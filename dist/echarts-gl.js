@@ -61,30 +61,17 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_echarts_lib_echarts__;
 /******/ 		})();
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
 (() => {
 /*!*****************************************!*\
-  !*** ./src/export/all.js + 349 modules ***!
+  !*** ./src/export/all.js + 365 modules ***!
   \*****************************************/
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: external "echarts"
 var external_echarts_ = __webpack_require__("echarts/lib/echarts");
-;// CONCATENATED MODULE: ./node_modules/claygl/src/core/mixin/extend.js
+;// ./node_modules/claygl/src/core/mixin/extend.js
 /**
  * Extend a sub class from base class
  * @param {object|Function} makeDefaultOpt default option of this sub class, method of the sub can use this.xxx to access this option
@@ -192,7 +179,7 @@ function extendWithPropList(target, source, propList) {
     derive: derive
 });
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/core/mixin/notifier.js
+;// ./node_modules/claygl/src/core/mixin/notifier.js
 function Handler(action, context) {
     this.action = action;
     this.context = context;
@@ -396,7 +383,7 @@ var notifier = {
 };
 
 /* harmony default export */ const mixin_notifier = (notifier);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/core/util.js
+;// ./node_modules/claygl/src/core/util.js
 var guid = 0;
 
 var ArrayProto = Array.prototype;
@@ -601,7 +588,7 @@ var util = {
 
 /* harmony default export */ const core_util = (util);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/core/Base.js
+;// ./node_modules/claygl/src/core/Base.js
 
 
 
@@ -630,7 +617,7 @@ core_util.extend(Base.prototype, mixin_notifier);
 
 /* harmony default export */ const core_Base = (Base);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/core/GLInfo.js
+;// ./node_modules/claygl/src/core/GLInfo.js
 var EXTENSION_LIST = [
     'OES_texture_float',
     'OES_texture_half_float',
@@ -696,7 +683,7 @@ function GLInfo(_gl) {
 
 /* harmony default export */ const core_GLInfo = (GLInfo);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/core/glenum.js
+;// ./node_modules/claygl/src/core/glenum.js
 /**
  * @namespace clay.core.glenum
  * @see http://www.khronos.org/registry/webgl/specs/latest/1.0/#5.14
@@ -1118,7 +1105,7 @@ function GLInfo(_gl) {
     BROWSER_DEFAULT_WEBGL          : 0x9244,
 });
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/core/request.js
+;// ./node_modules/claygl/src/core/request.js
 function get(options) {
 
     var xhr = new XMLHttpRequest();
@@ -1160,7 +1147,7 @@ function get(options) {
     get: get
 });
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/core/vendor.js
+;// ./node_modules/claygl/src/core/vendor.js
 
 
 var supportWebGL;
@@ -1239,7 +1226,7 @@ vendor.removeEventListener = function (dom, type, func) {
 
 /* harmony default export */ const core_vendor = (vendor);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/core/LinkedList.js
+;// ./node_modules/claygl/src/core/LinkedList.js
 /**
  * Simple double linked list. Compared with array, it has O(1) remove operation.
  * @constructor
@@ -1499,7 +1486,7 @@ LinkedList.Entry = function (val) {
 
 /* harmony default export */ const core_LinkedList = (LinkedList);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/core/LRU.js
+;// ./node_modules/claygl/src/core/LRU.js
 
 
 /**
@@ -1582,7 +1569,7 @@ LRU.prototype.clear = function () {
 
 /* harmony default export */ const core_LRU = (LRU);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/core/color.js
+;// ./node_modules/claygl/src/core/color.js
 /**
  * @namespace clay.core.color
  */
@@ -2129,7 +2116,7 @@ colorUtil.stringify = function (arrColor, type) {
 
 
 /* harmony default export */ const color = (colorUtil);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/Material.js
+;// ./node_modules/claygl/src/Material.js
 
 
 
@@ -2630,7 +2617,7 @@ var Material = core_Base.extend(function () {
 
 /* harmony default export */ const src_Material = (Material);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/glmatrix/common.js
+;// ./node_modules/claygl/src/glmatrix/common.js
 
 var GLMAT_EPSILON = 0.000001;
 
@@ -2642,7 +2629,7 @@ var GLMAT_ARRAY_TYPE = Array;
 
 var common_GLMAT_RANDOM = Math.random;
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/glmatrix/vec2.js
+;// ./node_modules/claygl/src/glmatrix/vec2.js
 
 /* Copyright (c) 2013, Brandon Jones, Colin MacKenzie IV. All rights reserved.
 
@@ -3160,7 +3147,7 @@ vec2.forEach = (function() {
 })();
 
 /* harmony default export */ const glmatrix_vec2 = (vec2);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/math/Vector2.js
+;// ./node_modules/claygl/src/math/Vector2.js
 
 
 /**
@@ -3891,7 +3878,7 @@ Vector2.transformMat4 = function(out, a, m) {
 
 /* harmony default export */ const math_Vector2 = (Vector2);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/gpu/GLProgram.js
+;// ./node_modules/claygl/src/gpu/GLProgram.js
 
 
 
@@ -4230,7 +4217,7 @@ var GLProgram = core_Base.extend({
 });
 
 /* harmony default export */ const gpu_GLProgram = (GLProgram);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/gpu/ProgramManager.js
+;// ./node_modules/claygl/src/gpu/ProgramManager.js
 
 
 var loopRegex = /for\s*?\(int\s*?_idx_\s*\=\s*([\w-]+)\;\s*_idx_\s*<\s*([\w-]+);\s*_idx_\s*\+\+\s*\)\s*\{\{([\s\S]+?)(?=\}\})\}\}/g;
@@ -4418,7 +4405,7 @@ ProgramManager.prototype.getProgram = function (renderable, material, scene) {
 };
 
 /* harmony default export */ const gpu_ProgramManager = (ProgramManager);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/Shader.js
+;// ./node_modules/claygl/src/Shader.js
 /**
  * Mainly do the parse and compile of shader string
  * Support shader code chunk import and export
@@ -5100,10 +5087,10 @@ Shader.source = function (name) {
 
 /* harmony default export */ const src_Shader = (Shader);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/prez.glsl.js
+;// ./node_modules/claygl/src/shader/source/prez.glsl.js
 /* harmony default export */ const prez_glsl = ("@export clay.prez.vertex\nuniform mat4 WVP : WORLDVIEWPROJECTION;\nattribute vec3 pos : POSITION;\nattribute vec2 uv : TEXCOORD_0;\nuniform vec2 uvRepeat : [1.0, 1.0];\nuniform vec2 uvOffset : [0.0, 0.0];\n@import clay.chunk.skinning_header\n@import clay.chunk.instancing_header\nvarying vec2 v_Texcoord;\nvoid main()\n{\n vec4 P = vec4(pos, 1.0);\n#ifdef SKINNING\n @import clay.chunk.skin_matrix\n P = skinMatrixWS * P;\n#endif\n#ifdef INSTANCING\n @import clay.chunk.instancing_matrix\n P = instanceMat * P;\n#endif\n gl_Position = WVP * P;\n v_Texcoord = uv * uvRepeat + uvOffset;\n}\n@end\n@export clay.prez.fragment\nuniform sampler2D alphaMap;\nuniform float alphaCutoff: 0.0;\nvarying vec2 v_Texcoord;\nvoid main()\n{\n if (alphaCutoff > 0.0) {\n if (texture2D(alphaMap, v_Texcoord).a <= alphaCutoff) {\n discard;\n }\n }\n gl_FragColor = vec4(0.0,0.0,0.0,1.0);\n}\n@end");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/glmatrix/mat4.js
+;// ./node_modules/claygl/src/glmatrix/mat4.js
 
 /* Copyright (c) 2013, Brandon Jones, Colin MacKenzie IV. All rights reserved.
 
@@ -6048,7 +6035,7 @@ mat4.frob = function (a) {
 };
 
 /* harmony default export */ const glmatrix_mat4 = (mat4);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/glmatrix/vec3.js
+;// ./node_modules/claygl/src/glmatrix/vec3.js
 
 /* Copyright (c) 2013, Brandon Jones, Colin MacKenzie IV. All rights reserved.
 
@@ -6700,7 +6687,7 @@ vec3.angle = function(a, b) {
 };
 
 /* harmony default export */ const glmatrix_vec3 = (vec3);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/Renderer.js
+;// ./node_modules/claygl/src/Renderer.js
 // TODO Resources like shader, texture, geometry reference management
 // Trace and find out which shader, texture, geometry can be destroyed
 
@@ -8110,7 +8097,7 @@ Renderer.STENCIL_BUFFER_BIT = glenum.STENCIL_BUFFER_BIT;
 
 /* harmony default export */ const src_Renderer = (Renderer);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/math/Vector3.js
+;// ./node_modules/claygl/src/math/Vector3.js
 
 
 /**
@@ -9112,7 +9099,7 @@ Object.defineProperties(Vector3, {
 
 /* harmony default export */ const math_Vector3 = (Vector3);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/math/Ray.js
+;// ./node_modules/claygl/src/math/Ray.js
 
 
 
@@ -9433,7 +9420,7 @@ Ray.prototype = {
 
 /* harmony default export */ const math_Ray = (Ray);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/glmatrix/vec4.js
+;// ./node_modules/claygl/src/glmatrix/vec4.js
 
 /* Copyright (c) 2013, Brandon Jones, Colin MacKenzie IV. All rights reserved.
 
@@ -9964,7 +9951,7 @@ vec4.forEach = (function() {
 })();
 
 /* harmony default export */ const glmatrix_vec4 = (vec4);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/glmatrix/mat3.js
+;// ./node_modules/claygl/src/glmatrix/mat3.js
 
 /* Copyright (c) 2013, Brandon Jones, Colin MacKenzie IV. All rights reserved.
 
@@ -10444,7 +10431,7 @@ mat3.frob = function (a) {
 
 
 /* harmony default export */ const glmatrix_mat3 = (mat3);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/glmatrix/quat.js
+;// ./node_modules/claygl/src/glmatrix/quat.js
 
 
 /* Copyright (c) 2013, Brandon Jones, Colin MacKenzie IV. All rights reserved.
@@ -10970,7 +10957,7 @@ quat.fromMat3 = function(out, m) {
 };
 
 /* harmony default export */ const glmatrix_quat = (quat);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/math/Matrix4.js
+;// ./node_modules/claygl/src/math/Matrix4.js
 
 
 
@@ -11691,7 +11678,7 @@ Matrix4.translate = function(out, a, v) {
 
 /* harmony default export */ const math_Matrix4 = (Matrix4);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/math/Quaternion.js
+;// ./node_modules/claygl/src/math/Quaternion.js
 
 
 
@@ -12467,7 +12454,7 @@ Quaternion.fromEuler = function (out, v, order) {
 
 /* harmony default export */ const math_Quaternion = (Quaternion);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/math/BoundingBox.js
+;// ./node_modules/claygl/src/math/BoundingBox.js
 
 
 
@@ -12779,7 +12766,7 @@ BoundingBox.prototype = {
 
 /* harmony default export */ const math_BoundingBox = (BoundingBox);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/Node.js
+;// ./node_modules/claygl/src/Node.js
 
 
 
@@ -13447,7 +13434,7 @@ var Node = core_Base.extend(/** @lends clay.Node# */{
 
 /* harmony default export */ const src_Node = (Node);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/Renderable.js
+;// ./node_modules/claygl/src/Renderable.js
 
 
 
@@ -13660,7 +13647,7 @@ Renderable.CCW = glenum.CCW;
 
 /* harmony default export */ const src_Renderable = (Renderable);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/picking/RayPicking.js
+;// ./node_modules/claygl/src/picking/RayPicking.js
 
 
 
@@ -13719,7 +13706,6 @@ var RayPicking = core_Base.extend(/** @lends clay.picking.RayPicking# */{
      */
     pickAll: function (x, y, output, forcePickAll) {
         this.renderer.screenToNDC(x, y, this._ndc);
-        
         this.camera.castRay(this._ndc, this._ray);
 
         output = output || [];
@@ -13776,7 +13762,6 @@ var RayPicking = core_Base.extend(/** @lends clay.picking.RayPicking# */{
             if (bbox && !ray.intersectBoundingBox(bbox)) {
                 return;
             }
-            
             // Use user defined picking algorithm
             if (geometry.pick) {
                 geometry.pick(
@@ -13859,8 +13844,7 @@ var RayPicking = core_Base.extend(/** @lends clay.picking.RayPicking# */{
                 else {
                     point = ray.intersectTriangle(v1, v3, v2, renderable.culling);
                 }
-
-                if (point) {                   
+                if (point) {
                     var pointW = new math_Vector3();
                     if (!isSkinnedMesh) {
                         math_Vector3.transformMat4(pointW, point, renderable.worldTransform);
@@ -13926,7 +13910,7 @@ RayPicking.Intersection = function (point, pointWorld, target, triangle, triangl
 
 /* harmony default export */ const picking_RayPicking = (RayPicking);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/core/Cache.js
+;// ./node_modules/claygl/src/core/Cache.js
 var DIRTY_PREFIX = '__dt__';
 
 var Cache = function () {
@@ -14037,7 +14021,7 @@ Cache.prototype.constructor = Cache;
 
 /* harmony default export */ const core_Cache = (Cache);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/Texture.js
+;// ./node_modules/claygl/src/Texture.js
 /**
  * Base class for all textures like compressed texture, texture2d, texturecube
  * TODO mapping
@@ -14454,7 +14438,7 @@ Texture.MIRRORED_REPEAT = glenum.MIRRORED_REPEAT;
 
 /* harmony default export */ const src_Texture = (Texture);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/Mesh.js
+;// ./node_modules/claygl/src/Mesh.js
 
 
 
@@ -14519,7 +14503,7 @@ Mesh.CCW = glenum.CCW;
 
 /* harmony default export */ const src_Mesh = (Mesh);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/math/util.js
+;// ./node_modules/claygl/src/math/util.js
 var mathUtil = {};
 
 mathUtil.isPowerOfTwo = function (value) {
@@ -14544,7 +14528,7 @@ mathUtil.nearestPowerOfTwo = function (value) {
 
 /* harmony default export */ const math_util = (mathUtil);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/Texture2D.js
+;// ./node_modules/claygl/src/Texture2D.js
 
 
 
@@ -14798,7 +14782,7 @@ Object.defineProperty(Texture2D.prototype, 'height', {
 
 /* harmony default export */ const src_Texture2D = (Texture2D);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/GeometryBase.js
+;// ./node_modules/claygl/src/GeometryBase.js
 
 
 
@@ -15468,7 +15452,7 @@ GeometryBase.Attribute = Attribute;
 
 /* harmony default export */ const src_GeometryBase = (GeometryBase);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/Geometry.js
+;// ./node_modules/claygl/src/Geometry.js
 
 
 
@@ -16042,10 +16026,10 @@ Geometry.Attribute = Geometry_Attribute;
 
 /* harmony default export */ const src_Geometry = (Geometry);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/header/calcAmbientSHLight.glsl.js
+;// ./node_modules/claygl/src/shader/source/header/calcAmbientSHLight.glsl.js
 /* harmony default export */ const calcAmbientSHLight_glsl = ("vec3 calcAmbientSHLight(int idx, vec3 N) {\n int offset = 9 * idx;\n return ambientSHLightCoefficients[0]\n + ambientSHLightCoefficients[1] * N.x\n + ambientSHLightCoefficients[2] * N.y\n + ambientSHLightCoefficients[3] * N.z\n + ambientSHLightCoefficients[4] * N.x * N.z\n + ambientSHLightCoefficients[5] * N.z * N.y\n + ambientSHLightCoefficients[6] * N.y * N.x\n + ambientSHLightCoefficients[7] * (3.0 * N.z * N.z - 1.0)\n + ambientSHLightCoefficients[8] * (N.x * N.x - N.y * N.y);\n}");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/header/light.js
+;// ./node_modules/claygl/src/shader/source/header/light.js
 
 
 var uniformVec3Prefix = 'uniform vec3 ';
@@ -16092,7 +16076,7 @@ var unconfigurable = ':unconfigurable;';
     exportEnd
 ].join('\n'));
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/Light.js
+;// ./node_modules/claygl/src/Light.js
 
 
 
@@ -16165,7 +16149,7 @@ var Light = src_Node.extend(function(){
 
 /* harmony default export */ const src_Light = (Light);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/math/Plane.js
+;// ./node_modules/claygl/src/math/Plane.js
 
 
 
@@ -16334,7 +16318,7 @@ Plane.prototype = {
 
 /* harmony default export */ const math_Plane = (Plane);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/math/Frustum.js
+;// ./node_modules/claygl/src/math/Frustum.js
 
 
 
@@ -16519,7 +16503,7 @@ Frustum.prototype = {
 };
 /* harmony default export */ const math_Frustum = (Frustum);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/Camera.js
+;// ./node_modules/claygl/src/Camera.js
 
 
 
@@ -16645,7 +16629,7 @@ var Camera = src_Node.extend(function () {
 
 /* harmony default export */ const src_Camera = (Camera);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/Scene.js
+;// ./node_modules/claygl/src/Scene.js
 
 
 
@@ -17204,7 +17188,7 @@ function lightSortFunc(a, b) {
 
 /* harmony default export */ const src_Scene = (Scene);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/core/LRU.js
+;// ./node_modules/zrender/lib/core/LRU.js
 var Entry = (function () {
     function Entry(val) {
         this.value = val;
@@ -17316,7 +17300,7 @@ var LRU_LRU = (function () {
 }());
 /* harmony default export */ const lib_core_LRU = (LRU_LRU);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/TextureCube.js
+;// ./node_modules/claygl/src/TextureCube.js
 
 
 
@@ -17588,7 +17572,7 @@ function isImageRenderable(image) {
 
 /* harmony default export */ const src_TextureCube = (TextureCube);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/camera/Perspective.js
+;// ./node_modules/claygl/src/camera/Perspective.js
 
 
 /**
@@ -17648,7 +17632,7 @@ var Perspective = src_Camera.extend(/** @lends clay.camera.Perspective# */{
 
 /* harmony default export */ const camera_Perspective = (Perspective);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/FrameBuffer.js
+;// ./node_modules/claygl/src/FrameBuffer.js
 
 
 
@@ -18042,7 +18026,7 @@ FrameBuffer.DEPTH_STENCIL_ATTACHMENT = glenum.DEPTH_STENCIL_ATTACHMENT;
 
 /* harmony default export */ const src_FrameBuffer = (FrameBuffer);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/prePass/EnvironmentMap.js
+;// ./node_modules/claygl/src/prePass/EnvironmentMap.js
 
 
 
@@ -18187,7 +18171,7 @@ var EnvironmentMapPass = core_Base.extend(function() {
 
 /* harmony default export */ const EnvironmentMap = (EnvironmentMapPass);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/geometry/Plane.js
+;// ./node_modules/claygl/src/geometry/Plane.js
 
 
 
@@ -18261,7 +18245,7 @@ var Plane_Plane = src_Geometry.extend(
 
 /* harmony default export */ const geometry_Plane = (Plane_Plane);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/geometry/Cube.js
+;// ./node_modules/claygl/src/geometry/Cube.js
 
 
 
@@ -18401,10 +18385,10 @@ function createPlane(pos, widthSegments, heightSegments) {
 
 /* harmony default export */ const geometry_Cube = (Cube);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/skybox.glsl.js
+;// ./node_modules/claygl/src/shader/source/skybox.glsl.js
 /* harmony default export */ const skybox_glsl = ("@export clay.skybox.vertex\n#define SHADER_NAME skybox\nuniform mat4 world : WORLD;\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nattribute vec3 position : POSITION;\nvarying vec3 v_WorldPosition;\nvoid main()\n{\n v_WorldPosition = (world * vec4(position, 1.0)).xyz;\n gl_Position = worldViewProjection * vec4(position, 1.0);\n}\n@end\n@export clay.skybox.fragment\n#define PI 3.1415926\nuniform mat4 viewInverse : VIEWINVERSE;\n#ifdef EQUIRECTANGULAR\nuniform sampler2D environmentMap;\n#else\nuniform samplerCube environmentMap;\n#endif\nuniform float lod: 0.0;\nvarying vec3 v_WorldPosition;\n@import clay.util.rgbm\n@import clay.util.srgb\n@import clay.util.ACES\nvoid main()\n{\n vec3 eyePos = viewInverse[3].xyz;\n vec3 V = normalize(v_WorldPosition - eyePos);\n#ifdef EQUIRECTANGULAR\n float phi = acos(V.y);\n float theta = atan(-V.x, V.z) + PI * 0.5;\n vec2 uv = vec2(theta / 2.0 / PI, phi / PI);\n vec4 texel = decodeHDR(texture2D(environmentMap, fract(uv)));\n#else\n #if defined(LOD) || defined(SUPPORT_TEXTURE_LOD)\n vec4 texel = decodeHDR(textureCubeLodEXT(environmentMap, V, lod));\n #else\n vec4 texel = decodeHDR(textureCube(environmentMap, V));\n #endif\n#endif\n#ifdef SRGB_DECODE\n texel = sRGBToLinear(texel);\n#endif\n#ifdef TONEMAPPING\n texel.rgb = ACESToneMapping(texel.rgb);\n#endif\n#ifdef SRGB_ENCODE\n texel = linearTosRGB(texel);\n#endif\n gl_FragColor = encodeHDR(vec4(texel.rgb, 1.0));\n}\n@end");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/plugin/Skybox.js
+;// ./node_modules/claygl/src/plugin/Skybox.js
 // TODO Should not derived from mesh?
 
 
@@ -18556,11 +18540,11 @@ var Skybox = src_Mesh.extend(function () {
 
 /* harmony default export */ const plugin_Skybox = (Skybox);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/plugin/Skydome.js
+;// ./node_modules/claygl/src/plugin/Skydome.js
 
 
 /* harmony default export */ const Skydome = (plugin_Skybox);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/util/dds.js
+;// ./node_modules/claygl/src/util/dds.js
 
 
 
@@ -18718,7 +18702,7 @@ var ret = {
 
 /* harmony default export */ const dds = (ret);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/util/hdr.js
+;// ./node_modules/claygl/src/util/hdr.js
 
 
 var toChar = String.fromCharCode;
@@ -18897,7 +18881,7 @@ var hdr_ret = {
 
 /* harmony default export */ const hdr = (hdr_ret);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/util/texture.js
+;// ./node_modules/claygl/src/util/texture.js
 
 
 
@@ -19211,7 +19195,7 @@ var textureUtil = {
 
 /* harmony default export */ const util_texture = (textureUtil);
 
-;// CONCATENATED MODULE: ./src/util/EChartsSurface.js
+;// ./src/util/EChartsSurface.js
 /**
  * Surface texture in the 3D scene.
  * Provide management and rendering of zrender shapes and groups
@@ -19389,7 +19373,7 @@ EChartsSurface.prototype = {
 };
 
 /* harmony default export */ const util_EChartsSurface = (EChartsSurface);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/camera/Orthographic.js
+;// ./node_modules/claygl/src/camera/Orthographic.js
 
 /**
  * @constructor clay.camera.Orthographic
@@ -19457,10 +19441,10 @@ var Orthographic = src_Camera.extend(
 
 /* harmony default export */ const camera_Orthographic = (Orthographic);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/compositor/vertex.glsl.js
+;// ./node_modules/claygl/src/shader/source/compositor/vertex.glsl.js
 /* harmony default export */ const vertex_glsl = ("\n@export clay.compositor.vertex\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nattribute vec3 position : POSITION;\nattribute vec2 texcoord : TEXCOORD_0;\nvarying vec2 v_Texcoord;\nvoid main()\n{\n v_Texcoord = texcoord;\n gl_Position = worldViewProjection * vec4(position, 1.0);\n}\n@end");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/compositor/Pass.js
+;// ./node_modules/claygl/src/compositor/Pass.js
 
 
 
@@ -19666,13 +19650,13 @@ var Pass = core_Base.extend(function () {
 
 /* harmony default export */ const compositor_Pass = (Pass);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/util/shader/integrateBRDF.glsl.js
+;// ./node_modules/claygl/src/util/shader/integrateBRDF.glsl.js
 /* harmony default export */ const integrateBRDF_glsl = ("#define SAMPLE_NUMBER 1024\n#define PI 3.14159265358979\nuniform sampler2D normalDistribution;\nuniform vec2 viewportSize : [512, 256];\nconst vec3 N = vec3(0.0, 0.0, 1.0);\nconst float fSampleNumber = float(SAMPLE_NUMBER);\nvec3 importanceSampleNormal(float i, float roughness, vec3 N) {\n vec3 H = texture2D(normalDistribution, vec2(roughness, i)).rgb;\n vec3 upVector = abs(N.y) > 0.999 ? vec3(1.0, 0.0, 0.0) : vec3(0.0, 1.0, 0.0);\n vec3 tangentX = normalize(cross(N, upVector));\n vec3 tangentZ = cross(N, tangentX);\n return normalize(tangentX * H.x + N * H.y + tangentZ * H.z);\n}\nfloat G_Smith(float roughness, float NoV, float NoL) {\n float k = roughness * roughness / 2.0;\n float G1V = NoV / (NoV * (1.0 - k) + k);\n float G1L = NoL / (NoL * (1.0 - k) + k);\n return G1L * G1V;\n}\nvoid main() {\n vec2 uv = gl_FragCoord.xy / viewportSize;\n float NoV = uv.x;\n float roughness = uv.y;\n vec3 V;\n V.x = sqrt(1.0 - NoV * NoV);\n V.y = 0.0;\n V.z = NoV;\n float A = 0.0;\n float B = 0.0;\n for (int i = 0; i < SAMPLE_NUMBER; i++) {\n vec3 H = importanceSampleNormal(float(i) / fSampleNumber, roughness, N);\n vec3 L = reflect(-V, H);\n float NoL = clamp(L.z, 0.0, 1.0);\n float NoH = clamp(H.z, 0.0, 1.0);\n float VoH = clamp(dot(V, H), 0.0, 1.0);\n if (NoL > 0.0) {\n float G = G_Smith(roughness, NoV, NoL);\n float G_Vis = G * VoH / (NoH * NoV);\n float Fc = pow(1.0 - VoH, 5.0);\n A += (1.0 - Fc) * G_Vis;\n B += Fc * G_Vis;\n }\n }\n gl_FragColor = vec4(vec2(A, B) / fSampleNumber, 0.0, 1.0);\n}\n");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/util/shader/prefilter.glsl.js
+;// ./node_modules/claygl/src/util/shader/prefilter.glsl.js
 /* harmony default export */ const prefilter_glsl = ("#define SHADER_NAME prefilter\n#define SAMPLE_NUMBER 1024\n#define PI 3.14159265358979\nuniform mat4 viewInverse : VIEWINVERSE;\nuniform samplerCube environmentMap;\nuniform sampler2D normalDistribution;\nuniform float roughness : 0.5;\nvarying vec2 v_Texcoord;\nvarying vec3 v_WorldPosition;\n@import clay.util.rgbm\nvec3 importanceSampleNormal(float i, float roughness, vec3 N) {\n vec3 H = texture2D(normalDistribution, vec2(roughness, i)).rgb;\n vec3 upVector = abs(N.y) > 0.999 ? vec3(1.0, 0.0, 0.0) : vec3(0.0, 1.0, 0.0);\n vec3 tangentX = normalize(cross(N, upVector));\n vec3 tangentZ = cross(N, tangentX);\n return normalize(tangentX * H.x + N * H.y + tangentZ * H.z);\n}\nvoid main() {\n vec3 eyePos = viewInverse[3].xyz;\n vec3 V = normalize(v_WorldPosition - eyePos);\n vec3 N = V;\n vec3 prefilteredColor = vec3(0.0);\n float totalWeight = 0.0;\n float fMaxSampleNumber = float(SAMPLE_NUMBER);\n for (int i = 0; i < SAMPLE_NUMBER; i++) {\n vec3 H = importanceSampleNormal(float(i) / fMaxSampleNumber, roughness, N);\n vec3 L = reflect(-V, H);\n float NoL = clamp(dot(N, L), 0.0, 1.0);\n if (NoL > 0.0) {\n prefilteredColor += decodeHDR(textureCube(environmentMap, L)).rgb * NoL;\n totalWeight += NoL;\n }\n }\n gl_FragColor = encodeHDR(vec4(prefilteredColor / totalWeight, 1.0));\n}\n");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/util/cubemap.js
+;// ./node_modules/claygl/src/util/cubemap.js
 // Cubemap prefilter utility
 // http://www.unrealengine.com/files/downloads/2013SiggraphPresentationsNotes.pdf
 // http://http.developer.nvidia.com/GPUGems3/gpugems3_ch20.html
@@ -19961,7 +19945,7 @@ cubemapUtil.generateNormalDistribution = function (roughnessLevels, sampleSize) 
 
 /* harmony default export */ const util_cubemap = (cubemapUtil);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/light/AmbientCubemap.js
+;// ./node_modules/claygl/src/light/AmbientCubemap.js
 // https://docs.unrealengine.com/latest/INT/Engine/Rendering/LightingAndShadows/AmbientCubemap/
 
 
@@ -20062,7 +20046,7 @@ var AmbientCubemapLight = src_Light.extend({
 
 /* harmony default export */ const AmbientCubemap = (AmbientCubemapLight);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/light/AmbientSH.js
+;// ./node_modules/claygl/src/light/AmbientSH.js
 
 
 
@@ -20119,10 +20103,10 @@ var AmbientSHLight = src_Light.extend({
 
 /* harmony default export */ const AmbientSH = (AmbientSHLight);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/util/shader/projectEnvMap.glsl.js
+;// ./node_modules/claygl/src/util/shader/projectEnvMap.glsl.js
 /* harmony default export */ const projectEnvMap_glsl = ("uniform samplerCube environmentMap;\nvarying vec2 v_Texcoord;\n#define TEXTURE_SIZE 16\nmat3 front = mat3(\n 1.0, 0.0, 0.0,\n 0.0, 1.0, 0.0,\n 0.0, 0.0, 1.0\n);\nmat3 back = mat3(\n -1.0, 0.0, 0.0,\n 0.0, 1.0, 0.0,\n 0.0, 0.0, -1.0\n);\nmat3 left = mat3(\n 0.0, 0.0, -1.0,\n 0.0, 1.0, 0.0,\n 1.0, 0.0, 0.0\n);\nmat3 right = mat3(\n 0.0, 0.0, 1.0,\n 0.0, 1.0, 0.0,\n -1.0, 0.0, 0.0\n);\nmat3 up = mat3(\n 1.0, 0.0, 0.0,\n 0.0, 0.0, 1.0,\n 0.0, -1.0, 0.0\n);\nmat3 down = mat3(\n 1.0, 0.0, 0.0,\n 0.0, 0.0, -1.0,\n 0.0, 1.0, 0.0\n);\nfloat harmonics(vec3 normal){\n int index = int(gl_FragCoord.x);\n float x = normal.x;\n float y = normal.y;\n float z = normal.z;\n if(index==0){\n return 1.0;\n }\n else if(index==1){\n return x;\n }\n else if(index==2){\n return y;\n }\n else if(index==3){\n return z;\n }\n else if(index==4){\n return x*z;\n }\n else if(index==5){\n return y*z;\n }\n else if(index==6){\n return x*y;\n }\n else if(index==7){\n return 3.0*z*z - 1.0;\n }\n else{\n return x*x - y*y;\n }\n}\nvec3 sampleSide(mat3 rot)\n{\n vec3 result = vec3(0.0);\n float divider = 0.0;\n for (int i = 0; i < TEXTURE_SIZE * TEXTURE_SIZE; i++) {\n float x = mod(float(i), float(TEXTURE_SIZE));\n float y = float(i / TEXTURE_SIZE);\n vec2 sidecoord = ((vec2(x, y) + vec2(0.5, 0.5)) / vec2(TEXTURE_SIZE)) * 2.0 - 1.0;\n vec3 normal = normalize(vec3(sidecoord, -1.0));\n vec3 fetchNormal = rot * normal;\n vec3 texel = textureCube(environmentMap, fetchNormal).rgb;\n result += harmonics(fetchNormal) * texel * -normal.z;\n divider += -normal.z;\n }\n return result / divider;\n}\nvoid main()\n{\n vec3 result = (\n sampleSide(front) +\n sampleSide(back) +\n sampleSide(left) +\n sampleSide(right) +\n sampleSide(up) +\n sampleSide(down)\n ) / 6.0;\n gl_FragColor = vec4(result, 1.0);\n}");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/util/sh.js
+;// ./node_modules/claygl/src/util/sh.js
 // Spherical Harmonic Helpers
 
 
@@ -20340,7 +20324,7 @@ sh.projectEnvironmentMap = function (renderer, envMap, opts) {
 
 /* harmony default export */ const util_sh = (sh);
 
-;// CONCATENATED MODULE: ./src/util/retrieve.js
+;// ./src/util/retrieve.js
 
 
 var retrieve = {
@@ -20381,7 +20365,7 @@ var retrieve = {
 };
 
 /* harmony default export */ const util_retrieve = (retrieve);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/geometry/Sphere.js
+;// ./node_modules/claygl/src/geometry/Sphere.js
 
 
 
@@ -20522,7 +20506,7 @@ var Sphere = src_Geometry.extend(/** @lends clay.geometry.Sphere# */ {
 
 /* harmony default export */ const geometry_Sphere = (Sphere);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/light/Ambient.js
+;// ./node_modules/claygl/src/light/Ambient.js
 
 
 /**
@@ -20557,7 +20541,7 @@ var AmbientLight = src_Light.extend({
 
 /* harmony default export */ const Ambient = (AmbientLight);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/light/Directional.js
+;// ./node_modules/claygl/src/light/Directional.js
 
 
 
@@ -20631,7 +20615,7 @@ var DirectionalLight = src_Light.extend(/** @lends clay.light.Directional# */ {
 
 /* harmony default export */ const Directional = (DirectionalLight);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/light/Point.js
+;// ./node_modules/claygl/src/light/Point.js
 
 
 /**
@@ -20687,7 +20671,7 @@ var PointLight = src_Light.extend(/** @lends clay.light.Point# */ {
 
 /* harmony default export */ const Point = (PointLight);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/light/Spot.js
+;// ./node_modules/claygl/src/light/Spot.js
 
 
 
@@ -20790,7 +20774,7 @@ var SpotLight = src_Light.extend(/**@lends clay.light.Spot */ {
 
 /* harmony default export */ const Spot = (SpotLight);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/math/Vector4.js
+;// ./node_modules/claygl/src/math/Vector4.js
 
 
 /**
@@ -21511,7 +21495,7 @@ Vector4.transformQuat = function(out, a, q) {
 
 /* harmony default export */ const math_Vector4 = (Vector4);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/glmatrix/mat2.js
+;// ./node_modules/claygl/src/glmatrix/mat2.js
 
 
 /* Copyright (c) 2013, Brandon Jones, Colin MacKenzie IV. All rights reserved.
@@ -21769,7 +21753,7 @@ mat2.LDU = function (L, D, U, a) {
 
 
 /* harmony default export */ const glmatrix_mat2 = (mat2);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/math/Matrix2.js
+;// ./node_modules/claygl/src/math/Matrix2.js
 
 
 /**
@@ -22058,7 +22042,7 @@ Matrix2.transpose = function(out, a) {
 
 /* harmony default export */ const math_Matrix2 = (Matrix2);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/glmatrix/mat2d.js
+;// ./node_modules/claygl/src/glmatrix/mat2d.js
 
 /* Copyright (c) 2013, Brandon Jones, Colin MacKenzie IV. All rights reserved.
 
@@ -22307,7 +22291,7 @@ mat2d.frob = function (a) {
 
 
 /* harmony default export */ const glmatrix_mat2d = (mat2d);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/math/Matrix2d.js
+;// ./node_modules/claygl/src/math/Matrix2d.js
 
 
 /**
@@ -22578,7 +22562,7 @@ Matrix2d.translate = function(out, a, v) {
 
 /* harmony default export */ const math_Matrix2d = (Matrix2d);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/math/Matrix3.js
+;// ./node_modules/claygl/src/math/Matrix3.js
 
 
 /**
@@ -22976,7 +22960,7 @@ Matrix3.translate = function (out, a, v) {
 
 /* harmony default export */ const math_Matrix3 = (Matrix3);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/animation/easing.js
+;// ./node_modules/zrender/lib/animation/easing.js
 var easingFuncs = {
     linear: function (k) {
         return k;
@@ -23173,7 +23157,7 @@ var easingFuncs = {
 };
 /* harmony default export */ const animation_easing = (easingFuncs);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/core/platform.js
+;// ./node_modules/zrender/lib/core/platform.js
 var DEFAULT_FONT_SIZE = 12;
 var DEFAULT_FONT_FAMILY = 'sans-serif';
 var DEFAULT_FONT = DEFAULT_FONT_SIZE + "px " + DEFAULT_FONT_FAMILY;
@@ -23215,7 +23199,7 @@ var platformApi = {
             else {
                 text = text || '';
                 font = font || DEFAULT_FONT;
-                var res = /(\d+)px/.exec(font);
+                var res = /((?:\d+)?\.?\d*)px/.exec(font);
                 var fontSize = res && +res[1] || DEFAULT_FONT_SIZE;
                 var width = 0;
                 if (font.indexOf('mono') >= 0) {
@@ -23247,7 +23231,7 @@ function setPlatformAPI(newPlatformApis) {
     }
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/core/util.js
+;// ./node_modules/zrender/lib/core/util.js
 
 var BUILTIN_OBJECT = reduce([
     'Function',
@@ -23383,9 +23367,9 @@ function util_extend(target, source) {
     }
     return target;
 }
-function util_defaults(target, source, overlay) {
+function defaults(target, source, overlay) {
     var keysArr = keys(source);
-    for (var i = 0; i < keysArr.length; i++) {
+    for (var i = 0, len = keysArr.length; i < len; i++) {
         var key = keysArr[i];
         if ((overlay ? source[key] != null : target[key] == null)) {
             target[key] = source[key];
@@ -23435,7 +23419,7 @@ function mixin(target, source, override) {
         }
     }
     else {
-        util_defaults(target, source, override);
+        defaults(target, source, override);
     }
 }
 function isArrayLike(data) {
@@ -23791,7 +23775,7 @@ function hasOwn(own, prop) {
 function util_noop() { }
 var RADIAN_TO_DEGREE = 180 / Math.PI;
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/core/vector.js
+;// ./node_modules/zrender/lib/core/vector.js
 function create(x, y) {
     if (x == null) {
         x = 0;
@@ -23894,18 +23878,18 @@ function applyTransform(out, v, m) {
     out[1] = m[1] * x + m[3] * y + m[5];
     return out;
 }
-function vector_min(out, v1, v2) {
+function min(out, v1, v2) {
     out[0] = Math.min(v1[0], v2[0]);
     out[1] = Math.min(v1[1], v2[1]);
     return out;
 }
-function vector_max(out, v1, v2) {
+function max(out, v1, v2) {
     out[0] = Math.max(v1[0], v2[0]);
     out[1] = Math.max(v1[1], v2[1]);
     return out;
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/core/curve.js
+;// ./node_modules/zrender/lib/core/curve.js
 
 var mathPow = Math.pow;
 var mathSqrt = Math.sqrt;
@@ -23922,7 +23906,7 @@ function isAroundZero(val) {
 function isNotAroundZero(val) {
     return val > curve_EPSILON || val < -curve_EPSILON;
 }
-function curve_cubicAt(p0, p1, p2, p3, t) {
+function cubicAt(p0, p1, p2, p3, t) {
     var onet = 1 - t;
     return onet * onet * (onet * p0 + 3 * t * p1)
         + t * t * (t * p3 + 3 * onet * p2);
@@ -24007,7 +23991,7 @@ function cubicRootAt(p0, p1, p2, p3, val, roots) {
     }
     return n;
 }
-function curve_cubicExtrema(p0, p1, p2, p3, extrema) {
+function cubicExtrema(p0, p1, p2, p3, extrema) {
     var b = 6 * p2 - 12 * p1 + 6 * p0;
     var a = 9 * p1 + 3 * p3 - 3 * p0 - 9 * p2;
     var c = 3 * p1 - 3 * p0;
@@ -24066,8 +24050,8 @@ function cubicProjectPoint(x0, y0, x1, y1, x2, y2, x3, y3, x, y, out) {
     _v0[0] = x;
     _v0[1] = y;
     for (var _t = 0; _t < 1; _t += 0.05) {
-        _v1[0] = curve_cubicAt(x0, x1, x2, x3, _t);
-        _v1[1] = curve_cubicAt(y0, y1, y2, y3, _t);
+        _v1[0] = cubicAt(x0, x1, x2, x3, _t);
+        _v1[1] = cubicAt(y0, y1, y2, y3, _t);
         d1 = distSquare(_v0, _v1);
         if (d1 < d) {
             t = _t;
@@ -24081,16 +24065,16 @@ function cubicProjectPoint(x0, y0, x1, y1, x2, y2, x3, y3, x, y, out) {
         }
         prev = t - interval;
         next = t + interval;
-        _v1[0] = curve_cubicAt(x0, x1, x2, x3, prev);
-        _v1[1] = curve_cubicAt(y0, y1, y2, y3, prev);
+        _v1[0] = cubicAt(x0, x1, x2, x3, prev);
+        _v1[1] = cubicAt(y0, y1, y2, y3, prev);
         d1 = distSquare(_v1, _v0);
         if (prev >= 0 && d1 < d) {
             t = prev;
             d = d1;
         }
         else {
-            _v2[0] = curve_cubicAt(x0, x1, x2, x3, next);
-            _v2[1] = curve_cubicAt(y0, y1, y2, y3, next);
+            _v2[0] = cubicAt(x0, x1, x2, x3, next);
+            _v2[1] = cubicAt(y0, y1, y2, y3, next);
             d2 = distSquare(_v2, _v0);
             if (next <= 1 && d2 < d) {
                 t = next;
@@ -24102,8 +24086,8 @@ function cubicProjectPoint(x0, y0, x1, y1, x2, y2, x3, y3, x, y, out) {
         }
     }
     if (out) {
-        out[0] = curve_cubicAt(x0, x1, x2, x3, t);
-        out[1] = curve_cubicAt(y0, y1, y2, y3, t);
+        out[0] = cubicAt(x0, x1, x2, x3, t);
+        out[1] = cubicAt(y0, y1, y2, y3, t);
     }
     return mathSqrt(d);
 }
@@ -24114,8 +24098,8 @@ function cubicLength(x0, y0, x1, y1, x2, y2, x3, y3, iteration) {
     var step = 1 / iteration;
     for (var i = 1; i <= iteration; i++) {
         var t = i * step;
-        var x = curve_cubicAt(x0, x1, x2, x3, t);
-        var y = curve_cubicAt(y0, y1, y2, y3, t);
+        var x = cubicAt(x0, x1, x2, x3, t);
+        var y = cubicAt(y0, y1, y2, y3, t);
         var dx = x - px;
         var dy = y - py;
         d += Math.sqrt(dx * dx + dy * dy);
@@ -24124,7 +24108,7 @@ function cubicLength(x0, y0, x1, y1, x2, y2, x3, y3, iteration) {
     }
     return d;
 }
-function curve_quadraticAt(p0, p1, p2, t) {
+function quadraticAt(p0, p1, p2, t) {
     var onet = 1 - t;
     return onet * (onet * p0 + 2 * t * p1) + t * t * p2;
 }
@@ -24166,7 +24150,7 @@ function quadraticRootAt(p0, p1, p2, val, roots) {
     }
     return n;
 }
-function curve_quadraticExtremum(p0, p1, p2) {
+function quadraticExtremum(p0, p1, p2) {
     var divider = p0 + p2 - 2 * p1;
     if (divider === 0) {
         return 0.5;
@@ -24193,8 +24177,8 @@ function quadraticProjectPoint(x0, y0, x1, y1, x2, y2, x, y, out) {
     _v0[0] = x;
     _v0[1] = y;
     for (var _t = 0; _t < 1; _t += 0.05) {
-        _v1[0] = curve_quadraticAt(x0, x1, x2, _t);
-        _v1[1] = curve_quadraticAt(y0, y1, y2, _t);
+        _v1[0] = quadraticAt(x0, x1, x2, _t);
+        _v1[1] = quadraticAt(y0, y1, y2, _t);
         var d1 = distSquare(_v0, _v1);
         if (d1 < d) {
             t = _t;
@@ -24208,16 +24192,16 @@ function quadraticProjectPoint(x0, y0, x1, y1, x2, y2, x, y, out) {
         }
         var prev = t - interval;
         var next = t + interval;
-        _v1[0] = curve_quadraticAt(x0, x1, x2, prev);
-        _v1[1] = curve_quadraticAt(y0, y1, y2, prev);
+        _v1[0] = quadraticAt(x0, x1, x2, prev);
+        _v1[1] = quadraticAt(y0, y1, y2, prev);
         var d1 = distSquare(_v1, _v0);
         if (prev >= 0 && d1 < d) {
             t = prev;
             d = d1;
         }
         else {
-            _v2[0] = curve_quadraticAt(x0, x1, x2, next);
-            _v2[1] = curve_quadraticAt(y0, y1, y2, next);
+            _v2[0] = quadraticAt(x0, x1, x2, next);
+            _v2[1] = quadraticAt(y0, y1, y2, next);
             var d2 = distSquare(_v2, _v0);
             if (next <= 1 && d2 < d) {
                 t = next;
@@ -24229,8 +24213,8 @@ function quadraticProjectPoint(x0, y0, x1, y1, x2, y2, x, y, out) {
         }
     }
     if (out) {
-        out[0] = curve_quadraticAt(x0, x1, x2, t);
-        out[1] = curve_quadraticAt(y0, y1, y2, t);
+        out[0] = quadraticAt(x0, x1, x2, t);
+        out[1] = quadraticAt(y0, y1, y2, t);
     }
     return mathSqrt(d);
 }
@@ -24241,8 +24225,8 @@ function quadraticLength(x0, y0, x1, y1, x2, y2, iteration) {
     var step = 1 / iteration;
     for (var i = 1; i <= iteration; i++) {
         var t = i * step;
-        var x = curve_quadraticAt(x0, x1, x2, t);
-        var y = curve_quadraticAt(y0, y1, y2, t);
+        var x = quadraticAt(x0, x1, x2, t);
+        var y = quadraticAt(y0, y1, y2, t);
         var dx = x - px;
         var dy = y - py;
         d += Math.sqrt(dx * dx + dy * dy);
@@ -24252,7 +24236,7 @@ function quadraticLength(x0, y0, x1, y1, x2, y2, iteration) {
     return d;
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/animation/cubicEasing.js
+;// ./node_modules/zrender/lib/animation/cubicEasing.js
 
 
 var regexp = /cubic-bezier\(([0-9,\.e ]+)\)/;
@@ -24272,12 +24256,12 @@ function createCubicEasingFunc(cubicEasingStr) {
             return p <= 0
                 ? 0 : p >= 1
                 ? 1
-                : cubicRootAt(0, a_1, c_1, 1, p, roots_1) && curve_cubicAt(0, b_1, d_1, 1, roots_1[0]);
+                : cubicRootAt(0, a_1, c_1, 1, p, roots_1) && cubicAt(0, b_1, d_1, 1, roots_1[0]);
         };
     }
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/animation/Clip.js
+;// ./node_modules/zrender/lib/animation/Clip.js
 
 
 
@@ -24343,7 +24327,8 @@ var Clip = (function () {
 }());
 /* harmony default export */ const animation_Clip = (Clip);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/tool/color.js
+;// ./node_modules/zrender/lib/tool/color.js
+
 
 var color_kCSSColorTable = {
     'transparent': [0, 0, 0, 0], 'aliceblue': [240, 248, 255, 1],
@@ -24752,8 +24737,28 @@ function random() {
         Math.round(Math.random() * 255)
     ], 'rgb');
 }
+var liftedColorCache = new lib_core_LRU(100);
+function liftColor(color) {
+    if (isString(color)) {
+        var liftedColor = liftedColorCache.get(color);
+        if (!liftedColor) {
+            liftedColor = lift(color, -0.1);
+            liftedColorCache.put(color, liftedColor);
+        }
+        return liftedColor;
+    }
+    else if (isGradientObject(color)) {
+        var ret = util_extend({}, color);
+        ret.colorStops = map(color.colorStops, function (stop) { return ({
+            offset: stop.offset,
+            color: lift(stop.color, -0.1)
+        }); });
+        return ret;
+    }
+    return color;
+}
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/core/env.js
+;// ./node_modules/zrender/lib/core/env.js
 var Browser = (function () {
     function Browser() {
         this.firefox = false;
@@ -24788,7 +24793,7 @@ if (typeof wx === 'object' && typeof wx.getSystemInfoSync === 'function') {
 else if (typeof document === 'undefined' && typeof self !== 'undefined') {
     env.worker = true;
 }
-else if (typeof navigator === 'undefined') {
+else if (!env.hasGlobalWindow || 'Deno' in window) {
     env.node = true;
     env.svgSupported = true;
 }
@@ -24834,7 +24839,7 @@ function detect(ua, env) {
 }
 /* harmony default export */ const core_env = (env);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/svg/helper.js
+;// ./node_modules/zrender/lib/svg/helper.js
 
 
 
@@ -24989,7 +24994,7 @@ var encodeBase64 = (function () {
     };
 })();
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/animation/Animator.js
+;// ./node_modules/zrender/lib/animation/Animator.js
 
 
 
@@ -25728,7 +25733,7 @@ var Animator = (function () {
 }());
 /* harmony default export */ const animation_Animator = (Animator);
 
-;// CONCATENATED MODULE: ./src/util/animatableMixin.js
+;// ./src/util/animatableMixin.js
 
 
 var animatableMixin = {
@@ -25822,28 +25827,28 @@ var animatableMixin = {
 };
 
 /* harmony default export */ const util_animatableMixin = (animatableMixin);
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/util.glsl.js
+;// ./node_modules/claygl/src/shader/source/util.glsl.js
 /* harmony default export */ const util_glsl = ("\n@export clay.util.rand\nhighp float rand(vec2 uv) {\n const highp float a = 12.9898, b = 78.233, c = 43758.5453;\n highp float dt = dot(uv.xy, vec2(a,b)), sn = mod(dt, 3.141592653589793);\n return fract(sin(sn) * c);\n}\n@end\n@export clay.util.calculate_attenuation\nuniform float attenuationFactor : 5.0;\nfloat lightAttenuation(float dist, float range)\n{\n float attenuation = 1.0;\n attenuation = dist*dist/(range*range+1.0);\n float att_s = attenuationFactor;\n attenuation = 1.0/(attenuation*att_s+1.0);\n att_s = 1.0/(att_s+1.0);\n attenuation = attenuation - att_s;\n attenuation /= 1.0 - att_s;\n return clamp(attenuation, 0.0, 1.0);\n}\n@end\n@export clay.util.edge_factor\n#ifdef SUPPORT_STANDARD_DERIVATIVES\nfloat edgeFactor(float width)\n{\n vec3 d = fwidth(v_Barycentric);\n vec3 a3 = smoothstep(vec3(0.0), d * width, v_Barycentric);\n return min(min(a3.x, a3.y), a3.z);\n}\n#else\nfloat edgeFactor(float width)\n{\n return 1.0;\n}\n#endif\n@end\n@export clay.util.encode_float\nvec4 encodeFloat(const in float depth)\n{\n const vec4 bitShifts = vec4(256.0*256.0*256.0, 256.0*256.0, 256.0, 1.0);\n const vec4 bit_mask = vec4(0.0, 1.0/256.0, 1.0/256.0, 1.0/256.0);\n vec4 res = fract(depth * bitShifts);\n res -= res.xxyz * bit_mask;\n return res;\n}\n@end\n@export clay.util.decode_float\nfloat decodeFloat(const in vec4 color)\n{\n const vec4 bitShifts = vec4(1.0/(256.0*256.0*256.0), 1.0/(256.0*256.0), 1.0/256.0, 1.0);\n return dot(color, bitShifts);\n}\n@end\n@export clay.util.float\n@import clay.util.encode_float\n@import clay.util.decode_float\n@end\n@export clay.util.rgbm_decode\nvec3 RGBMDecode(vec4 rgbm, float range) {\n return range * rgbm.rgb * rgbm.a;\n}\n@end\n@export clay.util.rgbm_encode\nvec4 RGBMEncode(vec3 color, float range) {\n if (dot(color, color) == 0.0) {\n return vec4(0.0);\n }\n vec4 rgbm;\n color /= range;\n rgbm.a = clamp(max(max(color.r, color.g), max(color.b, 1e-6)), 0.0, 1.0);\n rgbm.a = ceil(rgbm.a * 255.0) / 255.0;\n rgbm.rgb = color / rgbm.a;\n return rgbm;\n}\n@end\n@export clay.util.rgbm\n@import clay.util.rgbm_decode\n@import clay.util.rgbm_encode\nvec4 decodeHDR(vec4 color)\n{\n#if defined(RGBM_DECODE) || defined(RGBM)\n return vec4(RGBMDecode(color, 8.12), 1.0);\n#else\n return color;\n#endif\n}\nvec4 encodeHDR(vec4 color)\n{\n#if defined(RGBM_ENCODE) || defined(RGBM)\n return RGBMEncode(color.xyz, 8.12);\n#else\n return color;\n#endif\n}\n@end\n@export clay.util.srgb\nvec4 sRGBToLinear(in vec4 value) {\n return vec4(mix(pow(value.rgb * 0.9478672986 + vec3(0.0521327014), vec3(2.4)), value.rgb * 0.0773993808, vec3(lessThanEqual(value.rgb, vec3(0.04045)))), value.w);\n}\nvec4 linearTosRGB(in vec4 value) {\n return vec4(mix(pow(value.rgb, vec3(0.41666)) * 1.055 - vec3(0.055), value.rgb * 12.92, vec3(lessThanEqual(value.rgb, vec3(0.0031308)))), value.w);\n}\n@end\n@export clay.chunk.skinning_header\n#ifdef SKINNING\nattribute vec3 weight : WEIGHT;\nattribute vec4 joint : JOINT;\n#ifdef USE_SKIN_MATRICES_TEXTURE\nuniform sampler2D skinMatricesTexture : ignore;\nuniform float skinMatricesTextureSize: ignore;\nmat4 getSkinMatrix(sampler2D tex, float idx) {\n float j = idx * 4.0;\n float x = mod(j, skinMatricesTextureSize);\n float y = floor(j / skinMatricesTextureSize) + 0.5;\n vec2 scale = vec2(skinMatricesTextureSize);\n return mat4(\n texture2D(tex, vec2(x + 0.5, y) / scale),\n texture2D(tex, vec2(x + 1.5, y) / scale),\n texture2D(tex, vec2(x + 2.5, y) / scale),\n texture2D(tex, vec2(x + 3.5, y) / scale)\n );\n}\nmat4 getSkinMatrix(float idx) {\n return getSkinMatrix(skinMatricesTexture, idx);\n}\n#else\nuniform mat4 skinMatrix[JOINT_COUNT] : SKIN_MATRIX;\nmat4 getSkinMatrix(float idx) {\n return skinMatrix[int(idx)];\n}\n#endif\n#endif\n@end\n@export clay.chunk.skin_matrix\nmat4 skinMatrixWS = getSkinMatrix(joint.x) * weight.x;\nif (weight.y > 1e-4)\n{\n skinMatrixWS += getSkinMatrix(joint.y) * weight.y;\n}\nif (weight.z > 1e-4)\n{\n skinMatrixWS += getSkinMatrix(joint.z) * weight.z;\n}\nfloat weightW = 1.0-weight.x-weight.y-weight.z;\nif (weightW > 1e-4)\n{\n skinMatrixWS += getSkinMatrix(joint.w) * weightW;\n}\n@end\n@export clay.chunk.instancing_header\n#ifdef INSTANCING\nattribute vec4 instanceMat1;\nattribute vec4 instanceMat2;\nattribute vec4 instanceMat3;\n#endif\n@end\n@export clay.chunk.instancing_matrix\nmat4 instanceMat = mat4(\n vec4(instanceMat1.xyz, 0.0),\n vec4(instanceMat2.xyz, 0.0),\n vec4(instanceMat3.xyz, 0.0),\n vec4(instanceMat1.w, instanceMat2.w, instanceMat3.w, 1.0)\n);\n@end\n@export clay.util.parallax_correct\nvec3 parallaxCorrect(in vec3 dir, in vec3 pos, in vec3 boxMin, in vec3 boxMax) {\n vec3 first = (boxMax - pos) / dir;\n vec3 second = (boxMin - pos) / dir;\n vec3 further = max(first, second);\n float dist = min(further.x, min(further.y, further.z));\n vec3 fixedPos = pos + dir * dist;\n vec3 boxCenter = (boxMax + boxMin) * 0.5;\n return normalize(fixedPos - boxCenter);\n}\n@end\n@export clay.util.clamp_sample\nvec4 clampSample(const in sampler2D texture, const in vec2 coord)\n{\n#ifdef STEREO\n float eye = step(0.5, coord.x) * 0.5;\n vec2 coordClamped = clamp(coord, vec2(eye, 0.0), vec2(0.5 + eye, 1.0));\n#else\n vec2 coordClamped = clamp(coord, vec2(0.0), vec2(1.0));\n#endif\n return texture2D(texture, coordClamped);\n}\n@end\n@export clay.util.ACES\nvec3 ACESToneMapping(vec3 color)\n{\n const float A = 2.51;\n const float B = 0.03;\n const float C = 2.43;\n const float D = 0.59;\n const float E = 0.14;\n return (color * (A * color + B)) / (color * (C * color + D) + E);\n}\n@end");
 
-;// CONCATENATED MODULE: ./src/util/shader/common.glsl.js
+;// ./src/util/shader/common.glsl.js
 /* harmony default export */ const common_glsl = ("// COMMON SHADERS\r\n\r\n// ----------------- UNIFORM AND ATTRIBUTES -----------\r\n@export ecgl.common.transformUniforms\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform mat4 worldInverseTranspose : WORLDINVERSETRANSPOSE;\r\nuniform mat4 world : WORLD;\r\n@end\r\n\r\n@export ecgl.common.attributes\r\nattribute vec3 position : POSITION;\r\nattribute vec2 texcoord : TEXCOORD_0;\r\nattribute vec3 normal : NORMAL;\r\n@end\r\n\r\n@export ecgl.common.uv.header\r\nuniform vec2 uvRepeat : [1.0, 1.0];\r\nuniform vec2 uvOffset : [0.0, 0.0];\r\nuniform vec2 detailUvRepeat : [1.0, 1.0];\r\nuniform vec2 detailUvOffset : [0.0, 0.0];\r\n\r\nvarying vec2 v_Texcoord;\r\nvarying vec2 v_DetailTexcoord;\r\n@end\r\n\r\n@export ecgl.common.uv.main\r\nv_Texcoord = texcoord * uvRepeat + uvOffset;\r\nv_DetailTexcoord = texcoord * detailUvRepeat + detailUvOffset;\r\n@end\r\n\r\n@export ecgl.common.uv.fragmentHeader\r\nvarying vec2 v_Texcoord;\r\nvarying vec2 v_DetailTexcoord;\r\n@end\r\n\r\n// ----------------- albedo -----------\r\n\r\n@export ecgl.common.albedo.main\r\n\r\n vec4 albedoTexel = vec4(1.0);\r\n#ifdef DIFFUSEMAP_ENABLED\r\n albedoTexel = texture2D(diffuseMap, v_Texcoord);\r\n #ifdef SRGB_DECODE\r\n albedoTexel = sRGBToLinear(albedoTexel);\r\n #endif\r\n#endif\r\n\r\n#ifdef DETAILMAP_ENABLED\r\n vec4 detailTexel = texture2D(detailMap, v_DetailTexcoord);\r\n #ifdef SRGB_DECODE\r\n detailTexel = sRGBToLinear(detailTexel);\r\n #endif\r\n albedoTexel.rgb = mix(albedoTexel.rgb, detailTexel.rgb, detailTexel.a);\r\n albedoTexel.a = detailTexel.a + (1.0 - detailTexel.a) * albedoTexel.a;\r\n#endif\r\n\r\n@end\r\n\r\n// -----------------WIREFRAME -----------\r\n@export ecgl.common.wireframe.vertexHeader\r\n\r\n#ifdef WIREFRAME_QUAD\r\nattribute vec4 barycentric;\r\nvarying vec4 v_Barycentric;\r\n#elif defined(WIREFRAME_TRIANGLE)\r\nattribute vec3 barycentric;\r\nvarying vec3 v_Barycentric;\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.wireframe.vertexMain\r\n\r\n#if defined(WIREFRAME_QUAD) || defined(WIREFRAME_TRIANGLE)\r\n v_Barycentric = barycentric;\r\n#endif\r\n\r\n@end\r\n\r\n\r\n@export ecgl.common.wireframe.fragmentHeader\r\n\r\nuniform float wireframeLineWidth : 1;\r\nuniform vec4 wireframeLineColor: [0, 0, 0, 0.5];\r\n\r\n#ifdef WIREFRAME_QUAD\r\nvarying vec4 v_Barycentric;\r\nfloat edgeFactor () {\r\n vec4 d = fwidth(v_Barycentric);\r\n vec4 a4 = smoothstep(vec4(0.0), d * wireframeLineWidth, v_Barycentric);\r\n return min(min(min(a4.x, a4.y), a4.z), a4.w);\r\n}\r\n#elif defined(WIREFRAME_TRIANGLE)\r\nvarying vec3 v_Barycentric;\r\nfloat edgeFactor () {\r\n vec3 d = fwidth(v_Barycentric);\r\n vec3 a3 = smoothstep(vec3(0.0), d * wireframeLineWidth, v_Barycentric);\r\n return min(min(a3.x, a3.y), a3.z);\r\n}\r\n#endif\r\n\r\n@end\r\n\r\n\r\n@export ecgl.common.wireframe.fragmentMain\r\n\r\n#if defined(WIREFRAME_QUAD) || defined(WIREFRAME_TRIANGLE)\r\n if (wireframeLineWidth > 0.) {\r\n vec4 lineColor = wireframeLineColor;\r\n#ifdef SRGB_DECODE\r\n lineColor = sRGBToLinear(lineColor);\r\n#endif\r\n\r\n gl_FragColor.rgb = mix(gl_FragColor.rgb, lineColor.rgb, (1.0 - edgeFactor()) * lineColor.a);\r\n }\r\n#endif\r\n@end\r\n\r\n\r\n\r\n// ----------------- Bumpmap and normal map -----------\r\n\r\n@export ecgl.common.bumpMap.header\r\n\r\n#ifdef BUMPMAP_ENABLED\r\nuniform sampler2D bumpMap;\r\nuniform float bumpScale : 1.0;\r\n// Derivative maps - bump mapping unparametrized surfaces by Morten Mikkelsen\r\n// http://mmikkelsen3d.blogspot.sk/2011/07/derivative-maps.html\r\n\r\n// Evaluate the derivative of the height w.r.t. screen-space using forward differencing (listing 2)\r\n\r\nvec3 bumpNormal(vec3 surfPos, vec3 surfNormal, vec3 baseNormal)\r\n{\r\n vec2 dSTdx = dFdx(v_Texcoord);\r\n vec2 dSTdy = dFdy(v_Texcoord);\r\n\r\n float Hll = bumpScale * texture2D(bumpMap, v_Texcoord).x;\r\n float dHx = bumpScale * texture2D(bumpMap, v_Texcoord + dSTdx).x - Hll;\r\n float dHy = bumpScale * texture2D(bumpMap, v_Texcoord + dSTdy).x - Hll;\r\n\r\n vec3 vSigmaX = dFdx(surfPos);\r\n vec3 vSigmaY = dFdy(surfPos);\r\n vec3 vN = surfNormal;\r\n\r\n vec3 R1 = cross(vSigmaY, vN);\r\n vec3 R2 = cross(vN, vSigmaX);\r\n\r\n float fDet = dot(vSigmaX, R1);\r\n\r\n vec3 vGrad = sign(fDet) * (dHx * R1 + dHy * R2);\r\n return normalize(abs(fDet) * baseNormal - vGrad);\r\n\r\n}\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.normalMap.vertexHeader\r\n\r\n#ifdef NORMALMAP_ENABLED\r\nattribute vec4 tangent : TANGENT;\r\nvarying vec3 v_Tangent;\r\nvarying vec3 v_Bitangent;\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.normalMap.vertexMain\r\n\r\n#ifdef NORMALMAP_ENABLED\r\n if (dot(tangent, tangent) > 0.0) {\r\n v_Tangent = normalize((worldInverseTranspose * vec4(tangent.xyz, 0.0)).xyz);\r\n v_Bitangent = normalize(cross(v_Normal, v_Tangent) * tangent.w);\r\n }\r\n#endif\r\n\r\n@end\r\n\r\n\r\n@export ecgl.common.normalMap.fragmentHeader\r\n\r\n#ifdef NORMALMAP_ENABLED\r\nuniform sampler2D normalMap;\r\nvarying vec3 v_Tangent;\r\nvarying vec3 v_Bitangent;\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.normalMap.fragmentMain\r\n#ifdef NORMALMAP_ENABLED\r\n if (dot(v_Tangent, v_Tangent) > 0.0) {\r\n vec3 normalTexel = texture2D(normalMap, v_DetailTexcoord).xyz;\r\n if (dot(normalTexel, normalTexel) > 0.0) { // Valid normal map\r\n N = normalTexel * 2.0 - 1.0;\r\n mat3 tbn = mat3(v_Tangent, v_Bitangent, v_Normal);\r\n N = normalize(tbn * N);\r\n }\r\n }\r\n#endif\r\n@end\r\n\r\n\r\n//----------- Vertex animation ---------\r\n\r\n@export ecgl.common.vertexAnimation.header\r\n\r\n#ifdef VERTEX_ANIMATION\r\nattribute vec3 prevPosition;\r\nattribute vec3 prevNormal;\r\nuniform float percent;\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.vertexAnimation.main\r\n\r\n#ifdef VERTEX_ANIMATION\r\n vec3 pos = mix(prevPosition, position, percent);\r\n vec3 norm = mix(prevNormal, normal, percent);\r\n#else\r\n vec3 pos = position;\r\n vec3 norm = normal;\r\n#endif\r\n\r\n@end\r\n\r\n//---------- SSAO MAP -------\r\n\r\n@export ecgl.common.ssaoMap.header\r\n#ifdef SSAOMAP_ENABLED\r\nuniform sampler2D ssaoMap;\r\nuniform vec4 viewport : VIEWPORT;\r\n#endif\r\n@end\r\n\r\n@export ecgl.common.ssaoMap.main\r\n float ao = 1.0;\r\n#ifdef SSAOMAP_ENABLED\r\n ao = texture2D(ssaoMap, (gl_FragCoord.xy - viewport.xy) / viewport.zw).r;\r\n#endif\r\n@end\r\n\r\n\r\n//----------- Layers ---------\r\n\r\n\r\n@export ecgl.common.diffuseLayer.header\r\n\r\n#if (LAYER_DIFFUSEMAP_COUNT > 0)\r\nuniform float layerDiffuseIntensity[LAYER_DIFFUSEMAP_COUNT];\r\nuniform sampler2D layerDiffuseMap[LAYER_DIFFUSEMAP_COUNT];\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.emissiveLayer.header\r\n\r\n#if (LAYER_EMISSIVEMAP_COUNT > 0)\r\nuniform float layerEmissionIntensity[LAYER_EMISSIVEMAP_COUNT];\r\nuniform sampler2D layerEmissiveMap[LAYER_EMISSIVEMAP_COUNT];\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.layers.header\r\n@import ecgl.common.diffuseLayer.header\r\n@import ecgl.common.emissiveLayer.header\r\n@end\r\n\r\n@export ecgl.common.diffuseLayer.main\r\n\r\n#if (LAYER_DIFFUSEMAP_COUNT > 0)\r\n for (int _idx_ = 0; _idx_ < LAYER_DIFFUSEMAP_COUNT; _idx_++) {{\r\n float intensity = layerDiffuseIntensity[_idx_];\r\n vec4 texel2 = texture2D(layerDiffuseMap[_idx_], v_Texcoord);\r\n #ifdef SRGB_DECODE\r\n texel2 = sRGBToLinear(texel2);\r\n #endif\r\n // source-over blend\r\n albedoTexel.rgb = mix(albedoTexel.rgb, texel2.rgb * intensity, texel2.a);\r\n albedoTexel.a = texel2.a + (1.0 - texel2.a) * albedoTexel.a;\r\n }}\r\n#endif\r\n\r\n@end\r\n\r\n@export ecgl.common.emissiveLayer.main\r\n\r\n#if (LAYER_EMISSIVEMAP_COUNT > 0)\r\n for (int _idx_ = 0; _idx_ < LAYER_EMISSIVEMAP_COUNT; _idx_++)\r\n {{\r\n vec4 texel2 = texture2D(layerEmissiveMap[_idx_], v_Texcoord) * layerEmissionIntensity[_idx_];\r\n #ifdef SRGB_DECODE\r\n texel2 = sRGBToLinear(texel2);\r\n #endif\r\n float intensity = layerEmissionIntensity[_idx_];\r\n gl_FragColor.rgb += texel2.rgb * texel2.a * intensity;\r\n }}\r\n#endif\r\n\r\n@end\r\n");
 
-;// CONCATENATED MODULE: ./src/util/shader/color.glsl.js
+;// ./src/util/shader/color.glsl.js
 /* harmony default export */ const color_glsl = ("@export ecgl.color.vertex\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\n@import ecgl.common.uv.header\r\n\r\nattribute vec2 texcoord : TEXCOORD_0;\r\nattribute vec3 position: POSITION;\r\n\r\n@import ecgl.common.wireframe.vertexHeader\r\n\r\n#ifdef VERTEX_COLOR\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n#ifdef VERTEX_ANIMATION\r\nattribute vec3 prevPosition;\r\nuniform float percent : 1.0;\r\n#endif\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\nattribute vec3 normal: NORMAL;\r\nuniform mat4 worldInverseTranspose : WORLDINVERSETRANSPOSE;\r\nvarying vec3 v_Normal;\r\n#endif\r\n\r\nvoid main()\r\n{\r\n#ifdef VERTEX_ANIMATION\r\n vec3 pos = mix(prevPosition, position, percent);\r\n#else\r\n vec3 pos = position;\r\n#endif\r\n\r\n gl_Position = worldViewProjection * vec4(pos, 1.0);\r\n\r\n @import ecgl.common.uv.main\r\n\r\n#ifdef VERTEX_COLOR\r\n v_Color = a_Color;\r\n#endif\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\n v_Normal = normalize((worldInverseTranspose * vec4(normal, 0.0)).xyz);\r\n#endif\r\n\r\n @import ecgl.common.wireframe.vertexMain\r\n\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.color.fragment\r\n\r\n#define LAYER_DIFFUSEMAP_COUNT 0\r\n#define LAYER_EMISSIVEMAP_COUNT 0\r\n\r\nuniform sampler2D diffuseMap;\r\nuniform sampler2D detailMap;\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\nuniform mat4 viewTranspose: VIEWTRANSPOSE;\r\nuniform vec3 glowColor;\r\nuniform float glowPower;\r\nvarying vec3 v_Normal;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n@import ecgl.common.layers.header\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.util.srgb\r\n\r\nvoid main()\r\n{\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(color);\r\n#else\r\n gl_FragColor = color;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\n gl_FragColor *= v_Color;\r\n#endif\r\n\r\n @import ecgl.common.albedo.main\r\n\r\n @import ecgl.common.diffuseLayer.main\r\n\r\n gl_FragColor *= albedoTexel;\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\n float atmoIntensity = pow(1.0 - dot(v_Normal, (viewTranspose * vec4(0.0, 0.0, 1.0, 0.0)).xyz), glowPower);\r\n gl_FragColor.rgb += glowColor * atmoIntensity;\r\n#endif\r\n\r\n @import ecgl.common.emissiveLayer.main\r\n\r\n @import ecgl.common.wireframe.fragmentMain\r\n\r\n}\r\n@end");
 
-;// CONCATENATED MODULE: ./src/util/shader/lambert.glsl.js
+;// ./src/util/shader/lambert.glsl.js
 /* harmony default export */ const lambert_glsl = ("/**\r\n * http://en.wikipedia.org/wiki/Lambertian_reflectance\r\n */\r\n\r\n@export ecgl.lambert.vertex\r\n\r\n@import ecgl.common.transformUniforms\r\n\r\n@import ecgl.common.uv.header\r\n\r\n\r\n@import ecgl.common.attributes\r\n\r\n@import ecgl.common.wireframe.vertexHeader\r\n\r\n#ifdef VERTEX_COLOR\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n\r\n@import ecgl.common.vertexAnimation.header\r\n\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\nvoid main()\r\n{\r\n @import ecgl.common.uv.main\r\n\r\n @import ecgl.common.vertexAnimation.main\r\n\r\n\r\n gl_Position = worldViewProjection * vec4(pos, 1.0);\r\n\r\n v_Normal = normalize((worldInverseTranspose * vec4(norm, 0.0)).xyz);\r\n v_WorldPosition = (world * vec4(pos, 1.0)).xyz;\r\n\r\n#ifdef VERTEX_COLOR\r\n v_Color = a_Color;\r\n#endif\r\n\r\n @import ecgl.common.wireframe.vertexMain\r\n}\r\n\r\n@end\r\n\r\n\r\n@export ecgl.lambert.fragment\r\n\r\n#define LAYER_DIFFUSEMAP_COUNT 0\r\n#define LAYER_EMISSIVEMAP_COUNT 0\r\n\r\n#define NORMAL_UP_AXIS 1\r\n#define NORMAL_FRONT_AXIS 2\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\nuniform sampler2D diffuseMap;\r\nuniform sampler2D detailMap;\r\n\r\n@import ecgl.common.layers.header\r\n\r\nuniform float emissionIntensity: 1.0;\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nuniform mat4 viewInverse : VIEWINVERSE;\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\nuniform mat4 viewTranspose: VIEWTRANSPOSE;\r\nuniform vec3 glowColor;\r\nuniform float glowPower;\r\n#endif\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n@import clay.header.ambient_light\r\n#endif\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n@import clay.header.ambient_sh_light\r\n#endif\r\n\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n@import clay.header.directional_light\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n\r\n@import ecgl.common.ssaoMap.header\r\n\r\n@import ecgl.common.bumpMap.header\r\n\r\n@import clay.util.srgb\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.plugin.compute_shadow_map\r\n\r\nvoid main()\r\n{\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(color);\r\n#else\r\n gl_FragColor = color;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\n // PENDING\r\n #ifdef SRGB_DECODE\r\n gl_FragColor *= sRGBToLinear(v_Color);\r\n #else\r\n gl_FragColor *= v_Color;\r\n #endif\r\n#endif\r\n\r\n @import ecgl.common.albedo.main\r\n\r\n @import ecgl.common.diffuseLayer.main\r\n\r\n gl_FragColor *= albedoTexel;\r\n\r\n vec3 N = v_Normal;\r\n#ifdef DOUBLE_SIDED\r\n vec3 eyePos = viewInverse[3].xyz;\r\n vec3 V = normalize(eyePos - v_WorldPosition);\r\n\r\n if (dot(N, V) < 0.0) {\r\n N = -N;\r\n }\r\n#endif\r\n\r\n float ambientFactor = 1.0;\r\n\r\n#ifdef BUMPMAP_ENABLED\r\n N = bumpNormal(v_WorldPosition, v_Normal, N);\r\n // PENDING\r\n ambientFactor = dot(v_Normal, N);\r\n#endif\r\n\r\n vec3 N2 = vec3(N.x, N[NORMAL_UP_AXIS], N[NORMAL_FRONT_AXIS]);\r\n\r\n vec3 diffuseColor = vec3(0.0, 0.0, 0.0);\r\n\r\n @import ecgl.common.ssaoMap.main\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n for(int i = 0; i < AMBIENT_LIGHT_COUNT; i++)\r\n {\r\n // Multiply a dot factor to make sure the bump detail can be seen\r\n // in the dark side\r\n diffuseColor += ambientLightColor[i] * ambientFactor * ao;\r\n }\r\n#endif\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n for(int _idx_ = 0; _idx_ < AMBIENT_SH_LIGHT_COUNT; _idx_++)\r\n {{\r\n diffuseColor += calcAmbientSHLight(_idx_, N2) * ambientSHLightColor[_idx_] * ao;\r\n }}\r\n#endif\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n float shadowContribsDir[DIRECTIONAL_LIGHT_COUNT];\r\n if(shadowEnabled)\r\n {\r\n computeShadowOfDirectionalLights(v_WorldPosition, shadowContribsDir);\r\n }\r\n#endif\r\n for(int i = 0; i < DIRECTIONAL_LIGHT_COUNT; i++)\r\n {\r\n vec3 lightDirection = -directionalLightDirection[i];\r\n vec3 lightColor = directionalLightColor[i];\r\n\r\n float shadowContrib = 1.0;\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n if (shadowEnabled)\r\n {\r\n shadowContrib = shadowContribsDir[i];\r\n }\r\n#endif\r\n\r\n float ndl = dot(N, normalize(lightDirection)) * shadowContrib;\r\n\r\n diffuseColor += lightColor * clamp(ndl, 0.0, 1.0);\r\n }\r\n#endif\r\n\r\n gl_FragColor.rgb *= diffuseColor;\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\n float atmoIntensity = pow(1.0 - dot(v_Normal, (viewTranspose * vec4(0.0, 0.0, 1.0, 0.0)).xyz), glowPower);\r\n gl_FragColor.rgb += glowColor * atmoIntensity;\r\n#endif\r\n\r\n @import ecgl.common.emissiveLayer.main\r\n\r\n @import ecgl.common.wireframe.fragmentMain\r\n}\r\n\r\n@end");
 
-;// CONCATENATED MODULE: ./src/util/shader/realistic.glsl.js
+;// ./src/util/shader/realistic.glsl.js
 /* harmony default export */ const realistic_glsl = ("@export ecgl.realistic.vertex\r\n\r\n@import ecgl.common.transformUniforms\r\n\r\n@import ecgl.common.uv.header\r\n\r\n@import ecgl.common.attributes\r\n\r\n\r\n@import ecgl.common.wireframe.vertexHeader\r\n\r\n#ifdef VERTEX_COLOR\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n#ifdef NORMALMAP_ENABLED\r\nattribute vec4 tangent : TANGENT;\r\nvarying vec3 v_Tangent;\r\nvarying vec3 v_Bitangent;\r\n#endif\r\n\r\n@import ecgl.common.vertexAnimation.header\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\nvoid main()\r\n{\r\n\r\n @import ecgl.common.uv.main\r\n\r\n @import ecgl.common.vertexAnimation.main\r\n\r\n gl_Position = worldViewProjection * vec4(pos, 1.0);\r\n\r\n v_Normal = normalize((worldInverseTranspose * vec4(norm, 0.0)).xyz);\r\n v_WorldPosition = (world * vec4(pos, 1.0)).xyz;\r\n\r\n#ifdef VERTEX_COLOR\r\n v_Color = a_Color;\r\n#endif\r\n\r\n#ifdef NORMALMAP_ENABLED\r\n v_Tangent = normalize((worldInverseTranspose * vec4(tangent.xyz, 0.0)).xyz);\r\n v_Bitangent = normalize(cross(v_Normal, v_Tangent) * tangent.w);\r\n#endif\r\n\r\n @import ecgl.common.wireframe.vertexMain\r\n\r\n}\r\n\r\n@end\r\n\r\n\r\n\r\n@export ecgl.realistic.fragment\r\n\r\n#define LAYER_DIFFUSEMAP_COUNT 0\r\n#define LAYER_EMISSIVEMAP_COUNT 0\r\n#define PI 3.14159265358979\r\n#define ROUGHNESS_CHANEL 0\r\n#define METALNESS_CHANEL 1\r\n\r\n#define NORMAL_UP_AXIS 1\r\n#define NORMAL_FRONT_AXIS 2\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\n// diffuseMap, bumpMap use v_Texcoord\r\nuniform sampler2D diffuseMap;\r\n\r\n// detailMap, metalnessMap, roughnessMap, normalMap use v_DetailTexcoord.\r\nuniform sampler2D detailMap;\r\nuniform sampler2D metalnessMap;\r\nuniform sampler2D roughnessMap;\r\n\r\n@import ecgl.common.layers.header\r\n\r\nuniform float emissionIntensity: 1.0;\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nuniform float metalness : 0.0;\r\nuniform float roughness : 0.5;\r\n\r\nuniform mat4 viewInverse : VIEWINVERSE;\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\nuniform mat4 viewTranspose: VIEWTRANSPOSE;\r\nuniform vec3 glowColor;\r\nuniform float glowPower;\r\n#endif\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n@import clay.header.ambient_light\r\n#endif\r\n\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n@import clay.header.ambient_sh_light\r\n#endif\r\n\r\n#ifdef AMBIENT_CUBEMAP_LIGHT_COUNT\r\n@import clay.header.ambient_cubemap_light\r\n#endif\r\n\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n@import clay.header.directional_light\r\n#endif\r\n\r\n@import ecgl.common.normalMap.fragmentHeader\r\n\r\n@import ecgl.common.ssaoMap.header\r\n\r\n@import ecgl.common.bumpMap.header\r\n\r\n@import clay.util.srgb\r\n\r\n@import clay.util.rgbm\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.plugin.compute_shadow_map\r\n\r\n// Fresnel\r\nvec3 F_Schlick(float ndv, vec3 spec) {\r\n return spec + (1.0 - spec) * pow(1.0 - ndv, 5.0);\r\n}\r\n\r\nfloat D_Phong(float g, float ndh) {\r\n // from black ops 2\r\n float a = pow(8192.0, g);\r\n return (a + 2.0) / 8.0 * pow(ndh, a);\r\n}\r\n\r\nvoid main()\r\n{\r\n vec4 albedoColor = color;\r\n\r\n vec3 eyePos = viewInverse[3].xyz;\r\n vec3 V = normalize(eyePos - v_WorldPosition);\r\n#ifdef VERTEX_COLOR\r\n // PENDING\r\n #ifdef SRGB_DECODE\r\n albedoColor *= sRGBToLinear(v_Color);\r\n #else\r\n albedoColor *= v_Color;\r\n #endif\r\n#endif\r\n\r\n @import ecgl.common.albedo.main\r\n\r\n @import ecgl.common.diffuseLayer.main\r\n\r\n albedoColor *= albedoTexel;\r\n\r\n float m = metalness;\r\n\r\n#ifdef METALNESSMAP_ENABLED\r\n float m2 = texture2D(metalnessMap, v_DetailTexcoord)[METALNESS_CHANEL];\r\n // Adjust the brightness\r\n m = clamp(m2 + (m - 0.5) * 2.0, 0.0, 1.0);\r\n#endif\r\n\r\n vec3 baseColor = albedoColor.rgb;\r\n albedoColor.rgb = baseColor * (1.0 - m);\r\n vec3 specFactor = mix(vec3(0.04), baseColor, m);\r\n\r\n float g = 1.0 - roughness;\r\n\r\n#ifdef ROUGHNESSMAP_ENABLED\r\n float g2 = 1.0 - texture2D(roughnessMap, v_DetailTexcoord)[ROUGHNESS_CHANEL];\r\n // Adjust the brightness\r\n g = clamp(g2 + (g - 0.5) * 2.0, 0.0, 1.0);\r\n#endif\r\n\r\n vec3 N = v_Normal;\r\n\r\n#ifdef DOUBLE_SIDED\r\n if (dot(N, V) < 0.0) {\r\n N = -N;\r\n }\r\n#endif\r\n\r\n float ambientFactor = 1.0;\r\n\r\n#ifdef BUMPMAP_ENABLED\r\n N = bumpNormal(v_WorldPosition, v_Normal, N);\r\n // PENDING\r\n ambientFactor = dot(v_Normal, N);\r\n#endif\r\n\r\n@import ecgl.common.normalMap.fragmentMain\r\n\r\n vec3 N2 = vec3(N.x, N[NORMAL_UP_AXIS], N[NORMAL_FRONT_AXIS]);\r\n\r\n vec3 diffuseTerm = vec3(0.0);\r\n vec3 specularTerm = vec3(0.0);\r\n\r\n float ndv = clamp(dot(N, V), 0.0, 1.0);\r\n vec3 fresnelTerm = F_Schlick(ndv, specFactor);\r\n\r\n @import ecgl.common.ssaoMap.main\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n for(int _idx_ = 0; _idx_ < AMBIENT_LIGHT_COUNT; _idx_++)\r\n {{\r\n // Multiply a dot factor to make sure the bump detail can be seen\r\n // in the dark side\r\n diffuseTerm += ambientLightColor[_idx_] * ambientFactor * ao;\r\n }}\r\n#endif\r\n\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n for(int _idx_ = 0; _idx_ < AMBIENT_SH_LIGHT_COUNT; _idx_++)\r\n {{\r\n diffuseTerm += calcAmbientSHLight(_idx_, N2) * ambientSHLightColor[_idx_] * ao;\r\n }}\r\n#endif\r\n\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n float shadowContribsDir[DIRECTIONAL_LIGHT_COUNT];\r\n if(shadowEnabled)\r\n {\r\n computeShadowOfDirectionalLights(v_WorldPosition, shadowContribsDir);\r\n }\r\n#endif\r\n for(int _idx_ = 0; _idx_ < DIRECTIONAL_LIGHT_COUNT; _idx_++)\r\n {{\r\n vec3 L = -directionalLightDirection[_idx_];\r\n vec3 lc = directionalLightColor[_idx_];\r\n\r\n vec3 H = normalize(L + V);\r\n float ndl = clamp(dot(N, normalize(L)), 0.0, 1.0);\r\n float ndh = clamp(dot(N, H), 0.0, 1.0);\r\n\r\n float shadowContrib = 1.0;\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n if (shadowEnabled)\r\n {\r\n shadowContrib = shadowContribsDir[_idx_];\r\n }\r\n#endif\r\n\r\n vec3 li = lc * ndl * shadowContrib;\r\n\r\n diffuseTerm += li;\r\n specularTerm += li * fresnelTerm * D_Phong(g, ndh);\r\n }}\r\n#endif\r\n\r\n\r\n#ifdef AMBIENT_CUBEMAP_LIGHT_COUNT\r\n vec3 L = reflect(-V, N);\r\n L = vec3(L.x, L[NORMAL_UP_AXIS], L[NORMAL_FRONT_AXIS]);\r\n float rough2 = clamp(1.0 - g, 0.0, 1.0);\r\n // FIXME fixed maxMipmapLevel ?\r\n float bias2 = rough2 * 5.0;\r\n // One brdf lookup is enough\r\n vec2 brdfParam2 = texture2D(ambientCubemapLightBRDFLookup[0], vec2(rough2, ndv)).xy;\r\n vec3 envWeight2 = specFactor * brdfParam2.x + brdfParam2.y;\r\n vec3 envTexel2;\r\n for(int _idx_ = 0; _idx_ < AMBIENT_CUBEMAP_LIGHT_COUNT; _idx_++)\r\n {{\r\n envTexel2 = RGBMDecode(textureCubeLodEXT(ambientCubemapLightCubemap[_idx_], L, bias2), 8.12);\r\n // TODO mix ?\r\n specularTerm += ambientCubemapLightColor[_idx_] * envTexel2 * envWeight2 * ao;\r\n }}\r\n#endif\r\n\r\n gl_FragColor.rgb = albedoColor.rgb * diffuseTerm + specularTerm;\r\n gl_FragColor.a = albedoColor.a;\r\n\r\n#ifdef ATMOSPHERE_ENABLED\r\n float atmoIntensity = pow(1.0 - dot(v_Normal, (viewTranspose * vec4(0.0, 0.0, 1.0, 0.0)).xyz), glowPower);\r\n gl_FragColor.rgb += glowColor * atmoIntensity;\r\n#endif\r\n\r\n#ifdef SRGB_ENCODE\r\n gl_FragColor = linearTosRGB(gl_FragColor);\r\n#endif\r\n\r\n @import ecgl.common.emissiveLayer.main\r\n\r\n @import ecgl.common.wireframe.fragmentMain\r\n}\r\n\r\n@end");
 
-;// CONCATENATED MODULE: ./src/util/shader/hatching.glsl.js
+;// ./src/util/shader/hatching.glsl.js
 /* harmony default export */ const hatching_glsl = ("@export ecgl.hatching.vertex\r\n\r\n@import ecgl.realistic.vertex\r\n\r\n@end\r\n\r\n\r\n@export ecgl.hatching.fragment\r\n\r\n#define NORMAL_UP_AXIS 1\r\n#define NORMAL_FRONT_AXIS 2\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\nuniform vec4 color : [0.0, 0.0, 0.0, 1.0];\r\nuniform vec4 paperColor : [1.0, 1.0, 1.0, 1.0];\r\n\r\nuniform mat4 viewInverse : VIEWINVERSE;\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n@import clay.header.ambient_light\r\n#endif\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n@import clay.header.ambient_sh_light\r\n#endif\r\n\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n@import clay.header.directional_light\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n\r\n@import ecgl.common.ssaoMap.header\r\n\r\n@import ecgl.common.bumpMap.header\r\n\r\n@import clay.util.srgb\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.plugin.compute_shadow_map\r\n\r\nuniform sampler2D hatch1;\r\nuniform sampler2D hatch2;\r\nuniform sampler2D hatch3;\r\nuniform sampler2D hatch4;\r\nuniform sampler2D hatch5;\r\nuniform sampler2D hatch6;\r\n\r\n// https://github.com/spite/cross-hatching\r\n// http://gfx.cs.princeton.edu/proj/hatching/hatching.pdf\r\nfloat shade(in float tone) {\r\n vec4 c = vec4(1. ,1., 1., 1.);\r\n float step = 1. / 6.;\r\n vec2 uv = v_DetailTexcoord;\r\n if (tone <= step / 2.0) {\r\n c = mix(vec4(0.), texture2D(hatch6, uv), 12. * tone);\r\n }\r\n else if (tone <= step) {\r\n c = mix(texture2D(hatch6, uv), texture2D(hatch5, uv), 6. * tone);\r\n }\r\n if(tone > step && tone <= 2. * step){\r\n c = mix(texture2D(hatch5, uv), texture2D(hatch4, uv) , 6. * (tone - step));\r\n }\r\n if(tone > 2. * step && tone <= 3. * step){\r\n c = mix(texture2D(hatch4, uv), texture2D(hatch3, uv), 6. * (tone - 2. * step));\r\n }\r\n if(tone > 3. * step && tone <= 4. * step){\r\n c = mix(texture2D(hatch3, uv), texture2D(hatch2, uv), 6. * (tone - 3. * step));\r\n }\r\n if(tone > 4. * step && tone <= 5. * step){\r\n c = mix(texture2D(hatch2, uv), texture2D(hatch1, uv), 6. * (tone - 4. * step));\r\n }\r\n if(tone > 5. * step){\r\n c = mix(texture2D(hatch1, uv), vec4(1.), 6. * (tone - 5. * step));\r\n }\r\n\r\n return c.r;\r\n}\r\n\r\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\r\n\r\nvoid main()\r\n{\r\n#ifdef SRGB_DECODE\r\n vec4 inkColor = sRGBToLinear(color);\r\n#else\r\n vec4 inkColor = color;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\n // PENDING\r\n #ifdef SRGB_DECODE\r\n inkColor *= sRGBToLinear(v_Color);\r\n #else\r\n inkColor *= v_Color;\r\n #endif\r\n#endif\r\n\r\n vec3 N = v_Normal;\r\n#ifdef DOUBLE_SIDED\r\n vec3 eyePos = viewInverse[3].xyz;\r\n vec3 V = normalize(eyePos - v_WorldPosition);\r\n\r\n if (dot(N, V) < 0.0) {\r\n N = -N;\r\n }\r\n#endif\r\n\r\n float tone = 0.0;\r\n\r\n float ambientFactor = 1.0;\r\n\r\n#ifdef BUMPMAP_ENABLED\r\n N = bumpNormal(v_WorldPosition, v_Normal, N);\r\n // PENDING\r\n ambientFactor = dot(v_Normal, N);\r\n#endif\r\n\r\n vec3 N2 = vec3(N.x, N[NORMAL_UP_AXIS], N[NORMAL_FRONT_AXIS]);\r\n\r\n @import ecgl.common.ssaoMap.main\r\n\r\n#ifdef AMBIENT_LIGHT_COUNT\r\n for(int i = 0; i < AMBIENT_LIGHT_COUNT; i++)\r\n {\r\n // Multiply a dot factor to make sure the bump detail can be seen\r\n // in the dark side\r\n tone += dot(ambientLightColor[i], w) * ambientFactor * ao;\r\n }\r\n#endif\r\n#ifdef AMBIENT_SH_LIGHT_COUNT\r\n for(int _idx_ = 0; _idx_ < AMBIENT_SH_LIGHT_COUNT; _idx_++)\r\n {{\r\n tone += dot(calcAmbientSHLight(_idx_, N2) * ambientSHLightColor[_idx_], w) * ao;\r\n }}\r\n#endif\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n float shadowContribsDir[DIRECTIONAL_LIGHT_COUNT];\r\n if(shadowEnabled)\r\n {\r\n computeShadowOfDirectionalLights(v_WorldPosition, shadowContribsDir);\r\n }\r\n#endif\r\n for(int i = 0; i < DIRECTIONAL_LIGHT_COUNT; i++)\r\n {\r\n vec3 lightDirection = -directionalLightDirection[i];\r\n float lightTone = dot(directionalLightColor[i], w);\r\n\r\n float shadowContrib = 1.0;\r\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n if (shadowEnabled)\r\n {\r\n shadowContrib = shadowContribsDir[i];\r\n }\r\n#endif\r\n\r\n float ndl = dot(N, normalize(lightDirection)) * shadowContrib;\r\n\r\n tone += lightTone * clamp(ndl, 0.0, 1.0);\r\n }\r\n#endif\r\n\r\n gl_FragColor = mix(inkColor, paperColor, shade(clamp(tone, 0.0, 1.0)));\r\n // gl_FragColor = vec4(vec3(clamp(tone, 0.0, 1.0)), 1.0);\r\n}\r\n@end\r\n");
 
-;// CONCATENATED MODULE: ./src/util/shader/shadow.glsl.js
+;// ./src/util/shader/shadow.glsl.js
 /* harmony default export */ const shadow_glsl = ("@export ecgl.sm.depth.vertex\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nattribute vec3 position : POSITION;\r\nattribute vec2 texcoord : TEXCOORD_0;\r\n\r\n#ifdef VERTEX_ANIMATION\r\nattribute vec3 prevPosition;\r\nuniform float percent : 1.0;\r\n#endif\r\n\r\nvarying vec4 v_ViewPosition;\r\nvarying vec2 v_Texcoord;\r\n\r\nvoid main(){\r\n\r\n#ifdef VERTEX_ANIMATION\r\n vec3 pos = mix(prevPosition, position, percent);\r\n#else\r\n vec3 pos = position;\r\n#endif\r\n\r\n v_ViewPosition = worldViewProjection * vec4(pos, 1.0);\r\n gl_Position = v_ViewPosition;\r\n\r\n v_Texcoord = texcoord;\r\n\r\n}\r\n@end\r\n\r\n\r\n\r\n@export ecgl.sm.depth.fragment\r\n\r\n@import clay.sm.depth.fragment\r\n\r\n@end");
 
-;// CONCATENATED MODULE: ./src/util/graphicGL.js
+;// ./src/util/graphicGL.js
 
 
 
@@ -26530,7 +26535,7 @@ graphicGL.updateVertexAnimation = function (
 
 /* harmony default export */ const util_graphicGL = (graphicGL);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/animation/requestAnimationFrame.js
+;// ./node_modules/zrender/lib/animation/requestAnimationFrame.js
 
 var requestAnimationFrame;
 requestAnimationFrame = (core_env.hasGlobalWindow
@@ -26542,7 +26547,7 @@ requestAnimationFrame = (core_env.hasGlobalWindow
 };
 /* harmony default export */ const animation_requestAnimationFrame = (requestAnimationFrame);
 
-;// CONCATENATED MODULE: ./src/core/LayerGL.js
+;// ./src/core/LayerGL.js
 /**
  * Provide WebGL layer to zrender. Which is rendered on top of clay.
  *
@@ -27221,7 +27226,7 @@ LayerGL.prototype._dispatchToView = function (eventName, e) {
 Object.assign(LayerGL.prototype, mixin_notifier);
 
 /* harmony default export */ const core_LayerGL = (LayerGL);
-;// CONCATENATED MODULE: ./src/preprocessor/backwardCompat.js
+;// ./src/preprocessor/backwardCompat.js
 
 
 var GL_SERIES = ['bar3D', 'line3D', 'map3D', 'scatter3D', 'surface', 'lines3D', 'scatterGL', 'scatter3D', 'heatmapGL'];
@@ -27284,7 +27289,7 @@ function removeTextStyleInAxis(axesOpt) {
 
     convertNormalEmphasis(option.geo3D);
 };
-;// CONCATENATED MODULE: ./src/echarts-gl.js
+;// ./src/echarts-gl.js
 /**
  * echarts-gl
  * Extension pack of ECharts providing 3d plots and globe visualization
@@ -27545,7 +27550,7 @@ external_echarts_.registerPreprocessor(backwardCompat);
 
 
 /* harmony default export */ const echarts_gl = (EChartsGL);
-;// CONCATENATED MODULE: ./src/component/common/componentViewControlMixin.js
+;// ./src/component/common/componentViewControlMixin.js
 /* harmony default export */ const componentViewControlMixin = ({
     defaultOption: {
 
@@ -27624,7 +27629,7 @@ external_echarts_.registerPreprocessor(backwardCompat);
         }
     }
 });
-;// CONCATENATED MODULE: ./src/component/common/componentPostEffectMixin.js
+;// ./src/component/common/componentPostEffectMixin.js
 /* harmony default export */ const componentPostEffectMixin = ({
     defaultOption: {
         // Post effect
@@ -27688,7 +27693,7 @@ external_echarts_.registerPreprocessor(backwardCompat);
         }
     }
 });
-;// CONCATENATED MODULE: ./src/component/common/componentLightMixin.js
+;// ./src/component/common/componentLightMixin.js
 /* harmony default export */ const componentLightMixin = ({
     defaultOption: {
         // Light is available when material.shading is not color
@@ -27723,7 +27728,7 @@ external_echarts_.registerPreprocessor(backwardCompat);
         }
     }
 });
-;// CONCATENATED MODULE: ./src/component/grid3D/Grid3DModel.js
+;// ./src/component/grid3D/Grid3DModel.js
 
 
 
@@ -27870,7 +27875,7 @@ external_echarts_.util.merge(Grid3DModel.prototype, componentLightMixin);
 /* harmony default export */ const grid3D_Grid3DModel = (Grid3DModel);
 
 
-;// CONCATENATED MODULE: ./node_modules/tslib/tslib.es6.js
+;// ./node_modules/tslib/tslib.es6.js
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
 
@@ -28111,10 +28116,196 @@ function __classPrivateFieldSet(receiver, state, value, kind, f) {
     return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/graphic/helper/image.js
+;// ./node_modules/echarts/node_modules/zrender/lib/core/LRU.js
+var LRU_Entry = (function () {
+    function Entry(val) {
+        this.value = val;
+    }
+    return Entry;
+}());
+
+var core_LRU_LinkedList = (function () {
+    function LinkedList() {
+        this._len = 0;
+    }
+    LinkedList.prototype.insert = function (val) {
+        var entry = new LRU_Entry(val);
+        this.insertEntry(entry);
+        return entry;
+    };
+    LinkedList.prototype.insertEntry = function (entry) {
+        if (!this.head) {
+            this.head = this.tail = entry;
+        }
+        else {
+            this.tail.next = entry;
+            entry.prev = this.tail;
+            entry.next = null;
+            this.tail = entry;
+        }
+        this._len++;
+    };
+    LinkedList.prototype.remove = function (entry) {
+        var prev = entry.prev;
+        var next = entry.next;
+        if (prev) {
+            prev.next = next;
+        }
+        else {
+            this.head = next;
+        }
+        if (next) {
+            next.prev = prev;
+        }
+        else {
+            this.tail = prev;
+        }
+        entry.next = entry.prev = null;
+        this._len--;
+    };
+    LinkedList.prototype.len = function () {
+        return this._len;
+    };
+    LinkedList.prototype.clear = function () {
+        this.head = this.tail = null;
+        this._len = 0;
+    };
+    return LinkedList;
+}());
+
+var core_LRU_LRU = (function () {
+    function LRU(maxSize) {
+        this._list = new core_LRU_LinkedList();
+        this._maxSize = 10;
+        this._map = {};
+        this._maxSize = maxSize;
+    }
+    LRU.prototype.put = function (key, value) {
+        var list = this._list;
+        var map = this._map;
+        var removed = null;
+        if (map[key] == null) {
+            var len = list.len();
+            var entry = this._lastRemovedEntry;
+            if (len >= this._maxSize && len > 0) {
+                var leastUsedEntry = list.head;
+                list.remove(leastUsedEntry);
+                delete map[leastUsedEntry.key];
+                removed = leastUsedEntry.value;
+                this._lastRemovedEntry = leastUsedEntry;
+            }
+            if (entry) {
+                entry.value = value;
+            }
+            else {
+                entry = new LRU_Entry(value);
+            }
+            entry.key = key;
+            list.insertEntry(entry);
+            map[key] = entry;
+        }
+        return removed;
+    };
+    LRU.prototype.get = function (key) {
+        var entry = this._map[key];
+        var list = this._list;
+        if (entry != null) {
+            if (entry !== list.tail) {
+                list.remove(entry);
+                list.insertEntry(entry);
+            }
+            return entry.value;
+        }
+    };
+    LRU.prototype.clear = function () {
+        this._list.clear();
+        this._map = {};
+    };
+    LRU.prototype.len = function () {
+        return this._list.len();
+    };
+    return LRU;
+}());
+/* harmony default export */ const zrender_lib_core_LRU = (core_LRU_LRU);
+
+;// ./node_modules/echarts/node_modules/zrender/lib/core/platform.js
+var platform_DEFAULT_FONT_SIZE = 12;
+var platform_DEFAULT_FONT_FAMILY = 'sans-serif';
+var platform_DEFAULT_FONT = platform_DEFAULT_FONT_SIZE + "px " + platform_DEFAULT_FONT_FAMILY;
+var platform_OFFSET = 20;
+var platform_SCALE = 100;
+var platform_defaultWidthMapStr = "007LLmW'55;N0500LLLLLLLLLL00NNNLzWW\\\\WQb\\0FWLg\\bWb\\WQ\\WrWWQ000CL5LLFLL0LL**F*gLLLL5F0LF\\FFF5.5N";
+function platform_getTextWidthMap(mapStr) {
+    var map = {};
+    if (typeof JSON === 'undefined') {
+        return map;
+    }
+    for (var i = 0; i < mapStr.length; i++) {
+        var char = String.fromCharCode(i + 32);
+        var size = (mapStr.charCodeAt(i) - platform_OFFSET) / platform_SCALE;
+        map[char] = size;
+    }
+    return map;
+}
+var platform_DEFAULT_TEXT_WIDTH_MAP = platform_getTextWidthMap(platform_defaultWidthMapStr);
+var platform_platformApi = {
+    createCanvas: function () {
+        return typeof document !== 'undefined'
+            && document.createElement('canvas');
+    },
+    measureText: (function () {
+        var _ctx;
+        var _cachedFont;
+        return function (text, font) {
+            if (!_ctx) {
+                var canvas = platform_platformApi.createCanvas();
+                _ctx = canvas && canvas.getContext('2d');
+            }
+            if (_ctx) {
+                if (_cachedFont !== font) {
+                    _cachedFont = _ctx.font = font || platform_DEFAULT_FONT;
+                }
+                return _ctx.measureText(text);
+            }
+            else {
+                text = text || '';
+                font = font || platform_DEFAULT_FONT;
+                var res = /((?:\d+)?\.?\d*)px/.exec(font);
+                var fontSize = res && +res[1] || platform_DEFAULT_FONT_SIZE;
+                var width = 0;
+                if (font.indexOf('mono') >= 0) {
+                    width = fontSize * text.length;
+                }
+                else {
+                    for (var i = 0; i < text.length; i++) {
+                        var preCalcWidth = platform_DEFAULT_TEXT_WIDTH_MAP[text[i]];
+                        width += preCalcWidth == null ? fontSize : (preCalcWidth * fontSize);
+                    }
+                }
+                return { width: width };
+            }
+        };
+    })(),
+    loadImage: function (src, onload, onerror) {
+        var image = new Image();
+        image.onload = onload;
+        image.onerror = onerror;
+        image.src = src;
+        return image;
+    }
+};
+function platform_setPlatformAPI(newPlatformApis) {
+    for (var key in platform_platformApi) {
+        if (newPlatformApis[key]) {
+            platform_platformApi[key] = newPlatformApis[key];
+        }
+    }
+}
+
+;// ./node_modules/echarts/node_modules/zrender/lib/graphic/helper/image.js
 
 
-var globalImageCache = new lib_core_LRU(50);
+var globalImageCache = new zrender_lib_core_LRU(50);
 function findExistImage(newImageOrSrc) {
     if (typeof newImageOrSrc === 'string') {
         var cachedImgObj = globalImageCache.get(newImageOrSrc);
@@ -28139,7 +28330,7 @@ function createOrUpdateImage(newImageOrSrc, image, hostEl, onload, cbPayload) {
             !isImageReady(image) && cachedImgObj.pending.push(pendingWrap);
         }
         else {
-            image = platformApi.loadImage(newImageOrSrc, imageOnLoad, imageOnLoad);
+            image = platform_platformApi.loadImage(newImageOrSrc, imageOnLoad, imageOnLoad);
             image.__zrImageSrc = newImageOrSrc;
             globalImageCache.put(newImageOrSrc, image.__cachedImgObj = {
                 image: image,
@@ -28167,7 +28358,552 @@ function isImageReady(image) {
     return image && image.width && image.height;
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/core/matrix.js
+;// ./node_modules/echarts/node_modules/zrender/lib/core/util.js
+
+var util_BUILTIN_OBJECT = util_reduce([
+    'Function',
+    'RegExp',
+    'Date',
+    'Error',
+    'CanvasGradient',
+    'CanvasPattern',
+    'Image',
+    'Canvas'
+], function (obj, val) {
+    obj['[object ' + val + ']'] = true;
+    return obj;
+}, {});
+var util_TYPED_ARRAY = util_reduce([
+    'Int8',
+    'Uint8',
+    'Uint8Clamped',
+    'Int16',
+    'Uint16',
+    'Int32',
+    'Uint32',
+    'Float32',
+    'Float64'
+], function (obj, val) {
+    obj['[object ' + val + 'Array]'] = true;
+    return obj;
+}, {});
+var util_objToString = Object.prototype.toString;
+var util_arrayProto = Array.prototype;
+var core_util_nativeForEach = util_arrayProto.forEach;
+var util_nativeFilter = util_arrayProto.filter;
+var util_nativeSlice = util_arrayProto.slice;
+var util_nativeMap = util_arrayProto.map;
+var util_ctorFunction = function () { }.constructor;
+var util_protoFunction = util_ctorFunction ? util_ctorFunction.prototype : null;
+var util_protoKey = '__proto__';
+var util_idStart = 0x0907;
+function core_util_guid() {
+    return util_idStart++;
+}
+function util_logError() {
+    var args = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        args[_i] = arguments[_i];
+    }
+    if (typeof console !== 'undefined') {
+        console.error.apply(console, args);
+    }
+}
+function util_clone(source) {
+    if (source == null || typeof source !== 'object') {
+        return source;
+    }
+    var result = source;
+    var typeStr = util_objToString.call(source);
+    if (typeStr === '[object Array]') {
+        if (!util_isPrimitive(source)) {
+            result = [];
+            for (var i = 0, len = source.length; i < len; i++) {
+                result[i] = util_clone(source[i]);
+            }
+        }
+    }
+    else if (util_TYPED_ARRAY[typeStr]) {
+        if (!util_isPrimitive(source)) {
+            var Ctor = source.constructor;
+            if (Ctor.from) {
+                result = Ctor.from(source);
+            }
+            else {
+                result = new Ctor(source.length);
+                for (var i = 0, len = source.length; i < len; i++) {
+                    result[i] = source[i];
+                }
+            }
+        }
+    }
+    else if (!util_BUILTIN_OBJECT[typeStr] && !util_isPrimitive(source) && !util_isDom(source)) {
+        result = {};
+        for (var key in source) {
+            if (source.hasOwnProperty(key) && key !== util_protoKey) {
+                result[key] = util_clone(source[key]);
+            }
+        }
+    }
+    return result;
+}
+function util_merge(target, source, overwrite) {
+    if (!util_isObject(source) || !util_isObject(target)) {
+        return overwrite ? util_clone(source) : target;
+    }
+    for (var key in source) {
+        if (source.hasOwnProperty(key) && key !== util_protoKey) {
+            var targetProp = target[key];
+            var sourceProp = source[key];
+            if (util_isObject(sourceProp)
+                && util_isObject(targetProp)
+                && !util_isArray(sourceProp)
+                && !util_isArray(targetProp)
+                && !util_isDom(sourceProp)
+                && !util_isDom(targetProp)
+                && !util_isBuiltInObject(sourceProp)
+                && !util_isBuiltInObject(targetProp)
+                && !util_isPrimitive(sourceProp)
+                && !util_isPrimitive(targetProp)) {
+                util_merge(targetProp, sourceProp, overwrite);
+            }
+            else if (overwrite || !(key in target)) {
+                target[key] = util_clone(source[key]);
+            }
+        }
+    }
+    return target;
+}
+function util_mergeAll(targetAndSources, overwrite) {
+    var result = targetAndSources[0];
+    for (var i = 1, len = targetAndSources.length; i < len; i++) {
+        result = util_merge(result, targetAndSources[i], overwrite);
+    }
+    return result;
+}
+function core_util_extend(target, source) {
+    if (Object.assign) {
+        Object.assign(target, source);
+    }
+    else {
+        for (var key in source) {
+            if (source.hasOwnProperty(key) && key !== util_protoKey) {
+                target[key] = source[key];
+            }
+        }
+    }
+    return target;
+}
+function util_defaults(target, source, overlay) {
+    var keysArr = util_keys(source);
+    for (var i = 0, len = keysArr.length; i < len; i++) {
+        var key = keysArr[i];
+        if ((overlay ? source[key] != null : target[key] == null)) {
+            target[key] = source[key];
+        }
+    }
+    return target;
+}
+var util_createCanvas = platform_platformApi.createCanvas;
+function util_indexOf(array, value) {
+    if (array) {
+        if (array.indexOf) {
+            return array.indexOf(value);
+        }
+        for (var i = 0, len = array.length; i < len; i++) {
+            if (array[i] === value) {
+                return i;
+            }
+        }
+    }
+    return -1;
+}
+function util_inherits(clazz, baseClazz) {
+    var clazzPrototype = clazz.prototype;
+    function F() { }
+    F.prototype = baseClazz.prototype;
+    clazz.prototype = new F();
+    for (var prop in clazzPrototype) {
+        if (clazzPrototype.hasOwnProperty(prop)) {
+            clazz.prototype[prop] = clazzPrototype[prop];
+        }
+    }
+    clazz.prototype.constructor = clazz;
+    clazz.superClass = baseClazz;
+}
+function util_mixin(target, source, override) {
+    target = 'prototype' in target ? target.prototype : target;
+    source = 'prototype' in source ? source.prototype : source;
+    if (Object.getOwnPropertyNames) {
+        var keyList = Object.getOwnPropertyNames(source);
+        for (var i = 0; i < keyList.length; i++) {
+            var key = keyList[i];
+            if (key !== 'constructor') {
+                if ((override ? source[key] != null : target[key] == null)) {
+                    target[key] = source[key];
+                }
+            }
+        }
+    }
+    else {
+        util_defaults(target, source, override);
+    }
+}
+function util_isArrayLike(data) {
+    if (!data) {
+        return false;
+    }
+    if (typeof data === 'string') {
+        return false;
+    }
+    return typeof data.length === 'number';
+}
+function util_each(arr, cb, context) {
+    if (!(arr && cb)) {
+        return;
+    }
+    if (arr.forEach && arr.forEach === core_util_nativeForEach) {
+        arr.forEach(cb, context);
+    }
+    else if (arr.length === +arr.length) {
+        for (var i = 0, len = arr.length; i < len; i++) {
+            cb.call(context, arr[i], i, arr);
+        }
+    }
+    else {
+        for (var key in arr) {
+            if (arr.hasOwnProperty(key)) {
+                cb.call(context, arr[key], key, arr);
+            }
+        }
+    }
+}
+function util_map(arr, cb, context) {
+    if (!arr) {
+        return [];
+    }
+    if (!cb) {
+        return util_slice(arr);
+    }
+    if (arr.map && arr.map === util_nativeMap) {
+        return arr.map(cb, context);
+    }
+    else {
+        var result = [];
+        for (var i = 0, len = arr.length; i < len; i++) {
+            result.push(cb.call(context, arr[i], i, arr));
+        }
+        return result;
+    }
+}
+function util_reduce(arr, cb, memo, context) {
+    if (!(arr && cb)) {
+        return;
+    }
+    for (var i = 0, len = arr.length; i < len; i++) {
+        memo = cb.call(context, memo, arr[i], i, arr);
+    }
+    return memo;
+}
+function util_filter(arr, cb, context) {
+    if (!arr) {
+        return [];
+    }
+    if (!cb) {
+        return util_slice(arr);
+    }
+    if (arr.filter && arr.filter === util_nativeFilter) {
+        return arr.filter(cb, context);
+    }
+    else {
+        var result = [];
+        for (var i = 0, len = arr.length; i < len; i++) {
+            if (cb.call(context, arr[i], i, arr)) {
+                result.push(arr[i]);
+            }
+        }
+        return result;
+    }
+}
+function util_find(arr, cb, context) {
+    if (!(arr && cb)) {
+        return;
+    }
+    for (var i = 0, len = arr.length; i < len; i++) {
+        if (cb.call(context, arr[i], i, arr)) {
+            return arr[i];
+        }
+    }
+}
+function util_keys(obj) {
+    if (!obj) {
+        return [];
+    }
+    if (Object.keys) {
+        return Object.keys(obj);
+    }
+    var keyList = [];
+    for (var key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            keyList.push(key);
+        }
+    }
+    return keyList;
+}
+function util_bindPolyfill(func, context) {
+    var args = [];
+    for (var _i = 2; _i < arguments.length; _i++) {
+        args[_i - 2] = arguments[_i];
+    }
+    return function () {
+        return func.apply(context, args.concat(util_nativeSlice.call(arguments)));
+    };
+}
+var util_bind = (util_protoFunction && util_isFunction(util_protoFunction.bind))
+    ? util_protoFunction.call.bind(util_protoFunction.bind)
+    : util_bindPolyfill;
+function util_curry(func) {
+    var args = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        args[_i - 1] = arguments[_i];
+    }
+    return function () {
+        return func.apply(this, args.concat(util_nativeSlice.call(arguments)));
+    };
+}
+
+function util_isArray(value) {
+    if (Array.isArray) {
+        return Array.isArray(value);
+    }
+    return util_objToString.call(value) === '[object Array]';
+}
+function util_isFunction(value) {
+    return typeof value === 'function';
+}
+function util_isString(value) {
+    return typeof value === 'string';
+}
+function util_isStringSafe(value) {
+    return util_objToString.call(value) === '[object String]';
+}
+function util_isNumber(value) {
+    return typeof value === 'number';
+}
+function util_isObject(value) {
+    var type = typeof value;
+    return type === 'function' || (!!value && type === 'object');
+}
+function util_isBuiltInObject(value) {
+    return !!util_BUILTIN_OBJECT[util_objToString.call(value)];
+}
+function util_isTypedArray(value) {
+    return !!util_TYPED_ARRAY[util_objToString.call(value)];
+}
+function util_isDom(value) {
+    return typeof value === 'object'
+        && typeof value.nodeType === 'number'
+        && typeof value.ownerDocument === 'object';
+}
+function util_isGradientObject(value) {
+    return value.colorStops != null;
+}
+function util_isImagePatternObject(value) {
+    return value.image != null;
+}
+function util_isRegExp(value) {
+    return util_objToString.call(value) === '[object RegExp]';
+}
+function util_eqNaN(value) {
+    return value !== value;
+}
+function lib_core_util_retrieve() {
+    var args = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        args[_i] = arguments[_i];
+    }
+    for (var i = 0, len = args.length; i < len; i++) {
+        if (args[i] != null) {
+            return args[i];
+        }
+    }
+}
+function util_retrieve2(value0, value1) {
+    return value0 != null
+        ? value0
+        : value1;
+}
+function util_retrieve3(value0, value1, value2) {
+    return value0 != null
+        ? value0
+        : value1 != null
+            ? value1
+            : value2;
+}
+function util_slice(arr) {
+    var args = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        args[_i - 1] = arguments[_i];
+    }
+    return util_nativeSlice.apply(arr, args);
+}
+function util_normalizeCssArray(val) {
+    if (typeof (val) === 'number') {
+        return [val, val, val, val];
+    }
+    var len = val.length;
+    if (len === 2) {
+        return [val[0], val[1], val[0], val[1]];
+    }
+    else if (len === 3) {
+        return [val[0], val[1], val[2], val[1]];
+    }
+    return val;
+}
+function util_assert(condition, message) {
+    if (!condition) {
+        throw new Error(message);
+    }
+}
+function util_trim(str) {
+    if (str == null) {
+        return null;
+    }
+    else if (typeof str.trim === 'function') {
+        return str.trim();
+    }
+    else {
+        return str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+    }
+}
+var util_primitiveKey = '__ec_primitive__';
+function util_setAsPrimitive(obj) {
+    obj[util_primitiveKey] = true;
+}
+function util_isPrimitive(obj) {
+    return obj[util_primitiveKey];
+}
+var util_MapPolyfill = (function () {
+    function MapPolyfill() {
+        this.data = {};
+    }
+    MapPolyfill.prototype["delete"] = function (key) {
+        var existed = this.has(key);
+        if (existed) {
+            delete this.data[key];
+        }
+        return existed;
+    };
+    MapPolyfill.prototype.has = function (key) {
+        return this.data.hasOwnProperty(key);
+    };
+    MapPolyfill.prototype.get = function (key) {
+        return this.data[key];
+    };
+    MapPolyfill.prototype.set = function (key, value) {
+        this.data[key] = value;
+        return this;
+    };
+    MapPolyfill.prototype.keys = function () {
+        return util_keys(this.data);
+    };
+    MapPolyfill.prototype.forEach = function (callback) {
+        var data = this.data;
+        for (var key in data) {
+            if (data.hasOwnProperty(key)) {
+                callback(data[key], key);
+            }
+        }
+    };
+    return MapPolyfill;
+}());
+var util_isNativeMapSupported = typeof Map === 'function';
+function util_maybeNativeMap() {
+    return (util_isNativeMapSupported ? new Map() : new util_MapPolyfill());
+}
+var util_HashMap = (function () {
+    function HashMap(obj) {
+        var isArr = util_isArray(obj);
+        this.data = util_maybeNativeMap();
+        var thisMap = this;
+        (obj instanceof HashMap)
+            ? obj.each(visit)
+            : (obj && util_each(obj, visit));
+        function visit(value, key) {
+            isArr ? thisMap.set(value, key) : thisMap.set(key, value);
+        }
+    }
+    HashMap.prototype.hasKey = function (key) {
+        return this.data.has(key);
+    };
+    HashMap.prototype.get = function (key) {
+        return this.data.get(key);
+    };
+    HashMap.prototype.set = function (key, value) {
+        this.data.set(key, value);
+        return value;
+    };
+    HashMap.prototype.each = function (cb, context) {
+        this.data.forEach(function (value, key) {
+            cb.call(context, value, key);
+        });
+    };
+    HashMap.prototype.keys = function () {
+        var keys = this.data.keys();
+        return util_isNativeMapSupported
+            ? Array.from(keys)
+            : keys;
+    };
+    HashMap.prototype.removeKey = function (key) {
+        this.data["delete"](key);
+    };
+    return HashMap;
+}());
+
+function util_createHashMap(obj) {
+    return new util_HashMap(obj);
+}
+function util_concatArray(a, b) {
+    var newArray = new a.constructor(a.length + b.length);
+    for (var i = 0; i < a.length; i++) {
+        newArray[i] = a[i];
+    }
+    var offset = a.length;
+    for (var i = 0; i < b.length; i++) {
+        newArray[i + offset] = b[i];
+    }
+    return newArray;
+}
+function util_createObject(proto, properties) {
+    var obj;
+    if (Object.create) {
+        obj = Object.create(proto);
+    }
+    else {
+        var StyleCtor = function () { };
+        StyleCtor.prototype = proto;
+        obj = new StyleCtor();
+    }
+    if (properties) {
+        core_util_extend(obj, properties);
+    }
+    return obj;
+}
+function util_disableUserSelect(dom) {
+    var domStyle = dom.style;
+    domStyle.webkitUserSelect = 'none';
+    domStyle.userSelect = 'none';
+    domStyle.webkitTapHighlightColor = 'rgba(0,0,0,0)';
+    domStyle['-webkit-touch-callout'] = 'none';
+}
+function util_hasOwn(own, prop) {
+    return own.hasOwnProperty(prop);
+}
+function core_util_noop() { }
+var util_RADIAN_TO_DEGREE = 180 / Math.PI;
+var util_EPSILON = Number.EPSILON || Math.pow(2, -52);
+
+;// ./node_modules/echarts/node_modules/zrender/lib/core/matrix.js
 function matrix_create() {
     return [1, 0, 0, 1, 0, 0];
 }
@@ -28213,7 +28949,8 @@ function translate(out, a, v) {
     out[5] = a[5] + v[1];
     return out;
 }
-function rotate(out, a, rad) {
+function rotate(out, a, rad, pivot) {
+    if (pivot === void 0) { pivot = [0, 0]; }
     var aa = a[0];
     var ac = a[2];
     var atx = a[4];
@@ -28226,8 +28963,8 @@ function rotate(out, a, rad) {
     out[1] = -aa * st + ab * ct;
     out[2] = ac * ct + ad * st;
     out[3] = -ac * st + ct * ad;
-    out[4] = ct * atx + st * aty;
-    out[5] = ct * aty - st * atx;
+    out[4] = ct * (atx - pivot[0]) + st * (aty - pivot[1]) + pivot[0];
+    out[5] = ct * (aty - pivot[1]) - st * (atx - pivot[0]) + pivot[1];
     return out;
 }
 function matrix_scale(out, a, v) {
@@ -28267,7 +29004,7 @@ function matrix_clone(a) {
     return b;
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/core/Point.js
+;// ./node_modules/echarts/node_modules/zrender/lib/core/Point.js
 var Point_Point = (function () {
     function Point(x, y) {
         this.x = x || 0;
@@ -28398,19 +29135,27 @@ var Point_Point = (function () {
 }());
 /* harmony default export */ const core_Point = (Point_Point);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/core/BoundingRect.js
+;// ./node_modules/echarts/node_modules/zrender/lib/core/BoundingRect.js
 
 
 var BoundingRect_mathMin = Math.min;
 var BoundingRect_mathMax = Math.max;
+var mathAbs = Math.abs;
+var XY = ['x', 'y'];
+var WH = ['width', 'height'];
 var lt = new core_Point();
 var rb = new core_Point();
 var lb = new core_Point();
 var rt = new core_Point();
-var minTv = new core_Point();
-var maxTv = new core_Point();
+var _intersectCtx = createIntersectContext();
+var _minTv = _intersectCtx.minTv;
+var _maxTv = _intersectCtx.maxTv;
+var _lenMinMax = [0, 0];
 var BoundingRect = (function () {
     function BoundingRect(x, y, width, height) {
+        BoundingRect.set(this, x, y, width, height);
+    }
+    BoundingRect.set = function (target, x, y, width, height) {
         if (width < 0) {
             x = x + width;
             width = -width;
@@ -28419,11 +29164,12 @@ var BoundingRect = (function () {
             y = y + height;
             height = -height;
         }
-        this.x = x;
-        this.y = y;
-        this.width = width;
-        this.height = height;
-    }
+        target.x = x;
+        target.y = y;
+        target.width = width;
+        target.height = height;
+        return target;
+    };
     BoundingRect.prototype.union = function (other) {
         var x = BoundingRect_mathMin(other.x, this.x);
         var y = BoundingRect_mathMin(other.y, this.y);
@@ -28455,88 +29201,63 @@ var BoundingRect = (function () {
         translate(m, m, [b.x, b.y]);
         return m;
     };
-    BoundingRect.prototype.intersect = function (b, mtv) {
-        if (!b) {
+    BoundingRect.prototype.intersect = function (b, mtv, opt) {
+        return BoundingRect.intersect(this, b, mtv, opt);
+    };
+    BoundingRect.intersect = function (a, b, mtv, opt) {
+        if (mtv) {
+            core_Point.set(mtv, 0, 0);
+        }
+        var outIntersectRect = opt && opt.outIntersectRect || null;
+        var clamp = opt && opt.clamp;
+        if (outIntersectRect) {
+            outIntersectRect.x = outIntersectRect.y = outIntersectRect.width = outIntersectRect.height = NaN;
+        }
+        if (!a || !b) {
             return false;
         }
+        if (!(a instanceof BoundingRect)) {
+            a = BoundingRect.set(_tmpIntersectA, a.x, a.y, a.width, a.height);
+        }
         if (!(b instanceof BoundingRect)) {
-            b = BoundingRect.create(b);
+            b = BoundingRect.set(_tmpIntersectB, b.x, b.y, b.width, b.height);
         }
-        var a = this;
-        var ax0 = a.x;
-        var ax1 = a.x + a.width;
-        var ay0 = a.y;
-        var ay1 = a.y + a.height;
-        var bx0 = b.x;
-        var bx1 = b.x + b.width;
-        var by0 = b.y;
-        var by1 = b.y + b.height;
+        var useMTV = !!mtv;
+        _intersectCtx.reset(opt, useMTV);
+        var touchThreshold = _intersectCtx.touchThreshold;
+        var ax0 = a.x + touchThreshold;
+        var ax1 = a.x + a.width - touchThreshold;
+        var ay0 = a.y + touchThreshold;
+        var ay1 = a.y + a.height - touchThreshold;
+        var bx0 = b.x + touchThreshold;
+        var bx1 = b.x + b.width - touchThreshold;
+        var by0 = b.y + touchThreshold;
+        var by1 = b.y + b.height - touchThreshold;
+        if (ax0 > ax1 || ay0 > ay1 || bx0 > bx1 || by0 > by1) {
+            return false;
+        }
         var overlap = !(ax1 < bx0 || bx1 < ax0 || ay1 < by0 || by1 < ay0);
-        if (mtv) {
-            var dMin = Infinity;
-            var dMax = 0;
-            var d0 = Math.abs(ax1 - bx0);
-            var d1 = Math.abs(bx1 - ax0);
-            var d2 = Math.abs(ay1 - by0);
-            var d3 = Math.abs(by1 - ay0);
-            var dx = Math.min(d0, d1);
-            var dy = Math.min(d2, d3);
-            if (ax1 < bx0 || bx1 < ax0) {
-                if (dx > dMax) {
-                    dMax = dx;
-                    if (d0 < d1) {
-                        core_Point.set(maxTv, -d0, 0);
-                    }
-                    else {
-                        core_Point.set(maxTv, d1, 0);
-                    }
-                }
+        if (useMTV || outIntersectRect) {
+            _lenMinMax[0] = Infinity;
+            _lenMinMax[1] = 0;
+            intersectOneDim(ax0, ax1, bx0, bx1, 0, useMTV, outIntersectRect, clamp);
+            intersectOneDim(ay0, ay1, by0, by1, 1, useMTV, outIntersectRect, clamp);
+            if (useMTV) {
+                core_Point.copy(mtv, overlap
+                    ? (_intersectCtx.useDir ? _intersectCtx.dirMinTv : _minTv)
+                    : _maxTv);
             }
-            else {
-                if (dx < dMin) {
-                    dMin = dx;
-                    if (d0 < d1) {
-                        core_Point.set(minTv, d0, 0);
-                    }
-                    else {
-                        core_Point.set(minTv, -d1, 0);
-                    }
-                }
-            }
-            if (ay1 < by0 || by1 < ay0) {
-                if (dy > dMax) {
-                    dMax = dy;
-                    if (d2 < d3) {
-                        core_Point.set(maxTv, 0, -d2);
-                    }
-                    else {
-                        core_Point.set(maxTv, 0, d3);
-                    }
-                }
-            }
-            else {
-                if (dx < dMin) {
-                    dMin = dx;
-                    if (d2 < d3) {
-                        core_Point.set(minTv, 0, d2);
-                    }
-                    else {
-                        core_Point.set(minTv, 0, -d3);
-                    }
-                }
-            }
-        }
-        if (mtv) {
-            core_Point.copy(mtv, overlap ? minTv : maxTv);
         }
         return overlap;
     };
-    BoundingRect.prototype.contain = function (x, y) {
-        var rect = this;
+    BoundingRect.contain = function (rect, x, y) {
         return x >= rect.x
             && x <= (rect.x + rect.width)
             && y >= rect.y
             && y <= (rect.y + rect.height);
+    };
+    BoundingRect.prototype.contain = function (x, y) {
+        return BoundingRect.contain(this, x, y);
     };
     BoundingRect.prototype.clone = function () {
         return new BoundingRect(this.x, this.y, this.width, this.height);
@@ -28569,6 +29290,7 @@ var BoundingRect = (function () {
         target.y = source.y;
         target.width = source.width;
         target.height = source.height;
+        return target;
     };
     BoundingRect.applyTransform = function (target, source, m) {
         if (!m) {
@@ -28613,28 +29335,199 @@ var BoundingRect = (function () {
     };
     return BoundingRect;
 }());
+var _tmpIntersectA = new BoundingRect(0, 0, 0, 0);
+var _tmpIntersectB = new BoundingRect(0, 0, 0, 0);
+function intersectOneDim(a0, a1, b0, b1, updateDimIdx, useMTV, outIntersectRect, clamp) {
+    var d0 = mathAbs(a1 - b0);
+    var d1 = mathAbs(b1 - a0);
+    var d01min = BoundingRect_mathMin(d0, d1);
+    var updateDim = XY[updateDimIdx];
+    var zeroDim = XY[1 - updateDimIdx];
+    var wh = WH[updateDimIdx];
+    if (a1 < b0 || b1 < a0) {
+        if (d0 < d1) {
+            if (useMTV) {
+                _maxTv[updateDim] = -d0;
+            }
+            if (clamp) {
+                outIntersectRect[updateDim] = a1;
+                outIntersectRect[wh] = 0;
+            }
+        }
+        else {
+            if (useMTV) {
+                _maxTv[updateDim] = d1;
+            }
+            if (clamp) {
+                outIntersectRect[updateDim] = a0;
+                outIntersectRect[wh] = 0;
+            }
+        }
+    }
+    else {
+        if (outIntersectRect) {
+            outIntersectRect[updateDim] = BoundingRect_mathMax(a0, b0);
+            outIntersectRect[wh] = BoundingRect_mathMin(a1, b1) - outIntersectRect[updateDim];
+        }
+        if (useMTV) {
+            if (d01min < _lenMinMax[0] || _intersectCtx.useDir) {
+                _lenMinMax[0] = BoundingRect_mathMin(d01min, _lenMinMax[0]);
+                if (d0 < d1 || !_intersectCtx.bidirectional) {
+                    _minTv[updateDim] = d0;
+                    _minTv[zeroDim] = 0;
+                    if (_intersectCtx.useDir) {
+                        _intersectCtx.calcDirMTV();
+                    }
+                }
+                if (d0 >= d1 || !_intersectCtx.bidirectional) {
+                    _minTv[updateDim] = -d1;
+                    _minTv[zeroDim] = 0;
+                    if (_intersectCtx.useDir) {
+                        _intersectCtx.calcDirMTV();
+                    }
+                }
+            }
+        }
+    }
+}
+function createIntersectContext() {
+    var _direction = 0;
+    var _dirCheckVec = new core_Point();
+    var _dirTmp = new core_Point();
+    var _ctx = {
+        minTv: new core_Point(),
+        maxTv: new core_Point(),
+        useDir: false,
+        dirMinTv: new core_Point(),
+        touchThreshold: 0,
+        bidirectional: true,
+        negativeSize: false,
+        reset: function (opt, useMTV) {
+            _ctx.touchThreshold = 0;
+            if (opt && opt.touchThreshold != null) {
+                _ctx.touchThreshold = BoundingRect_mathMax(0, opt.touchThreshold);
+            }
+            _ctx.negativeSize = false;
+            if (!useMTV) {
+                return;
+            }
+            _ctx.minTv.set(Infinity, Infinity);
+            _ctx.maxTv.set(0, 0);
+            _ctx.useDir = false;
+            if (opt && opt.direction != null) {
+                _ctx.useDir = true;
+                _ctx.dirMinTv.copy(_ctx.minTv);
+                _dirTmp.copy(_ctx.minTv);
+                _direction = opt.direction;
+                _ctx.bidirectional = opt.bidirectional == null || !!opt.bidirectional;
+                if (!_ctx.bidirectional) {
+                    _dirCheckVec.set(Math.cos(_direction), Math.sin(_direction));
+                }
+            }
+        },
+        calcDirMTV: function () {
+            var minTv = _ctx.minTv;
+            var dirMinTv = _ctx.dirMinTv;
+            var squareMag = minTv.y * minTv.y + minTv.x * minTv.x;
+            var dirSin = Math.sin(_direction);
+            var dirCos = Math.cos(_direction);
+            var dotProd = dirSin * minTv.y + dirCos * minTv.x;
+            if (nearZero(dotProd)) {
+                if (nearZero(minTv.x) && nearZero(minTv.y)) {
+                    dirMinTv.set(0, 0);
+                }
+                return;
+            }
+            _dirTmp.x = squareMag * dirCos / dotProd;
+            _dirTmp.y = squareMag * dirSin / dotProd;
+            if (nearZero(_dirTmp.x) && nearZero(_dirTmp.y)) {
+                dirMinTv.set(0, 0);
+                return;
+            }
+            if ((_ctx.bidirectional
+                || _dirCheckVec.dot(_dirTmp) > 0)
+                && _dirTmp.len() < dirMinTv.len()) {
+                dirMinTv.copy(_dirTmp);
+            }
+        }
+    };
+    function nearZero(val) {
+        return mathAbs(val) < 1e-10;
+    }
+    return _ctx;
+}
 /* harmony default export */ const core_BoundingRect = (BoundingRect);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/contain/text.js
+;// ./node_modules/echarts/node_modules/zrender/lib/contain/text.js
 
 
 
-var textWidthCache = {};
 function getWidth(text, font) {
-    font = font || DEFAULT_FONT;
-    var cacheOfFont = textWidthCache[font];
-    if (!cacheOfFont) {
-        cacheOfFont = textWidthCache[font] = new lib_core_LRU(500);
+    return measureWidth(ensureFontMeasureInfo(font), text);
+}
+function ensureFontMeasureInfo(font) {
+    if (!_fontMeasureInfoCache) {
+        _fontMeasureInfoCache = new zrender_lib_core_LRU(100);
     }
-    var width = cacheOfFont.get(text);
+    font = font || platform_DEFAULT_FONT;
+    var measureInfo = _fontMeasureInfoCache.get(font);
+    if (!measureInfo) {
+        measureInfo = {
+            font: font,
+            strWidthCache: new zrender_lib_core_LRU(500),
+            asciiWidthMap: null,
+            asciiWidthMapTried: false,
+            stWideCharWidth: platform_platformApi.measureText('国', font).width,
+            asciiCharWidth: platform_platformApi.measureText('a', font).width
+        };
+        _fontMeasureInfoCache.put(font, measureInfo);
+    }
+    return measureInfo;
+}
+var _fontMeasureInfoCache;
+function tryCreateASCIIWidthMap(font) {
+    if (_getASCIIWidthMapLongCount >= GET_ASCII_WIDTH_LONG_COUNT_MAX) {
+        return;
+    }
+    font = font || platform_DEFAULT_FONT;
+    var asciiWidthMap = [];
+    var start = +(new Date());
+    for (var code = 0; code <= 127; code++) {
+        asciiWidthMap[code] = platform_platformApi.measureText(String.fromCharCode(code), font).width;
+    }
+    var cost = +(new Date()) - start;
+    if (cost > 16) {
+        _getASCIIWidthMapLongCount = GET_ASCII_WIDTH_LONG_COUNT_MAX;
+    }
+    else if (cost > 2) {
+        _getASCIIWidthMapLongCount++;
+    }
+    return asciiWidthMap;
+}
+var _getASCIIWidthMapLongCount = 0;
+var GET_ASCII_WIDTH_LONG_COUNT_MAX = 5;
+function measureCharWidth(fontMeasureInfo, charCode) {
+    if (!fontMeasureInfo.asciiWidthMapTried) {
+        fontMeasureInfo.asciiWidthMap = tryCreateASCIIWidthMap(fontMeasureInfo.font);
+        fontMeasureInfo.asciiWidthMapTried = true;
+    }
+    return (0 <= charCode && charCode <= 127)
+        ? (fontMeasureInfo.asciiWidthMap != null
+            ? fontMeasureInfo.asciiWidthMap[charCode]
+            : fontMeasureInfo.asciiCharWidth)
+        : fontMeasureInfo.stWideCharWidth;
+}
+function measureWidth(fontMeasureInfo, text) {
+    var strWidthCache = fontMeasureInfo.strWidthCache;
+    var width = strWidthCache.get(text);
     if (width == null) {
-        width = platformApi.measureText(text, font).width;
-        cacheOfFont.put(text, width);
+        width = platform_platformApi.measureText(text, fontMeasureInfo.font).width;
+        strWidthCache.put(text, width);
     }
     return width;
 }
 function innerGetBoundingRect(text, font, textAlign, textBaseline) {
-    var width = getWidth(text, font);
+    var width = measureWidth(ensureFontMeasureInfo(font), text);
     var height = getLineHeight(font);
     var x = adjustTextX(0, width, textAlign);
     var y = text_adjustTextY(0, height, textBaseline);
@@ -28656,29 +29549,29 @@ function getBoundingRect(text, font, textAlign, textBaseline) {
         return uniondRect;
     }
 }
-function adjustTextX(x, width, textAlign) {
+function adjustTextX(x, width, textAlign, inverse) {
     if (textAlign === 'right') {
-        x -= width;
+        !inverse ? (x -= width) : (x += width);
     }
     else if (textAlign === 'center') {
-        x -= width / 2;
+        !inverse ? (x -= width / 2) : (x += width / 2);
     }
     return x;
 }
-function text_adjustTextY(y, height, verticalAlign) {
+function text_adjustTextY(y, height, verticalAlign, inverse) {
     if (verticalAlign === 'middle') {
-        y -= height / 2;
+        !inverse ? (y -= height / 2) : (y += height / 2);
     }
     else if (verticalAlign === 'bottom') {
-        y -= height;
+        !inverse ? (y -= height) : (y += height);
     }
     return y;
 }
 function getLineHeight(font) {
-    return getWidth('国', font);
+    return ensureFontMeasureInfo(font).stWideCharWidth;
 }
 function measureText(text, font) {
-    return platformApi.measureText(text, font);
+    return platform_platformApi.measureText(text, font);
 }
 function parsePercent(value, maxValue) {
     if (typeof value === 'string') {
@@ -28787,37 +29680,49 @@ function calculateTextPosition(out, opts, rect) {
     return out;
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/graphic/helper/parseText.js
+;// ./node_modules/echarts/node_modules/zrender/lib/graphic/helper/parseText.js
+
 
 
 
 var STYLE_REG = /\{([a-zA-Z0-9_]+)\|([^}]*)\}/g;
 function truncateText(text, containerWidth, font, ellipsis, options) {
+    var out = {};
+    truncateText2(out, text, containerWidth, font, ellipsis, options);
+    return out.text;
+}
+function truncateText2(out, text, containerWidth, font, ellipsis, options) {
     if (!containerWidth) {
-        return '';
+        out.text = '';
+        out.isTruncated = false;
+        return;
     }
     var textLines = (text + '').split('\n');
     options = prepareTruncateOptions(containerWidth, font, ellipsis, options);
+    var isTruncated = false;
+    var truncateOut = {};
     for (var i = 0, len = textLines.length; i < len; i++) {
-        textLines[i] = truncateSingleLine(textLines[i], options);
+        truncateSingleLine(truncateOut, textLines[i], options);
+        textLines[i] = truncateOut.textLine;
+        isTruncated = isTruncated || truncateOut.isTruncated;
     }
-    return textLines.join('\n');
+    out.text = textLines.join('\n');
+    out.isTruncated = isTruncated;
 }
 function prepareTruncateOptions(containerWidth, font, ellipsis, options) {
     options = options || {};
-    var preparedOpts = util_extend({}, options);
-    preparedOpts.font = font;
-    ellipsis = retrieve2(ellipsis, '...');
-    preparedOpts.maxIterations = retrieve2(options.maxIterations, 2);
-    var minChar = preparedOpts.minChar = retrieve2(options.minChar, 0);
-    preparedOpts.cnCharWidth = getWidth('国', font);
-    var ascCharWidth = preparedOpts.ascCharWidth = getWidth('a', font);
-    preparedOpts.placeholder = retrieve2(options.placeholder, '');
+    var preparedOpts = core_util_extend({}, options);
+    ellipsis = util_retrieve2(ellipsis, '...');
+    preparedOpts.maxIterations = util_retrieve2(options.maxIterations, 2);
+    var minChar = preparedOpts.minChar = util_retrieve2(options.minChar, 0);
+    var fontMeasureInfo = preparedOpts.fontMeasureInfo = ensureFontMeasureInfo(font);
+    var ascCharWidth = fontMeasureInfo.asciiCharWidth;
+    preparedOpts.placeholder = util_retrieve2(options.placeholder, '');
     var contentWidth = containerWidth = Math.max(0, containerWidth - 1);
     for (var i = 0; i < minChar && contentWidth >= ascCharWidth; i++) {
         contentWidth -= ascCharWidth;
     }
-    var ellipsisWidth = getWidth(ellipsis, font);
+    var ellipsisWidth = measureWidth(fontMeasureInfo, ellipsis);
     if (ellipsisWidth > contentWidth) {
         ellipsis = '';
         ellipsisWidth = 0;
@@ -28829,16 +29734,20 @@ function prepareTruncateOptions(containerWidth, font, ellipsis, options) {
     preparedOpts.containerWidth = containerWidth;
     return preparedOpts;
 }
-function truncateSingleLine(textLine, options) {
+function truncateSingleLine(out, textLine, options) {
     var containerWidth = options.containerWidth;
-    var font = options.font;
     var contentWidth = options.contentWidth;
+    var fontMeasureInfo = options.fontMeasureInfo;
     if (!containerWidth) {
-        return '';
+        out.textLine = '';
+        out.isTruncated = false;
+        return;
     }
-    var lineWidth = getWidth(textLine, font);
+    var lineWidth = measureWidth(fontMeasureInfo, textLine);
     if (lineWidth <= containerWidth) {
-        return textLine;
+        out.textLine = textLine;
+        out.isTruncated = false;
+        return;
     }
     for (var j = 0;; j++) {
         if (lineWidth <= contentWidth || j >= options.maxIterations) {
@@ -28846,38 +29755,47 @@ function truncateSingleLine(textLine, options) {
             break;
         }
         var subLength = j === 0
-            ? estimateLength(textLine, contentWidth, options.ascCharWidth, options.cnCharWidth)
+            ? estimateLength(textLine, contentWidth, fontMeasureInfo)
             : lineWidth > 0
                 ? Math.floor(textLine.length * contentWidth / lineWidth)
                 : 0;
         textLine = textLine.substr(0, subLength);
-        lineWidth = getWidth(textLine, font);
+        lineWidth = measureWidth(fontMeasureInfo, textLine);
     }
     if (textLine === '') {
         textLine = options.placeholder;
     }
-    return textLine;
+    out.textLine = textLine;
+    out.isTruncated = true;
 }
-function estimateLength(text, contentWidth, ascCharWidth, cnCharWidth) {
+function estimateLength(text, contentWidth, fontMeasureInfo) {
     var width = 0;
     var i = 0;
     for (var len = text.length; i < len && width < contentWidth; i++) {
-        var charCode = text.charCodeAt(i);
-        width += (0 <= charCode && charCode <= 127) ? ascCharWidth : cnCharWidth;
+        width += measureCharWidth(fontMeasureInfo, text.charCodeAt(i));
     }
     return i;
 }
-function parsePlainText(text, style) {
-    text != null && (text += '');
+function parsePlainText(rawText, style, defaultOuterWidth, defaultOuterHeight) {
+    var text = formatText(rawText);
     var overflow = style.overflow;
     var padding = style.padding;
+    var paddingH = padding ? padding[1] + padding[3] : 0;
+    var paddingV = padding ? padding[0] + padding[2] : 0;
     var font = style.font;
     var truncate = overflow === 'truncate';
     var calculatedLineHeight = getLineHeight(font);
-    var lineHeight = retrieve2(style.lineHeight, calculatedLineHeight);
-    var bgColorDrawn = !!(style.backgroundColor);
+    var lineHeight = util_retrieve2(style.lineHeight, calculatedLineHeight);
     var truncateLineOverflow = style.lineOverflow === 'truncate';
+    var isTruncated = false;
     var width = style.width;
+    if (width == null && defaultOuterWidth != null) {
+        width = defaultOuterWidth - paddingH;
+    }
+    var height = style.height;
+    if (height == null && defaultOuterHeight != null) {
+        height = defaultOuterHeight - paddingV;
+    }
     var lines;
     if (width != null && (overflow === 'break' || overflow === 'breakAll')) {
         lines = text ? wrapText(text, style.font, width, overflow === 'breakAll', 0).lines : [];
@@ -28886,37 +29804,39 @@ function parsePlainText(text, style) {
         lines = text ? text.split('\n') : [];
     }
     var contentHeight = lines.length * lineHeight;
-    var height = retrieve2(style.height, contentHeight);
+    if (height == null) {
+        height = contentHeight;
+    }
     if (contentHeight > height && truncateLineOverflow) {
         var lineCount = Math.floor(height / lineHeight);
+        isTruncated = isTruncated || (lines.length > lineCount);
         lines = lines.slice(0, lineCount);
+        contentHeight = lines.length * lineHeight;
     }
     if (text && truncate && width != null) {
         var options = prepareTruncateOptions(width, font, style.ellipsis, {
             minChar: style.truncateMinChar,
             placeholder: style.placeholder
         });
+        var singleOut = {};
         for (var i = 0; i < lines.length; i++) {
-            lines[i] = truncateSingleLine(lines[i], options);
+            truncateSingleLine(singleOut, lines[i], options);
+            lines[i] = singleOut.textLine;
+            isTruncated = isTruncated || singleOut.isTruncated;
         }
     }
     var outerHeight = height;
     var contentWidth = 0;
+    var fontMeasureInfo = ensureFontMeasureInfo(font);
     for (var i = 0; i < lines.length; i++) {
-        contentWidth = Math.max(getWidth(lines[i], font), contentWidth);
+        contentWidth = Math.max(measureWidth(fontMeasureInfo, lines[i]), contentWidth);
     }
     if (width == null) {
         width = contentWidth;
     }
-    var outerWidth = contentWidth;
-    if (padding) {
-        outerHeight += padding[0] + padding[2];
-        outerWidth += padding[1] + padding[3];
-        width += padding[1] + padding[3];
-    }
-    if (bgColorDrawn) {
-        outerWidth = width;
-    }
+    var outerWidth = width;
+    outerHeight += paddingV;
+    outerWidth += paddingH;
     return {
         lines: lines,
         height: height,
@@ -28926,7 +29846,8 @@ function parsePlainText(text, style) {
         calculatedLineHeight: calculatedLineHeight,
         contentWidth: contentWidth,
         contentHeight: contentHeight,
-        width: width
+        width: width,
+        isTruncated: isTruncated
     };
 }
 var RichTextToken = (function () {
@@ -28952,18 +29873,28 @@ var RichTextContentBlock = (function () {
         this.outerWidth = 0;
         this.outerHeight = 0;
         this.lines = [];
+        this.isTruncated = false;
     }
     return RichTextContentBlock;
 }());
 
-function parseRichText(text, style) {
+function parseRichText(rawText, style, defaultOuterWidth, defaultOuterHeight, topTextAlign) {
     var contentBlock = new RichTextContentBlock();
-    text != null && (text += '');
+    var text = formatText(rawText);
     if (!text) {
         return contentBlock;
     }
+    var stlPadding = style.padding;
+    var stlPaddingH = stlPadding ? stlPadding[1] + stlPadding[3] : 0;
+    var stlPaddingV = stlPadding ? stlPadding[0] + stlPadding[2] : 0;
     var topWidth = style.width;
+    if (topWidth == null && defaultOuterWidth != null) {
+        topWidth = defaultOuterWidth - stlPaddingH;
+    }
     var topHeight = style.height;
+    if (topHeight == null && defaultOuterHeight != null) {
+        topHeight = defaultOuterHeight - stlPaddingV;
+    }
     var overflow = style.overflow;
     var wrapInfo = (overflow === 'break' || overflow === 'breakAll') && topWidth != null
         ? { width: topWidth, accumWidth: 0, breakAll: overflow === 'breakAll' }
@@ -28984,9 +29915,9 @@ function parseRichText(text, style) {
     var pendingList = [];
     var calculatedHeight = 0;
     var calculatedWidth = 0;
-    var stlPadding = style.padding;
     var truncate = overflow === 'truncate';
     var truncateLine = style.lineOverflow === 'truncate';
+    var tmpTruncateOut = {};
     function finishLine(line, lineWidth, lineHeight) {
         line.width = lineWidth;
         line.lineHeight = lineHeight;
@@ -29004,14 +29935,15 @@ function parseRichText(text, style) {
             var paddingH = textPadding ? textPadding[1] + textPadding[3] : 0;
             var font = token.font = tokenStyle.font || style.font;
             token.contentHeight = getLineHeight(font);
-            var tokenHeight = retrieve2(tokenStyle.height, token.contentHeight);
+            var tokenHeight = util_retrieve2(tokenStyle.height, token.contentHeight);
             token.innerHeight = tokenHeight;
             textPadding && (tokenHeight += textPadding[0] + textPadding[2]);
             token.height = tokenHeight;
-            token.lineHeight = retrieve3(tokenStyle.lineHeight, style.lineHeight, tokenHeight);
-            token.align = tokenStyle && tokenStyle.align || style.align;
+            token.lineHeight = util_retrieve3(tokenStyle.lineHeight, style.lineHeight, tokenHeight);
+            token.align = tokenStyle && tokenStyle.align || topTextAlign;
             token.verticalAlign = tokenStyle && tokenStyle.verticalAlign || 'middle';
             if (truncateLine && topHeight != null && calculatedHeight + token.lineHeight > topHeight) {
+                var originalLength = contentBlock.lines.length;
                 if (j > 0) {
                     line.tokens = line.tokens.slice(0, j);
                     finishLine(line, lineWidth, lineHeight);
@@ -29020,6 +29952,7 @@ function parseRichText(text, style) {
                 else {
                     contentBlock.lines = contentBlock.lines.slice(0, i);
                 }
+                contentBlock.isTruncated = contentBlock.isTruncated || (contentBlock.lines.length < originalLength);
                 break outer;
             }
             var styleTokenWidth = tokenStyle.width;
@@ -29027,7 +29960,7 @@ function parseRichText(text, style) {
             if (typeof styleTokenWidth === 'string' && styleTokenWidth.charAt(styleTokenWidth.length - 1) === '%') {
                 token.percentWidth = styleTokenWidth;
                 pendingList.push(token);
-                token.contentWidth = getWidth(token.text, font);
+                token.contentWidth = measureWidth(ensureFontMeasureInfo(font), token.text);
             }
             else {
                 if (tokenWidthNotSpecified) {
@@ -29048,12 +29981,14 @@ function parseRichText(text, style) {
                         token.width = token.contentWidth = 0;
                     }
                     else {
-                        token.text = truncateText(token.text, remainTruncWidth - paddingH, font, style.ellipsis, { minChar: style.truncateMinChar });
-                        token.width = token.contentWidth = getWidth(token.text, font);
+                        truncateText2(tmpTruncateOut, token.text, remainTruncWidth - paddingH, font, style.ellipsis, { minChar: style.truncateMinChar });
+                        token.text = tmpTruncateOut.text;
+                        contentBlock.isTruncated = contentBlock.isTruncated || tmpTruncateOut.isTruncated;
+                        token.width = token.contentWidth = measureWidth(ensureFontMeasureInfo(font), token.text);
                     }
                 }
                 else {
-                    token.contentWidth = getWidth(token.text, font);
+                    token.contentWidth = measureWidth(ensureFontMeasureInfo(font), token.text);
                 }
             }
             token.width += paddingH;
@@ -29062,14 +29997,12 @@ function parseRichText(text, style) {
         }
         finishLine(line, lineWidth, lineHeight);
     }
-    contentBlock.outerWidth = contentBlock.width = retrieve2(topWidth, calculatedWidth);
-    contentBlock.outerHeight = contentBlock.height = retrieve2(topHeight, calculatedHeight);
+    contentBlock.outerWidth = contentBlock.width = util_retrieve2(topWidth, calculatedWidth);
+    contentBlock.outerHeight = contentBlock.height = util_retrieve2(topHeight, calculatedHeight);
     contentBlock.contentHeight = calculatedHeight;
     contentBlock.contentWidth = calculatedWidth;
-    if (stlPadding) {
-        contentBlock.outerWidth += stlPadding[1] + stlPadding[3];
-        contentBlock.outerHeight += stlPadding[0] + stlPadding[2];
-    }
+    contentBlock.outerWidth += stlPaddingH;
+    contentBlock.outerHeight += stlPaddingV;
     for (var i = 0; i < pendingList.length; i++) {
         var token = pendingList[i];
         var percentWidth = token.percentWidth;
@@ -29105,9 +30038,10 @@ function pushTokens(block, str, style, wrapInfo, styleName) {
             strLines = res.lines;
         }
     }
-    else {
+    if (!strLines) {
         strLines = str.split('\n');
     }
+    var fontMeasureInfo = ensureFontMeasureInfo(font);
     for (var i = 0; i < strLines.length; i++) {
         var text = strLines[i];
         var token = new RichTextToken();
@@ -29120,7 +30054,7 @@ function pushTokens(block, str, style, wrapInfo, styleName) {
         else {
             token.width = linesWidths
                 ? linesWidths[i]
-                : getWidth(text, font);
+                : measureWidth(fontMeasureInfo, text);
         }
         if (!i && !newLine) {
             var tokens = (lines[lines.length - 1] || (lines[0] = new RichTextLine())).tokens;
@@ -29141,7 +30075,7 @@ function isAlphabeticLetter(ch) {
         || code >= 0x1200 && code <= 0x13FF
         || code >= 0x1E00 && code <= 0x206F;
 }
-var breakCharMap = reduce(',&?/;] '.split(''), function (obj, ch) {
+var breakCharMap = util_reduce(',&?/;] '.split(''), function (obj, ch) {
     obj[ch] = true;
     return obj;
 }, {});
@@ -29161,6 +30095,7 @@ function wrapText(text, font, lineWidth, isBreakAll, lastAccumWidth) {
     var currentWord = '';
     var currentWordWidth = 0;
     var accumWidth = 0;
+    var fontMeasureInfo = ensureFontMeasureInfo(font);
     for (var i = 0; i < text.length; i++) {
         var ch = text.charAt(i);
         if (ch === '\n') {
@@ -29176,7 +30111,7 @@ function wrapText(text, font, lineWidth, isBreakAll, lastAccumWidth) {
             accumWidth = 0;
             continue;
         }
-        var chWidth = getWidth(ch, font);
+        var chWidth = measureCharWidth(fontMeasureInfo, ch.charCodeAt(0));
         var inWord = isBreakAll ? false : !isWordBreakChar(ch);
         if (!lines.length
             ? lastAccumWidth + accumWidth + chWidth > lineWidth
@@ -29236,11 +30171,6 @@ function wrapText(text, font, lineWidth, isBreakAll, lastAccumWidth) {
             line += ch;
         }
     }
-    if (!lines.length && !line) {
-        line = text;
-        currentWord = '';
-        currentWordWidth = 0;
-    }
     if (currentWord) {
         line += currentWord;
     }
@@ -29257,8 +30187,168 @@ function wrapText(text, font, lineWidth, isBreakAll, lastAccumWidth) {
         linesWidths: linesWidths
     };
 }
+function calcInnerTextOverflowArea(out, overflowRect, baseX, baseY, textAlign, textVerticalAlign) {
+    out.baseX = baseX;
+    out.baseY = baseY;
+    out.outerWidth = out.outerHeight = null;
+    if (!overflowRect) {
+        return;
+    }
+    var textWidth = overflowRect.width * 2;
+    var textHeight = overflowRect.height * 2;
+    core_BoundingRect.set(tmpCITCTextRect, adjustTextX(baseX, textWidth, textAlign), text_adjustTextY(baseY, textHeight, textVerticalAlign), textWidth, textHeight);
+    core_BoundingRect.intersect(overflowRect, tmpCITCTextRect, null, tmpCITCIntersectRectOpt);
+    var outIntersectRect = tmpCITCIntersectRectOpt.outIntersectRect;
+    out.outerWidth = outIntersectRect.width;
+    out.outerHeight = outIntersectRect.height;
+    out.baseX = adjustTextX(outIntersectRect.x, outIntersectRect.width, textAlign, true);
+    out.baseY = text_adjustTextY(outIntersectRect.y, outIntersectRect.height, textVerticalAlign, true);
+}
+var tmpCITCTextRect = new core_BoundingRect(0, 0, 0, 0);
+var tmpCITCIntersectRectOpt = { outIntersectRect: {}, clamp: true };
+function formatText(text) {
+    return text != null ? (text += '') : (text = '');
+}
+function tSpanCreateBoundingRect(style) {
+    var text = formatText(style.text);
+    var font = style.font;
+    var contentWidth = measureWidth(ensureFontMeasureInfo(font), text);
+    var contentHeight = getLineHeight(font);
+    return tSpanCreateBoundingRect2(style, contentWidth, contentHeight, null);
+}
+function tSpanCreateBoundingRect2(style, contentWidth, contentHeight, forceLineWidth) {
+    var rect = new core_BoundingRect(adjustTextX(style.x || 0, contentWidth, style.textAlign), text_adjustTextY(style.y || 0, contentHeight, style.textBaseline), contentWidth, contentHeight);
+    var lineWidth = forceLineWidth != null
+        ? forceLineWidth
+        : (tSpanHasStroke(style) ? style.lineWidth : 0);
+    if (lineWidth > 0) {
+        rect.x -= lineWidth / 2;
+        rect.y -= lineWidth / 2;
+        rect.width += lineWidth;
+        rect.height += lineWidth;
+    }
+    return rect;
+}
+function tSpanHasStroke(style) {
+    var stroke = style.stroke;
+    return stroke != null && stroke !== 'none' && style.lineWidth > 0;
+}
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/core/Transformable.js
+;// ./node_modules/echarts/node_modules/zrender/lib/core/vector.js
+function vector_create(x, y) {
+    if (x == null) {
+        x = 0;
+    }
+    if (y == null) {
+        y = 0;
+    }
+    return [x, y];
+}
+function vector_copy(out, v) {
+    out[0] = v[0];
+    out[1] = v[1];
+    return out;
+}
+function core_vector_clone(v) {
+    return [v[0], v[1]];
+}
+function vector_set(out, a, b) {
+    out[0] = a;
+    out[1] = b;
+    return out;
+}
+function vector_add(out, v1, v2) {
+    out[0] = v1[0] + v2[0];
+    out[1] = v1[1] + v2[1];
+    return out;
+}
+function vector_scaleAndAdd(out, v1, v2, a) {
+    out[0] = v1[0] + v2[0] * a;
+    out[1] = v1[1] + v2[1] * a;
+    return out;
+}
+function vector_sub(out, v1, v2) {
+    out[0] = v1[0] - v2[0];
+    out[1] = v1[1] - v2[1];
+    return out;
+}
+function vector_len(v) {
+    return Math.sqrt(vector_lenSquare(v));
+}
+var core_vector_length = vector_len;
+function vector_lenSquare(v) {
+    return v[0] * v[0] + v[1] * v[1];
+}
+var vector_lengthSquare = vector_lenSquare;
+function vector_mul(out, v1, v2) {
+    out[0] = v1[0] * v2[0];
+    out[1] = v1[1] * v2[1];
+    return out;
+}
+function vector_div(out, v1, v2) {
+    out[0] = v1[0] / v2[0];
+    out[1] = v1[1] / v2[1];
+    return out;
+}
+function vector_dot(v1, v2) {
+    return v1[0] * v2[0] + v1[1] * v2[1];
+}
+function vector_scale(out, v, s) {
+    out[0] = v[0] * s;
+    out[1] = v[1] * s;
+    return out;
+}
+function vector_normalize(out, v) {
+    var d = vector_len(v);
+    if (d === 0) {
+        out[0] = 0;
+        out[1] = 0;
+    }
+    else {
+        out[0] = v[0] / d;
+        out[1] = v[1] / d;
+    }
+    return out;
+}
+function vector_distance(v1, v2) {
+    return Math.sqrt((v1[0] - v2[0]) * (v1[0] - v2[0])
+        + (v1[1] - v2[1]) * (v1[1] - v2[1]));
+}
+var vector_dist = vector_distance;
+function vector_distanceSquare(v1, v2) {
+    return (v1[0] - v2[0]) * (v1[0] - v2[0])
+        + (v1[1] - v2[1]) * (v1[1] - v2[1]);
+}
+var vector_distSquare = vector_distanceSquare;
+function vector_negate(out, v) {
+    out[0] = -v[0];
+    out[1] = -v[1];
+    return out;
+}
+function vector_lerp(out, v1, v2, t) {
+    out[0] = v1[0] + t * (v2[0] - v1[0]);
+    out[1] = v1[1] + t * (v2[1] - v1[1]);
+    return out;
+}
+function vector_applyTransform(out, v, m) {
+    var x = v[0];
+    var y = v[1];
+    out[0] = m[0] * x + m[2] * y + m[4];
+    out[1] = m[1] * x + m[3] * y + m[5];
+    return out;
+}
+function vector_min(out, v1, v2) {
+    out[0] = Math.min(v1[0], v2[0]);
+    out[1] = Math.min(v1[1], v2[1]);
+    return out;
+}
+function vector_max(out, v1, v2) {
+    out[0] = Math.max(v1[0], v2[0]);
+    out[1] = Math.max(v1[1], v2[1]);
+    return out;
+}
+
+;// ./node_modules/echarts/node_modules/zrender/lib/core/Transformable.js
 
 
 var mIdentity = identity;
@@ -29385,6 +30475,7 @@ var Transformable = (function () {
         var parent = this.parent;
         var m = this.transform;
         if (parent && parent.transform) {
+            parent.invTransform = parent.invTransform || matrix_create();
             matrix_mul(tmpTransform, parent.invTransform, m);
             m = tmpTransform;
         }
@@ -29422,7 +30513,7 @@ var Transformable = (function () {
         var v2 = [x, y];
         var invTransform = this.invTransform;
         if (invTransform) {
-            applyTransform(v2, v2, invTransform);
+            vector_applyTransform(v2, v2, invTransform);
         }
         return v2;
     };
@@ -29430,7 +30521,7 @@ var Transformable = (function () {
         var v2 = [x, y];
         var transform = this.transform;
         if (transform) {
-            applyTransform(v2, v2, transform);
+            vector_applyTransform(v2, v2, transform);
         }
         return v2;
     };
@@ -29503,7 +30594,2053 @@ function copyTransform(target, source) {
 }
 /* harmony default export */ const core_Transformable = (Transformable);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/core/Eventful.js
+;// ./node_modules/echarts/node_modules/zrender/lib/animation/easing.js
+var easing_easingFuncs = {
+    linear: function (k) {
+        return k;
+    },
+    quadraticIn: function (k) {
+        return k * k;
+    },
+    quadraticOut: function (k) {
+        return k * (2 - k);
+    },
+    quadraticInOut: function (k) {
+        if ((k *= 2) < 1) {
+            return 0.5 * k * k;
+        }
+        return -0.5 * (--k * (k - 2) - 1);
+    },
+    cubicIn: function (k) {
+        return k * k * k;
+    },
+    cubicOut: function (k) {
+        return --k * k * k + 1;
+    },
+    cubicInOut: function (k) {
+        if ((k *= 2) < 1) {
+            return 0.5 * k * k * k;
+        }
+        return 0.5 * ((k -= 2) * k * k + 2);
+    },
+    quarticIn: function (k) {
+        return k * k * k * k;
+    },
+    quarticOut: function (k) {
+        return 1 - (--k * k * k * k);
+    },
+    quarticInOut: function (k) {
+        if ((k *= 2) < 1) {
+            return 0.5 * k * k * k * k;
+        }
+        return -0.5 * ((k -= 2) * k * k * k - 2);
+    },
+    quinticIn: function (k) {
+        return k * k * k * k * k;
+    },
+    quinticOut: function (k) {
+        return --k * k * k * k * k + 1;
+    },
+    quinticInOut: function (k) {
+        if ((k *= 2) < 1) {
+            return 0.5 * k * k * k * k * k;
+        }
+        return 0.5 * ((k -= 2) * k * k * k * k + 2);
+    },
+    sinusoidalIn: function (k) {
+        return 1 - Math.cos(k * Math.PI / 2);
+    },
+    sinusoidalOut: function (k) {
+        return Math.sin(k * Math.PI / 2);
+    },
+    sinusoidalInOut: function (k) {
+        return 0.5 * (1 - Math.cos(Math.PI * k));
+    },
+    exponentialIn: function (k) {
+        return k === 0 ? 0 : Math.pow(1024, k - 1);
+    },
+    exponentialOut: function (k) {
+        return k === 1 ? 1 : 1 - Math.pow(2, -10 * k);
+    },
+    exponentialInOut: function (k) {
+        if (k === 0) {
+            return 0;
+        }
+        if (k === 1) {
+            return 1;
+        }
+        if ((k *= 2) < 1) {
+            return 0.5 * Math.pow(1024, k - 1);
+        }
+        return 0.5 * (-Math.pow(2, -10 * (k - 1)) + 2);
+    },
+    circularIn: function (k) {
+        return 1 - Math.sqrt(1 - k * k);
+    },
+    circularOut: function (k) {
+        return Math.sqrt(1 - (--k * k));
+    },
+    circularInOut: function (k) {
+        if ((k *= 2) < 1) {
+            return -0.5 * (Math.sqrt(1 - k * k) - 1);
+        }
+        return 0.5 * (Math.sqrt(1 - (k -= 2) * k) + 1);
+    },
+    elasticIn: function (k) {
+        var s;
+        var a = 0.1;
+        var p = 0.4;
+        if (k === 0) {
+            return 0;
+        }
+        if (k === 1) {
+            return 1;
+        }
+        if (!a || a < 1) {
+            a = 1;
+            s = p / 4;
+        }
+        else {
+            s = p * Math.asin(1 / a) / (2 * Math.PI);
+        }
+        return -(a * Math.pow(2, 10 * (k -= 1))
+            * Math.sin((k - s) * (2 * Math.PI) / p));
+    },
+    elasticOut: function (k) {
+        var s;
+        var a = 0.1;
+        var p = 0.4;
+        if (k === 0) {
+            return 0;
+        }
+        if (k === 1) {
+            return 1;
+        }
+        if (!a || a < 1) {
+            a = 1;
+            s = p / 4;
+        }
+        else {
+            s = p * Math.asin(1 / a) / (2 * Math.PI);
+        }
+        return (a * Math.pow(2, -10 * k)
+            * Math.sin((k - s) * (2 * Math.PI) / p) + 1);
+    },
+    elasticInOut: function (k) {
+        var s;
+        var a = 0.1;
+        var p = 0.4;
+        if (k === 0) {
+            return 0;
+        }
+        if (k === 1) {
+            return 1;
+        }
+        if (!a || a < 1) {
+            a = 1;
+            s = p / 4;
+        }
+        else {
+            s = p * Math.asin(1 / a) / (2 * Math.PI);
+        }
+        if ((k *= 2) < 1) {
+            return -0.5 * (a * Math.pow(2, 10 * (k -= 1))
+                * Math.sin((k - s) * (2 * Math.PI) / p));
+        }
+        return a * Math.pow(2, -10 * (k -= 1))
+            * Math.sin((k - s) * (2 * Math.PI) / p) * 0.5 + 1;
+    },
+    backIn: function (k) {
+        var s = 1.70158;
+        return k * k * ((s + 1) * k - s);
+    },
+    backOut: function (k) {
+        var s = 1.70158;
+        return --k * k * ((s + 1) * k + s) + 1;
+    },
+    backInOut: function (k) {
+        var s = 1.70158 * 1.525;
+        if ((k *= 2) < 1) {
+            return 0.5 * (k * k * ((s + 1) * k - s));
+        }
+        return 0.5 * ((k -= 2) * k * ((s + 1) * k + s) + 2);
+    },
+    bounceIn: function (k) {
+        return 1 - easing_easingFuncs.bounceOut(1 - k);
+    },
+    bounceOut: function (k) {
+        if (k < (1 / 2.75)) {
+            return 7.5625 * k * k;
+        }
+        else if (k < (2 / 2.75)) {
+            return 7.5625 * (k -= (1.5 / 2.75)) * k + 0.75;
+        }
+        else if (k < (2.5 / 2.75)) {
+            return 7.5625 * (k -= (2.25 / 2.75)) * k + 0.9375;
+        }
+        else {
+            return 7.5625 * (k -= (2.625 / 2.75)) * k + 0.984375;
+        }
+    },
+    bounceInOut: function (k) {
+        if (k < 0.5) {
+            return easing_easingFuncs.bounceIn(k * 2) * 0.5;
+        }
+        return easing_easingFuncs.bounceOut(k * 2 - 1) * 0.5 + 0.5;
+    }
+};
+/* harmony default export */ const lib_animation_easing = (easing_easingFuncs);
+
+;// ./node_modules/echarts/node_modules/zrender/lib/core/curve.js
+
+var curve_mathPow = Math.pow;
+var curve_mathSqrt = Math.sqrt;
+var core_curve_EPSILON = 1e-8;
+var curve_EPSILON_NUMERIC = 1e-4;
+var curve_THREE_SQRT = curve_mathSqrt(3);
+var curve_ONE_THIRD = 1 / 3;
+var curve_v0 = vector_create();
+var curve_v1 = vector_create();
+var curve_v2 = vector_create();
+function curve_isAroundZero(val) {
+    return val > -core_curve_EPSILON && val < core_curve_EPSILON;
+}
+function curve_isNotAroundZero(val) {
+    return val > core_curve_EPSILON || val < -core_curve_EPSILON;
+}
+function curve_cubicAt(p0, p1, p2, p3, t) {
+    var onet = 1 - t;
+    return onet * onet * (onet * p0 + 3 * t * p1)
+        + t * t * (t * p3 + 3 * onet * p2);
+}
+function curve_cubicDerivativeAt(p0, p1, p2, p3, t) {
+    var onet = 1 - t;
+    return 3 * (((p1 - p0) * onet + 2 * (p2 - p1) * t) * onet
+        + (p3 - p2) * t * t);
+}
+function curve_cubicRootAt(p0, p1, p2, p3, val, roots) {
+    var a = p3 + 3 * (p1 - p2) - p0;
+    var b = 3 * (p2 - p1 * 2 + p0);
+    var c = 3 * (p1 - p0);
+    var d = p0 - val;
+    var A = b * b - 3 * a * c;
+    var B = b * c - 9 * a * d;
+    var C = c * c - 3 * b * d;
+    var n = 0;
+    if (curve_isAroundZero(A) && curve_isAroundZero(B)) {
+        if (curve_isAroundZero(b)) {
+            roots[0] = 0;
+        }
+        else {
+            var t1 = -c / b;
+            if (t1 >= 0 && t1 <= 1) {
+                roots[n++] = t1;
+            }
+        }
+    }
+    else {
+        var disc = B * B - 4 * A * C;
+        if (curve_isAroundZero(disc)) {
+            var K = B / A;
+            var t1 = -b / a + K;
+            var t2 = -K / 2;
+            if (t1 >= 0 && t1 <= 1) {
+                roots[n++] = t1;
+            }
+            if (t2 >= 0 && t2 <= 1) {
+                roots[n++] = t2;
+            }
+        }
+        else if (disc > 0) {
+            var discSqrt = curve_mathSqrt(disc);
+            var Y1 = A * b + 1.5 * a * (-B + discSqrt);
+            var Y2 = A * b + 1.5 * a * (-B - discSqrt);
+            if (Y1 < 0) {
+                Y1 = -curve_mathPow(-Y1, curve_ONE_THIRD);
+            }
+            else {
+                Y1 = curve_mathPow(Y1, curve_ONE_THIRD);
+            }
+            if (Y2 < 0) {
+                Y2 = -curve_mathPow(-Y2, curve_ONE_THIRD);
+            }
+            else {
+                Y2 = curve_mathPow(Y2, curve_ONE_THIRD);
+            }
+            var t1 = (-b - (Y1 + Y2)) / (3 * a);
+            if (t1 >= 0 && t1 <= 1) {
+                roots[n++] = t1;
+            }
+        }
+        else {
+            var T = (2 * A * b - 3 * a * B) / (2 * curve_mathSqrt(A * A * A));
+            var theta = Math.acos(T) / 3;
+            var ASqrt = curve_mathSqrt(A);
+            var tmp = Math.cos(theta);
+            var t1 = (-b - 2 * ASqrt * tmp) / (3 * a);
+            var t2 = (-b + ASqrt * (tmp + curve_THREE_SQRT * Math.sin(theta))) / (3 * a);
+            var t3 = (-b + ASqrt * (tmp - curve_THREE_SQRT * Math.sin(theta))) / (3 * a);
+            if (t1 >= 0 && t1 <= 1) {
+                roots[n++] = t1;
+            }
+            if (t2 >= 0 && t2 <= 1) {
+                roots[n++] = t2;
+            }
+            if (t3 >= 0 && t3 <= 1) {
+                roots[n++] = t3;
+            }
+        }
+    }
+    return n;
+}
+function curve_cubicExtrema(p0, p1, p2, p3, extrema) {
+    var b = 6 * p2 - 12 * p1 + 6 * p0;
+    var a = 9 * p1 + 3 * p3 - 3 * p0 - 9 * p2;
+    var c = 3 * p1 - 3 * p0;
+    var n = 0;
+    if (curve_isAroundZero(a)) {
+        if (curve_isNotAroundZero(b)) {
+            var t1 = -c / b;
+            if (t1 >= 0 && t1 <= 1) {
+                extrema[n++] = t1;
+            }
+        }
+    }
+    else {
+        var disc = b * b - 4 * a * c;
+        if (curve_isAroundZero(disc)) {
+            extrema[0] = -b / (2 * a);
+        }
+        else if (disc > 0) {
+            var discSqrt = curve_mathSqrt(disc);
+            var t1 = (-b + discSqrt) / (2 * a);
+            var t2 = (-b - discSqrt) / (2 * a);
+            if (t1 >= 0 && t1 <= 1) {
+                extrema[n++] = t1;
+            }
+            if (t2 >= 0 && t2 <= 1) {
+                extrema[n++] = t2;
+            }
+        }
+    }
+    return n;
+}
+function curve_cubicSubdivide(p0, p1, p2, p3, t, out) {
+    var p01 = (p1 - p0) * t + p0;
+    var p12 = (p2 - p1) * t + p1;
+    var p23 = (p3 - p2) * t + p2;
+    var p012 = (p12 - p01) * t + p01;
+    var p123 = (p23 - p12) * t + p12;
+    var p0123 = (p123 - p012) * t + p012;
+    out[0] = p0;
+    out[1] = p01;
+    out[2] = p012;
+    out[3] = p0123;
+    out[4] = p0123;
+    out[5] = p123;
+    out[6] = p23;
+    out[7] = p3;
+}
+function curve_cubicProjectPoint(x0, y0, x1, y1, x2, y2, x3, y3, x, y, out) {
+    var t;
+    var interval = 0.005;
+    var d = Infinity;
+    var prev;
+    var next;
+    var d1;
+    var d2;
+    curve_v0[0] = x;
+    curve_v0[1] = y;
+    for (var _t = 0; _t < 1; _t += 0.05) {
+        curve_v1[0] = curve_cubicAt(x0, x1, x2, x3, _t);
+        curve_v1[1] = curve_cubicAt(y0, y1, y2, y3, _t);
+        d1 = vector_distSquare(curve_v0, curve_v1);
+        if (d1 < d) {
+            t = _t;
+            d = d1;
+        }
+    }
+    d = Infinity;
+    for (var i = 0; i < 32; i++) {
+        if (interval < curve_EPSILON_NUMERIC) {
+            break;
+        }
+        prev = t - interval;
+        next = t + interval;
+        curve_v1[0] = curve_cubicAt(x0, x1, x2, x3, prev);
+        curve_v1[1] = curve_cubicAt(y0, y1, y2, y3, prev);
+        d1 = vector_distSquare(curve_v1, curve_v0);
+        if (prev >= 0 && d1 < d) {
+            t = prev;
+            d = d1;
+        }
+        else {
+            curve_v2[0] = curve_cubicAt(x0, x1, x2, x3, next);
+            curve_v2[1] = curve_cubicAt(y0, y1, y2, y3, next);
+            d2 = vector_distSquare(curve_v2, curve_v0);
+            if (next <= 1 && d2 < d) {
+                t = next;
+                d = d2;
+            }
+            else {
+                interval *= 0.5;
+            }
+        }
+    }
+    if (out) {
+        out[0] = curve_cubicAt(x0, x1, x2, x3, t);
+        out[1] = curve_cubicAt(y0, y1, y2, y3, t);
+    }
+    return curve_mathSqrt(d);
+}
+function curve_cubicLength(x0, y0, x1, y1, x2, y2, x3, y3, iteration) {
+    var px = x0;
+    var py = y0;
+    var d = 0;
+    var step = 1 / iteration;
+    for (var i = 1; i <= iteration; i++) {
+        var t = i * step;
+        var x = curve_cubicAt(x0, x1, x2, x3, t);
+        var y = curve_cubicAt(y0, y1, y2, y3, t);
+        var dx = x - px;
+        var dy = y - py;
+        d += Math.sqrt(dx * dx + dy * dy);
+        px = x;
+        py = y;
+    }
+    return d;
+}
+function curve_quadraticAt(p0, p1, p2, t) {
+    var onet = 1 - t;
+    return onet * (onet * p0 + 2 * t * p1) + t * t * p2;
+}
+function curve_quadraticDerivativeAt(p0, p1, p2, t) {
+    return 2 * ((1 - t) * (p1 - p0) + t * (p2 - p1));
+}
+function curve_quadraticRootAt(p0, p1, p2, val, roots) {
+    var a = p0 - 2 * p1 + p2;
+    var b = 2 * (p1 - p0);
+    var c = p0 - val;
+    var n = 0;
+    if (curve_isAroundZero(a)) {
+        if (curve_isNotAroundZero(b)) {
+            var t1 = -c / b;
+            if (t1 >= 0 && t1 <= 1) {
+                roots[n++] = t1;
+            }
+        }
+    }
+    else {
+        var disc = b * b - 4 * a * c;
+        if (curve_isAroundZero(disc)) {
+            var t1 = -b / (2 * a);
+            if (t1 >= 0 && t1 <= 1) {
+                roots[n++] = t1;
+            }
+        }
+        else if (disc > 0) {
+            var discSqrt = curve_mathSqrt(disc);
+            var t1 = (-b + discSqrt) / (2 * a);
+            var t2 = (-b - discSqrt) / (2 * a);
+            if (t1 >= 0 && t1 <= 1) {
+                roots[n++] = t1;
+            }
+            if (t2 >= 0 && t2 <= 1) {
+                roots[n++] = t2;
+            }
+        }
+    }
+    return n;
+}
+function curve_quadraticExtremum(p0, p1, p2) {
+    var divider = p0 + p2 - 2 * p1;
+    if (divider === 0) {
+        return 0.5;
+    }
+    else {
+        return (p0 - p1) / divider;
+    }
+}
+function curve_quadraticSubdivide(p0, p1, p2, t, out) {
+    var p01 = (p1 - p0) * t + p0;
+    var p12 = (p2 - p1) * t + p1;
+    var p012 = (p12 - p01) * t + p01;
+    out[0] = p0;
+    out[1] = p01;
+    out[2] = p012;
+    out[3] = p012;
+    out[4] = p12;
+    out[5] = p2;
+}
+function curve_quadraticProjectPoint(x0, y0, x1, y1, x2, y2, x, y, out) {
+    var t;
+    var interval = 0.005;
+    var d = Infinity;
+    curve_v0[0] = x;
+    curve_v0[1] = y;
+    for (var _t = 0; _t < 1; _t += 0.05) {
+        curve_v1[0] = curve_quadraticAt(x0, x1, x2, _t);
+        curve_v1[1] = curve_quadraticAt(y0, y1, y2, _t);
+        var d1 = vector_distSquare(curve_v0, curve_v1);
+        if (d1 < d) {
+            t = _t;
+            d = d1;
+        }
+    }
+    d = Infinity;
+    for (var i = 0; i < 32; i++) {
+        if (interval < curve_EPSILON_NUMERIC) {
+            break;
+        }
+        var prev = t - interval;
+        var next = t + interval;
+        curve_v1[0] = curve_quadraticAt(x0, x1, x2, prev);
+        curve_v1[1] = curve_quadraticAt(y0, y1, y2, prev);
+        var d1 = vector_distSquare(curve_v1, curve_v0);
+        if (prev >= 0 && d1 < d) {
+            t = prev;
+            d = d1;
+        }
+        else {
+            curve_v2[0] = curve_quadraticAt(x0, x1, x2, next);
+            curve_v2[1] = curve_quadraticAt(y0, y1, y2, next);
+            var d2 = vector_distSquare(curve_v2, curve_v0);
+            if (next <= 1 && d2 < d) {
+                t = next;
+                d = d2;
+            }
+            else {
+                interval *= 0.5;
+            }
+        }
+    }
+    if (out) {
+        out[0] = curve_quadraticAt(x0, x1, x2, t);
+        out[1] = curve_quadraticAt(y0, y1, y2, t);
+    }
+    return curve_mathSqrt(d);
+}
+function curve_quadraticLength(x0, y0, x1, y1, x2, y2, iteration) {
+    var px = x0;
+    var py = y0;
+    var d = 0;
+    var step = 1 / iteration;
+    for (var i = 1; i <= iteration; i++) {
+        var t = i * step;
+        var x = curve_quadraticAt(x0, x1, x2, t);
+        var y = curve_quadraticAt(y0, y1, y2, t);
+        var dx = x - px;
+        var dy = y - py;
+        d += Math.sqrt(dx * dx + dy * dy);
+        px = x;
+        py = y;
+    }
+    return d;
+}
+
+;// ./node_modules/echarts/node_modules/zrender/lib/animation/cubicEasing.js
+
+
+var cubicEasing_regexp = /cubic-bezier\(([0-9,\.e ]+)\)/;
+function cubicEasing_createCubicEasingFunc(cubicEasingStr) {
+    var cubic = cubicEasingStr && cubicEasing_regexp.exec(cubicEasingStr);
+    if (cubic) {
+        var points = cubic[1].split(',');
+        var a_1 = +util_trim(points[0]);
+        var b_1 = +util_trim(points[1]);
+        var c_1 = +util_trim(points[2]);
+        var d_1 = +util_trim(points[3]);
+        if (isNaN(a_1 + b_1 + c_1 + d_1)) {
+            return;
+        }
+        var roots_1 = [];
+        return function (p) {
+            return p <= 0
+                ? 0 : p >= 1
+                ? 1
+                : curve_cubicRootAt(0, a_1, c_1, 1, p, roots_1) && curve_cubicAt(0, b_1, d_1, 1, roots_1[0]);
+        };
+    }
+}
+
+;// ./node_modules/echarts/node_modules/zrender/lib/animation/Clip.js
+
+
+
+var Clip_Clip = (function () {
+    function Clip(opts) {
+        this._inited = false;
+        this._startTime = 0;
+        this._pausedTime = 0;
+        this._paused = false;
+        this._life = opts.life || 1000;
+        this._delay = opts.delay || 0;
+        this.loop = opts.loop || false;
+        this.onframe = opts.onframe || core_util_noop;
+        this.ondestroy = opts.ondestroy || core_util_noop;
+        this.onrestart = opts.onrestart || core_util_noop;
+        opts.easing && this.setEasing(opts.easing);
+    }
+    Clip.prototype.step = function (globalTime, deltaTime) {
+        if (!this._inited) {
+            this._startTime = globalTime + this._delay;
+            this._inited = true;
+        }
+        if (this._paused) {
+            this._pausedTime += deltaTime;
+            return;
+        }
+        var life = this._life;
+        var elapsedTime = globalTime - this._startTime - this._pausedTime;
+        var percent = elapsedTime / life;
+        if (percent < 0) {
+            percent = 0;
+        }
+        percent = Math.min(percent, 1);
+        var easingFunc = this.easingFunc;
+        var schedule = easingFunc ? easingFunc(percent) : percent;
+        this.onframe(schedule);
+        if (percent === 1) {
+            if (this.loop) {
+                var remainder = elapsedTime % life;
+                this._startTime = globalTime - remainder;
+                this._pausedTime = 0;
+                this.onrestart();
+            }
+            else {
+                return true;
+            }
+        }
+        return false;
+    };
+    Clip.prototype.pause = function () {
+        this._paused = true;
+    };
+    Clip.prototype.resume = function () {
+        this._paused = false;
+    };
+    Clip.prototype.setEasing = function (easing) {
+        this.easing = easing;
+        this.easingFunc = util_isFunction(easing)
+            ? easing
+            : lib_animation_easing[easing] || cubicEasing_createCubicEasingFunc(easing);
+    };
+    return Clip;
+}());
+/* harmony default export */ const lib_animation_Clip = (Clip_Clip);
+
+;// ./node_modules/echarts/node_modules/zrender/lib/tool/color.js
+
+
+var tool_color_kCSSColorTable = {
+    'transparent': [0, 0, 0, 0], 'aliceblue': [240, 248, 255, 1],
+    'antiquewhite': [250, 235, 215, 1], 'aqua': [0, 255, 255, 1],
+    'aquamarine': [127, 255, 212, 1], 'azure': [240, 255, 255, 1],
+    'beige': [245, 245, 220, 1], 'bisque': [255, 228, 196, 1],
+    'black': [0, 0, 0, 1], 'blanchedalmond': [255, 235, 205, 1],
+    'blue': [0, 0, 255, 1], 'blueviolet': [138, 43, 226, 1],
+    'brown': [165, 42, 42, 1], 'burlywood': [222, 184, 135, 1],
+    'cadetblue': [95, 158, 160, 1], 'chartreuse': [127, 255, 0, 1],
+    'chocolate': [210, 105, 30, 1], 'coral': [255, 127, 80, 1],
+    'cornflowerblue': [100, 149, 237, 1], 'cornsilk': [255, 248, 220, 1],
+    'crimson': [220, 20, 60, 1], 'cyan': [0, 255, 255, 1],
+    'darkblue': [0, 0, 139, 1], 'darkcyan': [0, 139, 139, 1],
+    'darkgoldenrod': [184, 134, 11, 1], 'darkgray': [169, 169, 169, 1],
+    'darkgreen': [0, 100, 0, 1], 'darkgrey': [169, 169, 169, 1],
+    'darkkhaki': [189, 183, 107, 1], 'darkmagenta': [139, 0, 139, 1],
+    'darkolivegreen': [85, 107, 47, 1], 'darkorange': [255, 140, 0, 1],
+    'darkorchid': [153, 50, 204, 1], 'darkred': [139, 0, 0, 1],
+    'darksalmon': [233, 150, 122, 1], 'darkseagreen': [143, 188, 143, 1],
+    'darkslateblue': [72, 61, 139, 1], 'darkslategray': [47, 79, 79, 1],
+    'darkslategrey': [47, 79, 79, 1], 'darkturquoise': [0, 206, 209, 1],
+    'darkviolet': [148, 0, 211, 1], 'deeppink': [255, 20, 147, 1],
+    'deepskyblue': [0, 191, 255, 1], 'dimgray': [105, 105, 105, 1],
+    'dimgrey': [105, 105, 105, 1], 'dodgerblue': [30, 144, 255, 1],
+    'firebrick': [178, 34, 34, 1], 'floralwhite': [255, 250, 240, 1],
+    'forestgreen': [34, 139, 34, 1], 'fuchsia': [255, 0, 255, 1],
+    'gainsboro': [220, 220, 220, 1], 'ghostwhite': [248, 248, 255, 1],
+    'gold': [255, 215, 0, 1], 'goldenrod': [218, 165, 32, 1],
+    'gray': [128, 128, 128, 1], 'green': [0, 128, 0, 1],
+    'greenyellow': [173, 255, 47, 1], 'grey': [128, 128, 128, 1],
+    'honeydew': [240, 255, 240, 1], 'hotpink': [255, 105, 180, 1],
+    'indianred': [205, 92, 92, 1], 'indigo': [75, 0, 130, 1],
+    'ivory': [255, 255, 240, 1], 'khaki': [240, 230, 140, 1],
+    'lavender': [230, 230, 250, 1], 'lavenderblush': [255, 240, 245, 1],
+    'lawngreen': [124, 252, 0, 1], 'lemonchiffon': [255, 250, 205, 1],
+    'lightblue': [173, 216, 230, 1], 'lightcoral': [240, 128, 128, 1],
+    'lightcyan': [224, 255, 255, 1], 'lightgoldenrodyellow': [250, 250, 210, 1],
+    'lightgray': [211, 211, 211, 1], 'lightgreen': [144, 238, 144, 1],
+    'lightgrey': [211, 211, 211, 1], 'lightpink': [255, 182, 193, 1],
+    'lightsalmon': [255, 160, 122, 1], 'lightseagreen': [32, 178, 170, 1],
+    'lightskyblue': [135, 206, 250, 1], 'lightslategray': [119, 136, 153, 1],
+    'lightslategrey': [119, 136, 153, 1], 'lightsteelblue': [176, 196, 222, 1],
+    'lightyellow': [255, 255, 224, 1], 'lime': [0, 255, 0, 1],
+    'limegreen': [50, 205, 50, 1], 'linen': [250, 240, 230, 1],
+    'magenta': [255, 0, 255, 1], 'maroon': [128, 0, 0, 1],
+    'mediumaquamarine': [102, 205, 170, 1], 'mediumblue': [0, 0, 205, 1],
+    'mediumorchid': [186, 85, 211, 1], 'mediumpurple': [147, 112, 219, 1],
+    'mediumseagreen': [60, 179, 113, 1], 'mediumslateblue': [123, 104, 238, 1],
+    'mediumspringgreen': [0, 250, 154, 1], 'mediumturquoise': [72, 209, 204, 1],
+    'mediumvioletred': [199, 21, 133, 1], 'midnightblue': [25, 25, 112, 1],
+    'mintcream': [245, 255, 250, 1], 'mistyrose': [255, 228, 225, 1],
+    'moccasin': [255, 228, 181, 1], 'navajowhite': [255, 222, 173, 1],
+    'navy': [0, 0, 128, 1], 'oldlace': [253, 245, 230, 1],
+    'olive': [128, 128, 0, 1], 'olivedrab': [107, 142, 35, 1],
+    'orange': [255, 165, 0, 1], 'orangered': [255, 69, 0, 1],
+    'orchid': [218, 112, 214, 1], 'palegoldenrod': [238, 232, 170, 1],
+    'palegreen': [152, 251, 152, 1], 'paleturquoise': [175, 238, 238, 1],
+    'palevioletred': [219, 112, 147, 1], 'papayawhip': [255, 239, 213, 1],
+    'peachpuff': [255, 218, 185, 1], 'peru': [205, 133, 63, 1],
+    'pink': [255, 192, 203, 1], 'plum': [221, 160, 221, 1],
+    'powderblue': [176, 224, 230, 1], 'purple': [128, 0, 128, 1],
+    'red': [255, 0, 0, 1], 'rosybrown': [188, 143, 143, 1],
+    'royalblue': [65, 105, 225, 1], 'saddlebrown': [139, 69, 19, 1],
+    'salmon': [250, 128, 114, 1], 'sandybrown': [244, 164, 96, 1],
+    'seagreen': [46, 139, 87, 1], 'seashell': [255, 245, 238, 1],
+    'sienna': [160, 82, 45, 1], 'silver': [192, 192, 192, 1],
+    'skyblue': [135, 206, 235, 1], 'slateblue': [106, 90, 205, 1],
+    'slategray': [112, 128, 144, 1], 'slategrey': [112, 128, 144, 1],
+    'snow': [255, 250, 250, 1], 'springgreen': [0, 255, 127, 1],
+    'steelblue': [70, 130, 180, 1], 'tan': [210, 180, 140, 1],
+    'teal': [0, 128, 128, 1], 'thistle': [216, 191, 216, 1],
+    'tomato': [255, 99, 71, 1], 'turquoise': [64, 224, 208, 1],
+    'violet': [238, 130, 238, 1], 'wheat': [245, 222, 179, 1],
+    'white': [255, 255, 255, 1], 'whitesmoke': [245, 245, 245, 1],
+    'yellow': [255, 255, 0, 1], 'yellowgreen': [154, 205, 50, 1]
+};
+function tool_color_clampCssByte(i) {
+    i = Math.round(i);
+    return i < 0 ? 0 : i > 255 ? 255 : i;
+}
+function tool_color_clampCssAngle(i) {
+    i = Math.round(i);
+    return i < 0 ? 0 : i > 360 ? 360 : i;
+}
+function tool_color_clampCssFloat(f) {
+    return f < 0 ? 0 : f > 1 ? 1 : f;
+}
+function tool_color_parseCssInt(val) {
+    var str = val;
+    if (str.length && str.charAt(str.length - 1) === '%') {
+        return tool_color_clampCssByte(parseFloat(str) / 100 * 255);
+    }
+    return tool_color_clampCssByte(parseInt(str, 10));
+}
+function tool_color_parseCssFloat(val) {
+    var str = val;
+    if (str.length && str.charAt(str.length - 1) === '%') {
+        return tool_color_clampCssFloat(parseFloat(str) / 100);
+    }
+    return tool_color_clampCssFloat(parseFloat(str));
+}
+function tool_color_cssHueToRgb(m1, m2, h) {
+    if (h < 0) {
+        h += 1;
+    }
+    else if (h > 1) {
+        h -= 1;
+    }
+    if (h * 6 < 1) {
+        return m1 + (m2 - m1) * h * 6;
+    }
+    if (h * 2 < 1) {
+        return m2;
+    }
+    if (h * 3 < 2) {
+        return m1 + (m2 - m1) * (2 / 3 - h) * 6;
+    }
+    return m1;
+}
+function tool_color_lerpNumber(a, b, p) {
+    return a + (b - a) * p;
+}
+function tool_color_setRgba(out, r, g, b, a) {
+    out[0] = r;
+    out[1] = g;
+    out[2] = b;
+    out[3] = a;
+    return out;
+}
+function tool_color_copyRgba(out, a) {
+    out[0] = a[0];
+    out[1] = a[1];
+    out[2] = a[2];
+    out[3] = a[3];
+    return out;
+}
+var tool_color_colorCache = new zrender_lib_core_LRU(20);
+var tool_color_lastRemovedArr = null;
+function tool_color_putToCache(colorStr, rgbaArr) {
+    if (tool_color_lastRemovedArr) {
+        tool_color_copyRgba(tool_color_lastRemovedArr, rgbaArr);
+    }
+    tool_color_lastRemovedArr = tool_color_colorCache.put(colorStr, tool_color_lastRemovedArr || (rgbaArr.slice()));
+}
+function color_parse(colorStr, rgbaArr) {
+    if (!colorStr) {
+        return;
+    }
+    rgbaArr = rgbaArr || [];
+    var cached = tool_color_colorCache.get(colorStr);
+    if (cached) {
+        return tool_color_copyRgba(rgbaArr, cached);
+    }
+    colorStr = colorStr + '';
+    var str = colorStr.replace(/ /g, '').toLowerCase();
+    if (str in tool_color_kCSSColorTable) {
+        tool_color_copyRgba(rgbaArr, tool_color_kCSSColorTable[str]);
+        tool_color_putToCache(colorStr, rgbaArr);
+        return rgbaArr;
+    }
+    var strLen = str.length;
+    if (str.charAt(0) === '#') {
+        if (strLen === 4 || strLen === 5) {
+            var iv = parseInt(str.slice(1, 4), 16);
+            if (!(iv >= 0 && iv <= 0xfff)) {
+                tool_color_setRgba(rgbaArr, 0, 0, 0, 1);
+                return;
+            }
+            tool_color_setRgba(rgbaArr, ((iv & 0xf00) >> 4) | ((iv & 0xf00) >> 8), (iv & 0xf0) | ((iv & 0xf0) >> 4), (iv & 0xf) | ((iv & 0xf) << 4), strLen === 5 ? parseInt(str.slice(4), 16) / 0xf : 1);
+            tool_color_putToCache(colorStr, rgbaArr);
+            return rgbaArr;
+        }
+        else if (strLen === 7 || strLen === 9) {
+            var iv = parseInt(str.slice(1, 7), 16);
+            if (!(iv >= 0 && iv <= 0xffffff)) {
+                tool_color_setRgba(rgbaArr, 0, 0, 0, 1);
+                return;
+            }
+            tool_color_setRgba(rgbaArr, (iv & 0xff0000) >> 16, (iv & 0xff00) >> 8, iv & 0xff, strLen === 9 ? parseInt(str.slice(7), 16) / 0xff : 1);
+            tool_color_putToCache(colorStr, rgbaArr);
+            return rgbaArr;
+        }
+        return;
+    }
+    var op = str.indexOf('(');
+    var ep = str.indexOf(')');
+    if (op !== -1 && ep + 1 === strLen) {
+        var fname = str.substr(0, op);
+        var params = str.substr(op + 1, ep - (op + 1)).split(',');
+        var alpha = 1;
+        switch (fname) {
+            case 'rgba':
+                if (params.length !== 4) {
+                    return params.length === 3
+                        ? tool_color_setRgba(rgbaArr, +params[0], +params[1], +params[2], 1)
+                        : tool_color_setRgba(rgbaArr, 0, 0, 0, 1);
+                }
+                alpha = tool_color_parseCssFloat(params.pop());
+            case 'rgb':
+                if (params.length >= 3) {
+                    tool_color_setRgba(rgbaArr, tool_color_parseCssInt(params[0]), tool_color_parseCssInt(params[1]), tool_color_parseCssInt(params[2]), params.length === 3 ? alpha : tool_color_parseCssFloat(params[3]));
+                    tool_color_putToCache(colorStr, rgbaArr);
+                    return rgbaArr;
+                }
+                else {
+                    tool_color_setRgba(rgbaArr, 0, 0, 0, 1);
+                    return;
+                }
+            case 'hsla':
+                if (params.length !== 4) {
+                    tool_color_setRgba(rgbaArr, 0, 0, 0, 1);
+                    return;
+                }
+                params[3] = tool_color_parseCssFloat(params[3]);
+                tool_color_hsla2rgba(params, rgbaArr);
+                tool_color_putToCache(colorStr, rgbaArr);
+                return rgbaArr;
+            case 'hsl':
+                if (params.length !== 3) {
+                    tool_color_setRgba(rgbaArr, 0, 0, 0, 1);
+                    return;
+                }
+                tool_color_hsla2rgba(params, rgbaArr);
+                tool_color_putToCache(colorStr, rgbaArr);
+                return rgbaArr;
+            default:
+                return;
+        }
+    }
+    tool_color_setRgba(rgbaArr, 0, 0, 0, 1);
+    return;
+}
+function tool_color_hsla2rgba(hsla, rgba) {
+    var h = (((parseFloat(hsla[0]) % 360) + 360) % 360) / 360;
+    var s = tool_color_parseCssFloat(hsla[1]);
+    var l = tool_color_parseCssFloat(hsla[2]);
+    var m2 = l <= 0.5 ? l * (s + 1) : l + s - l * s;
+    var m1 = l * 2 - m2;
+    rgba = rgba || [];
+    tool_color_setRgba(rgba, tool_color_clampCssByte(tool_color_cssHueToRgb(m1, m2, h + 1 / 3) * 255), tool_color_clampCssByte(tool_color_cssHueToRgb(m1, m2, h) * 255), tool_color_clampCssByte(tool_color_cssHueToRgb(m1, m2, h - 1 / 3) * 255), 1);
+    if (hsla.length === 4) {
+        rgba[3] = hsla[3];
+    }
+    return rgba;
+}
+function tool_color_rgba2hsla(rgba) {
+    if (!rgba) {
+        return;
+    }
+    var R = rgba[0] / 255;
+    var G = rgba[1] / 255;
+    var B = rgba[2] / 255;
+    var vMin = Math.min(R, G, B);
+    var vMax = Math.max(R, G, B);
+    var delta = vMax - vMin;
+    var L = (vMax + vMin) / 2;
+    var H;
+    var S;
+    if (delta === 0) {
+        H = 0;
+        S = 0;
+    }
+    else {
+        if (L < 0.5) {
+            S = delta / (vMax + vMin);
+        }
+        else {
+            S = delta / (2 - vMax - vMin);
+        }
+        var deltaR = (((vMax - R) / 6) + (delta / 2)) / delta;
+        var deltaG = (((vMax - G) / 6) + (delta / 2)) / delta;
+        var deltaB = (((vMax - B) / 6) + (delta / 2)) / delta;
+        if (R === vMax) {
+            H = deltaB - deltaG;
+        }
+        else if (G === vMax) {
+            H = (1 / 3) + deltaR - deltaB;
+        }
+        else if (B === vMax) {
+            H = (2 / 3) + deltaG - deltaR;
+        }
+        if (H < 0) {
+            H += 1;
+        }
+        if (H > 1) {
+            H -= 1;
+        }
+    }
+    var hsla = [H * 360, S, L];
+    if (rgba[3] != null) {
+        hsla.push(rgba[3]);
+    }
+    return hsla;
+}
+function color_lift(color, level) {
+    var colorArr = color_parse(color);
+    if (colorArr) {
+        for (var i = 0; i < 3; i++) {
+            if (level < 0) {
+                colorArr[i] = colorArr[i] * (1 - level) | 0;
+            }
+            else {
+                colorArr[i] = ((255 - colorArr[i]) * level + colorArr[i]) | 0;
+            }
+            if (colorArr[i] > 255) {
+                colorArr[i] = 255;
+            }
+            else if (colorArr[i] < 0) {
+                colorArr[i] = 0;
+            }
+        }
+        return color_stringify(colorArr, colorArr.length === 4 ? 'rgba' : 'rgb');
+    }
+}
+function color_toHex(color) {
+    var colorArr = color_parse(color);
+    if (colorArr) {
+        return ((1 << 24) + (colorArr[0] << 16) + (colorArr[1] << 8) + (+colorArr[2])).toString(16).slice(1);
+    }
+}
+function color_fastLerp(normalizedValue, colors, out) {
+    if (!(colors && colors.length)
+        || !(normalizedValue >= 0 && normalizedValue <= 1)) {
+        return;
+    }
+    out = out || [];
+    var value = normalizedValue * (colors.length - 1);
+    var leftIndex = Math.floor(value);
+    var rightIndex = Math.ceil(value);
+    var leftColor = colors[leftIndex];
+    var rightColor = colors[rightIndex];
+    var dv = value - leftIndex;
+    out[0] = tool_color_clampCssByte(tool_color_lerpNumber(leftColor[0], rightColor[0], dv));
+    out[1] = tool_color_clampCssByte(tool_color_lerpNumber(leftColor[1], rightColor[1], dv));
+    out[2] = tool_color_clampCssByte(tool_color_lerpNumber(leftColor[2], rightColor[2], dv));
+    out[3] = tool_color_clampCssFloat(tool_color_lerpNumber(leftColor[3], rightColor[3], dv));
+    return out;
+}
+var color_fastMapToColor = color_fastLerp;
+function tool_color_lerp(normalizedValue, colors, fullOutput) {
+    if (!(colors && colors.length)
+        || !(normalizedValue >= 0 && normalizedValue <= 1)) {
+        return;
+    }
+    var value = normalizedValue * (colors.length - 1);
+    var leftIndex = Math.floor(value);
+    var rightIndex = Math.ceil(value);
+    var leftColor = color_parse(colors[leftIndex]);
+    var rightColor = color_parse(colors[rightIndex]);
+    var dv = value - leftIndex;
+    var color = color_stringify([
+        tool_color_clampCssByte(tool_color_lerpNumber(leftColor[0], rightColor[0], dv)),
+        tool_color_clampCssByte(tool_color_lerpNumber(leftColor[1], rightColor[1], dv)),
+        tool_color_clampCssByte(tool_color_lerpNumber(leftColor[2], rightColor[2], dv)),
+        tool_color_clampCssFloat(tool_color_lerpNumber(leftColor[3], rightColor[3], dv))
+    ], 'rgba');
+    return fullOutput
+        ? {
+            color: color,
+            leftIndex: leftIndex,
+            rightIndex: rightIndex,
+            value: value
+        }
+        : color;
+}
+var color_mapToColor = tool_color_lerp;
+function color_modifyHSL(color, h, s, l) {
+    var colorArr = color_parse(color);
+    if (color) {
+        colorArr = tool_color_rgba2hsla(colorArr);
+        h != null && (colorArr[0] = tool_color_clampCssAngle(util_isFunction(h) ? h(colorArr[0]) : h));
+        s != null && (colorArr[1] = tool_color_parseCssFloat(util_isFunction(s) ? s(colorArr[1]) : s));
+        l != null && (colorArr[2] = tool_color_parseCssFloat(util_isFunction(l) ? l(colorArr[2]) : l));
+        return color_stringify(tool_color_hsla2rgba(colorArr), 'rgba');
+    }
+}
+function color_modifyAlpha(color, alpha) {
+    var colorArr = color_parse(color);
+    if (colorArr && alpha != null) {
+        colorArr[3] = tool_color_clampCssFloat(alpha);
+        return color_stringify(colorArr, 'rgba');
+    }
+}
+function color_stringify(arrColor, type) {
+    if (!arrColor || !arrColor.length) {
+        return;
+    }
+    var colorStr = arrColor[0] + ',' + arrColor[1] + ',' + arrColor[2];
+    if (type === 'rgba' || type === 'hsva' || type === 'hsla') {
+        colorStr += ',' + arrColor[3];
+    }
+    return type + '(' + colorStr + ')';
+}
+function color_lum(color, backgroundLum) {
+    var arr = color_parse(color);
+    return arr
+        ? (0.299 * arr[0] + 0.587 * arr[1] + 0.114 * arr[2]) * arr[3] / 255
+            + (1 - arr[3]) * backgroundLum
+        : 0;
+}
+function color_random() {
+    return color_stringify([
+        Math.round(Math.random() * 255),
+        Math.round(Math.random() * 255),
+        Math.round(Math.random() * 255)
+    ], 'rgb');
+}
+var color_liftedColorCache = new zrender_lib_core_LRU(100);
+function color_liftColor(color) {
+    if (util_isString(color)) {
+        var liftedColor = color_liftedColorCache.get(color);
+        if (!liftedColor) {
+            liftedColor = color_lift(color, -0.1);
+            color_liftedColorCache.put(color, liftedColor);
+        }
+        return liftedColor;
+    }
+    else if (util_isGradientObject(color)) {
+        var ret = core_util_extend({}, color);
+        ret.colorStops = util_map(color.colorStops, function (stop) { return ({
+            offset: stop.offset,
+            color: color_lift(stop.color, -0.1)
+        }); });
+        return ret;
+    }
+    return color;
+}
+
+;// ./node_modules/echarts/node_modules/zrender/lib/core/env.js
+var env_Browser = (function () {
+    function Browser() {
+        this.firefox = false;
+        this.ie = false;
+        this.edge = false;
+        this.newEdge = false;
+        this.weChat = false;
+    }
+    return Browser;
+}());
+var env_Env = (function () {
+    function Env() {
+        this.browser = new env_Browser();
+        this.node = false;
+        this.wxa = false;
+        this.worker = false;
+        this.svgSupported = false;
+        this.touchEventsSupported = false;
+        this.pointerEventsSupported = false;
+        this.domSupported = false;
+        this.transformSupported = false;
+        this.transform3dSupported = false;
+        this.hasGlobalWindow = typeof window !== 'undefined';
+    }
+    return Env;
+}());
+var env_env = new env_Env();
+if (typeof wx === 'object' && typeof wx.getSystemInfoSync === 'function') {
+    env_env.wxa = true;
+    env_env.touchEventsSupported = true;
+}
+else if (typeof document === 'undefined' && typeof self !== 'undefined') {
+    env_env.worker = true;
+}
+else if (!env_env.hasGlobalWindow
+    || 'Deno' in window
+    || (typeof navigator !== 'undefined' && typeof navigator.userAgent === 'string'
+        && navigator.userAgent.indexOf('Node.js') > -1)) {
+    env_env.node = true;
+    env_env.svgSupported = true;
+}
+else {
+    env_detect(navigator.userAgent, env_env);
+}
+function env_detect(ua, env) {
+    var browser = env.browser;
+    var firefox = ua.match(/Firefox\/([\d.]+)/);
+    var ie = ua.match(/MSIE\s([\d.]+)/)
+        || ua.match(/Trident\/.+?rv:(([\d.]+))/);
+    var edge = ua.match(/Edge?\/([\d.]+)/);
+    var weChat = (/micromessenger/i).test(ua);
+    if (firefox) {
+        browser.firefox = true;
+        browser.version = firefox[1];
+    }
+    if (ie) {
+        browser.ie = true;
+        browser.version = ie[1];
+    }
+    if (edge) {
+        browser.edge = true;
+        browser.version = edge[1];
+        browser.newEdge = +edge[1].split('.')[0] > 18;
+    }
+    if (weChat) {
+        browser.weChat = true;
+    }
+    env.svgSupported = typeof SVGRect !== 'undefined';
+    env.touchEventsSupported = 'ontouchstart' in window && !browser.ie && !browser.edge;
+    env.pointerEventsSupported = 'onpointerdown' in window
+        && (browser.edge || (browser.ie && +browser.version >= 11));
+    var domSupported = env.domSupported = typeof document !== 'undefined';
+    if (domSupported) {
+        var style = document.documentElement.style;
+        env.transform3dSupported = ((browser.ie && 'transition' in style)
+            || browser.edge
+            || (('WebKitCSSMatrix' in window) && ('m11' in new WebKitCSSMatrix()))
+            || 'MozPerspective' in style)
+            && !('OTransition' in style);
+        env.transformSupported = env.transform3dSupported
+            || (browser.ie && +browser.version >= 9);
+    }
+}
+/* harmony default export */ const lib_core_env = (env_env);
+
+;// ./node_modules/echarts/node_modules/zrender/lib/svg/helper.js
+
+
+
+var helper_mathRound = Math.round;
+function helper_normalizeColor(color) {
+    var opacity;
+    if (!color || color === 'transparent') {
+        color = 'none';
+    }
+    else if (typeof color === 'string' && color.indexOf('rgba') > -1) {
+        var arr = color_parse(color);
+        if (arr) {
+            color = 'rgb(' + arr[0] + ',' + arr[1] + ',' + arr[2] + ')';
+            opacity = arr[3];
+        }
+    }
+    return {
+        color: color,
+        opacity: opacity == null ? 1 : opacity
+    };
+}
+var svg_helper_EPSILON = 1e-4;
+function svg_helper_isAroundZero(transform) {
+    return transform < svg_helper_EPSILON && transform > -svg_helper_EPSILON;
+}
+function helper_round3(transform) {
+    return helper_mathRound(transform * 1e3) / 1e3;
+}
+function helper_round4(transform) {
+    return helper_mathRound(transform * 1e4) / 1e4;
+}
+function helper_round1(transform) {
+    return helper_mathRound(transform * 10) / 10;
+}
+function helper_getMatrixStr(m) {
+    return 'matrix('
+        + helper_round3(m[0]) + ','
+        + helper_round3(m[1]) + ','
+        + helper_round3(m[2]) + ','
+        + helper_round3(m[3]) + ','
+        + helper_round4(m[4]) + ','
+        + helper_round4(m[5])
+        + ')';
+}
+var helper_TEXT_ALIGN_TO_ANCHOR = {
+    left: 'start',
+    right: 'end',
+    center: 'middle',
+    middle: 'middle'
+};
+function helper_adjustTextY(y, lineHeight, textBaseline) {
+    if (textBaseline === 'top') {
+        y += lineHeight / 2;
+    }
+    else if (textBaseline === 'bottom') {
+        y -= lineHeight / 2;
+    }
+    return y;
+}
+function helper_hasShadow(style) {
+    return style
+        && (style.shadowBlur || style.shadowOffsetX || style.shadowOffsetY);
+}
+function helper_getShadowKey(displayable) {
+    var style = displayable.style;
+    var globalScale = displayable.getGlobalScale();
+    return [
+        style.shadowColor,
+        (style.shadowBlur || 0).toFixed(2),
+        (style.shadowOffsetX || 0).toFixed(2),
+        (style.shadowOffsetY || 0).toFixed(2),
+        globalScale[0],
+        globalScale[1]
+    ].join(',');
+}
+function helper_getClipPathsKey(clipPaths) {
+    var key = [];
+    if (clipPaths) {
+        for (var i = 0; i < clipPaths.length; i++) {
+            var clipPath = clipPaths[i];
+            key.push(clipPath.id);
+        }
+    }
+    return key.join(',');
+}
+function helper_isImagePattern(val) {
+    return val && (!!val.image);
+}
+function helper_isSVGPattern(val) {
+    return val && (!!val.svgElement);
+}
+function helper_isPattern(val) {
+    return helper_isImagePattern(val) || helper_isSVGPattern(val);
+}
+function helper_isLinearGradient(val) {
+    return val.type === 'linear';
+}
+function helper_isRadialGradient(val) {
+    return val.type === 'radial';
+}
+function helper_isGradient(val) {
+    return val && (val.type === 'linear'
+        || val.type === 'radial');
+}
+function helper_getIdURL(id) {
+    return "url(#" + id + ")";
+}
+function helper_getPathPrecision(el) {
+    var scale = el.getGlobalScale();
+    var size = Math.max(scale[0], scale[1]);
+    return Math.max(Math.ceil(Math.log(size) / Math.log(10)), 1);
+}
+function helper_getSRTTransformString(transform) {
+    var x = transform.x || 0;
+    var y = transform.y || 0;
+    var rotation = (transform.rotation || 0) * util_RADIAN_TO_DEGREE;
+    var scaleX = util_retrieve2(transform.scaleX, 1);
+    var scaleY = util_retrieve2(transform.scaleY, 1);
+    var skewX = transform.skewX || 0;
+    var skewY = transform.skewY || 0;
+    var res = [];
+    if (x || y) {
+        res.push("translate(" + x + "px," + y + "px)");
+    }
+    if (rotation) {
+        res.push("rotate(" + rotation + ")");
+    }
+    if (scaleX !== 1 || scaleY !== 1) {
+        res.push("scale(" + scaleX + "," + scaleY + ")");
+    }
+    if (skewX || skewY) {
+        res.push("skew(" + helper_mathRound(skewX * util_RADIAN_TO_DEGREE) + "deg, " + helper_mathRound(skewY * util_RADIAN_TO_DEGREE) + "deg)");
+    }
+    return res.join(' ');
+}
+var helper_encodeBase64 = (function () {
+    if (lib_core_env.hasGlobalWindow && util_isFunction(window.btoa)) {
+        return function (str) {
+            return window.btoa(unescape(encodeURIComponent(str)));
+        };
+    }
+    if (typeof Buffer !== 'undefined') {
+        return function (str) {
+            return Buffer.from(str).toString('base64');
+        };
+    }
+    return function (str) {
+        if (true) {
+            util_logError('Base64 isn\'t natively supported in the current environment.');
+        }
+        return null;
+    };
+})();
+
+;// ./node_modules/echarts/node_modules/zrender/lib/animation/Animator.js
+
+
+
+
+
+
+;
+var Animator_arraySlice = Array.prototype.slice;
+function Animator_interpolateNumber(p0, p1, percent) {
+    return (p1 - p0) * percent + p0;
+}
+function Animator_interpolate1DArray(out, p0, p1, percent) {
+    var len = p0.length;
+    for (var i = 0; i < len; i++) {
+        out[i] = Animator_interpolateNumber(p0[i], p1[i], percent);
+    }
+    return out;
+}
+function Animator_interpolate2DArray(out, p0, p1, percent) {
+    var len = p0.length;
+    var len2 = len && p0[0].length;
+    for (var i = 0; i < len; i++) {
+        if (!out[i]) {
+            out[i] = [];
+        }
+        for (var j = 0; j < len2; j++) {
+            out[i][j] = Animator_interpolateNumber(p0[i][j], p1[i][j], percent);
+        }
+    }
+    return out;
+}
+function Animator_add1DArray(out, p0, p1, sign) {
+    var len = p0.length;
+    for (var i = 0; i < len; i++) {
+        out[i] = p0[i] + p1[i] * sign;
+    }
+    return out;
+}
+function Animator_add2DArray(out, p0, p1, sign) {
+    var len = p0.length;
+    var len2 = len && p0[0].length;
+    for (var i = 0; i < len; i++) {
+        if (!out[i]) {
+            out[i] = [];
+        }
+        for (var j = 0; j < len2; j++) {
+            out[i][j] = p0[i][j] + p1[i][j] * sign;
+        }
+    }
+    return out;
+}
+function Animator_fillColorStops(val0, val1) {
+    var len0 = val0.length;
+    var len1 = val1.length;
+    var shorterArr = len0 > len1 ? val1 : val0;
+    var shorterLen = Math.min(len0, len1);
+    var last = shorterArr[shorterLen - 1] || { color: [0, 0, 0, 0], offset: 0 };
+    for (var i = shorterLen; i < Math.max(len0, len1); i++) {
+        shorterArr.push({
+            offset: last.offset,
+            color: last.color.slice()
+        });
+    }
+}
+function Animator_fillArray(val0, val1, arrDim) {
+    var arr0 = val0;
+    var arr1 = val1;
+    if (!arr0.push || !arr1.push) {
+        return;
+    }
+    var arr0Len = arr0.length;
+    var arr1Len = arr1.length;
+    if (arr0Len !== arr1Len) {
+        var isPreviousLarger = arr0Len > arr1Len;
+        if (isPreviousLarger) {
+            arr0.length = arr1Len;
+        }
+        else {
+            for (var i = arr0Len; i < arr1Len; i++) {
+                arr0.push(arrDim === 1 ? arr1[i] : Animator_arraySlice.call(arr1[i]));
+            }
+        }
+    }
+    var len2 = arr0[0] && arr0[0].length;
+    for (var i = 0; i < arr0.length; i++) {
+        if (arrDim === 1) {
+            if (isNaN(arr0[i])) {
+                arr0[i] = arr1[i];
+            }
+        }
+        else {
+            for (var j = 0; j < len2; j++) {
+                if (isNaN(arr0[i][j])) {
+                    arr0[i][j] = arr1[i][j];
+                }
+            }
+        }
+    }
+}
+function Animator_cloneValue(value) {
+    if (util_isArrayLike(value)) {
+        var len = value.length;
+        if (util_isArrayLike(value[0])) {
+            var ret = [];
+            for (var i = 0; i < len; i++) {
+                ret.push(Animator_arraySlice.call(value[i]));
+            }
+            return ret;
+        }
+        return Animator_arraySlice.call(value);
+    }
+    return value;
+}
+function Animator_rgba2String(rgba) {
+    rgba[0] = Math.floor(rgba[0]) || 0;
+    rgba[1] = Math.floor(rgba[1]) || 0;
+    rgba[2] = Math.floor(rgba[2]) || 0;
+    rgba[3] = rgba[3] == null ? 1 : rgba[3];
+    return 'rgba(' + rgba.join(',') + ')';
+}
+function Animator_guessArrayDim(value) {
+    return util_isArrayLike(value && value[0]) ? 2 : 1;
+}
+var Animator_VALUE_TYPE_NUMBER = 0;
+var Animator_VALUE_TYPE_1D_ARRAY = 1;
+var Animator_VALUE_TYPE_2D_ARRAY = 2;
+var Animator_VALUE_TYPE_COLOR = 3;
+var Animator_VALUE_TYPE_LINEAR_GRADIENT = 4;
+var Animator_VALUE_TYPE_RADIAL_GRADIENT = 5;
+var Animator_VALUE_TYPE_UNKOWN = 6;
+function Animator_isGradientValueType(valType) {
+    return valType === Animator_VALUE_TYPE_LINEAR_GRADIENT || valType === Animator_VALUE_TYPE_RADIAL_GRADIENT;
+}
+function Animator_isArrayValueType(valType) {
+    return valType === Animator_VALUE_TYPE_1D_ARRAY || valType === Animator_VALUE_TYPE_2D_ARRAY;
+}
+var Animator_tmpRgba = [0, 0, 0, 0];
+var Animator_Track = (function () {
+    function Track(propName) {
+        this.keyframes = [];
+        this.discrete = false;
+        this._invalid = false;
+        this._needsSort = false;
+        this._lastFr = 0;
+        this._lastFrP = 0;
+        this.propName = propName;
+    }
+    Track.prototype.isFinished = function () {
+        return this._finished;
+    };
+    Track.prototype.setFinished = function () {
+        this._finished = true;
+        if (this._additiveTrack) {
+            this._additiveTrack.setFinished();
+        }
+    };
+    Track.prototype.needsAnimate = function () {
+        return this.keyframes.length >= 1;
+    };
+    Track.prototype.getAdditiveTrack = function () {
+        return this._additiveTrack;
+    };
+    Track.prototype.addKeyframe = function (time, rawValue, easing) {
+        this._needsSort = true;
+        var keyframes = this.keyframes;
+        var len = keyframes.length;
+        var discrete = false;
+        var valType = Animator_VALUE_TYPE_UNKOWN;
+        var value = rawValue;
+        if (util_isArrayLike(rawValue)) {
+            var arrayDim = Animator_guessArrayDim(rawValue);
+            valType = arrayDim;
+            if (arrayDim === 1 && !util_isNumber(rawValue[0])
+                || arrayDim === 2 && !util_isNumber(rawValue[0][0])) {
+                discrete = true;
+            }
+        }
+        else {
+            if (util_isNumber(rawValue) && !util_eqNaN(rawValue)) {
+                valType = Animator_VALUE_TYPE_NUMBER;
+            }
+            else if (util_isString(rawValue)) {
+                if (!isNaN(+rawValue)) {
+                    valType = Animator_VALUE_TYPE_NUMBER;
+                }
+                else {
+                    var colorArray = color_parse(rawValue);
+                    if (colorArray) {
+                        value = colorArray;
+                        valType = Animator_VALUE_TYPE_COLOR;
+                    }
+                }
+            }
+            else if (util_isGradientObject(rawValue)) {
+                var parsedGradient = core_util_extend({}, value);
+                parsedGradient.colorStops = util_map(rawValue.colorStops, function (colorStop) { return ({
+                    offset: colorStop.offset,
+                    color: color_parse(colorStop.color)
+                }); });
+                if (helper_isLinearGradient(rawValue)) {
+                    valType = Animator_VALUE_TYPE_LINEAR_GRADIENT;
+                }
+                else if (helper_isRadialGradient(rawValue)) {
+                    valType = Animator_VALUE_TYPE_RADIAL_GRADIENT;
+                }
+                value = parsedGradient;
+            }
+        }
+        if (len === 0) {
+            this.valType = valType;
+        }
+        else if (valType !== this.valType || valType === Animator_VALUE_TYPE_UNKOWN) {
+            discrete = true;
+        }
+        this.discrete = this.discrete || discrete;
+        var kf = {
+            time: time,
+            value: value,
+            rawValue: rawValue,
+            percent: 0
+        };
+        if (easing) {
+            kf.easing = easing;
+            kf.easingFunc = util_isFunction(easing)
+                ? easing
+                : lib_animation_easing[easing] || cubicEasing_createCubicEasingFunc(easing);
+        }
+        keyframes.push(kf);
+        return kf;
+    };
+    Track.prototype.prepare = function (maxTime, additiveTrack) {
+        var kfs = this.keyframes;
+        if (this._needsSort) {
+            kfs.sort(function (a, b) {
+                return a.time - b.time;
+            });
+        }
+        var valType = this.valType;
+        var kfsLen = kfs.length;
+        var lastKf = kfs[kfsLen - 1];
+        var isDiscrete = this.discrete;
+        var isArr = Animator_isArrayValueType(valType);
+        var isGradient = Animator_isGradientValueType(valType);
+        for (var i = 0; i < kfsLen; i++) {
+            var kf = kfs[i];
+            var value = kf.value;
+            var lastValue = lastKf.value;
+            kf.percent = kf.time / maxTime;
+            if (!isDiscrete) {
+                if (isArr && i !== kfsLen - 1) {
+                    Animator_fillArray(value, lastValue, valType);
+                }
+                else if (isGradient) {
+                    Animator_fillColorStops(value.colorStops, lastValue.colorStops);
+                }
+            }
+        }
+        if (!isDiscrete
+            && valType !== Animator_VALUE_TYPE_RADIAL_GRADIENT
+            && additiveTrack
+            && this.needsAnimate()
+            && additiveTrack.needsAnimate()
+            && valType === additiveTrack.valType
+            && !additiveTrack._finished) {
+            this._additiveTrack = additiveTrack;
+            var startValue = kfs[0].value;
+            for (var i = 0; i < kfsLen; i++) {
+                if (valType === Animator_VALUE_TYPE_NUMBER) {
+                    kfs[i].additiveValue = kfs[i].value - startValue;
+                }
+                else if (valType === Animator_VALUE_TYPE_COLOR) {
+                    kfs[i].additiveValue =
+                        Animator_add1DArray([], kfs[i].value, startValue, -1);
+                }
+                else if (Animator_isArrayValueType(valType)) {
+                    kfs[i].additiveValue = valType === Animator_VALUE_TYPE_1D_ARRAY
+                        ? Animator_add1DArray([], kfs[i].value, startValue, -1)
+                        : Animator_add2DArray([], kfs[i].value, startValue, -1);
+                }
+            }
+        }
+    };
+    Track.prototype.step = function (target, percent) {
+        if (this._finished) {
+            return;
+        }
+        if (this._additiveTrack && this._additiveTrack._finished) {
+            this._additiveTrack = null;
+        }
+        var isAdditive = this._additiveTrack != null;
+        var valueKey = isAdditive ? 'additiveValue' : 'value';
+        var valType = this.valType;
+        var keyframes = this.keyframes;
+        var kfsNum = keyframes.length;
+        var propName = this.propName;
+        var isValueColor = valType === Animator_VALUE_TYPE_COLOR;
+        var frameIdx;
+        var lastFrame = this._lastFr;
+        var mathMin = Math.min;
+        var frame;
+        var nextFrame;
+        if (kfsNum === 1) {
+            frame = nextFrame = keyframes[0];
+        }
+        else {
+            if (percent < 0) {
+                frameIdx = 0;
+            }
+            else if (percent < this._lastFrP) {
+                var start = mathMin(lastFrame + 1, kfsNum - 1);
+                for (frameIdx = start; frameIdx >= 0; frameIdx--) {
+                    if (keyframes[frameIdx].percent <= percent) {
+                        break;
+                    }
+                }
+                frameIdx = mathMin(frameIdx, kfsNum - 2);
+            }
+            else {
+                for (frameIdx = lastFrame; frameIdx < kfsNum; frameIdx++) {
+                    if (keyframes[frameIdx].percent > percent) {
+                        break;
+                    }
+                }
+                frameIdx = mathMin(frameIdx - 1, kfsNum - 2);
+            }
+            nextFrame = keyframes[frameIdx + 1];
+            frame = keyframes[frameIdx];
+        }
+        if (!(frame && nextFrame)) {
+            return;
+        }
+        this._lastFr = frameIdx;
+        this._lastFrP = percent;
+        var interval = (nextFrame.percent - frame.percent);
+        var w = interval === 0 ? 1 : mathMin((percent - frame.percent) / interval, 1);
+        if (nextFrame.easingFunc) {
+            w = nextFrame.easingFunc(w);
+        }
+        var targetArr = isAdditive ? this._additiveValue
+            : (isValueColor ? Animator_tmpRgba : target[propName]);
+        if ((Animator_isArrayValueType(valType) || isValueColor) && !targetArr) {
+            targetArr = this._additiveValue = [];
+        }
+        if (this.discrete) {
+            target[propName] = w < 1 ? frame.rawValue : nextFrame.rawValue;
+        }
+        else if (Animator_isArrayValueType(valType)) {
+            valType === Animator_VALUE_TYPE_1D_ARRAY
+                ? Animator_interpolate1DArray(targetArr, frame[valueKey], nextFrame[valueKey], w)
+                : Animator_interpolate2DArray(targetArr, frame[valueKey], nextFrame[valueKey], w);
+        }
+        else if (Animator_isGradientValueType(valType)) {
+            var val = frame[valueKey];
+            var nextVal_1 = nextFrame[valueKey];
+            var isLinearGradient_1 = valType === Animator_VALUE_TYPE_LINEAR_GRADIENT;
+            target[propName] = {
+                type: isLinearGradient_1 ? 'linear' : 'radial',
+                x: Animator_interpolateNumber(val.x, nextVal_1.x, w),
+                y: Animator_interpolateNumber(val.y, nextVal_1.y, w),
+                colorStops: util_map(val.colorStops, function (colorStop, idx) {
+                    var nextColorStop = nextVal_1.colorStops[idx];
+                    return {
+                        offset: Animator_interpolateNumber(colorStop.offset, nextColorStop.offset, w),
+                        color: Animator_rgba2String(Animator_interpolate1DArray([], colorStop.color, nextColorStop.color, w))
+                    };
+                }),
+                global: nextVal_1.global
+            };
+            if (isLinearGradient_1) {
+                target[propName].x2 = Animator_interpolateNumber(val.x2, nextVal_1.x2, w);
+                target[propName].y2 = Animator_interpolateNumber(val.y2, nextVal_1.y2, w);
+            }
+            else {
+                target[propName].r = Animator_interpolateNumber(val.r, nextVal_1.r, w);
+            }
+        }
+        else if (isValueColor) {
+            Animator_interpolate1DArray(targetArr, frame[valueKey], nextFrame[valueKey], w);
+            if (!isAdditive) {
+                target[propName] = Animator_rgba2String(targetArr);
+            }
+        }
+        else {
+            var value = Animator_interpolateNumber(frame[valueKey], nextFrame[valueKey], w);
+            if (isAdditive) {
+                this._additiveValue = value;
+            }
+            else {
+                target[propName] = value;
+            }
+        }
+        if (isAdditive) {
+            this._addToTarget(target);
+        }
+    };
+    Track.prototype._addToTarget = function (target) {
+        var valType = this.valType;
+        var propName = this.propName;
+        var additiveValue = this._additiveValue;
+        if (valType === Animator_VALUE_TYPE_NUMBER) {
+            target[propName] = target[propName] + additiveValue;
+        }
+        else if (valType === Animator_VALUE_TYPE_COLOR) {
+            color_parse(target[propName], Animator_tmpRgba);
+            Animator_add1DArray(Animator_tmpRgba, Animator_tmpRgba, additiveValue, 1);
+            target[propName] = Animator_rgba2String(Animator_tmpRgba);
+        }
+        else if (valType === Animator_VALUE_TYPE_1D_ARRAY) {
+            Animator_add1DArray(target[propName], target[propName], additiveValue, 1);
+        }
+        else if (valType === Animator_VALUE_TYPE_2D_ARRAY) {
+            Animator_add2DArray(target[propName], target[propName], additiveValue, 1);
+        }
+    };
+    return Track;
+}());
+var Animator_Animator = (function () {
+    function Animator(target, loop, allowDiscreteAnimation, additiveTo) {
+        this._tracks = {};
+        this._trackKeys = [];
+        this._maxTime = 0;
+        this._started = 0;
+        this._clip = null;
+        this._target = target;
+        this._loop = loop;
+        if (loop && additiveTo) {
+            util_logError('Can\' use additive animation on looped animation.');
+            return;
+        }
+        this._additiveAnimators = additiveTo;
+        this._allowDiscrete = allowDiscreteAnimation;
+    }
+    Animator.prototype.getMaxTime = function () {
+        return this._maxTime;
+    };
+    Animator.prototype.getDelay = function () {
+        return this._delay;
+    };
+    Animator.prototype.getLoop = function () {
+        return this._loop;
+    };
+    Animator.prototype.getTarget = function () {
+        return this._target;
+    };
+    Animator.prototype.changeTarget = function (target) {
+        this._target = target;
+    };
+    Animator.prototype.when = function (time, props, easing) {
+        return this.whenWithKeys(time, props, util_keys(props), easing);
+    };
+    Animator.prototype.whenWithKeys = function (time, props, propNames, easing) {
+        var tracks = this._tracks;
+        for (var i = 0; i < propNames.length; i++) {
+            var propName = propNames[i];
+            var track = tracks[propName];
+            if (!track) {
+                track = tracks[propName] = new Animator_Track(propName);
+                var initialValue = void 0;
+                var additiveTrack = this._getAdditiveTrack(propName);
+                if (additiveTrack) {
+                    var addtiveTrackKfs = additiveTrack.keyframes;
+                    var lastFinalKf = addtiveTrackKfs[addtiveTrackKfs.length - 1];
+                    initialValue = lastFinalKf && lastFinalKf.value;
+                    if (additiveTrack.valType === Animator_VALUE_TYPE_COLOR && initialValue) {
+                        initialValue = Animator_rgba2String(initialValue);
+                    }
+                }
+                else {
+                    initialValue = this._target[propName];
+                }
+                if (initialValue == null) {
+                    continue;
+                }
+                if (time > 0) {
+                    track.addKeyframe(0, Animator_cloneValue(initialValue), easing);
+                }
+                this._trackKeys.push(propName);
+            }
+            track.addKeyframe(time, Animator_cloneValue(props[propName]), easing);
+        }
+        this._maxTime = Math.max(this._maxTime, time);
+        return this;
+    };
+    Animator.prototype.pause = function () {
+        this._clip.pause();
+        this._paused = true;
+    };
+    Animator.prototype.resume = function () {
+        this._clip.resume();
+        this._paused = false;
+    };
+    Animator.prototype.isPaused = function () {
+        return !!this._paused;
+    };
+    Animator.prototype.duration = function (duration) {
+        this._maxTime = duration;
+        this._force = true;
+        return this;
+    };
+    Animator.prototype._doneCallback = function () {
+        this._setTracksFinished();
+        this._clip = null;
+        var doneList = this._doneCbs;
+        if (doneList) {
+            var len = doneList.length;
+            for (var i = 0; i < len; i++) {
+                doneList[i].call(this);
+            }
+        }
+    };
+    Animator.prototype._abortedCallback = function () {
+        this._setTracksFinished();
+        var animation = this.animation;
+        var abortedList = this._abortedCbs;
+        if (animation) {
+            animation.removeClip(this._clip);
+        }
+        this._clip = null;
+        if (abortedList) {
+            for (var i = 0; i < abortedList.length; i++) {
+                abortedList[i].call(this);
+            }
+        }
+    };
+    Animator.prototype._setTracksFinished = function () {
+        var tracks = this._tracks;
+        var tracksKeys = this._trackKeys;
+        for (var i = 0; i < tracksKeys.length; i++) {
+            tracks[tracksKeys[i]].setFinished();
+        }
+    };
+    Animator.prototype._getAdditiveTrack = function (trackName) {
+        var additiveTrack;
+        var additiveAnimators = this._additiveAnimators;
+        if (additiveAnimators) {
+            for (var i = 0; i < additiveAnimators.length; i++) {
+                var track = additiveAnimators[i].getTrack(trackName);
+                if (track) {
+                    additiveTrack = track;
+                }
+            }
+        }
+        return additiveTrack;
+    };
+    Animator.prototype.start = function (easing) {
+        if (this._started > 0) {
+            return;
+        }
+        this._started = 1;
+        var self = this;
+        var tracks = [];
+        var maxTime = this._maxTime || 0;
+        for (var i = 0; i < this._trackKeys.length; i++) {
+            var propName = this._trackKeys[i];
+            var track = this._tracks[propName];
+            var additiveTrack = this._getAdditiveTrack(propName);
+            var kfs = track.keyframes;
+            var kfsNum = kfs.length;
+            track.prepare(maxTime, additiveTrack);
+            if (track.needsAnimate()) {
+                if (!this._allowDiscrete && track.discrete) {
+                    var lastKf = kfs[kfsNum - 1];
+                    if (lastKf) {
+                        self._target[track.propName] = lastKf.rawValue;
+                    }
+                    track.setFinished();
+                }
+                else {
+                    tracks.push(track);
+                }
+            }
+        }
+        if (tracks.length || this._force) {
+            var clip = new lib_animation_Clip({
+                life: maxTime,
+                loop: this._loop,
+                delay: this._delay || 0,
+                onframe: function (percent) {
+                    self._started = 2;
+                    var additiveAnimators = self._additiveAnimators;
+                    if (additiveAnimators) {
+                        var stillHasAdditiveAnimator = false;
+                        for (var i = 0; i < additiveAnimators.length; i++) {
+                            if (additiveAnimators[i]._clip) {
+                                stillHasAdditiveAnimator = true;
+                                break;
+                            }
+                        }
+                        if (!stillHasAdditiveAnimator) {
+                            self._additiveAnimators = null;
+                        }
+                    }
+                    for (var i = 0; i < tracks.length; i++) {
+                        tracks[i].step(self._target, percent);
+                    }
+                    var onframeList = self._onframeCbs;
+                    if (onframeList) {
+                        for (var i = 0; i < onframeList.length; i++) {
+                            onframeList[i](self._target, percent);
+                        }
+                    }
+                },
+                ondestroy: function () {
+                    self._doneCallback();
+                }
+            });
+            this._clip = clip;
+            if (this.animation) {
+                this.animation.addClip(clip);
+            }
+            if (easing) {
+                clip.setEasing(easing);
+            }
+        }
+        else {
+            this._doneCallback();
+        }
+        return this;
+    };
+    Animator.prototype.stop = function (forwardToLast) {
+        if (!this._clip) {
+            return;
+        }
+        var clip = this._clip;
+        if (forwardToLast) {
+            clip.onframe(1);
+        }
+        this._abortedCallback();
+    };
+    Animator.prototype.delay = function (time) {
+        this._delay = time;
+        return this;
+    };
+    Animator.prototype.during = function (cb) {
+        if (cb) {
+            if (!this._onframeCbs) {
+                this._onframeCbs = [];
+            }
+            this._onframeCbs.push(cb);
+        }
+        return this;
+    };
+    Animator.prototype.done = function (cb) {
+        if (cb) {
+            if (!this._doneCbs) {
+                this._doneCbs = [];
+            }
+            this._doneCbs.push(cb);
+        }
+        return this;
+    };
+    Animator.prototype.aborted = function (cb) {
+        if (cb) {
+            if (!this._abortedCbs) {
+                this._abortedCbs = [];
+            }
+            this._abortedCbs.push(cb);
+        }
+        return this;
+    };
+    Animator.prototype.getClip = function () {
+        return this._clip;
+    };
+    Animator.prototype.getTrack = function (propName) {
+        return this._tracks[propName];
+    };
+    Animator.prototype.getTracks = function () {
+        var _this = this;
+        return util_map(this._trackKeys, function (key) { return _this._tracks[key]; });
+    };
+    Animator.prototype.stopTracks = function (propNames, forwardToLast) {
+        if (!propNames.length || !this._clip) {
+            return true;
+        }
+        var tracks = this._tracks;
+        var tracksKeys = this._trackKeys;
+        for (var i = 0; i < propNames.length; i++) {
+            var track = tracks[propNames[i]];
+            if (track && !track.isFinished()) {
+                if (forwardToLast) {
+                    track.step(this._target, 1);
+                }
+                else if (this._started === 1) {
+                    track.step(this._target, 0);
+                }
+                track.setFinished();
+            }
+        }
+        var allAborted = true;
+        for (var i = 0; i < tracksKeys.length; i++) {
+            if (!tracks[tracksKeys[i]].isFinished()) {
+                allAborted = false;
+                break;
+            }
+        }
+        if (allAborted) {
+            this._abortedCallback();
+        }
+        return allAborted;
+    };
+    Animator.prototype.saveTo = function (target, trackKeys, firstOrLast) {
+        if (!target) {
+            return;
+        }
+        trackKeys = trackKeys || this._trackKeys;
+        for (var i = 0; i < trackKeys.length; i++) {
+            var propName = trackKeys[i];
+            var track = this._tracks[propName];
+            if (!track || track.isFinished()) {
+                continue;
+            }
+            var kfs = track.keyframes;
+            var kf = kfs[firstOrLast ? 0 : kfs.length - 1];
+            if (kf) {
+                target[propName] = Animator_cloneValue(kf.rawValue);
+            }
+        }
+    };
+    Animator.prototype.__changeFinalValue = function (finalProps, trackKeys) {
+        trackKeys = trackKeys || util_keys(finalProps);
+        for (var i = 0; i < trackKeys.length; i++) {
+            var propName = trackKeys[i];
+            var track = this._tracks[propName];
+            if (!track) {
+                continue;
+            }
+            var kfs = track.keyframes;
+            if (kfs.length > 1) {
+                var lastKf = kfs.pop();
+                track.addKeyframe(lastKf.time, finalProps[propName]);
+                track.prepare(this._maxTime, track.getAdditiveTrack());
+            }
+        }
+    };
+    return Animator;
+}());
+/* harmony default export */ const lib_animation_Animator = (Animator_Animator);
+
+;// ./node_modules/echarts/node_modules/zrender/lib/core/Eventful.js
 var Eventful = (function () {
     function Eventful(eventProcessors) {
         if (eventProcessors) {
@@ -29667,10 +32804,10 @@ var Eventful = (function () {
 }());
 /* harmony default export */ const core_Eventful = (Eventful);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/config.js
+;// ./node_modules/echarts/node_modules/zrender/lib/config.js
 
 var dpr = 1;
-if (core_env.hasGlobalWindow) {
+if (lib_core_env.hasGlobalWindow) {
     dpr = Math.max(window.devicePixelRatio
         || (window.screen && window.screen.deviceXDPI / window.screen.logicalXDPI)
         || 1, 1);
@@ -29682,12 +32819,13 @@ var DARK_LABEL_COLOR = '#333';
 var LIGHT_LABEL_COLOR = '#ccc';
 var LIGHTER_LABEL_COLOR = '#eee';
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/graphic/constants.js
+;// ./node_modules/echarts/node_modules/zrender/lib/graphic/constants.js
 var REDRAW_BIT = 1;
 var STYLE_CHANGED_BIT = 2;
 var SHAPE_CHANGED_BIT = 4;
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/Element.js
+;// ./node_modules/echarts/node_modules/zrender/lib/Element.js
+
 
 
 
@@ -29699,15 +32837,16 @@ var SHAPE_CHANGED_BIT = 4;
 
 var PRESERVED_NORMAL_STATE = '__zr_normal__';
 var PRIMARY_STATES_KEYS = TRANSFORMABLE_PROPS.concat(['ignore']);
-var DEFAULT_ANIMATABLE_MAP = reduce(TRANSFORMABLE_PROPS, function (obj, key) {
+var DEFAULT_ANIMATABLE_MAP = util_reduce(TRANSFORMABLE_PROPS, function (obj, key) {
     obj[key] = true;
     return obj;
 }, { ignore: false });
 var tmpTextPosCalcRes = {};
 var tmpBoundingRect = new core_BoundingRect(0, 0, 0, 0);
+var tmpInnerTextTrans = [];
 var Element = (function () {
     function Element(props) {
-        this.id = util_guid();
+        this.id = core_util_guid();
         this.animators = [];
         this.currentStates = [];
         this.states = {};
@@ -29757,8 +32896,11 @@ var Element = (function () {
             innerTransformable.parent = isLocal ? this : null;
             var innerOrigin = false;
             innerTransformable.copyTransform(textEl);
-            if (textConfig.position != null) {
-                var layoutRect = tmpBoundingRect;
+            var hasPosition = textConfig.position != null;
+            var autoOverflowArea = textConfig.autoOverflowArea;
+            var layoutRect = void 0;
+            if (autoOverflowArea || hasPosition) {
+                layoutRect = tmpBoundingRect;
                 if (textConfig.layoutRect) {
                     layoutRect.copy(textConfig.layoutRect);
                 }
@@ -29768,6 +32910,8 @@ var Element = (function () {
                 if (!isLocal) {
                     layoutRect.applyTransform(this.transform);
                 }
+            }
+            if (hasPosition) {
                 if (this.calculateTextPosition) {
                     this.calculateTextPosition(tmpTextPosCalcRes, textConfig, layoutRect);
                 }
@@ -29807,10 +32951,21 @@ var Element = (function () {
                     innerTransformable.originY = -textOffset[1];
                 }
             }
+            var innerTextDefaultStyle = this._innerTextDefaultStyle || (this._innerTextDefaultStyle = {});
+            if (autoOverflowArea) {
+                var overflowRect = innerTextDefaultStyle.overflowRect =
+                    innerTextDefaultStyle.overflowRect || new core_BoundingRect(0, 0, 0, 0);
+                innerTransformable.getLocalTransform(tmpInnerTextTrans);
+                invert(tmpInnerTextTrans, tmpInnerTextTrans);
+                core_BoundingRect.copy(overflowRect, layoutRect);
+                overflowRect.applyTransform(tmpInnerTextTrans);
+            }
+            else {
+                innerTextDefaultStyle.overflowRect = null;
+            }
             var isInside = textConfig.inside == null
                 ? (typeof textConfig.position === 'string' && textConfig.position.indexOf('inside') >= 0)
                 : textConfig.inside;
-            var innerTextDefaultStyle = this._innerTextDefaultStyle || (this._innerTextDefaultStyle = {});
             var textFill = void 0;
             var textStroke = void 0;
             var autoStroke = void 0;
@@ -29870,7 +33025,7 @@ var Element = (function () {
     };
     Element.prototype.getOutsideStroke = function (textFill) {
         var backgroundColor = this.__zr && this.__zr.getBackgroundColor();
-        var colorArr = typeof backgroundColor === 'string' && parse(backgroundColor);
+        var colorArr = typeof backgroundColor === 'string' && color_parse(backgroundColor);
         if (!colorArr) {
             colorArr = [255, 255, 255, 1];
         }
@@ -29880,7 +33035,7 @@ var Element = (function () {
             colorArr[i] = colorArr[i] * alpha + (isDark ? 0 : 255) * (1 - alpha);
         }
         colorArr[3] = 1;
-        return stringify(colorArr, 'rgba');
+        return color_stringify(colorArr, 'rgba');
     };
     Element.prototype.traverse = function (cb, context) { };
     Element.prototype.attrKV = function (key, value) {
@@ -29895,7 +33050,7 @@ var Element = (function () {
         }
         else if (key === 'extra') {
             this.extra = this.extra || {};
-            util_extend(this.extra, value);
+            core_util_extend(this.extra, value);
         }
         else {
             this[key] = value;
@@ -29913,9 +33068,9 @@ var Element = (function () {
         if (typeof keyOrObj === 'string') {
             this.attrKV(keyOrObj, value);
         }
-        else if (isObject(keyOrObj)) {
+        else if (util_isObject(keyOrObj)) {
             var obj = keyOrObj;
-            var keysArr = keys(obj);
+            var keysArr = util_keys(obj);
             for (var i = 0; i < keysArr.length; i++) {
                 var key = keysArr[i];
                 this.attrKV(key, keyOrObj[key]);
@@ -29981,7 +33136,7 @@ var Element = (function () {
         }
         var currentStates = this.currentStates;
         var animationCfg = this.stateTransition;
-        if (indexOf(currentStates, stateName) >= 0 && (keepCurrentStates || currentStates.length === 1)) {
+        if (util_indexOf(currentStates, stateName) >= 0 && (keepCurrentStates || currentStates.length === 1)) {
             return;
         }
         var state;
@@ -29992,7 +33147,7 @@ var Element = (function () {
             state = (this.states && this.states[stateName]);
         }
         if (!state && !toNormalState) {
-            logError("State " + stateName + " not exists.");
+            util_logError("State " + stateName + " not exists.");
             return;
         }
         if (!toNormalState) {
@@ -30090,6 +33245,17 @@ var Element = (function () {
             }
         }
     };
+    Element.prototype.isSilent = function () {
+        var el = this;
+        while (el) {
+            if (el.silent) {
+                return true;
+            }
+            var hostEl = el.__hostTarget;
+            el = hostEl ? (el.ignoreHostSilent ? null : hostEl) : el.parent;
+        }
+        return false;
+    };
     Element.prototype._updateAnimationTargets = function () {
         for (var i = 0; i < this.animators.length; i++) {
             var animator = this.animators[i];
@@ -30099,7 +33265,7 @@ var Element = (function () {
         }
     };
     Element.prototype.removeState = function (state) {
-        var idx = indexOf(this.currentStates, state);
+        var idx = util_indexOf(this.currentStates, state);
         if (idx >= 0) {
             var currentStates = this.currentStates.slice();
             currentStates.splice(idx, 1);
@@ -30108,8 +33274,8 @@ var Element = (function () {
     };
     Element.prototype.replaceState = function (oldState, newState, forceAdd) {
         var currentStates = this.currentStates.slice();
-        var idx = indexOf(currentStates, oldState);
-        var newStateExists = indexOf(currentStates, newState) >= 0;
+        var idx = util_indexOf(currentStates, oldState);
+        var newStateExists = util_indexOf(currentStates, newState) >= 0;
         if (idx >= 0) {
             if (!newStateExists) {
                 currentStates[idx] = newState;
@@ -30136,10 +33302,10 @@ var Element = (function () {
         var mergedTextConfig;
         for (var i = 0; i < states.length; i++) {
             var state = states[i];
-            util_extend(mergedState, state);
+            core_util_extend(mergedState, state);
             if (state.textConfig) {
                 mergedTextConfig = mergedTextConfig || {};
-                util_extend(mergedTextConfig, state.textConfig);
+                core_util_extend(mergedTextConfig, state.textConfig);
             }
         }
         if (mergedTextConfig) {
@@ -30150,8 +33316,8 @@ var Element = (function () {
     Element.prototype._applyStateObj = function (stateName, state, normalState, keepCurrentStates, transition, animationCfg) {
         var needsRestoreToNormal = !(state && keepCurrentStates);
         if (state && state.textConfig) {
-            this.textConfig = util_extend({}, keepCurrentStates ? this.textConfig : normalState.textConfig);
-            util_extend(this.textConfig, state.textConfig);
+            this.textConfig = core_util_extend({}, keepCurrentStates ? this.textConfig : normalState.textConfig);
+            core_util_extend(this.textConfig, state.textConfig);
         }
         else if (needsRestoreToNormal) {
             if (normalState.textConfig) {
@@ -30204,13 +33370,15 @@ var Element = (function () {
             if (true) {
                 throw new Error('Text element has been added to zrender.');
             }
-            return;
+            // removed by dead control flow
+
         }
         if (componentEl === this) {
             if (true) {
                 throw new Error('Recursive component attachment.');
             }
-            return;
+            // removed by dead control flow
+
         }
         var zr = this.__zr;
         if (zr) {
@@ -30270,7 +33438,7 @@ var Element = (function () {
         if (!this.textConfig) {
             this.textConfig = {};
         }
-        util_extend(this.textConfig, cfg);
+        core_util_extend(this.textConfig, cfg);
         this.markRedraw();
     };
     Element.prototype.removeTextConfig = function () {
@@ -30381,14 +33549,14 @@ var Element = (function () {
         var target = key ? this[key] : this;
         if (true) {
             if (!target) {
-                logError('Property "'
+                util_logError('Property "'
                     + key
                     + '" is not existed in element '
                     + this.id);
                 return;
             }
         }
-        var animator = new animation_Animator(target, loop, allowDiscreteAnimation);
+        var animator = new lib_animation_Animator(target, loop, allowDiscreteAnimation);
         key && (animator.targetName = key);
         this.addAnimator(animator, key);
         return animator;
@@ -30400,7 +33568,7 @@ var Element = (function () {
             el.updateDuringAnimation(key);
         }).done(function () {
             var animators = el.animators;
-            var idx = indexOf(animators, animator);
+            var idx = util_indexOf(animators, animator);
             if (idx >= 0) {
                 animators.splice(idx, 1);
             }
@@ -30454,11 +33622,12 @@ var Element = (function () {
         elProto.name = '';
         elProto.ignore =
             elProto.silent =
-                elProto.isGroup =
-                    elProto.draggable =
-                        elProto.dragging =
-                            elProto.ignoreClip =
-                                elProto.__inHover = false;
+                elProto.ignoreHostSilent =
+                    elProto.isGroup =
+                        elProto.draggable =
+                            elProto.dragging =
+                                elProto.ignoreClip =
+                                    elProto.__inHover = false;
         elProto.__dirty = REDRAW_BIT;
         var logs = {};
         function logDeprecatedError(key, xKey, yKey) {
@@ -30516,8 +33685,8 @@ var Element = (function () {
     })();
     return Element;
 }());
-mixin(Element, core_Eventful);
-mixin(Element, core_Transformable);
+util_mixin(Element, core_Eventful);
+util_mixin(Element, core_Transformable);
 function animateTo(animatable, target, cfg, animationProps, reverse) {
     cfg = cfg || {};
     var animators = [];
@@ -30572,14 +33741,14 @@ function copyArrShallow(source, target, len) {
     }
 }
 function is2DArray(value) {
-    return isArrayLike(value[0]);
+    return util_isArrayLike(value[0]);
 }
 function copyValue(target, source, key) {
-    if (isArrayLike(source[key])) {
-        if (!isArrayLike(target[key])) {
+    if (util_isArrayLike(source[key])) {
+        if (!util_isArrayLike(target[key])) {
             target[key] = [];
         }
-        if (isTypedArray(source[key])) {
+        if (util_isTypedArray(source[key])) {
             var len = source[key].length;
             if (target[key].length !== len) {
                 target[key] = new (source[key].constructor)(len);
@@ -30613,7 +33782,7 @@ function copyValue(target, source, key) {
 }
 function isValueSame(val1, val2) {
     return val1 === val2
-        || isArrayLike(val1) && isArrayLike(val2) && is1DArraySame(val1, val2);
+        || util_isArrayLike(val1) && util_isArrayLike(val2) && is1DArraySame(val1, val2);
 }
 function is1DArraySame(arr0, arr1) {
     var len = arr0.length;
@@ -30628,12 +33797,12 @@ function is1DArraySame(arr0, arr1) {
     return true;
 }
 function animateToShallow(animatable, topKey, animateObj, target, cfg, animationProps, animators, reverse) {
-    var targetKeys = keys(target);
+    var targetKeys = util_keys(target);
     var duration = cfg.duration;
     var delay = cfg.delay;
     var additive = cfg.additive;
     var setToFinal = cfg.setToFinal;
-    var animateAll = !isObject(animationProps);
+    var animateAll = !util_isObject(animationProps);
     var existsAnimators = animatable.animators;
     var animationKeys = [];
     for (var k = 0; k < targetKeys.length; k++) {
@@ -30641,9 +33810,9 @@ function animateToShallow(animatable, topKey, animateObj, target, cfg, animation
         var targetVal = target[innerKey];
         if (targetVal != null && animateObj[innerKey] != null
             && (animateAll || animationProps[innerKey])) {
-            if (isObject(targetVal)
-                && !isArrayLike(targetVal)
-                && !isGradientObject(targetVal)) {
+            if (util_isObject(targetVal)
+                && !util_isArrayLike(targetVal)
+                && !util_isGradientObject(targetVal)) {
                 if (topKey) {
                     if (!reverse) {
                         animateObj[innerKey] = targetVal;
@@ -30670,14 +33839,14 @@ function animateToShallow(animatable, topKey, animateObj, target, cfg, animation
             if (animator.targetName === topKey) {
                 var allAborted = animator.stopTracks(animationKeys);
                 if (allAborted) {
-                    var idx = indexOf(existsAnimators, animator);
+                    var idx = util_indexOf(existsAnimators, animator);
                     existsAnimators.splice(idx, 1);
                 }
             }
         }
     }
     if (!cfg.force) {
-        animationKeys = filter(animationKeys, function (key) { return !isValueSame(target[key], animateObj[key]); });
+        animationKeys = util_filter(animationKeys, function (key) { return !isValueSame(target[key], animateObj[key]); });
         keyLen = animationKeys.length;
     }
     if (keyLen > 0
@@ -30705,11 +33874,11 @@ function animateToShallow(animatable, topKey, animateObj, target, cfg, animation
             sourceClone = {};
             for (var i = 0; i < keyLen; i++) {
                 var innerKey = animationKeys[i];
-                sourceClone[innerKey] = cloneValue(animateObj[innerKey]);
+                sourceClone[innerKey] = Animator_cloneValue(animateObj[innerKey]);
                 copyValue(animateObj, target, innerKey);
             }
         }
-        var animator = new animation_Animator(animateObj, false, false, additive ? filter(existsAnimators, function (animator) { return animator.targetName === topKey; }) : null);
+        var animator = new lib_animation_Animator(animateObj, false, false, additive ? util_filter(existsAnimators, function (animator) { return animator.targetName === topKey; }) : null);
         animator.targetName = topKey;
         if (cfg.scope) {
             animator.scope = cfg.scope;
@@ -30727,7 +33896,7 @@ function animateToShallow(animatable, topKey, animateObj, target, cfg, animation
 }
 /* harmony default export */ const lib_Element = (Element);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/graphic/Displayable.js
+;// ./node_modules/echarts/node_modules/zrender/lib/graphic/Displayable.js
 
 
 
@@ -30760,7 +33929,7 @@ var Displayable = (function (_super) {
         return _super.call(this, props) || this;
     }
     Displayable.prototype._init = function (props) {
-        var keysArr = keys(props);
+        var keysArr = util_keys(props);
         for (var i = 0; i < keysArr.length; i++) {
             var key = keysArr[i];
             if (key === 'style') {
@@ -30788,7 +33957,7 @@ var Displayable = (function (_super) {
             || (m && !m[0] && !m[3])) {
             return false;
         }
-        if (considerClipPath && this.__clipPaths) {
+        if (considerClipPath && this.__clipPaths && this.__clipPaths.length) {
             for (var i = 0; i < this.__clipPaths.length; ++i) {
                 if (this.__clipPaths[i].isZeroArea()) {
                     return false;
@@ -30890,7 +34059,7 @@ var Displayable = (function (_super) {
             this.style[keyOrObj] = value;
         }
         else {
-            util_extend(this.style, keyOrObj);
+            core_util_extend(this.style, keyOrObj);
         }
         this.dirtyStyle();
         return this;
@@ -30914,7 +34083,7 @@ var Displayable = (function (_super) {
         this.__dirty &= ~STYLE_CHANGED_BIT;
     };
     Displayable.prototype.createStyle = function (obj) {
-        return createObject(DEFAULT_COMMON_STYLE, obj);
+        return util_createObject(DEFAULT_COMMON_STYLE, obj);
     };
     Displayable.prototype.useStyle = function (obj) {
         if (!obj[STYLE_MAGIC_KEY]) {
@@ -30966,7 +34135,7 @@ var Displayable = (function (_super) {
                 var sourceStyle = this.style;
                 this.style = this.createStyle(needsRestoreToNormal ? {} : sourceStyle);
                 if (needsRestoreToNormal) {
-                    var changedKeys = keys(sourceStyle);
+                    var changedKeys = util_keys(sourceStyle);
                     for (var i = 0; i < changedKeys.length; i++) {
                         var key = changedKeys[i];
                         if (key in targetStyle) {
@@ -30975,7 +34144,7 @@ var Displayable = (function (_super) {
                         }
                     }
                 }
-                var targetKeys = keys(targetStyle);
+                var targetKeys = util_keys(targetStyle);
                 for (var i = 0; i < targetKeys.length; i++) {
                     var key = targetKeys[i];
                     this.style[key] = this.style[key];
@@ -31017,7 +34186,7 @@ var Displayable = (function (_super) {
         return mergedState;
     };
     Displayable.prototype._mergeStyle = function (targetStyle, sourceStyle) {
-        util_extend(targetStyle, sourceStyle);
+        core_util_extend(targetStyle, sourceStyle);
         return targetStyle;
     };
     Displayable.prototype.getAnimationStyleProps = function () {
@@ -31053,7 +34222,7 @@ function isDisplayableCulled(el, width, height) {
 }
 /* harmony default export */ const graphic_Displayable = (Displayable);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/core/bbox.js
+;// ./node_modules/echarts/node_modules/zrender/lib/core/bbox.js
 
 
 var bbox_mathMin = Math.min;
@@ -31061,9 +34230,9 @@ var bbox_mathMax = Math.max;
 var mathSin = Math.sin;
 var mathCos = Math.cos;
 var PI2 = Math.PI * 2;
-var start = create();
-var end = create();
-var extremity = create();
+var start = vector_create();
+var end = vector_create();
+var extremity = vector_create();
 function fromPoints(points, min, max) {
     if (points.length === 0) {
         return;
@@ -31179,7 +34348,7 @@ function fromArc(x, y, rx, ry, startAngle, endAngle, anticlockwise, min, max) {
     }
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/core/PathProxy.js
+;// ./node_modules/echarts/node_modules/zrender/lib/core/PathProxy.js
 
 
 
@@ -31196,15 +34365,15 @@ var CMD = {
 };
 var tmpOutX = [];
 var tmpOutY = [];
-var min = [];
-var max = [];
+var PathProxy_min = [];
+var PathProxy_max = [];
 var min2 = [];
 var max2 = [];
 var PathProxy_mathMin = Math.min;
 var PathProxy_mathMax = Math.max;
 var PathProxy_mathCos = Math.cos;
 var PathProxy_mathSin = Math.sin;
-var mathAbs = Math.abs;
+var PathProxy_mathAbs = Math.abs;
 var PI = Math.PI;
 var PathProxy_PI2 = PI * 2;
 var hasTypedArray = typeof Float32Array !== 'undefined';
@@ -31260,8 +34429,8 @@ var PathProxy = (function () {
     PathProxy.prototype.setScale = function (sx, sy, segmentIgnoreThreshold) {
         segmentIgnoreThreshold = segmentIgnoreThreshold || 0;
         if (segmentIgnoreThreshold > 0) {
-            this._ux = mathAbs(segmentIgnoreThreshold / devicePixelRatio / sx) || 0;
-            this._uy = mathAbs(segmentIgnoreThreshold / devicePixelRatio / sy) || 0;
+            this._ux = PathProxy_mathAbs(segmentIgnoreThreshold / devicePixelRatio / sx) || 0;
+            this._uy = PathProxy_mathAbs(segmentIgnoreThreshold / devicePixelRatio / sy) || 0;
         }
     };
     PathProxy.prototype.setDPR = function (dpr) {
@@ -31299,8 +34468,8 @@ var PathProxy = (function () {
         return this;
     };
     PathProxy.prototype.lineTo = function (x, y) {
-        var dx = mathAbs(x - this._xi);
-        var dy = mathAbs(y - this._yi);
+        var dx = PathProxy_mathAbs(x - this._xi);
+        var dy = PathProxy_mathAbs(y - this._yi);
         var exceedUnit = dx > this._ux || dy > this._uy;
         this.addData(CMD.L, x, y);
         if (this._ctx && exceedUnit) {
@@ -31393,6 +34562,9 @@ var PathProxy = (function () {
         return this._len;
     };
     PathProxy.prototype.setData = function (data) {
+        if (!this._saveData) {
+            return;
+        }
         var len = data.length;
         if (!(this.data && this.data.length === len) && hasTypedArray) {
             this.data = new Float32Array(len);
@@ -31403,6 +34575,9 @@ var PathProxy = (function () {
         this._len = len;
     };
     PathProxy.prototype.appendPath = function (path) {
+        if (!this._saveData) {
+            return;
+        }
         if (!(path instanceof Array)) {
             path = [path];
         }
@@ -31412,8 +34587,14 @@ var PathProxy = (function () {
         for (var i = 0; i < len; i++) {
             appendSize += path[i].len();
         }
-        if (hasTypedArray && (this.data instanceof Float32Array)) {
+        var oldData = this.data;
+        if (hasTypedArray && (oldData instanceof Float32Array || !oldData)) {
             this.data = new Float32Array(offset + appendSize);
+            if (offset > 0 && oldData) {
+                for (var k = 0; k < offset; k++) {
+                    this.data[k] = oldData[k];
+                }
+            }
         }
         for (var i = 0; i < len; i++) {
             var appendPathData = path[i].data;
@@ -31465,8 +34646,8 @@ var PathProxy = (function () {
         }
     };
     PathProxy.prototype.getBoundingRect = function () {
-        min[0] = min[1] = min2[0] = min2[1] = Number.MAX_VALUE;
-        max[0] = max[1] = max2[0] = max2[1] = -Number.MAX_VALUE;
+        PathProxy_min[0] = PathProxy_min[1] = min2[0] = min2[1] = Number.MAX_VALUE;
+        PathProxy_max[0] = PathProxy_max[1] = max2[0] = max2[1] = -Number.MAX_VALUE;
         var data = this.data;
         var xi = 0;
         var yi = 0;
@@ -31535,13 +34716,13 @@ var PathProxy = (function () {
                     yi = y0;
                     break;
             }
-            vector_min(min, min, min2);
-            vector_max(max, max, max2);
+            vector_min(PathProxy_min, PathProxy_min, min2);
+            vector_max(PathProxy_max, PathProxy_max, max2);
         }
         if (i === 0) {
-            min[0] = min[1] = max[0] = max[1] = 0;
+            PathProxy_min[0] = PathProxy_min[1] = PathProxy_max[0] = PathProxy_max[1] = 0;
         }
-        return new core_BoundingRect(min[0], min[1], max[0] - min[0], max[1] - min[1]);
+        return new core_BoundingRect(PathProxy_min[0], PathProxy_min[1], PathProxy_max[0] - PathProxy_min[0], PathProxy_max[1] - PathProxy_min[1]);
     };
     PathProxy.prototype._calculateLength = function () {
         var data = this.data;
@@ -31578,7 +34759,7 @@ var PathProxy = (function () {
                     var y2 = data[i++];
                     var dx = x2 - xi;
                     var dy = y2 - yi;
-                    if (mathAbs(dx) > ux || mathAbs(dy) > uy || i === len - 1) {
+                    if (PathProxy_mathAbs(dx) > ux || PathProxy_mathAbs(dy) > uy || i === len - 1) {
                         l = Math.sqrt(dx * dx + dy * dy);
                         xi = x2;
                         yi = y2;
@@ -31592,7 +34773,7 @@ var PathProxy = (function () {
                     var y2 = data[i++];
                     var x3 = data[i++];
                     var y3 = data[i++];
-                    l = cubicLength(xi, yi, x1, y1, x2, y2, x3, y3, 10);
+                    l = curve_cubicLength(xi, yi, x1, y1, x2, y2, x3, y3, 10);
                     xi = x3;
                     yi = y3;
                     break;
@@ -31602,7 +34783,7 @@ var PathProxy = (function () {
                     var y1 = data[i++];
                     var x2 = data[i++];
                     var y2 = data[i++];
-                    l = quadraticLength(xi, yi, x1, y1, x2, y2, 10);
+                    l = curve_quadraticLength(xi, yi, x1, y1, x2, y2, 10);
                     xi = x2;
                     yi = y2;
                     break;
@@ -31616,7 +34797,6 @@ var PathProxy = (function () {
                     var delta = data[i++];
                     var endAngle = delta + startAngle;
                     i += 1;
-                    var anticlockwise = !data[i++];
                     if (isFirst) {
                         x0 = PathProxy_mathCos(startAngle) * rx + cx;
                         y0 = PathProxy_mathSin(startAngle) * ry + cy;
@@ -31703,8 +34883,8 @@ var PathProxy = (function () {
                 case CMD.L: {
                     x = d[i++];
                     y = d[i++];
-                    var dx = mathAbs(x - xi);
-                    var dy = mathAbs(y - yi);
+                    var dx = PathProxy_mathAbs(x - xi);
+                    var dy = PathProxy_mathAbs(y - yi);
                     if (dx > ux || dy > uy) {
                         if (drawPart) {
                             var l = pathSegLen[segCount++];
@@ -31741,8 +34921,8 @@ var PathProxy = (function () {
                         var l = pathSegLen[segCount++];
                         if (accumLength + l > displayedLength) {
                             var t = (displayedLength - accumLength) / l;
-                            cubicSubdivide(xi, x1, x2, x3, t, tmpOutX);
-                            cubicSubdivide(yi, y1, y2, y3, t, tmpOutY);
+                            curve_cubicSubdivide(xi, x1, x2, x3, t, tmpOutX);
+                            curve_cubicSubdivide(yi, y1, y2, y3, t, tmpOutY);
                             ctx.bezierCurveTo(tmpOutX[1], tmpOutY[1], tmpOutX[2], tmpOutY[2], tmpOutX[3], tmpOutY[3]);
                             break lo;
                         }
@@ -31762,8 +34942,8 @@ var PathProxy = (function () {
                         var l = pathSegLen[segCount++];
                         if (accumLength + l > displayedLength) {
                             var t = (displayedLength - accumLength) / l;
-                            quadraticSubdivide(xi, x1, x2, t, tmpOutX);
-                            quadraticSubdivide(yi, y1, y2, t, tmpOutY);
+                            curve_quadraticSubdivide(xi, x1, x2, t, tmpOutX);
+                            curve_quadraticSubdivide(yi, y1, y2, t, tmpOutY);
                             ctx.quadraticCurveTo(tmpOutX[1], tmpOutY[1], tmpOutX[2], tmpOutY[2]);
                             break lo;
                         }
@@ -31784,7 +34964,7 @@ var PathProxy = (function () {
                     var psi = d[i++];
                     var anticlockwise = !d[i++];
                     var r = (rx > ry) ? rx : ry;
-                    var isEllipse = mathAbs(rx - ry) > 1e-3;
+                    var isEllipse = PathProxy_mathAbs(rx - ry) > 1e-3;
                     var endAngle = startAngle + delta;
                     var breakBuild = false;
                     if (drawPart) {
@@ -31866,6 +35046,9 @@ var PathProxy = (function () {
         newProxy._len = this._len;
         return newProxy;
     };
+    PathProxy.prototype.canSave = function () {
+        return !!this._saveData;
+    };
     PathProxy.CMD = CMD;
     PathProxy.initDefaultProps = (function () {
         var proto = PathProxy.prototype;
@@ -31879,7 +35062,7 @@ var PathProxy = (function () {
 }());
 /* harmony default export */ const core_PathProxy = (PathProxy);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/contain/line.js
+;// ./node_modules/echarts/node_modules/zrender/lib/contain/line.js
 function containStroke(x0, y0, x1, y1, lineWidth, x, y) {
     if (lineWidth === 0) {
         return false;
@@ -31905,7 +35088,7 @@ function containStroke(x0, y0, x1, y1, lineWidth, x, y) {
     return _s <= _l / 2 * _l / 2;
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/contain/cubic.js
+;// ./node_modules/echarts/node_modules/zrender/lib/contain/cubic.js
 
 function cubic_containStroke(x0, y0, x1, y1, x2, y2, x3, y3, lineWidth, x, y) {
     if (lineWidth === 0) {
@@ -31918,11 +35101,11 @@ function cubic_containStroke(x0, y0, x1, y1, x2, y2, x3, y3, lineWidth, x, y) {
         || (x < x0 - _l && x < x1 - _l && x < x2 - _l && x < x3 - _l)) {
         return false;
     }
-    var d = cubicProjectPoint(x0, y0, x1, y1, x2, y2, x3, y3, x, y, null);
+    var d = curve_cubicProjectPoint(x0, y0, x1, y1, x2, y2, x3, y3, x, y, null);
     return d <= _l / 2;
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/contain/quadratic.js
+;// ./node_modules/echarts/node_modules/zrender/lib/contain/quadratic.js
 
 function quadratic_containStroke(x0, y0, x1, y1, x2, y2, lineWidth, x, y) {
     if (lineWidth === 0) {
@@ -31935,11 +35118,11 @@ function quadratic_containStroke(x0, y0, x1, y1, x2, y2, lineWidth, x, y) {
         || (x < x0 - _l && x < x1 - _l && x < x2 - _l)) {
         return false;
     }
-    var d = quadraticProjectPoint(x0, y0, x1, y1, x2, y2, x, y, null);
+    var d = curve_quadraticProjectPoint(x0, y0, x1, y1, x2, y2, x, y, null);
     return d <= _l / 2;
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/contain/util.js
+;// ./node_modules/echarts/node_modules/zrender/lib/contain/util.js
 var util_PI2 = Math.PI * 2;
 function normalizeRadian(angle) {
     angle %= util_PI2;
@@ -31949,7 +35132,7 @@ function normalizeRadian(angle) {
     return angle;
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/contain/arc.js
+;// ./node_modules/echarts/node_modules/zrender/lib/contain/arc.js
 
 var arc_PI2 = Math.PI * 2;
 function arc_containStroke(cx, cy, r, startAngle, endAngle, anticlockwise, lineWidth, x, y) {
@@ -31986,7 +35169,7 @@ function arc_containStroke(cx, cy, r, startAngle, endAngle, anticlockwise, lineW
         || (angle + arc_PI2 >= startAngle && angle + arc_PI2 <= endAngle);
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/contain/windingLine.js
+;// ./node_modules/echarts/node_modules/zrender/lib/contain/windingLine.js
 function windingLine(x0, y0, x1, y1, x, y) {
     if ((y > y0 && y > y1) || (y < y0 && y < y1)) {
         return 0;
@@ -32003,7 +35186,7 @@ function windingLine(x0, y0, x1, y1, x, y) {
     return x_ === x ? Infinity : x_ > x ? dir : 0;
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/contain/path.js
+;// ./node_modules/echarts/node_modules/zrender/lib/contain/path.js
 
 
 
@@ -32029,7 +35212,7 @@ function windingCubic(x0, y0, x1, y1, x2, y2, x3, y3, x, y) {
         || (y < y0 && y < y1 && y < y2 && y < y3)) {
         return 0;
     }
-    var nRoots = cubicRootAt(y0, y1, y2, y3, y, roots);
+    var nRoots = curve_cubicRootAt(y0, y1, y2, y3, y, roots);
     if (nRoots === 0) {
         return 0;
     }
@@ -32083,7 +35266,7 @@ function windingQuadratic(x0, y0, x1, y1, x2, y2, x, y) {
         || (y < y0 && y < y1 && y < y2)) {
         return 0;
     }
-    var nRoots = quadraticRootAt(y0, y1, y2, y, roots);
+    var nRoots = curve_quadraticRootAt(y0, y1, y2, y, roots);
     if (nRoots === 0) {
         return 0;
     }
@@ -32312,7 +35495,7 @@ function path_containStroke(pathProxy, lineWidth, x, y) {
     return containPath(pathProxy, lineWidth, true, x, y);
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/graphic/Path.js
+;// ./node_modules/echarts/node_modules/zrender/lib/graphic/Path.js
 
 
 
@@ -32390,7 +35573,7 @@ var Path = (function (_super) {
         return this._decalEl;
     };
     Path.prototype._init = function (props) {
-        var keysArr = keys(props);
+        var keysArr = util_keys(props);
         this.shape = this.getDefaultShape();
         var defaultStyle = this.getDefaultStyle();
         if (defaultStyle) {
@@ -32404,11 +35587,11 @@ var Path = (function (_super) {
                     this.useStyle(value);
                 }
                 else {
-                    util_extend(this.style, value);
+                    core_util_extend(this.style, value);
                 }
             }
             else if (key === 'shape') {
-                util_extend(this.shape, value);
+                core_util_extend(this.shape, value);
             }
             else {
                 _super.prototype.attrKV.call(this, key, value);
@@ -32430,8 +35613,8 @@ var Path = (function (_super) {
     Path.prototype.getInsideTextFill = function () {
         var pathFill = this.style.fill;
         if (pathFill !== 'none') {
-            if (isString(pathFill)) {
-                var fillLum = lum(pathFill, 0);
+            if (util_isString(pathFill)) {
+                var fillLum = color_lum(pathFill, 0);
                 if (fillLum > 0.5) {
                     return DARK_LABEL_COLOR;
                 }
@@ -32448,10 +35631,10 @@ var Path = (function (_super) {
     };
     Path.prototype.getInsideTextStroke = function (textFill) {
         var pathFill = this.style.fill;
-        if (isString(pathFill)) {
+        if (util_isString(pathFill)) {
             var zr = this.__zr;
             var isDarkMode = !!(zr && zr.isDarkMode());
-            var isDarkLabel = lum(textFill, 0) < DARK_MODE_THRESHOLD;
+            var isDarkLabel = color_lum(textFill, 0) < DARK_MODE_THRESHOLD;
             if (isDarkMode === isDarkLabel) {
                 return pathFill;
             }
@@ -32591,7 +35774,7 @@ var Path = (function (_super) {
             shape[keyOrObj] = value;
         }
         else {
-            util_extend(shape, keyOrObj);
+            core_util_extend(shape, keyOrObj);
         }
         this.dirtyShape();
         return this;
@@ -32600,13 +35783,13 @@ var Path = (function (_super) {
         return !!(this.__dirty & SHAPE_CHANGED_BIT);
     };
     Path.prototype.createStyle = function (obj) {
-        return createObject(DEFAULT_PATH_STYLE, obj);
+        return util_createObject(DEFAULT_PATH_STYLE, obj);
     };
     Path.prototype._innerSaveToNormal = function (toState) {
         _super.prototype._innerSaveToNormal.call(this, toState);
         var normalState = this._normalState;
         if (toState.shape && !normalState.shape) {
-            normalState.shape = util_extend({}, this.shape);
+            normalState.shape = core_util_extend({}, this.shape);
         }
     };
     Path.prototype._applyStateObj = function (stateName, state, normalState, keepCurrentStates, transition, animationCfg) {
@@ -32619,13 +35802,13 @@ var Path = (function (_super) {
                     targetShape = state.shape;
                 }
                 else {
-                    targetShape = util_extend({}, normalState.shape);
-                    util_extend(targetShape, state.shape);
+                    targetShape = core_util_extend({}, normalState.shape);
+                    core_util_extend(targetShape, state.shape);
                 }
             }
             else {
-                targetShape = util_extend({}, keepCurrentStates ? this.shape : normalState.shape);
-                util_extend(targetShape, state.shape);
+                targetShape = core_util_extend({}, keepCurrentStates ? this.shape : normalState.shape);
+                core_util_extend(targetShape, state.shape);
             }
         }
         else if (needsRestoreToNormal) {
@@ -32633,9 +35816,9 @@ var Path = (function (_super) {
         }
         if (targetShape) {
             if (transition) {
-                this.shape = util_extend({}, this.shape);
+                this.shape = core_util_extend({}, this.shape);
                 var targetShapePrimaryProps = {};
-                var shapeKeys = keys(targetShape);
+                var shapeKeys = util_keys(targetShape);
                 for (var i = 0; i < shapeKeys.length; i++) {
                     var key = shapeKeys[i];
                     if (typeof targetShape[key] === 'object') {
@@ -32685,10 +35868,10 @@ var Path = (function (_super) {
                 return _this;
             }
             Sub.prototype.getDefaultStyle = function () {
-                return clone(defaultProps.style);
+                return util_clone(defaultProps.style);
             };
             Sub.prototype.getDefaultShape = function () {
-                return clone(defaultProps.shape);
+                return util_clone(defaultProps.shape);
             };
             return Sub;
         }(Path));
@@ -32712,7 +35895,7 @@ var Path = (function (_super) {
 }(graphic_Displayable));
 /* harmony default export */ const graphic_Path = (Path);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/graphic/TSpan.js
+;// ./node_modules/echarts/node_modules/zrender/lib/graphic/TSpan.js
 
 
 
@@ -32721,7 +35904,7 @@ var Path = (function (_super) {
 
 var DEFAULT_TSPAN_STYLE = util_defaults({
     strokeFirst: true,
-    font: DEFAULT_FONT,
+    font: platform_DEFAULT_FONT,
     x: 0,
     y: 0,
     textAlign: 'left',
@@ -32734,9 +35917,7 @@ var TSpan = (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     TSpan.prototype.hasStroke = function () {
-        var style = this.style;
-        var stroke = style.stroke;
-        return stroke != null && stroke !== 'none' && style.lineWidth > 0;
+        return tSpanHasStroke(this.style);
     };
     TSpan.prototype.hasFill = function () {
         var style = this.style;
@@ -32744,27 +35925,14 @@ var TSpan = (function (_super) {
         return fill != null && fill !== 'none';
     };
     TSpan.prototype.createStyle = function (obj) {
-        return createObject(DEFAULT_TSPAN_STYLE, obj);
+        return util_createObject(DEFAULT_TSPAN_STYLE, obj);
     };
     TSpan.prototype.setBoundingRect = function (rect) {
         this._rect = rect;
     };
     TSpan.prototype.getBoundingRect = function () {
-        var style = this.style;
         if (!this._rect) {
-            var text = style.text;
-            text != null ? (text += '') : (text = '');
-            var rect = getBoundingRect(text, style.font, style.textAlign, style.textBaseline);
-            rect.x += style.x || 0;
-            rect.y += style.y || 0;
-            if (this.hasStroke()) {
-                var w = style.lineWidth;
-                rect.x -= w / 2;
-                rect.y -= w / 2;
-                rect.width += w;
-                rect.height += w;
-            }
-            this._rect = rect;
+            this._rect = tSpanCreateBoundingRect(this.style);
         }
         return this._rect;
     };
@@ -32777,7 +35945,7 @@ var TSpan = (function (_super) {
 TSpan.prototype.type = 'tspan';
 /* harmony default export */ const graphic_TSpan = (TSpan);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/graphic/Image.js
+;// ./node_modules/echarts/node_modules/zrender/lib/graphic/Image.js
 
 
 
@@ -32809,7 +35977,7 @@ var ZRImage = (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     ZRImage.prototype.createStyle = function (obj) {
-        return createObject(DEFAULT_IMAGE_STYLE, obj);
+        return util_createObject(DEFAULT_IMAGE_STYLE, obj);
     };
     ZRImage.prototype._getSize = function (dim) {
         var style = this.style;
@@ -32852,7 +36020,7 @@ var ZRImage = (function (_super) {
 ZRImage.prototype.type = 'image';
 /* harmony default export */ const graphic_Image = (ZRImage);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/graphic/helper/roundRect.js
+;// ./node_modules/echarts/node_modules/zrender/lib/graphic/helper/roundRect.js
 function buildPath(ctx, shape) {
     var x = shape.x;
     var y = shape.y;
@@ -32929,7 +36097,7 @@ function buildPath(ctx, shape) {
     r1 !== 0 && ctx.arc(x + r1, y + r1, r1, Math.PI, Math.PI * 1.5);
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/graphic/helper/subPixelOptimize.js
+;// ./node_modules/echarts/node_modules/zrender/lib/graphic/helper/subPixelOptimize.js
 var round = Math.round;
 function subPixelOptimizeLine(outputShape, inputShape, style) {
     if (!inputShape) {
@@ -32987,7 +36155,7 @@ function subPixelOptimize(position, lineWidth, positiveOrNegative) {
         : (doubledPosition + (positiveOrNegative ? 1 : -1)) / 2;
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/graphic/shape/Rect.js
+;// ./node_modules/echarts/node_modules/zrender/lib/graphic/shape/Rect.js
 
 
 
@@ -33046,7 +36214,7 @@ var Rect = (function (_super) {
 Rect.prototype.type = 'rect';
 /* harmony default export */ const shape_Rect = (Rect);
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/graphic/Text.js
+;// ./node_modules/echarts/node_modules/zrender/lib/graphic/Text.js
 
 
 
@@ -33061,6 +36229,7 @@ var DEFAULT_RICH_TEXT_COLOR = {
     fill: '#000'
 };
 var DEFAULT_STROKE_LINE_WIDTH = 2;
+var tmpCITOverflowAreaOut = {};
 var DEFAULT_TEXT_ANIMATION_PROPS = {
     style: util_defaults({
         fill: true,
@@ -33199,7 +36368,7 @@ var ZRText = (function (_super) {
         }
         var sourceRich = sourceStyle.rich;
         var targetRich = targetStyle.rich || (sourceRich && {});
-        util_extend(targetStyle, sourceStyle);
+        core_util_extend(targetStyle, sourceStyle);
         if (sourceRich && targetRich) {
             this._mergeRich(targetRich, sourceRich);
             targetStyle.rich = targetRich;
@@ -33210,11 +36379,11 @@ var ZRText = (function (_super) {
         return targetStyle;
     };
     ZRText.prototype._mergeRich = function (targetRich, sourceRich) {
-        var richNames = keys(sourceRich);
+        var richNames = util_keys(sourceRich);
         for (var i = 0; i < richNames.length; i++) {
             var richName = richNames[i];
             targetRich[richName] = targetRich[richName] || {};
-            util_extend(targetRich[richName], sourceRich[richName]);
+            core_util_extend(targetRich[richName], sourceRich[richName]);
         }
     };
     ZRText.prototype.getAnimationStyleProps = function () {
@@ -33232,22 +36401,25 @@ var ZRText = (function (_super) {
     };
     ZRText.prototype._updatePlainTexts = function () {
         var style = this.style;
-        var textFont = style.font || DEFAULT_FONT;
+        var textFont = style.font || platform_DEFAULT_FONT;
         var textPadding = style.padding;
-        var text = getStyleText(style);
-        var contentBlock = parsePlainText(text, style);
-        var needDrawBg = needDrawBackground(style);
-        var bgColorDrawn = !!(style.backgroundColor);
-        var outerHeight = contentBlock.outerHeight;
-        var outerWidth = contentBlock.outerWidth;
-        var contentWidth = contentBlock.contentWidth;
-        var textLines = contentBlock.lines;
-        var lineHeight = contentBlock.lineHeight;
         var defaultStyle = this._defaultStyle;
         var baseX = style.x || 0;
         var baseY = style.y || 0;
         var textAlign = style.align || defaultStyle.align || 'left';
         var verticalAlign = style.verticalAlign || defaultStyle.verticalAlign || 'top';
+        calcInnerTextOverflowArea(tmpCITOverflowAreaOut, defaultStyle.overflowRect, baseX, baseY, textAlign, verticalAlign);
+        baseX = tmpCITOverflowAreaOut.baseX;
+        baseY = tmpCITOverflowAreaOut.baseY;
+        var text = getStyleText(style);
+        var contentBlock = parsePlainText(text, style, tmpCITOverflowAreaOut.outerWidth, tmpCITOverflowAreaOut.outerHeight);
+        var needDrawBg = needDrawBackground(style);
+        var bgColorDrawn = !!(style.backgroundColor);
+        var outerHeight = contentBlock.outerHeight;
+        var outerWidth = contentBlock.outerWidth;
+        var textLines = contentBlock.lines;
+        var lineHeight = contentBlock.lineHeight;
+        this.isTruncated = !!contentBlock.isTruncated;
         var textX = baseX;
         var textY = text_adjustTextY(baseY, contentBlock.contentHeight, verticalAlign);
         if (needDrawBg || textPadding) {
@@ -33266,6 +36438,7 @@ var ZRText = (function (_super) {
             }
         }
         var defaultLineWidth = 0;
+        var usingDefaultStroke = false;
         var useDefaultFill = false;
         var textFill = getFill('fill' in style
             ? style.fill
@@ -33274,12 +36447,9 @@ var ZRText = (function (_super) {
             ? style.stroke
             : (!bgColorDrawn
                 && (!defaultStyle.autoStroke || useDefaultFill))
-                ? (defaultLineWidth = DEFAULT_STROKE_LINE_WIDTH, defaultStyle.stroke)
+                ? (defaultLineWidth = DEFAULT_STROKE_LINE_WIDTH, usingDefaultStroke = true, defaultStyle.stroke)
                 : null);
         var hasShadow = style.textShadowBlur > 0;
-        var fixedBoundingRect = style.width != null
-            && (style.overflow === 'truncate' || style.overflow === 'break' || style.overflow === 'breakAll');
-        var calculatedLineHeight = contentBlock.calculatedLineHeight;
         for (var i = 0; i < textLines.length; i++) {
             var el = this._getOrCreateChild(graphic_TSpan);
             var subElStyle = el.createStyle();
@@ -33309,24 +36479,26 @@ var ZRText = (function (_super) {
             subElStyle.font = textFont;
             setSeparateFont(subElStyle, style);
             textY += lineHeight;
-            if (fixedBoundingRect) {
-                el.setBoundingRect(new core_BoundingRect(adjustTextX(subElStyle.x, style.width, subElStyle.textAlign), text_adjustTextY(subElStyle.y, calculatedLineHeight, subElStyle.textBaseline), contentWidth, calculatedLineHeight));
-            }
+            el.setBoundingRect(tSpanCreateBoundingRect2(subElStyle, contentBlock.contentWidth, contentBlock.calculatedLineHeight, usingDefaultStroke ? 0 : null));
         }
     };
     ZRText.prototype._updateRichTexts = function () {
         var style = this.style;
+        var defaultStyle = this._defaultStyle;
+        var textAlign = style.align || defaultStyle.align;
+        var verticalAlign = style.verticalAlign || defaultStyle.verticalAlign;
+        var baseX = style.x || 0;
+        var baseY = style.y || 0;
+        calcInnerTextOverflowArea(tmpCITOverflowAreaOut, defaultStyle.overflowRect, baseX, baseY, textAlign, verticalAlign);
+        baseX = tmpCITOverflowAreaOut.baseX;
+        baseY = tmpCITOverflowAreaOut.baseY;
         var text = getStyleText(style);
-        var contentBlock = parseRichText(text, style);
+        var contentBlock = parseRichText(text, style, tmpCITOverflowAreaOut.outerWidth, tmpCITOverflowAreaOut.outerHeight, textAlign);
         var contentWidth = contentBlock.width;
         var outerWidth = contentBlock.outerWidth;
         var outerHeight = contentBlock.outerHeight;
         var textPadding = style.padding;
-        var baseX = style.x || 0;
-        var baseY = style.y || 0;
-        var defaultStyle = this._defaultStyle;
-        var textAlign = style.align || defaultStyle.align;
-        var verticalAlign = style.verticalAlign || defaultStyle.verticalAlign;
+        this.isTruncated = !!contentBlock.isTruncated;
         var boxX = adjustTextX(baseX, outerWidth, textAlign);
         var boxY = text_adjustTextY(baseY, outerHeight, verticalAlign);
         var xLeft = boxX;
@@ -33404,6 +36576,7 @@ var ZRText = (function (_super) {
         var defaultStyle = this._defaultStyle;
         var useDefaultFill = false;
         var defaultLineWidth = 0;
+        var usingDefaultStroke = false;
         var textFill = getFill('fill' in tokenStyle ? tokenStyle.fill
             : 'fill' in style ? style.fill
                 : (useDefaultFill = true, defaultStyle.fill));
@@ -33411,7 +36584,7 @@ var ZRText = (function (_super) {
             : 'stroke' in style ? style.stroke
                 : (!bgColorDrawn
                     && !parentBgColorDrawn
-                    && (!defaultStyle.autoStroke || useDefaultFill)) ? (defaultLineWidth = DEFAULT_STROKE_LINE_WIDTH, defaultStyle.stroke)
+                    && (!defaultStyle.autoStroke || useDefaultFill)) ? (defaultLineWidth = DEFAULT_STROKE_LINE_WIDTH, usingDefaultStroke = true, defaultStyle.stroke)
                     : null);
         var hasShadow = tokenStyle.textShadowBlur > 0
             || style.textShadowBlur > 0;
@@ -33426,21 +36599,19 @@ var ZRText = (function (_super) {
         }
         subElStyle.textAlign = textAlign;
         subElStyle.textBaseline = 'middle';
-        subElStyle.font = token.font || DEFAULT_FONT;
-        subElStyle.opacity = retrieve3(tokenStyle.opacity, style.opacity, 1);
+        subElStyle.font = token.font || platform_DEFAULT_FONT;
+        subElStyle.opacity = util_retrieve3(tokenStyle.opacity, style.opacity, 1);
         setSeparateFont(subElStyle, tokenStyle);
         if (textStroke) {
-            subElStyle.lineWidth = retrieve3(tokenStyle.lineWidth, style.lineWidth, defaultLineWidth);
-            subElStyle.lineDash = retrieve2(tokenStyle.lineDash, style.lineDash);
+            subElStyle.lineWidth = util_retrieve3(tokenStyle.lineWidth, style.lineWidth, defaultLineWidth);
+            subElStyle.lineDash = util_retrieve2(tokenStyle.lineDash, style.lineDash);
             subElStyle.lineDashOffset = style.lineDashOffset || 0;
             subElStyle.stroke = textStroke;
         }
         if (textFill) {
             subElStyle.fill = textFill;
         }
-        var textWidth = token.contentWidth;
-        var textHeight = token.contentHeight;
-        el.setBoundingRect(new core_BoundingRect(adjustTextX(subElStyle.x, textWidth, subElStyle.textAlign), text_adjustTextY(subElStyle.y, textHeight, subElStyle.textBaseline), textWidth, textHeight));
+        el.setBoundingRect(tSpanCreateBoundingRect2(subElStyle, token.contentWidth, token.contentHeight, usingDefaultStroke ? 0 : null));
     };
     ZRText.prototype._renderBackground = function (style, topStyle, x, y, width, height) {
         var textBackgroundColor = style.backgroundColor;
@@ -33467,7 +36638,7 @@ var ZRText = (function (_super) {
         if (isPlainOrGradientBg) {
             var rectStyle = rectEl.style;
             rectStyle.fill = textBackgroundColor || null;
-            rectStyle.fillOpacity = retrieve2(style.fillOpacity, 1);
+            rectStyle.fillOpacity = util_retrieve2(style.fillOpacity, 1);
         }
         else if (isImageBg) {
             imgEl = this._getOrCreateChild(graphic_Image);
@@ -33485,7 +36656,7 @@ var ZRText = (function (_super) {
             var rectStyle = rectEl.style;
             rectStyle.lineWidth = textBorderWidth;
             rectStyle.stroke = textBorderColor;
-            rectStyle.strokeOpacity = retrieve2(style.strokeOpacity, 1);
+            rectStyle.strokeOpacity = util_retrieve2(style.strokeOpacity, 1);
             rectStyle.lineDash = style.borderDash;
             rectStyle.lineDashOffset = style.borderDashOffset || 0;
             rectEl.strokeContainThreshold = 0;
@@ -33499,7 +36670,7 @@ var ZRText = (function (_super) {
         commonStyle.shadowColor = style.shadowColor || 'transparent';
         commonStyle.shadowOffsetX = style.shadowOffsetX || 0;
         commonStyle.shadowOffsetY = style.shadowOffsetY || 0;
-        commonStyle.opacity = retrieve3(style.opacity, topStyle.opacity, 1);
+        commonStyle.opacity = util_retrieve3(style.opacity, topStyle.opacity, 1);
     };
     ZRText.makeFont = function (style) {
         var font = '';
@@ -33511,7 +36682,7 @@ var ZRText = (function (_super) {
                 style.fontFamily || 'sans-serif'
             ].join(' ');
         }
-        return font && trim(font) || style.textFont || style.font;
+        return font && util_trim(font) || style.textFont || style.font;
     };
     return ZRText;
 }(graphic_Displayable));
@@ -33529,7 +36700,7 @@ function parseFontSize(fontSize) {
         return fontSize + 'px';
     }
     else {
-        return DEFAULT_FONT_SIZE + 'px';
+        return platform_DEFAULT_FONT_SIZE + 'px';
     }
 }
 function setSeparateFont(targetStyle, sourceStyle) {
@@ -33546,7 +36717,7 @@ function hasSeparateFont(style) {
 }
 function normalizeTextStyle(style) {
     normalizeStyle(style);
-    each(style.rich, normalizeStyle);
+    util_each(style.rich, normalizeStyle);
     return style;
 }
 function normalizeStyle(style) {
@@ -33560,7 +36731,7 @@ function normalizeStyle(style) {
         style.verticalAlign = (verticalAlign == null || VALID_TEXT_VERTICAL_ALIGN[verticalAlign]) ? verticalAlign : 'top';
         var textPadding = style.padding;
         if (textPadding) {
-            style.padding = normalizeCssArray(style.padding);
+            style.padding = util_normalizeCssArray(style.padding);
         }
     }
 }
@@ -33597,7 +36768,7 @@ function needDrawBackground(style) {
 }
 /* harmony default export */ const Text = (ZRText);
 
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/util/number.js
+;// ./node_modules/echarts/lib/util/number.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -33641,7 +36812,6 @@ function needDrawBackground(style) {
 * specific language governing permissions and limitations
 * under the License.
 */
-
 /*
 * A third-party license is embedded for some of the code in this file:
 * The method "quantile" was copied from "d3.js".
@@ -33651,14 +36821,16 @@ function needDrawBackground(style) {
 * </licenses/LICENSE-d3>).
 */
 
-var RADIAN_EPSILON = 1e-4; // Although chrome already enlarge this number to 100 for `toFixed`, but
+var RADIAN_EPSILON = 1e-4;
+// Although chrome already enlarge this number to 100 for `toFixed`, but
 // we sill follow the spec for compatibility.
-
 var ROUND_SUPPORTED_PRECISION_MAX = 20;
-
 function _trim(str) {
   return str.replace(/^\s+|\s+$/g, '');
 }
+var number_mathMin = Math.min;
+var number_mathMax = Math.max;
+var number_mathAbs = Math.abs;
 /**
  * Linear mapping a value from domain to range
  * @param  val
@@ -33666,8 +36838,6 @@ function _trim(str) {
  * @param  range  Range extent range[0] can be bigger than range[1]
  * @param  clamp Default to be false
  */
-
-
 function linearMap(val, domain, range, clamp) {
   var d0 = domain[0];
   var d1 = domain[1];
@@ -33675,16 +36845,14 @@ function linearMap(val, domain, range, clamp) {
   var r1 = range[1];
   var subDomain = d1 - d0;
   var subRange = r1 - r0;
-
   if (subDomain === 0) {
     return subRange === 0 ? r0 : (r0 + r1) / 2;
-  } // Avoid accuracy problem in edge, such as
+  }
+  // Avoid accuracy problem in edge, such as
   // 146.39 - 62.83 === 83.55999999999999.
   // See echarts/test/ut/spec/util/number.js#linearMap#accuracyError
   // It is a little verbose for efficiency considering this method
   // is a hotspot.
-
-
   if (clamp) {
     if (subDomain > 0) {
       if (val <= d0) {
@@ -33703,55 +36871,63 @@ function linearMap(val, domain, range, clamp) {
     if (val === d0) {
       return r0;
     }
-
     if (val === d1) {
       return r1;
     }
   }
-
   return (val - d0) / subDomain * subRange + r0;
 }
 /**
- * Convert a percent string to absolute number.
- * Returns NaN if percent is not a valid string or number
+ * Preserve the name `parsePercent` for backward compatibility,
+ * and it's effectively published as `echarts.number.parsePercent`.
  */
-
-function number_parsePercent(percent, all) {
-  switch (percent) {
+var number_parsePercent = parsePositionOption;
+/**
+ * @see {parsePositionSizeOption} and also accept a string preset.
+ * @see {PositionSizeOption}
+ */
+function parsePositionOption(option, percentBase, percentOffset) {
+  switch (option) {
     case 'center':
     case 'middle':
-      percent = '50%';
+      option = '50%';
       break;
-
     case 'left':
     case 'top':
-      percent = '0%';
+      option = '0%';
       break;
-
     case 'right':
     case 'bottom':
-      percent = '100%';
+      option = '100%';
       break;
   }
-
-  if (isString(percent)) {
-    if (_trim(percent).match(/%$/)) {
-      return parseFloat(percent) / 100 * all;
+  return parsePositionSizeOption(option, percentBase, percentOffset);
+}
+/**
+ * Accept number, or numeric stirng (`'123'`), or percentage ('100%'), as x/y/width/height pixel number.
+ * If null/undefined or invalid, return NaN.
+ * (But allow JS type coercion (`+option`) due to backward compatibility)
+ * @see {PositionSizeOption}
+ */
+function parsePositionSizeOption(option, percentBase, percentOffset) {
+  if (util_isString(option)) {
+    if (_trim(option).match(/%$/)) {
+      return parseFloat(option) / 100 * percentBase + (percentOffset || 0);
     }
-
-    return parseFloat(percent);
+    return parseFloat(option);
   }
-
-  return percent == null ? NaN : +percent;
+  // Allow flexible input due to backward compatibility.
+  return option == null ? NaN : +option;
 }
 function number_round(x, precision, returnStr) {
   if (precision == null) {
+    // FIXME: the default precision should not be provided, since there is no universally adaptable
+    //  precision. The caller need to input a precision according to the scenarios.
     precision = 10;
-  } // Avoid range error
-
-
-  precision = Math.min(Math.max(0, precision), ROUND_SUPPORTED_PRECISION_MAX); // PENDING: 1.005.toFixed(2) is '1.00' rather than '1.01'
-
+  }
+  // Avoid range error
+  precision = Math.min(Math.max(0, precision), ROUND_SUPPORTED_PRECISION_MAX);
+  // PENDING: 1.005.toFixed(2) is '1.00' rather than '1.01'
   x = (+x).toFixed(precision);
   return returnStr ? x : +x;
 }
@@ -33759,7 +36935,6 @@ function number_round(x, precision, returnStr) {
  * Inplacd asc sort arr.
  * The input arr will be modified.
  */
-
 function asc(arr) {
   arr.sort(function (a, b) {
     return a - b;
@@ -33769,13 +36944,12 @@ function asc(arr) {
 /**
  * Get precision.
  */
-
 function getPrecision(val) {
   val = +val;
-
   if (isNaN(val)) {
     return 0;
-  } // It is much faster than methods converting number to string as follows
+  }
+  // It is much faster than methods converting number to string as follows
   //      let tmp = val.toString();
   //      return tmp.length - 1 - tmp.indexOf('.');
   // especially when precision is low
@@ -33784,28 +36958,23 @@ function getPrecision(val) {
   //     (see https://jsbench.me/2vkpcekkvw/1)
   // (2) If the val is less than for example 1e-15, the result may be incorrect.
   //     (see test/ut/spec/util/number.test.ts `getPrecision_equal_random`)
-
-
   if (val > 1e-14) {
     var e = 1;
-
     for (var i = 0; i < 15; i++, e *= 10) {
       if (Math.round(val * e) / e === val) {
         return i;
       }
     }
   }
-
   return getPrecisionSafe(val);
 }
 /**
  * Get precision with slow but safe method
  */
-
 function getPrecisionSafe(val) {
   // toLowerCase for: '3.4E-12'
-  var str = val.toString().toLowerCase(); // Consider scientific notation: '3.4e-12' '3.4e+12'
-
+  var str = val.toString().toLowerCase();
+  // Consider scientific notation: '3.4e-12' '3.4e+12'
   var eIndex = str.indexOf('e');
   var exp = eIndex > 0 ? +str.slice(eIndex + 1) : 0;
   var significandPartLen = eIndex > 0 ? eIndex : str.length;
@@ -33816,13 +36985,12 @@ function getPrecisionSafe(val) {
 /**
  * Minimal dicernible data precisioin according to a single pixel.
  */
-
 function getPixelPrecision(dataExtent, pixelExtent) {
   var log = Math.log;
   var LN10 = Math.LN10;
   var dataQuantity = Math.floor(log(dataExtent[1] - dataExtent[0]) / LN10);
-  var sizeQuantity = Math.round(log(Math.abs(pixelExtent[1] - pixelExtent[0])) / LN10); // toFixed() digits argument must be between 0 and 20.
-
+  var sizeQuantity = Math.round(log(number_mathAbs(pixelExtent[1] - pixelExtent[0])) / LN10);
+  // toFixed() digits argument must be between 0 and 20.
   var precision = Math.min(Math.max(-dataQuantity + sizeQuantity, 0), 20);
   return !isFinite(precision) ? 20 : precision;
 }
@@ -33837,12 +37005,10 @@ function getPixelPrecision(dataExtent, pixelExtent) {
  * @param precision integer number showing digits of precision
  * @return percent ranging from 0 to 100
  */
-
 function getPercentWithPrecision(valueList, idx, precision) {
   if (!valueList[idx]) {
     return 0;
   }
-
   var seats = getPercentSeats(valueList, precision);
   return seats[idx] || 0;
 }
@@ -33856,51 +37022,45 @@ function getPercentWithPrecision(valueList, idx, precision) {
  * @param precision integer number showing digits of precision
  * @return {Array<number>}
  */
-
 function getPercentSeats(valueList, precision) {
-  var sum = reduce(valueList, function (acc, val) {
+  var sum = util_reduce(valueList, function (acc, val) {
     return acc + (isNaN(val) ? 0 : val);
   }, 0);
-
   if (sum === 0) {
     return [];
   }
-
   var digits = Math.pow(10, precision);
-  var votesPerQuota = map(valueList, function (val) {
+  var votesPerQuota = util_map(valueList, function (val) {
     return (isNaN(val) ? 0 : val) / sum * digits * 100;
   });
   var targetSeats = digits * 100;
-  var seats = map(votesPerQuota, function (votes) {
+  var seats = util_map(votesPerQuota, function (votes) {
     // Assign automatic seats.
     return Math.floor(votes);
   });
-  var currentSum = reduce(seats, function (acc, val) {
+  var currentSum = util_reduce(seats, function (acc, val) {
     return acc + val;
   }, 0);
-  var remainder = map(votesPerQuota, function (votes, idx) {
+  var remainder = util_map(votesPerQuota, function (votes, idx) {
     return votes - seats[idx];
-  }); // Has remainding votes.
-
+  });
+  // Has remainding votes.
   while (currentSum < targetSeats) {
     // Find next largest remainder.
     var max = Number.NEGATIVE_INFINITY;
     var maxId = null;
-
     for (var i = 0, len = remainder.length; i < len; ++i) {
       if (remainder[i] > max) {
         max = remainder[i];
         maxId = i;
       }
-    } // Add a vote to max remainder.
-
-
+    }
+    // Add a vote to max remainder.
     ++seats[maxId];
     remainder[maxId] = 0;
     ++currentSum;
   }
-
-  return map(seats, function (seat) {
+  return util_map(seats, function (seat) {
     return seat / digits;
   });
 }
@@ -33908,21 +37068,19 @@ function getPercentSeats(valueList, precision) {
  * Solve the floating point adding problem like 0.1 + 0.2 === 0.30000000000000004
  * See <http://0.30000000000000004.com/>
  */
-
 function addSafe(val0, val1) {
-  var maxPrecision = Math.max(getPrecision(val0), getPrecision(val1)); // const multiplier = Math.pow(10, maxPrecision);
+  var maxPrecision = Math.max(getPrecision(val0), getPrecision(val1));
+  // const multiplier = Math.pow(10, maxPrecision);
   // return (Math.round(val0 * multiplier) + Math.round(val1 * multiplier)) / multiplier;
-
-  var sum = val0 + val1; // // PENDING: support more?
-
+  var sum = val0 + val1;
+  // // PENDING: support more?
   return maxPrecision > ROUND_SUPPORTED_PRECISION_MAX ? sum : number_round(sum, maxPrecision);
-} // Number.MAX_SAFE_INTEGER, ie do not support.
-
+}
+// Number.MAX_SAFE_INTEGER, ie do not support.
 var MAX_SAFE_INTEGER = 9007199254740991;
 /**
  * To 0 - 2 * PI, considering negative radian.
  */
-
 function remRadian(radian) {
   var pi2 = Math.PI * 2;
   return (radian % pi2 + pi2) % pi2;
@@ -33931,13 +37089,11 @@ function remRadian(radian) {
  * @param {type} radian
  * @return {boolean}
  */
-
 function isRadianAroundZero(val) {
   return val > -RADIAN_EPSILON && val < RADIAN_EPSILON;
-} // eslint-disable-next-line
-
+}
+// eslint-disable-next-line
 var TIME_REG = /^(?:(\d{4})(?:[-\/](\d{1,2})(?:[-\/](\d{1,2})(?:[T ](\d{1,2})(?::(\d{1,2})(?::(\d{1,2})(?:[.,](\d+))?)?)?(Z|[\+\-]\d\d:?\d\d)?)?)?)?)?$/; // jshint ignore:line
-
 /**
  * @param value valid type: number | string | Date, otherwise return `new Date(NaN)`
  *   These values can be accepted:
@@ -33954,29 +37110,27 @@ var TIME_REG = /^(?:(\d{4})(?:[-\/](\d{1,2})(?:[-\/](\d{1,2})(?:[T ](\d{1,2})(?:
  *   + a timestamp, which represent a time in UTC.
  * @return date Never be null/undefined. If invalid, return `new Date(NaN)`.
  */
-
 function parseDate(value) {
   if (value instanceof Date) {
     return value;
-  } else if (isString(value)) {
+  } else if (util_isString(value)) {
     // Different browsers parse date in different way, so we parse it manually.
     // Some other issues:
     // new Date('1970-01-01') is UTC,
     // new Date('1970/01/01') and new Date('1970-1-01') is local.
     // See issue #3623
     var match = TIME_REG.exec(value);
-
     if (!match) {
       // return Invalid Date.
       return new Date(NaN);
-    } // Use local time when no timezone offset is specified.
-
-
+    }
+    // Use local time when no timezone offset is specified.
     if (!match[8]) {
       // match[n] can only be string or undefined.
       // But take care of '12' + 1 => '121'.
       return new Date(+match[1], +(match[2] || 1) - 1, +match[3] || 1, +match[4] || 0, +(match[5] || 0), +match[6] || 0, match[7] ? +match[7].substring(0, 3) : 0);
-    } // Timezoneoffset of Javascript Date has considered DST (Daylight Saving Time,
+    }
+    // Timezoneoffset of Javascript Date has considered DST (Daylight Saving Time,
     // https://tc39.github.io/ecma262/#sec-daylight-saving-time-adjustment).
     // For example, system timezone is set as "Time Zone: America/Toronto",
     // then these code will get different result:
@@ -33984,18 +37138,15 @@ function parseDate(value) {
     // `new Date(1478412000000).getTimezoneOffset();  // get 300`
     // So we should not use `new Date`, but use `Date.UTC`.
     else {
-        var hour = +match[4] || 0;
-
-        if (match[8].toUpperCase() !== 'Z') {
-          hour -= +match[8].slice(0, 3);
-        }
-
-        return new Date(Date.UTC(+match[1], +(match[2] || 1) - 1, +match[3] || 1, hour, +(match[5] || 0), +match[6] || 0, match[7] ? +match[7].substring(0, 3) : 0));
+      var hour = +match[4] || 0;
+      if (match[8].toUpperCase() !== 'Z') {
+        hour -= +match[8].slice(0, 3);
       }
+      return new Date(Date.UTC(+match[1], +(match[2] || 1) - 1, +match[3] || 1, hour, +(match[5] || 0), +match[6] || 0, match[7] ? +match[7].substring(0, 3) : 0));
+    }
   } else if (value == null) {
     return new Date(NaN);
   }
-
   return new Date(Math.round(value));
 }
 /**
@@ -34004,7 +37155,6 @@ function parseDate(value) {
  * @param val
  * @return
  */
-
 function quantity(val) {
   return Math.pow(10, quantityExponent(val));
 }
@@ -34015,23 +37165,19 @@ function quantity(val) {
  * @param val non-negative value
  * @return
  */
-
 function quantityExponent(val) {
   if (val === 0) {
     return 0;
   }
-
   var exp = Math.floor(Math.log(val) / Math.LN10);
   /**
    * exp is expected to be the rounded-down result of the base-10 log of val.
    * But due to the precision loss with Math.log(val), we need to restore it
    * using 10^exp to make sure we can get val back from exp. #11249
    */
-
   if (val / Math.pow(10, exp) >= 10) {
     exp++;
   }
-
   return exp;
 }
 /**
@@ -34045,14 +37191,11 @@ function quantityExponent(val) {
  * @param  round
  * @return Niced number
  */
-
 function nice(val, round) {
   var exponent = quantityExponent(val);
   var exp10 = Math.pow(10, exponent);
   var f = val / exp10; // 1 <= f < 10
-
   var nf;
-
   if (round) {
     if (f < 1.5) {
       nf = 1;
@@ -34078,10 +37221,9 @@ function nice(val, round) {
       nf = 10;
     }
   }
-
-  val = nf * exp10; // Fix 3 * 0.1 === 0.30000000000000004 issue (see IEEE 754).
+  val = nf * exp10;
+  // Fix 3 * 0.1 === 0.30000000000000004 issue (see IEEE 754).
   // 20 is the uppper bound of toFixed.
-
   return exponent >= -20 ? +val.toFixed(exponent < 0 ? -exponent : 0) : val;
 }
 /**
@@ -34090,7 +37232,6 @@ function nice(val, round) {
  * See the license statement at the head of this file.
  * @param ascArr
  */
-
 function quantile(ascArr, p) {
   var H = (ascArr.length - 1) * p + 1;
   var h = Math.floor(H);
@@ -34120,37 +37261,30 @@ function quantile(ascArr, p) {
  *        of the interval, and Infinity can be used.
  * @return The origin list, which has been reformed.
  */
-
 function reformIntervals(list) {
   list.sort(function (a, b) {
     return littleThan(a, b, 0) ? -1 : 1;
   });
   var curr = -Infinity;
   var currClose = 1;
-
   for (var i = 0; i < list.length;) {
     var interval = list[i].interval;
     var close_1 = list[i].close;
-
     for (var lg = 0; lg < 2; lg++) {
       if (interval[lg] <= curr) {
         interval[lg] = curr;
         close_1[lg] = !lg ? 1 - currClose : 1;
       }
-
       curr = interval[lg];
       currClose = close_1[lg];
     }
-
     if (interval[0] === interval[1] && close_1[0] * close_1[1] !== 1) {
       list.splice(i, 1);
     } else {
       i++;
     }
   }
-
   return list;
-
   function littleThan(a, b, lg) {
     return a.interval[lg] < b.interval[lg] || a.interval[lg] === b.interval[lg] && (a.close[lg] - b.close[lg] === (!lg ? 1 : -1) || !lg && littleThan(a, b, 1));
   }
@@ -34171,17 +37305,15 @@ function reformIntervals(list) {
  * @test See full test cases in `test/ut/spec/util/number.js`.
  * @return Must be a typeof number. If not numeric, return NaN.
  */
-
 function numericToNumber(val) {
   var valFloat = parseFloat(val);
   return valFloat == val // eslint-disable-line eqeqeq
-  && (valFloat !== 0 || !isString(val) || val.indexOf('x') <= 0) // For case ' 0x0 '.
+  && (valFloat !== 0 || !util_isString(val) || val.indexOf('x') <= 0) // For case ' 0x0 '.
   ? valFloat : NaN;
 }
 /**
  * Definition of "numeric": see `numericToNumber`.
  */
-
 function isNumeric(val) {
   return !isNaN(numericToNumber(val));
 }
@@ -34190,7 +37322,6 @@ function isNumeric(val) {
  * this auto generated marker id.
  * @return An positive integer.
  */
-
 function getRandomIdBase() {
   return Math.round(Math.random() * 9);
 }
@@ -34200,12 +37331,10 @@ function getRandomIdBase() {
  * @param {number} a one number
  * @param {number} b the other number
  */
-
 function getGreatestCommonDividor(a, b) {
   if (b === 0) {
     return a;
   }
-
   return getGreatestCommonDividor(b, a % b);
 }
 /**
@@ -34214,19 +37343,16 @@ function getGreatestCommonDividor(a, b) {
  * @param {number} a one number
  * @param {number} b the other number
  */
-
 function getLeastCommonMultiple(a, b) {
   if (a == null) {
     return b;
   }
-
   if (b == null) {
     return a;
   }
-
   return a * b / getGreatestCommonDividor(a, b);
 }
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/util/log.js
+;// ./node_modules/echarts/lib/util/log.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -34273,24 +37399,21 @@ function getLeastCommonMultiple(a, b) {
 
 var ECHARTS_PREFIX = '[ECharts] ';
 var storedLogs = {};
-var hasConsole = typeof console !== 'undefined' // eslint-disable-next-line
+var hasConsole = typeof console !== 'undefined'
+// eslint-disable-next-line
 && console.warn && console.log;
-
 function outputLog(type, str, onlyOnce) {
   if (hasConsole) {
     if (onlyOnce) {
       if (storedLogs[str]) {
         return;
       }
-
       storedLogs[str] = true;
-    } // eslint-disable-next-line
-
-
+    }
+    // eslint-disable-next-line
     console[type](ECHARTS_PREFIX + str);
   }
 }
-
 function log(str, onlyOnce) {
   outputLog('log', str, onlyOnce);
 }
@@ -34308,7 +37431,7 @@ function deprecateLog(str) {
 }
 function deprecateReplaceLog(oldOpt, newOpt, scope) {
   if (true) {
-    deprecateLog((scope ? "[" + scope + "]" : '') + (oldOpt + " is deprecated, use " + newOpt + " instead."));
+    deprecateLog((scope ? "[" + scope + "]" : '') + (oldOpt + " is deprecated; use " + newOpt + " instead."));
   }
 }
 /**
@@ -34320,30 +37443,24 @@ function deprecateReplaceLog(oldOpt, newOpt, scope) {
  * @param hintInfo anything about the current execution context to hint users.
  * @throws Error
  */
-
 function makePrintable() {
   var hintInfo = [];
-
   for (var _i = 0; _i < arguments.length; _i++) {
     hintInfo[_i] = arguments[_i];
   }
-
   var msg = '';
-
   if (true) {
     // Fuzzy stringify for print.
     // This code only exist in dev environment.
     var makePrintableStringIfPossible_1 = function (val) {
-      return val === void 0 ? 'undefined' : val === Infinity ? 'Infinity' : val === -Infinity ? '-Infinity' : eqNaN(val) ? 'NaN' : val instanceof Date ? 'Date(' + val.toISOString() + ')' : isFunction(val) ? 'function () { ... }' : isRegExp(val) ? val + '' : null;
+      return val === void 0 ? 'undefined' : val === Infinity ? 'Infinity' : val === -Infinity ? '-Infinity' : util_eqNaN(val) ? 'NaN' : val instanceof Date ? 'Date(' + val.toISOString() + ')' : util_isFunction(val) ? 'function () { ... }' : util_isRegExp(val) ? val + '' : null;
     };
-
-    msg = map(hintInfo, function (arg) {
-      if (isString(arg)) {
+    msg = util_map(hintInfo, function (arg) {
+      if (util_isString(arg)) {
         // Print without quotation mark for some statement.
         return arg;
       } else {
         var printableStr = makePrintableStringIfPossible_1(arg);
-
         if (printableStr != null) {
           return printableStr;
         } else if (typeof JSON !== 'undefined' && JSON.stringify) {
@@ -34351,7 +37468,8 @@ function makePrintable() {
             return JSON.stringify(arg, function (n, val) {
               var printableStr = makePrintableStringIfPossible_1(val);
               return printableStr == null ? val : printableStr;
-            }); // In most cases the info object is small, so do not line break.
+            });
+            // In most cases the info object is small, so do not line break.
           } catch (err) {
             return '?';
           }
@@ -34361,17 +37479,15 @@ function makePrintable() {
       }
     }).join(' ');
   }
-
   return msg;
 }
 /**
  * @throws Error
  */
-
 function throwError(msg) {
   throw new Error(msg);
 }
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/util/model.js
+;// ./node_modules/echarts/lib/util/model.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -34419,7 +37535,6 @@ function throwError(msg) {
 
 
 
-
 function model_interpolateNumber(p0, p1, percent) {
   return (p1 - p0) * percent + p0;
 }
@@ -34428,8 +37543,6 @@ function model_interpolateNumber(p0, p1, percent) {
  * make sure it is not duplicated with user
  * specified name, so use '\0';
  */
-
-
 var DUMMY_COMPONENT_NAME_PREFIX = 'series\0';
 var INTERNAL_COMPONENT_ID_PREFIX = '\0_ec_\0';
 /**
@@ -34437,7 +37550,6 @@ var INTERNAL_COMPONENT_ID_PREFIX = '\0_ec_\0';
  * @param  {*} value
  * @return {Array} [value] or value
  */
-
 function normalizeToArray(value) {
   return value instanceof Array ? value : value == null ? [] : [value];
 }
@@ -34453,46 +37565,43 @@ function normalizeToArray(value) {
  *          label: { show: true }
  *     }
  */
-
 function defaultEmphasis(opt, key, subOpts) {
   // Caution: performance sensitive.
   if (opt) {
     opt[key] = opt[key] || {};
     opt.emphasis = opt.emphasis || {};
-    opt.emphasis[key] = opt.emphasis[key] || {}; // Default emphasis option from normal
-
+    opt.emphasis[key] = opt.emphasis[key] || {};
+    // Default emphasis option from normal
     for (var i = 0, len = subOpts.length; i < len; i++) {
       var subOptName = subOpts[i];
-
       if (!opt.emphasis[key].hasOwnProperty(subOptName) && opt[key].hasOwnProperty(subOptName)) {
         opt.emphasis[key][subOptName] = opt[key][subOptName];
       }
     }
   }
 }
-var TEXT_STYLE_OPTIONS = ['fontStyle', 'fontWeight', 'fontSize', 'fontFamily', 'rich', 'tag', 'color', 'textBorderColor', 'textBorderWidth', 'width', 'height', 'lineHeight', 'align', 'verticalAlign', 'baseline', 'shadowColor', 'shadowBlur', 'shadowOffsetX', 'shadowOffsetY', 'textShadowColor', 'textShadowBlur', 'textShadowOffsetX', 'textShadowOffsetY', 'backgroundColor', 'borderColor', 'borderWidth', 'borderRadius', 'padding']; // modelUtil.LABEL_OPTIONS = modelUtil.TEXT_STYLE_OPTIONS.concat([
+var TEXT_STYLE_OPTIONS = ['fontStyle', 'fontWeight', 'fontSize', 'fontFamily', 'rich', 'tag', 'color', 'textBorderColor', 'textBorderWidth', 'width', 'height', 'lineHeight', 'align', 'verticalAlign', 'baseline', 'shadowColor', 'shadowBlur', 'shadowOffsetX', 'shadowOffsetY', 'textShadowColor', 'textShadowBlur', 'textShadowOffsetX', 'textShadowOffsetY', 'backgroundColor', 'borderColor', 'borderWidth', 'borderRadius', 'padding'];
+// modelUtil.LABEL_OPTIONS = modelUtil.TEXT_STYLE_OPTIONS.concat([
 //     'position', 'offset', 'rotate', 'origin', 'show', 'distance', 'formatter',
 //     'fontStyle', 'fontWeight', 'fontSize', 'fontFamily',
 //     // FIXME: deprecated, check and remove it.
 //     'textStyle'
 // ]);
-
 /**
  * The method does not ensure performance.
  * data could be [12, 2323, {value: 223}, [1221, 23], {value: [2, 23]}]
  * This helper method retrieves value from data.
  */
-
 function getDataItemValue(dataItem) {
-  return isObject(dataItem) && !isArray(dataItem) && !(dataItem instanceof Date) ? dataItem.value : dataItem;
+  return util_isObject(dataItem) && !util_isArray(dataItem) && !(dataItem instanceof Date) ? dataItem.value : dataItem;
 }
 /**
  * data could be [12, 2323, {value: 223}, [1221, 23], {value: [2, 23]}]
  * This helper method determine if dataItem has extra option besides value
  */
-
 function isDataItemOption(dataItem) {
-  return isObject(dataItem) && !(dataItem instanceof Array); // // markLine data can be array
+  return util_isObject(dataItem) && !(dataItem instanceof Array);
+  // // markLine data can be array
   // && !(dataItem[0] && isObject(dataItem[0]) && !(dataItem[0] instanceof Array));
 }
 ;
@@ -34525,76 +37634,65 @@ function isDataItemOption(dataItem) {
  *
  * @return See the comment of <MappingResult>.
  */
-
 function mappingToExists(existings, newCmptOptions, mode) {
   var isNormalMergeMode = mode === 'normalMerge';
   var isReplaceMergeMode = mode === 'replaceMerge';
   var isReplaceAllMode = mode === 'replaceAll';
   existings = existings || [];
   newCmptOptions = (newCmptOptions || []).slice();
-  var existingIdIdxMap = createHashMap(); // Validate id and name on user input option.
-
-  each(newCmptOptions, function (cmptOption, index) {
-    if (!isObject(cmptOption)) {
+  var existingIdIdxMap = util_createHashMap();
+  // Validate id and name on user input option.
+  util_each(newCmptOptions, function (cmptOption, index) {
+    if (!util_isObject(cmptOption)) {
       newCmptOptions[index] = null;
       return;
     }
-
     if (true) {
       // There is some legacy case that name is set as `false`.
       // But should work normally rather than throw error.
       if (cmptOption.id != null && !isValidIdOrName(cmptOption.id)) {
         warnInvalidateIdOrName(cmptOption.id);
       }
-
       if (cmptOption.name != null && !isValidIdOrName(cmptOption.name)) {
         warnInvalidateIdOrName(cmptOption.name);
       }
     }
   });
   var result = prepareResult(existings, existingIdIdxMap, mode);
-
   if (isNormalMergeMode || isReplaceMergeMode) {
     mappingById(result, existings, existingIdIdxMap, newCmptOptions);
   }
-
   if (isNormalMergeMode) {
     mappingByName(result, newCmptOptions);
   }
-
   if (isNormalMergeMode || isReplaceMergeMode) {
     mappingByIndex(result, newCmptOptions, isReplaceMergeMode);
   } else if (isReplaceAllMode) {
     mappingInReplaceAllMode(result, newCmptOptions);
   }
-
-  makeIdAndName(result); // The array `result` MUST NOT contain elided items, otherwise the
+  makeIdAndName(result);
+  // The array `result` MUST NOT contain elided items, otherwise the
   // forEach will omit those items and result in incorrect result.
-
   return result;
 }
-
 function prepareResult(existings, existingIdIdxMap, mode) {
   var result = [];
-
   if (mode === 'replaceAll') {
     return result;
-  } // Do not use native `map` to in case that the array `existings`
+  }
+  // Do not use native `map` to in case that the array `existings`
   // contains elided items, which will be omitted.
-
-
   for (var index = 0; index < existings.length; index++) {
-    var existing = existings[index]; // Because of replaceMerge, `existing` may be null/undefined.
-
+    var existing = existings[index];
+    // Because of replaceMerge, `existing` may be null/undefined.
     if (existing && existing.id != null) {
       existingIdIdxMap.set(existing.id, index);
-    } // For non-internal-componnets:
+    }
+    // For non-internal-componnets:
     //     Mode "normalMerge": all existings kept.
     //     Mode "replaceMerge": all existing removed unless mapped by id.
     // For internal-components:
     //     go with "replaceMerge" approach in both mode.
-
-
     result.push({
       existing: mode === 'replaceMerge' || isComponentIdInternal(existing) ? null : existing,
       newOption: null,
@@ -34602,42 +37700,35 @@ function prepareResult(existings, existingIdIdxMap, mode) {
       brandNew: null
     });
   }
-
   return result;
 }
-
 function mappingById(result, existings, existingIdIdxMap, newCmptOptions) {
   // Mapping by id if specified.
-  each(newCmptOptions, function (cmptOption, index) {
+  util_each(newCmptOptions, function (cmptOption, index) {
     if (!cmptOption || cmptOption.id == null) {
       return;
     }
-
     var optionId = makeComparableKey(cmptOption.id);
     var existingIdx = existingIdIdxMap.get(optionId);
-
     if (existingIdx != null) {
       var resultItem = result[existingIdx];
-      assert(!resultItem.newOption, 'Duplicated option on id "' + optionId + '".');
-      resultItem.newOption = cmptOption; // In both mode, if id matched, new option will be merged to
+      util_assert(!resultItem.newOption, 'Duplicated option on id "' + optionId + '".');
+      resultItem.newOption = cmptOption;
+      // In both mode, if id matched, new option will be merged to
       // the existings rather than creating new component model.
-
       resultItem.existing = existings[existingIdx];
       newCmptOptions[index] = null;
     }
   });
 }
-
 function mappingByName(result, newCmptOptions) {
   // Mapping by name if specified.
-  each(newCmptOptions, function (cmptOption, index) {
+  util_each(newCmptOptions, function (cmptOption, index) {
     if (!cmptOption || cmptOption.name == null) {
       return;
     }
-
     for (var i = 0; i < result.length; i++) {
       var existing = result[i].existing;
-
       if (!result[i].newOption // Consider name: two map to one.
       // Can not match when both ids existing but different.
       && existing && (existing.id == null || cmptOption.id == null) && !isComponentIdInternal(cmptOption) && !isComponentIdInternal(existing) && keyExistAndEqual('name', existing, cmptOption)) {
@@ -34648,29 +37739,28 @@ function mappingByName(result, newCmptOptions) {
     }
   });
 }
-
 function mappingByIndex(result, newCmptOptions, brandNew) {
-  each(newCmptOptions, function (cmptOption) {
+  util_each(newCmptOptions, function (cmptOption) {
     if (!cmptOption) {
       return;
-    } // Find the first place that not mapped by id and not internal component (consider the "hole").
-
-
+    }
+    // Find the first place that not mapped by id and not internal component (consider the "hole").
     var resultItem;
     var nextIdx = 0;
-
-    while ( // Be `!resultItem` only when `nextIdx >= result.length`.
-    (resultItem = result[nextIdx]) && ( // (1) Existing models that already have id should be able to mapped to. Because
+    while (
+    // Be `!resultItem` only when `nextIdx >= result.length`.
+    (resultItem = result[nextIdx]
+    // (1) Existing models that already have id should be able to mapped to. Because
     // after mapping performed, model will always be assigned with an id if user not given.
     // After that all models have id.
     // (2) If new option has id, it can only set to a hole or append to the last. It should
     // not be merged to the existings with different id. Because id should not be overwritten.
     // (3) Name can be overwritten, because axis use name as 'show label text'.
-    resultItem.newOption || isComponentIdInternal(resultItem.existing) || // In mode "replaceMerge", here no not-mapped-non-internal-existing.
+    ) && (resultItem.newOption || isComponentIdInternal(resultItem.existing) ||
+    // In mode "replaceMerge", here no not-mapped-non-internal-existing.
     resultItem.existing && cmptOption.id != null && !keyExistAndEqual('id', cmptOption, resultItem.existing))) {
       nextIdx++;
     }
-
     if (resultItem) {
       resultItem.newOption = cmptOption;
       resultItem.brandNew = brandNew;
@@ -34682,13 +37772,11 @@ function mappingByIndex(result, newCmptOptions, brandNew) {
         keyInfo: null
       });
     }
-
     nextIdx++;
   });
 }
-
 function mappingInReplaceAllMode(result, newCmptOptions) {
-  each(newCmptOptions, function (cmptOption) {
+  util_each(newCmptOptions, function (cmptOption) {
     // The feature "reproduce" requires "hole" will also reproduced
     // in case that component index referring are broken.
     result.push({
@@ -34703,8 +37791,6 @@ function mappingInReplaceAllMode(result, newCmptOptions) {
  * Make id and name for mapping result (result of mappingToExists)
  * into `keyInfo` field.
  */
-
-
 function makeIdAndName(mapResult) {
   // We use this id to hash component models and view instances
   // in echarts. id can be specified by user, or auto generated.
@@ -34715,36 +37801,34 @@ function makeIdAndName(mapResult) {
   // name can be duplicated among components, which is convenient
   // to specify multi components (like series) by one name.
   // Ensure that each id is distinct.
-  var idMap = createHashMap();
-  each(mapResult, function (item) {
+  var idMap = util_createHashMap();
+  util_each(mapResult, function (item) {
     var existing = item.existing;
     existing && idMap.set(existing.id, item);
   });
-  each(mapResult, function (item) {
-    var opt = item.newOption; // Force ensure id not duplicated.
-
-    assert(!opt || opt.id == null || !idMap.get(opt.id) || idMap.get(opt.id) === item, 'id duplicates: ' + (opt && opt.id));
+  util_each(mapResult, function (item) {
+    var opt = item.newOption;
+    // Force ensure id not duplicated.
+    util_assert(!opt || opt.id == null || !idMap.get(opt.id) || idMap.get(opt.id) === item, 'id duplicates: ' + (opt && opt.id));
     opt && opt.id != null && idMap.set(opt.id, item);
     !item.keyInfo && (item.keyInfo = {});
-  }); // Make name and id.
-
-  each(mapResult, function (item, index) {
+  });
+  // Make name and id.
+  util_each(mapResult, function (item, index) {
     var existing = item.existing;
     var opt = item.newOption;
     var keyInfo = item.keyInfo;
-
-    if (!isObject(opt)) {
+    if (!util_isObject(opt)) {
       return;
-    } // Name can be overwritten. Consider case: axis.name = '20km'.
+    }
+    // Name can be overwritten. Consider case: axis.name = '20km'.
     // But id generated by name will not be changed, which affect
     // only in that case: setOption with 'not merge mode' and view
     // instance will be recreated, which can be accepted.
-
-
-    keyInfo.name = opt.name != null ? makeComparableKey(opt.name) : existing ? existing.name // Avoid that different series has the same name,
+    keyInfo.name = opt.name != null ? makeComparableKey(opt.name) : existing ? existing.name
+    // Avoid that different series has the same name,
     // because name may be used like in color pallet.
     : DUMMY_COMPONENT_NAME_PREFIX + index;
-
     if (existing) {
       keyInfo.id = makeComparableKey(existing.id);
     } else if (opt.id != null) {
@@ -34756,58 +37840,47 @@ function makeIdAndName(mapResult) {
       // Series with the same name between optionA and optionB
       // should be mapped.
       var idNum = 0;
-
       do {
         keyInfo.id = '\0' + keyInfo.name + '\0' + idNum++;
       } while (idMap.get(keyInfo.id));
     }
-
     idMap.set(keyInfo.id, item);
   });
 }
-
 function keyExistAndEqual(attr, obj1, obj2) {
   var key1 = convertOptionIdName(obj1[attr], null);
-  var key2 = convertOptionIdName(obj2[attr], null); // See `MappingExistingItem`. `id` and `name` trade string equals to number.
-
+  var key2 = convertOptionIdName(obj2[attr], null);
+  // See `MappingExistingItem`. `id` and `name` trade string equals to number.
   return key1 != null && key2 != null && key1 === key2;
 }
 /**
  * @return return null if not exist.
  */
-
-
 function makeComparableKey(val) {
   if (true) {
     if (val == null) {
       throw new Error();
     }
   }
-
   return convertOptionIdName(val, '');
 }
-
 function convertOptionIdName(idOrName, defaultValue) {
   if (idOrName == null) {
     return defaultValue;
   }
-
-  return isString(idOrName) ? idOrName : isNumber(idOrName) || isStringSafe(idOrName) ? idOrName + '' : defaultValue;
+  return util_isString(idOrName) ? idOrName : util_isNumber(idOrName) || util_isStringSafe(idOrName) ? idOrName + '' : defaultValue;
 }
-
 function warnInvalidateIdOrName(idOrName) {
   if (true) {
     warn('`' + idOrName + '` is invalid id or name. Must be a string or number.');
   }
 }
-
 function isValidIdOrName(idOrName) {
-  return isStringSafe(idOrName) || isNumeric(idOrName);
+  return util_isStringSafe(idOrName) || isNumeric(idOrName);
 }
-
 function isNameSpecified(componentModel) {
-  var name = componentModel.name; // Is specified when `indexOf` get -1 or > 0.
-
+  var name = componentModel.name;
+  // Is specified when `indexOf` get -1 or > 0.
   return !!(name && name.indexOf(DUMMY_COMPONENT_NAME_PREFIX));
 }
 /**
@@ -34815,7 +37888,6 @@ function isNameSpecified(componentModel) {
  * @param {Object} cmptOption
  * @return {boolean}
  */
-
 function isComponentIdInternal(cmptOption) {
   return cmptOption && cmptOption.id != null && makeComparableKey(cmptOption.id).indexOf(INTERNAL_COMPONENT_ID_PREFIX) === 0;
 }
@@ -34824,20 +37896,19 @@ function makeInternalComponentId(idSuffix) {
 }
 function setComponentTypeToKeyInfo(mappingResult, mainType, componentModelCtor) {
   // Set mainType and complete subType.
-  each(mappingResult, function (item) {
+  util_each(mappingResult, function (item) {
     var newOption = item.newOption;
-
-    if (isObject(newOption)) {
+    if (util_isObject(newOption)) {
       item.keyInfo.mainType = mainType;
       item.keyInfo.subType = determineSubType(mainType, newOption, item.existing, componentModelCtor);
     }
   });
 }
-
 function determineSubType(mainType, newCmptOption, existComponent, componentModelCtor) {
-  var subType = newCmptOption.type ? newCmptOption.type : existComponent ? existComponent.subType // Use determineSubType only when there is no existComponent.
-  : componentModelCtor.determineSubType(mainType, newCmptOption); // tooltip, markline, markpoint may always has no subType
-
+  var subType = newCmptOption.type ? newCmptOption.type : existComponent ? existComponent.subType
+  // Use determineSubType only when there is no existComponent.
+  : componentModelCtor.determineSubType(mainType, newCmptOption);
+  // tooltip, markline, markpoint may always has no subType
   return subType;
 }
 /**
@@ -34848,29 +37919,22 @@ function determineSubType(mainType, newCmptOption, existComponent, componentMode
  * @param batchB Like: [{seriesId: 2, dataIndex: [32, 4, 5]}, ...]
  * @return result: [resultBatchA, resultBatchB]
  */
-
-
 function compressBatches(batchA, batchB) {
   var mapA = {};
   var mapB = {};
   makeMap(batchA || [], mapA);
   makeMap(batchB || [], mapB, mapA);
   return [mapToArray(mapA), mapToArray(mapB)];
-
   function makeMap(sourceBatch, map, otherMap) {
     for (var i = 0, len = sourceBatch.length; i < len; i++) {
       var seriesId = convertOptionIdName(sourceBatch[i].seriesId, null);
-
       if (seriesId == null) {
         return;
       }
-
       var dataIndices = normalizeToArray(sourceBatch[i].dataIndex);
       var otherDataIndices = otherMap && otherMap[seriesId];
-
       for (var j = 0, lenj = dataIndices.length; j < lenj; j++) {
         var dataIndex = dataIndices[j];
-
         if (otherDataIndices && otherDataIndices[dataIndex]) {
           otherDataIndices[dataIndex] = null;
         } else {
@@ -34879,10 +37943,8 @@ function compressBatches(batchA, batchB) {
       }
     }
   }
-
   function mapToArray(map, isData) {
     var result = [];
-
     for (var i in map) {
       if (map.hasOwnProperty(i) && map[i] != null) {
         if (isData) {
@@ -34896,7 +37958,6 @@ function compressBatches(batchA, batchB) {
         }
       }
     }
-
     return result;
   }
 }
@@ -34905,16 +37966,15 @@ function compressBatches(batchA, batchB) {
  *                         each of which can be Array or primary type.
  * @return dataIndex If not found, return undefined/null.
  */
-
 function queryDataIndex(data, payload) {
   if (payload.dataIndexInside != null) {
     return payload.dataIndexInside;
   } else if (payload.dataIndex != null) {
-    return isArray(payload.dataIndex) ? map(payload.dataIndex, function (value) {
+    return util_isArray(payload.dataIndex) ? util_map(payload.dataIndex, function (value) {
       return data.indexOfRawIndex(value);
     }) : data.indexOfRawIndex(payload.dataIndex);
   } else if (payload.name != null) {
-    return isArray(payload.name) ? map(payload.name, function (value) {
+    return util_isArray(payload.name) ? util_map(payload.name, function (value) {
       return data.indexOfName(value);
     }) : data.indexOfName(payload.name);
   }
@@ -34939,7 +37999,6 @@ function queryDataIndex(data, payload) {
  *
  * @return {Function}
  */
-
 function makeInner() {
   var key = '__ec_inner_' + innerUniqueIndex++;
   return function (hostObj) {
@@ -34950,20 +38009,16 @@ var innerUniqueIndex = getRandomIdBase();
 /**
  * The same behavior as `component.getReferringComponents`.
  */
-
 function parseFinder(ecModel, finderInput, opt) {
   var _a = preParseFinder(finderInput, opt),
-      mainTypeSpecified = _a.mainTypeSpecified,
-      queryOptionMap = _a.queryOptionMap,
-      others = _a.others;
-
+    mainTypeSpecified = _a.mainTypeSpecified,
+    queryOptionMap = _a.queryOptionMap,
+    others = _a.others;
   var result = others;
   var defaultMainType = opt ? opt.defaultMainType : null;
-
   if (!mainTypeSpecified && defaultMainType) {
     queryOptionMap.set(defaultMainType, {});
   }
-
   queryOptionMap.each(function (queryOption, mainType) {
     var queryResult = queryReferringComponents(ecModel, mainType, queryOption, {
       useDefault: defaultMainType === mainType,
@@ -34977,33 +38032,28 @@ function parseFinder(ecModel, finderInput, opt) {
 }
 function preParseFinder(finderInput, opt) {
   var finder;
-
-  if (isString(finderInput)) {
+  if (util_isString(finderInput)) {
     var obj = {};
     obj[finderInput + 'Index'] = 0;
     finder = obj;
   } else {
     finder = finderInput;
   }
-
-  var queryOptionMap = createHashMap();
+  var queryOptionMap = util_createHashMap();
   var others = {};
   var mainTypeSpecified = false;
-  each(finder, function (value, key) {
-    // Exclude 'dataIndex' and other illgal keys.
+  util_each(finder, function (value, key) {
+    // Exclude 'dataIndex' and other illegal keys.
     if (key === 'dataIndex' || key === 'dataIndexInside') {
       others[key] = value;
       return;
     }
-
     var parsedKey = key.match(/^(\w+)(Index|Id|Name)$/) || [];
     var mainType = parsedKey[1];
     var queryType = (parsedKey[2] || '').toLowerCase();
-
-    if (!mainType || !queryType || opt && opt.includeMainTypes && indexOf(opt.includeMainTypes, mainType) < 0) {
+    if (!mainType || !queryType || opt && opt.includeMainTypes && util_indexOf(opt.includeMainTypes, mainType) < 0) {
       return;
     }
-
     mainTypeSpecified = mainTypeSpecified || !!mainType;
     var queryOption = queryOptionMap.get(mainType) || queryOptionMap.set(mainType, {});
     queryOption[queryType] = value;
@@ -35033,27 +38083,37 @@ function queryReferringComponents(ecModel, mainType, userOption, opt) {
     models: null,
     specified: indexOption != null || idOption != null || nameOption != null
   };
-
   if (!result.specified) {
     // Use the first as default if `useDefault`.
     var firstCmpt = void 0;
     result.models = opt.useDefault && (firstCmpt = ecModel.getComponent(mainType)) ? [firstCmpt] : [];
     return result;
   }
-
   if (indexOption === 'none' || indexOption === false) {
-    assert(opt.enableNone, '`"none"` or `false` is not a valid value on index option.');
-    result.models = [];
-    return result;
-  } // `queryComponents` will return all components if
-  // both all of index/id/name are null/undefined.
-
-
-  if (indexOption === 'all') {
-    assert(opt.enableAll, '`"all"` is not a valid value on index option.');
-    indexOption = idOption = nameOption = null;
+    if (opt.enableNone) {
+      result.models = [];
+      return result;
+    } else {
+      // Do not throw; consider if some component previously does not use this method,
+      // and start to use it, need to be fault-tolerant for backward compatibility.
+      if (true) {
+        error('`"none"` or `false` is not a valid value on index option.');
+      }
+      indexOption = -1; // Can not query by index but may still query by id/name if specified.
+    }
   }
-
+  // `queryComponents` will return all components if
+  // both all of index/id/name are null/undefined.
+  if (indexOption === 'all') {
+    if (opt.enableAll) {
+      indexOption = idOption = nameOption = null;
+    } else {
+      if (true) {
+        error('`"all"` is not a valid value on index option.');
+      }
+      indexOption = -1;
+    }
+  }
   result.models = ecModel.queryComponents({
     mainType: mainType,
     index: indexOption,
@@ -35071,7 +38131,7 @@ function getAttribute(dom, key) {
 function getTooltipRenderMode(renderModeOption) {
   if (renderModeOption === 'auto') {
     // Using html when `document` exists, use richText otherwise
-    return core_env.domSupported ? 'html' : 'richText';
+    return lib_core_env.domSupported ? 'html' : 'richText';
   } else {
     return renderModeOption || 'html';
   }
@@ -35079,12 +38139,11 @@ function getTooltipRenderMode(renderModeOption) {
 /**
  * Group a list by key.
  */
-
 function groupData(array, getKey // return key
 ) {
-  var buckets = createHashMap();
+  var buckets = util_createHashMap();
   var keys = [];
-  each(array, function (item) {
+  util_each(array, function (item) {
     var key = getKey(item);
     (buckets.get(key) || (keys.push(key), buckets.set(key, []))).push(item);
   });
@@ -35107,28 +38166,24 @@ function groupData(array, getKey // return key
  *                     If `sourceValue` and `targetValue` are `(string | number)[]`, return `(string | number)[]`.
  *                     Other cases do not supported.
  */
-
 function interpolateRawValues(data, precision, sourceValue, targetValue, percent) {
   var isAutoPrecision = precision == null || precision === 'auto';
-
   if (targetValue == null) {
     return targetValue;
   }
-
-  if (isNumber(targetValue)) {
+  if (util_isNumber(targetValue)) {
     var value = model_interpolateNumber(sourceValue || 0, targetValue, percent);
     return number_round(value, isAutoPrecision ? Math.max(getPrecision(sourceValue || 0), getPrecision(targetValue)) : precision);
-  } else if (isString(targetValue)) {
+  } else if (util_isString(targetValue)) {
     return percent < 1 ? sourceValue : targetValue;
   } else {
     var interpolated = [];
     var leftArr = sourceValue;
     var rightArr = targetValue;
     var length_1 = Math.max(leftArr ? leftArr.length : 0, rightArr.length);
-
     for (var i = 0; i < length_1; ++i) {
-      var info = data.getDimensionInfo(i); // Don't interpolate ordinal dims
-
+      var info = data.getDimensionInfo(i);
+      // Don't interpolate ordinal dims
       if (info && info.type === 'ordinal') {
         // In init, there is no `sourceValue`, but should better not to get undefined result.
         interpolated[i] = (percent < 1 && leftArr ? leftArr : rightArr)[i];
@@ -35139,11 +38194,59 @@ function interpolateRawValues(data, precision, sourceValue, targetValue, percent
         interpolated[i] = number_round(value, isAutoPrecision ? Math.max(getPrecision(leftVal), getPrecision(rightVal)) : precision);
       }
     }
-
     return interpolated;
   }
 }
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/util/innerStore.js
+/**
+ * Use an iterator to avoid exposing the internal list or duplicating it
+ * for the outside traveller, and no extra heap allocation.
+ * @usage
+ *  for (const it = resetIterator(); it.next();) {
+ *      const item = it.item;
+ *      const key = it.key;
+ *      const itIdx = it.itIdx;
+ *      // ...
+ *  }
+ * @usage
+ *  const it = resetIterator();
+ *  while (it.next()) { ... }
+ * @usage
+ *  for (resetIterator(it); it.next();) { ... }
+ */
+var ListIterator = /** @class */function () {
+  function ListIterator() {}
+  /**
+   * The loop condition is `idx < end` if `step > 0`;
+   * The loop condition is `idx >= end` if `step < 0`.
+   *
+   * @param end By default `list.length` if `step > 0`; `0` if `step < 0`.
+   * @param step By default `1`.
+   */
+  ListIterator.prototype.reset = function (list, start, end, step) {
+    this._list = list;
+    this._step = step = step || 1;
+    this._idx = start;
+    this._end = end != null ? end : step > 0 ? list.length : 0;
+    this.item = null;
+    this.key = NaN;
+    return this;
+  };
+  ListIterator.prototype.next = function () {
+    if (this._step > 0 ? this._idx < this._end : this._idx >= this._end) {
+      this.item = this._list[this._idx];
+      this.key = this._idx = this._idx + this._step;
+      return true;
+    }
+    return false;
+  };
+  return ListIterator;
+}();
+
+function clearTmpModel(model) {
+  // Clear to avoid memory leak.
+  model.option = model.parentModel = model.ecModel = null;
+}
+;// ./node_modules/echarts/lib/util/innerStore.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -35191,24 +38294,26 @@ function interpolateRawValues(data, precision, sourceValue, targetValue, percent
 var getECData = makeInner();
 var setCommonECData = function (seriesIndex, dataType, dataIdx, el) {
   if (el) {
-    var ecData = getECData(el); // Add data index and series index for indexing the data by element
+    var ecData = getECData(el);
+    // Add data index and series index for indexing the data by element
     // Useful in tooltip
-
     ecData.dataIndex = dataIdx;
     ecData.dataType = dataType;
-    ecData.seriesIndex = seriesIndex; // TODO: not store dataIndex on children.
-
+    ecData.seriesIndex = seriesIndex;
+    ecData.ssrType = 'chart';
+    // TODO: not store dataIndex on children.
     if (el.type === 'group') {
       el.traverse(function (child) {
         var childECData = getECData(child);
         childECData.seriesIndex = seriesIndex;
         childECData.dataIndex = dataIdx;
         childECData.dataType = dataType;
+        childECData.ssrType = 'chart';
       });
     }
   }
 };
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/util/states.js
+;// ./node_modules/echarts/lib/util/states.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -35258,8 +38363,7 @@ var setCommonECData = function (seriesIndex, dataType, dataIdx, el) {
 
 
 
- // Reserve 0 as default.
-
+// Reserve 0 as default.
 var _highlightNextDigit = 1;
 var _highlightKeyMap = {};
 var getSavedStates = makeInner();
@@ -35276,53 +38380,21 @@ var DOWNPLAY_ACTION_TYPE = 'downplay';
 var SELECT_ACTION_TYPE = 'select';
 var UNSELECT_ACTION_TYPE = 'unselect';
 var TOGGLE_SELECT_ACTION_TYPE = 'toggleSelect';
-
+var SELECT_CHANGED_EVENT_TYPE = 'selectchanged';
 function hasFillOrStroke(fillOrStroke) {
   return fillOrStroke != null && fillOrStroke !== 'none';
-} // Most lifted color are duplicated.
-
-
-var liftedColorCache = new lib_core_LRU(100);
-
-function liftColor(color) {
-  if (isString(color)) {
-    var liftedColor = liftedColorCache.get(color);
-
-    if (!liftedColor) {
-      liftedColor = lift(color, -0.1);
-      liftedColorCache.put(color, liftedColor);
-    }
-
-    return liftedColor;
-  } else if (isGradientObject(color)) {
-    var ret = util_extend({}, color);
-    ret.colorStops = map(color.colorStops, function (stop) {
-      return {
-        offset: stop.offset,
-        color: lift(stop.color, -0.1)
-      };
-    });
-    return ret;
-  } // Change nothing.
-
-
-  return color;
 }
-
 function doChangeHoverState(el, stateName, hoverStateEnum) {
   if (el.onHoverStateChange && (el.hoverState || 0) !== hoverStateEnum) {
     el.onHoverStateChange(stateName);
   }
-
   el.hoverState = hoverStateEnum;
 }
-
 function singleEnterEmphasis(el) {
   // Only mark the flag.
   // States will be applied in the echarts.ts in next frame.
   doChangeHoverState(el, 'emphasis', HOVER_STATE_EMPHASIS);
 }
-
 function singleLeaveEmphasis(el) {
   // Only mark the flag.
   // States will be applied in the echarts.ts in next frame.
@@ -35330,50 +38402,40 @@ function singleLeaveEmphasis(el) {
     doChangeHoverState(el, 'normal', HOVER_STATE_NORMAL);
   }
 }
-
 function singleEnterBlur(el) {
   doChangeHoverState(el, 'blur', HOVER_STATE_BLUR);
 }
-
 function singleLeaveBlur(el) {
   if (el.hoverState === HOVER_STATE_BLUR) {
     doChangeHoverState(el, 'normal', HOVER_STATE_NORMAL);
   }
 }
-
 function singleEnterSelect(el) {
   el.selected = true;
 }
-
 function singleLeaveSelect(el) {
   el.selected = false;
 }
-
 function updateElementState(el, updater, commonParam) {
   updater(el, commonParam);
 }
-
 function traverseUpdateState(el, updater, commonParam) {
   updateElementState(el, updater, commonParam);
   el.isGroup && el.traverse(function (child) {
     updateElementState(child, updater, commonParam);
   });
 }
-
 function setStatesFlag(el, stateName) {
   switch (stateName) {
     case 'emphasis':
       el.hoverState = HOVER_STATE_EMPHASIS;
       break;
-
     case 'normal':
       el.hoverState = HOVER_STATE_NORMAL;
       break;
-
     case 'blur':
       el.hoverState = HOVER_STATE_BLUR;
       break;
-
     case 'select':
       el.selected = true;
   }
@@ -35383,7 +38445,6 @@ function setStatesFlag(el, stateName) {
  * DON'T forget to clearStates before we update the style and shape.
  * Or we may update on the wrong state instead of normal state.
  */
-
 function clearStates(el) {
   if (el.isGroup) {
     el.traverse(function (child) {
@@ -35393,123 +38454,106 @@ function clearStates(el) {
     el.clearStates();
   }
 }
-
 function getFromStateStyle(el, props, toStateName, defaultValue) {
   var style = el.style;
   var fromState = {};
-
   for (var i = 0; i < props.length; i++) {
     var propName = props[i];
     var val = style[propName];
     fromState[propName] = val == null ? defaultValue && defaultValue[propName] : val;
   }
-
   for (var i = 0; i < el.animators.length; i++) {
     var animator = el.animators[i];
-
-    if (animator.__fromStateTransition // Don't consider the animation to emphasis state.
+    if (animator.__fromStateTransition
+    // Don't consider the animation to emphasis state.
     && animator.__fromStateTransition.indexOf(toStateName) < 0 && animator.targetName === 'style') {
       animator.saveTo(fromState, props);
     }
   }
-
   return fromState;
 }
-
 function createEmphasisDefaultState(el, stateName, targetStates, state) {
-  var hasSelect = targetStates && indexOf(targetStates, 'select') >= 0;
+  var hasSelect = targetStates && util_indexOf(targetStates, 'select') >= 0;
   var cloned = false;
-
   if (el instanceof graphic_Path) {
     var store = getSavedStates(el);
     var fromFill = hasSelect ? store.selectFill || store.normalFill : store.normalFill;
     var fromStroke = hasSelect ? store.selectStroke || store.normalStroke : store.normalStroke;
-
     if (hasFillOrStroke(fromFill) || hasFillOrStroke(fromStroke)) {
       state = state || {};
-      var emphasisStyle = state.style || {}; // inherit case
-
+      var emphasisStyle = state.style || {};
+      // inherit case
       if (emphasisStyle.fill === 'inherit') {
         cloned = true;
-        state = util_extend({}, state);
-        emphasisStyle = util_extend({}, emphasisStyle);
+        state = core_util_extend({}, state);
+        emphasisStyle = core_util_extend({}, emphasisStyle);
         emphasisStyle.fill = fromFill;
-      } // Apply default color lift
+      }
+      // Apply default color lift
       else if (!hasFillOrStroke(emphasisStyle.fill) && hasFillOrStroke(fromFill)) {
-          cloned = true; // Not modify the original value.
-
-          state = util_extend({}, state);
-          emphasisStyle = util_extend({}, emphasisStyle); // Already being applied 'emphasis'. DON'T lift color multiple times.
-
-          emphasisStyle.fill = liftColor(fromFill);
-        } // Not highlight stroke if fill has been highlighted.
-        else if (!hasFillOrStroke(emphasisStyle.stroke) && hasFillOrStroke(fromStroke)) {
-            if (!cloned) {
-              state = util_extend({}, state);
-              emphasisStyle = util_extend({}, emphasisStyle);
-            }
-
-            emphasisStyle.stroke = liftColor(fromStroke);
-          }
-
+        cloned = true;
+        // Not modify the original value.
+        state = core_util_extend({}, state);
+        emphasisStyle = core_util_extend({}, emphasisStyle);
+        // Already being applied 'emphasis'. DON'T lift color multiple times.
+        emphasisStyle.fill = color_liftColor(fromFill);
+      }
+      // Not highlight stroke if fill has been highlighted.
+      else if (!hasFillOrStroke(emphasisStyle.stroke) && hasFillOrStroke(fromStroke)) {
+        if (!cloned) {
+          state = core_util_extend({}, state);
+          emphasisStyle = core_util_extend({}, emphasisStyle);
+        }
+        emphasisStyle.stroke = color_liftColor(fromStroke);
+      }
       state.style = emphasisStyle;
     }
   }
-
   if (state) {
     // TODO Share with textContent?
     if (state.z2 == null) {
       if (!cloned) {
-        state = util_extend({}, state);
+        state = core_util_extend({}, state);
       }
-
       var z2EmphasisLift = el.z2EmphasisLift;
       state.z2 = el.z2 + (z2EmphasisLift != null ? z2EmphasisLift : Z2_EMPHASIS_LIFT);
     }
   }
-
   return state;
 }
-
 function createSelectDefaultState(el, stateName, state) {
   // const hasSelect = indexOf(el.currentStates, stateName) >= 0;
   if (state) {
     // TODO Share with textContent?
     if (state.z2 == null) {
-      state = util_extend({}, state);
+      state = core_util_extend({}, state);
       var z2SelectLift = el.z2SelectLift;
       state.z2 = el.z2 + (z2SelectLift != null ? z2SelectLift : Z2_SELECT_LIFT);
     }
   }
-
   return state;
 }
-
 function createBlurDefaultState(el, stateName, state) {
-  var hasBlur = indexOf(el.currentStates, stateName) >= 0;
+  var hasBlur = util_indexOf(el.currentStates, stateName) >= 0;
   var currentOpacity = el.style.opacity;
   var fromState = !hasBlur ? getFromStateStyle(el, ['opacity'], stateName, {
     opacity: 1
   }) : null;
   state = state || {};
   var blurStyle = state.style || {};
-
   if (blurStyle.opacity == null) {
     // clone state
-    state = util_extend({}, state);
-    blurStyle = util_extend({
+    state = core_util_extend({}, state);
+    blurStyle = core_util_extend({
       // Already being applied 'emphasis'. DON'T mul opacity multiple times.
       opacity: hasBlur ? currentOpacity : fromState.opacity * 0.1
     }, blurStyle);
     state.style = blurStyle;
   }
-
   return state;
 }
-
 function elementStateProxy(stateName, targetStates) {
   var state = this.states[stateName];
-
   if (this.style) {
     if (stateName === 'emphasis') {
       return createEmphasisDefaultState(this, stateName, targetStates, state);
@@ -35519,7 +38563,6 @@ function elementStateProxy(stateName, targetStates) {
       return createSelectDefaultState(this, stateName, state);
     }
   }
-
   return state;
 }
 /**
@@ -35527,27 +38570,25 @@ function elementStateProxy(stateName, targetStates) {
  * @param el Should not be `zrender/graphic/Group`.
  * @param focus 'self' | 'selfInSeries' | 'series'
  */
-
-
 function setDefaultStateProxy(el) {
   el.stateProxy = elementStateProxy;
   var textContent = el.getTextContent();
   var textGuide = el.getTextGuideLine();
-
   if (textContent) {
     textContent.stateProxy = elementStateProxy;
   }
-
   if (textGuide) {
     textGuide.stateProxy = elementStateProxy;
   }
 }
 function enterEmphasisWhenMouseOver(el, e) {
-  !shouldSilent(el, e) // "emphasis" event highlight has higher priority than mouse highlight.
+  !shouldSilent(el, e)
+  // "emphasis" event highlight has higher priority than mouse highlight.
   && !el.__highByOuter && traverseUpdateState(el, singleEnterEmphasis);
 }
 function leaveEmphasisWhenMouseOut(el, e) {
-  !shouldSilent(el, e) // "emphasis" event highlight has higher priority than mouse highlight.
+  !shouldSilent(el, e)
+  // "emphasis" event highlight has higher priority than mouse highlight.
   && !el.__highByOuter && traverseUpdateState(el, singleLeaveEmphasis);
 }
 function enterEmphasis(el, highlightDigit) {
@@ -35569,11 +38610,9 @@ function enterSelect(el) {
 function leaveSelect(el) {
   traverseUpdateState(el, singleLeaveSelect);
 }
-
 function shouldSilent(el, e) {
   return el.__highDownSilentOnTouch && e.zrByTouch;
 }
-
 function allLeaveBlur(api) {
   var model = api.getModel();
   var leaveBlurredSeries = [];
@@ -35583,7 +38622,6 @@ function allLeaveBlur(api) {
     var isSeries = componentType === 'series';
     var view = isSeries ? api.getViewOfSeriesModel(componentModel) : api.getViewOfComponentModel(componentModel);
     !isSeries && allComponentViews.push(view);
-
     if (componentStates.isBlured) {
       // Leave blur anyway
       view.group.traverse(function (child) {
@@ -35591,10 +38629,9 @@ function allLeaveBlur(api) {
       });
       isSeries && leaveBlurredSeries.push(componentModel);
     }
-
     componentStates.isBlured = false;
   });
-  each(allComponentViews, function (view) {
+  util_each(allComponentViews, function (view) {
     if (view && view.toggleBlurSeries) {
       view.toggleBlurSeries(leaveBlurredSeries, false, model);
     }
@@ -35603,44 +38640,39 @@ function allLeaveBlur(api) {
 function blurSeries(targetSeriesIndex, focus, blurScope, api) {
   var ecModel = api.getModel();
   blurScope = blurScope || 'coordinateSystem';
-
   function leaveBlurOfIndices(data, dataIndices) {
     for (var i = 0; i < dataIndices.length; i++) {
       var itemEl = data.getItemGraphicEl(dataIndices[i]);
       itemEl && leaveBlur(itemEl);
     }
   }
-
   if (targetSeriesIndex == null) {
     return;
   }
-
   if (!focus || focus === 'none') {
     return;
   }
-
   var targetSeriesModel = ecModel.getSeriesByIndex(targetSeriesIndex);
   var targetCoordSys = targetSeriesModel.coordinateSystem;
-
   if (targetCoordSys && targetCoordSys.master) {
     targetCoordSys = targetCoordSys.master;
   }
-
   var blurredSeries = [];
   ecModel.eachSeries(function (seriesModel) {
     var sameSeries = targetSeriesModel === seriesModel;
     var coordSys = seriesModel.coordinateSystem;
-
     if (coordSys && coordSys.master) {
       coordSys = coordSys.master;
     }
-
     var sameCoordSys = coordSys && targetCoordSys ? coordSys === targetCoordSys : sameSeries; // If there is no coordinate system. use sameSeries instead.
-
-    if (!( // Not blur other series if blurScope series
-    blurScope === 'series' && !sameSeries // Not blur other coordinate system if blurScope is coordinateSystem
-    || blurScope === 'coordinateSystem' && !sameCoordSys // Not blur self series if focus is series.
-    || focus === 'series' && sameSeries // TODO blurScope: coordinate system
+    if (!(
+    // Not blur other series if blurScope series
+    blurScope === 'series' && !sameSeries
+    // Not blur other coordinate system if blurScope is coordinateSystem
+    || blurScope === 'coordinateSystem' && !sameCoordSys
+    // Not blur self series if focus is series.
+    || focus === 'series' && sameSeries
+    // TODO blurScope: coordinate system
     )) {
       var view = api.getViewOfSeriesModel(seriesModel);
       view.group.traverse(function (child) {
@@ -35651,20 +38683,16 @@ function blurSeries(targetSeriesIndex, focus, blurScope, api) {
         if (child.__highByOuter && sameSeries && focus === 'self') {
           return;
         }
-
         singleEnterBlur(child);
       });
-
-      if (isArrayLike(focus)) {
+      if (util_isArrayLike(focus)) {
         leaveBlurOfIndices(seriesModel.getData(), focus);
-      } else if (isObject(focus)) {
-        var dataTypes = keys(focus);
-
+      } else if (util_isObject(focus)) {
+        var dataTypes = util_keys(focus);
         for (var d = 0; d < dataTypes.length; d++) {
           leaveBlurOfIndices(seriesModel.getData(dataTypes[d]), focus[dataTypes[d]]);
         }
       }
-
       blurredSeries.push(seriesModel);
       getComponentStates(seriesModel).isBlured = true;
     }
@@ -35673,9 +38701,7 @@ function blurSeries(targetSeriesIndex, focus, blurScope, api) {
     if (componentType === 'series') {
       return;
     }
-
     var view = api.getViewOfComponentModel(componentModel);
-
     if (view && view.toggleBlurSeries) {
       view.toggleBlurSeries(blurredSeries, true, ecModel);
     }
@@ -35685,20 +38711,15 @@ function blurComponent(componentMainType, componentIndex, api) {
   if (componentMainType == null || componentIndex == null) {
     return;
   }
-
   var componentModel = api.getModel().getComponent(componentMainType, componentIndex);
-
   if (!componentModel) {
     return;
   }
-
   getComponentStates(componentModel).isBlured = true;
   var view = api.getViewOfComponentModel(componentModel);
-
   if (!view || !view.focusBlurEnabled) {
     return;
   }
-
   view.group.traverse(function (child) {
     singleEnterBlur(child);
   });
@@ -35706,29 +38727,24 @@ function blurComponent(componentMainType, componentIndex, api) {
 function blurSeriesFromHighlightPayload(seriesModel, payload, api) {
   var seriesIndex = seriesModel.seriesIndex;
   var data = seriesModel.getData(payload.dataType);
-
   if (!data) {
     if (true) {
       error("Unknown dataType " + payload.dataType);
     }
-
     return;
   }
-
-  var dataIndex = queryDataIndex(data, payload); // Pick the first one if there is multiple/none exists.
-
-  dataIndex = (isArray(dataIndex) ? dataIndex[0] : dataIndex) || 0;
+  var dataIndex = queryDataIndex(data, payload);
+  // Pick the first one if there is multiple/none exists.
+  dataIndex = (util_isArray(dataIndex) ? dataIndex[0] : dataIndex) || 0;
   var el = data.getItemGraphicEl(dataIndex);
-
   if (!el) {
     var count = data.count();
-    var current = 0; // If data on dataIndex is NaN.
-
+    var current = 0;
+    // If data on dataIndex is NaN.
     while (!el && current < count) {
       el = data.getItemGraphicEl(current++);
     }
   }
-
   if (el) {
     var ecData = getECData(el);
     blurSeries(seriesIndex, ecData.focus, ecData.blurScope, api);
@@ -35737,7 +38753,6 @@ function blurSeriesFromHighlightPayload(seriesModel, payload, api) {
     // TODO Should put it on seriesModel?
     var focus_1 = seriesModel.get(['emphasis', 'focus']);
     var blurScope = seriesModel.get(['emphasis', 'blurScope']);
-
     if (focus_1 != null) {
       blurSeries(seriesIndex, focus_1, blurScope, api);
     }
@@ -35748,39 +38763,30 @@ function findComponentHighDownDispatchers(componentMainType, componentIndex, nam
     focusSelf: false,
     dispatchers: null
   };
-
   if (componentMainType == null || componentMainType === 'series' || componentIndex == null || name == null) {
     return ret;
   }
-
   var componentModel = api.getModel().getComponent(componentMainType, componentIndex);
-
   if (!componentModel) {
     return ret;
   }
-
   var view = api.getViewOfComponentModel(componentModel);
-
   if (!view || !view.findHighDownDispatchers) {
     return ret;
   }
-
-  var dispatchers = view.findHighDownDispatchers(name); // At presnet, the component (like Geo) only blur inside itself.
+  var dispatchers = view.findHighDownDispatchers(name);
+  // At presnet, the component (like Geo) only blur inside itself.
   // So we do not use `blurScope` in component.
-
   var focusSelf;
-
   for (var i = 0; i < dispatchers.length; i++) {
     if ( true && !isHighDownDispatcher(dispatchers[i])) {
       error('param should be highDownDispatcher');
     }
-
     if (getECData(dispatchers[i]).focus === 'self') {
       focusSelf = true;
       break;
     }
   }
-
   return {
     focusSelf: focusSelf,
     dispatchers: dispatchers
@@ -35790,35 +38796,29 @@ function handleGlobalMouseOverForHighDown(dispatcher, e, api) {
   if ( true && !isHighDownDispatcher(dispatcher)) {
     error('param should be highDownDispatcher');
   }
-
   var ecData = getECData(dispatcher);
-
   var _a = findComponentHighDownDispatchers(ecData.componentMainType, ecData.componentIndex, ecData.componentHighDownName, api),
-      dispatchers = _a.dispatchers,
-      focusSelf = _a.focusSelf; // If `findHighDownDispatchers` is supported on the component,
+    dispatchers = _a.dispatchers,
+    focusSelf = _a.focusSelf;
+  // If `findHighDownDispatchers` is supported on the component,
   // highlight/downplay elements with the same name.
-
-
   if (dispatchers) {
     if (focusSelf) {
       blurComponent(ecData.componentMainType, ecData.componentIndex, api);
     }
-
-    each(dispatchers, function (dispatcher) {
+    util_each(dispatchers, function (dispatcher) {
       return enterEmphasisWhenMouseOver(dispatcher, e);
     });
   } else {
     // Try blur all in the related series. Then emphasis the hoverred.
     // TODO. progressive mode.
     blurSeries(ecData.seriesIndex, ecData.focus, ecData.blurScope, api);
-
     if (ecData.focus === 'self') {
       blurComponent(ecData.componentMainType, ecData.componentIndex, api);
-    } // Other than series, component that not support `findHighDownDispatcher` will
+    }
+    // Other than series, component that not support `findHighDownDispatcher` will
     // also use it. But in this case, highlight/downplay are only supported in
     // mouse hover but not in dispatchAction.
-
-
     enterEmphasisWhenMouseOver(dispatcher, e);
   }
 }
@@ -35826,13 +38826,11 @@ function handleGlobalMouseOutForHighDown(dispatcher, e, api) {
   if ( true && !isHighDownDispatcher(dispatcher)) {
     error('param should be highDownDispatcher');
   }
-
   allLeaveBlur(api);
   var ecData = getECData(dispatcher);
   var dispatchers = findComponentHighDownDispatchers(ecData.componentMainType, ecData.componentIndex, ecData.componentHighDownName, api).dispatchers;
-
   if (dispatchers) {
-    each(dispatchers, function (dispatcher) {
+    util_each(dispatchers, function (dispatcher) {
       return leaveEmphasisWhenMouseOut(dispatcher, e);
     });
   } else {
@@ -35843,22 +38841,19 @@ function toggleSelectionFromPayload(seriesModel, payload, api) {
   if (!isSelectChangePayload(payload)) {
     return;
   }
-
   var dataType = payload.dataType;
   var data = seriesModel.getData(dataType);
   var dataIndex = queryDataIndex(data, payload);
-
-  if (!isArray(dataIndex)) {
+  if (!util_isArray(dataIndex)) {
     dataIndex = [dataIndex];
   }
-
   seriesModel[payload.type === TOGGLE_SELECT_ACTION_TYPE ? 'toggleSelect' : payload.type === SELECT_ACTION_TYPE ? 'select' : 'unselect'](dataIndex, dataType);
 }
 function updateSeriesElementSelection(seriesModel) {
   var allData = seriesModel.getAllData();
-  each(allData, function (_a) {
+  util_each(allData, function (_a) {
     var data = _a.data,
-        type = _a.type;
+      type = _a.type;
     data.eachItemGraphicEl(function (el, idx) {
       seriesModel.isSelected(idx, type) ? enterSelect(el) : leaveSelect(el);
     });
@@ -35868,21 +38863,18 @@ function getAllSelectedIndices(ecModel) {
   var ret = [];
   ecModel.eachSeries(function (seriesModel) {
     var allData = seriesModel.getAllData();
-    each(allData, function (_a) {
+    util_each(allData, function (_a) {
       var data = _a.data,
-          type = _a.type;
+        type = _a.type;
       var dataIndices = seriesModel.getSelectedDataIndices();
-
       if (dataIndices.length > 0) {
         var item = {
           dataIndex: dataIndices,
           seriesIndex: seriesModel.seriesIndex
         };
-
         if (type != null) {
           item.dataType = type;
         }
-
         ret.push(item);
       }
     });
@@ -35896,7 +38888,6 @@ function getAllSelectedIndices(ecModel) {
  * This function should be used on the element with dataIndex, seriesIndex.
  *
  */
-
 function enableHoverEmphasis(el, focus, blurScope) {
   setAsHighDownDispatcher(el, true);
   traverseUpdateState(el, setDefaultStateProxy);
@@ -35910,7 +38901,6 @@ function toggleHoverEmphasis(el, focus, blurScope, isDisabled) {
 }
 function enableHoverFocus(el, focus, blurScope) {
   var ecData = getECData(el);
-
   if (focus != null) {
     // TODO dataIndex may be set after this function. This check is not useful.
     // if (ecData.dataIndex == null) {
@@ -35920,7 +38910,8 @@ function enableHoverFocus(el, focus, blurScope) {
     // }
     // else {
     ecData.focus = focus;
-    ecData.blurScope = blurScope; // }
+    ecData.blurScope = blurScope;
+    // }
   } else if (ecData.focus) {
     ecData.focus = null;
   }
@@ -35934,16 +38925,15 @@ var defaultStyleGetterMap = {
 /**
  * Set emphasis/blur/selected states of element.
  */
-
-function setStatesStylesFromModel(el, itemModel, styleType, // default itemStyle
+function setStatesStylesFromModel(el, itemModel, styleType,
+// default itemStyle
 getter) {
   styleType = styleType || 'itemStyle';
-
   for (var i = 0; i < OTHER_STATES.length; i++) {
     var stateName = OTHER_STATES[i];
     var model = itemModel.getModel([stateName, styleType]);
-    var state = el.ensureState(stateName); // Let it throw error if getterType is not found.
-
+    var state = el.ensureState(stateName);
+    // Let it throw error if getterType is not found.
     state.style = getter ? getter(model) : model[defaultStyleGetterMap[styleType]]();
   }
 }
@@ -35966,18 +38956,16 @@ getter) {
  *        hover-highlight on touch device.
  * @param asDispatcher If `false`, do not set as "highDownDispatcher".
  */
-
 function setAsHighDownDispatcher(el, asDispatcher) {
   var disable = asDispatcher === false;
-  var extendedEl = el; // Make `highDownSilentOnTouch` and `onStateChange` only work after
+  var extendedEl = el;
+  // Make `highDownSilentOnTouch` and `onStateChange` only work after
   // `setAsHighDownDispatcher` called. Avoid it is modified by user unexpectedly.
-
   if (el.highDownSilentOnTouch) {
     extendedEl.__highDownSilentOnTouch = el.highDownSilentOnTouch;
-  } // Simple optimize, since this method might be
+  }
+  // Simple optimize, since this method might be
   // called for each elements of a group in some cases.
-
-
   if (!disable || extendedEl.__highDownDispatcher) {
     // Emphasis, normal can be triggered manually by API or other components like hover link.
     // el[method]('emphasis', onElementEmphasisEvent)[method]('normal', onElementNormalEvent);
@@ -35994,7 +38982,6 @@ function isHighDownDispatcher(el) {
  * + hover link (within the same name)
  * + focus blur in component
  */
-
 function enableComponentHighDownFeatures(el, componentModel, componentHighDownName) {
   var ecData = getECData(el);
   ecData.componentMainType = componentModel.mainType;
@@ -36009,14 +38996,11 @@ function enableComponentHighDownFeatures(el, componentModel, componentHighDownNa
  * @param {string} highlightKey
  * @return {number} highlightDigit
  */
-
 function getHighlightDigit(highlightKey) {
   var highlightDigit = _highlightKeyMap[highlightKey];
-
   if (highlightDigit == null && _highlightNextDigit <= 32) {
     highlightDigit = _highlightKeyMap[highlightKey] = _highlightNextDigit++;
   }
-
   return highlightDigit;
 }
 function isSelectChangePayload(payload) {
@@ -36035,7 +39019,7 @@ function savePathStates(el) {
   store.selectFill = selectState.style && selectState.style.fill || null;
   store.selectStroke = selectState.style && selectState.style.stroke || null;
 }
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/animation/basicTransition.js
+;// ./node_modules/echarts/lib/animation/basicTransition.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -36080,58 +39064,52 @@ function savePathStates(el) {
 * under the License.
 */
 
- // Stored properties for further transition.
 
+// Stored properties for further transition.
 var transitionStore = makeInner();
 /**
  * Return null if animation is disabled.
  */
-
-function getAnimationConfig(animationType, animatableModel, dataIndex, // Extra opts can override the option in animatable model.
-extraOpts, // TODO It's only for pictorial bar now.
+function getAnimationConfig(animationType, animatableModel, dataIndex,
+// Extra opts can override the option in animatable model.
+extraOpts,
+// TODO It's only for pictorial bar now.
 extraDelayParams) {
-  var animationPayload; // Check if there is global animation configuration from dataZoom/resize can override the config in option.
+  var animationPayload;
+  // Check if there is global animation configuration from dataZoom/resize can override the config in option.
   // If animation is enabled. Will use this animation config in payload.
   // If animation is disabled. Just ignore it.
-
   if (animatableModel && animatableModel.ecModel) {
     var updatePayload = animatableModel.ecModel.getUpdatePayload();
     animationPayload = updatePayload && updatePayload.animation;
   }
-
   var animationEnabled = animatableModel && animatableModel.isAnimationEnabled();
   var isUpdate = animationType === 'update';
-
   if (animationEnabled) {
     var duration = void 0;
     var easing = void 0;
     var delay = void 0;
-
     if (extraOpts) {
-      duration = retrieve2(extraOpts.duration, 200);
-      easing = retrieve2(extraOpts.easing, 'cubicOut');
+      duration = util_retrieve2(extraOpts.duration, 200);
+      easing = util_retrieve2(extraOpts.easing, 'cubicOut');
       delay = 0;
     } else {
       duration = animatableModel.getShallow(isUpdate ? 'animationDurationUpdate' : 'animationDuration');
       easing = animatableModel.getShallow(isUpdate ? 'animationEasingUpdate' : 'animationEasing');
       delay = animatableModel.getShallow(isUpdate ? 'animationDelayUpdate' : 'animationDelay');
-    } // animation from payload has highest priority.
-
-
+    }
+    // animation from payload has highest priority.
     if (animationPayload) {
       animationPayload.duration != null && (duration = animationPayload.duration);
       animationPayload.easing != null && (easing = animationPayload.easing);
       animationPayload.delay != null && (delay = animationPayload.delay);
     }
-
-    if (isFunction(delay)) {
+    if (util_isFunction(delay)) {
       delay = delay(dataIndex, extraDelayParams);
     }
-
-    if (isFunction(duration)) {
+    if (util_isFunction(duration)) {
       duration = duration(dataIndex);
     }
-
     var config = {
       duration: duration || 0,
       delay: delay,
@@ -36142,32 +39120,26 @@ extraDelayParams) {
     return null;
   }
 }
-
 function animateOrSetProps(animationType, el, props, animatableModel, dataIndex, cb, during) {
   var isFrom = false;
   var removeOpt;
-
-  if (isFunction(dataIndex)) {
+  if (util_isFunction(dataIndex)) {
     during = cb;
     cb = dataIndex;
     dataIndex = null;
-  } else if (isObject(dataIndex)) {
+  } else if (util_isObject(dataIndex)) {
     cb = dataIndex.cb;
     during = dataIndex.during;
     isFrom = dataIndex.isFrom;
     removeOpt = dataIndex.removeOpt;
     dataIndex = dataIndex.dataIndex;
   }
-
   var isRemove = animationType === 'leave';
-
   if (!isRemove) {
     // Must stop the remove animation.
     el.stopAnimation('leave');
   }
-
   var animationConfig = getAnimationConfig(animationType, animatableModel, dataIndex, isRemove ? removeOpt || {} : null, animatableModel && animatableModel.getAnimationDelayParams ? animatableModel.getAnimationDelayParams(el, dataIndex) : null);
-
   if (animationConfig && animationConfig.duration > 0) {
     var duration = animationConfig.duration;
     var animationDelay = animationConfig.delay;
@@ -36186,10 +39158,10 @@ function animateOrSetProps(animationType, el, props, animatableModel, dataIndex,
     };
     isFrom ? el.animateFrom(props, animateConfig) : el.animateTo(props, animateConfig);
   } else {
-    el.stopAnimation(); // If `isFrom`, the props is the "from" props.
-
-    !isFrom && el.attr(props); // Call during at least once.
-
+    el.stopAnimation();
+    // If `isFrom`, the props is the "from" props.
+    !isFrom && el.attr(props);
+    // Call during at least once.
     during && during(1);
     cb && cb();
   }
@@ -36210,13 +39182,11 @@ function animateOrSetProps(animationType, el, props, animatableModel, dataIndex,
  *         position: [100, 100]
  *     }, seriesModel, function () { console.log('Animation done!'); });
  */
-
-
-function updateProps(el, props, // TODO: TYPE AnimatableModel
+function updateProps(el, props,
+// TODO: TYPE AnimatableModel
 animatableModel, dataIndex, cb, during) {
   animateOrSetProps('update', el, props, animatableModel, dataIndex, cb, during);
 }
-
 
 /**
  * Init graphic element properties with or without animation according to the
@@ -36226,7 +39196,6 @@ animatableModel, dataIndex, cb, during) {
  * So do not use this method to one element twice before
  * animation starts, unless you know what you are doing.
  */
-
 function initProps(el, props, animatableModel, dataIndex, cb, during) {
   animateOrSetProps('enter', el, props, animatableModel, dataIndex, cb, during);
 }
@@ -36234,35 +39203,28 @@ function initProps(el, props, animatableModel, dataIndex, cb, during) {
  * If element is removed.
  * It can determine if element is having remove animation.
  */
-
 function isElementRemoved(el) {
   if (!el.__zr) {
     return true;
   }
-
   for (var i = 0; i < el.animators.length; i++) {
     var animator = el.animators[i];
-
     if (animator.scope === 'leave') {
       return true;
     }
   }
-
   return false;
 }
 /**
  * Remove graphic element
  */
-
 function removeElement(el, props, animatableModel, dataIndex, cb, during) {
   // Don't do remove animation twice.
   if (isElementRemoved(el)) {
     return;
   }
-
   animateOrSetProps('leave', el, props, animatableModel, dataIndex, cb, during);
 }
-
 function fadeOutDisplayable(el, animatableModel, dataIndex, done) {
   el.removeTextContent();
   el.removeTextGuideLine();
@@ -36272,14 +39234,12 @@ function fadeOutDisplayable(el, animatableModel, dataIndex, done) {
     }
   }, animatableModel, dataIndex, done);
 }
-
 function removeElementWithFadeOut(el, animatableModel, dataIndex) {
   function doRemove() {
     el.parent && el.parent.remove(el);
-  } // Hide label and labelLine first
+  }
+  // Hide label and labelLine first
   // TODO Also use fade out animation?
-
-
   if (!el.isGroup) {
     fadeOutDisplayable(el, animatableModel, dataIndex, doRemove);
   } else {
@@ -36297,14 +39257,13 @@ function removeElementWithFadeOut(el, animatableModel, dataIndex) {
  * For chart like map, heatmap, which will always create new element.
  * We don't need to save this because universalTransition can get old style from the old element
  */
-
 function saveOldStyle(el) {
   transitionStore(el).oldStyle = el.style;
 }
 function getOldStyle(el) {
   return transitionStore(el).oldStyle;
 }
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/label/labelStyle.js
+;// ./node_modules/echarts/lib/label/labelStyle.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -36363,7 +39322,6 @@ function setLabelText(label, labelTexts) {
     state.style = state.style || {};
     state.style.text = text;
   }
-
   var oldStates = label.currentStates.slice();
   label.clearStates(true);
   label.setStyle({
@@ -36371,119 +39329,97 @@ function setLabelText(label, labelTexts) {
   });
   label.useStates(oldStates, true);
 }
-
 function getLabelText(opt, stateModels, interpolatedValue) {
   var labelFetcher = opt.labelFetcher;
   var labelDataIndex = opt.labelDataIndex;
   var labelDimIndex = opt.labelDimIndex;
   var normalModel = stateModels.normal;
   var baseText;
-
   if (labelFetcher) {
     baseText = labelFetcher.getFormattedLabel(labelDataIndex, 'normal', null, labelDimIndex, normalModel && normalModel.get('formatter'), interpolatedValue != null ? {
       interpolatedValue: interpolatedValue
     } : null);
   }
-
   if (baseText == null) {
-    baseText = isFunction(opt.defaultText) ? opt.defaultText(labelDataIndex, opt, interpolatedValue) : opt.defaultText;
+    baseText = util_isFunction(opt.defaultText) ? opt.defaultText(labelDataIndex, opt, interpolatedValue) : opt.defaultText;
   }
-
   var statesText = {
     normal: baseText
   };
-
   for (var i = 0; i < SPECIAL_STATES.length; i++) {
     var stateName = SPECIAL_STATES[i];
     var stateModel = stateModels[stateName];
-    statesText[stateName] = retrieve2(labelFetcher ? labelFetcher.getFormattedLabel(labelDataIndex, stateName, null, labelDimIndex, stateModel && stateModel.get('formatter')) : null, baseText);
+    statesText[stateName] = util_retrieve2(labelFetcher ? labelFetcher.getFormattedLabel(labelDataIndex, stateName, null, labelDimIndex, stateModel && stateModel.get('formatter')) : null, baseText);
   }
-
   return statesText;
 }
-
-function setLabelStyle(targetEl, labelStatesModels, opt, stateSpecified // TODO specified position?
+function setLabelStyle(targetEl, labelStatesModels, opt, stateSpecified
+// TODO specified position?
 ) {
   opt = opt || EMPTY_OBJ;
   var isSetOnText = targetEl instanceof Text;
   var needsCreateText = false;
-
   for (var i = 0; i < DISPLAY_STATES.length; i++) {
     var stateModel = labelStatesModels[DISPLAY_STATES[i]];
-
     if (stateModel && stateModel.getShallow('show')) {
       needsCreateText = true;
       break;
     }
   }
-
   var textContent = isSetOnText ? targetEl : targetEl.getTextContent();
-
   if (needsCreateText) {
     if (!isSetOnText) {
       // Reuse the previous
       if (!textContent) {
         textContent = new Text();
         targetEl.setTextContent(textContent);
-      } // Use same state proxy
-
-
+      }
+      // Use same state proxy
       if (targetEl.stateProxy) {
         textContent.stateProxy = targetEl.stateProxy;
       }
     }
-
     var labelStatesTexts = getLabelText(opt, labelStatesModels);
     var normalModel = labelStatesModels.normal;
     var showNormal = !!normalModel.getShallow('show');
     var normalStyle = createTextStyle(normalModel, stateSpecified && stateSpecified.normal, opt, false, !isSetOnText);
     normalStyle.text = labelStatesTexts.normal;
-
     if (!isSetOnText) {
       // Always create new
       targetEl.setTextConfig(createTextConfig(normalModel, opt, false));
     }
-
     for (var i = 0; i < SPECIAL_STATES.length; i++) {
       var stateName = SPECIAL_STATES[i];
       var stateModel = labelStatesModels[stateName];
-
       if (stateModel) {
         var stateObj = textContent.ensureState(stateName);
-        var stateShow = !!retrieve2(stateModel.getShallow('show'), showNormal);
-
+        var stateShow = !!util_retrieve2(stateModel.getShallow('show'), showNormal);
         if (stateShow !== showNormal) {
           stateObj.ignore = !stateShow;
         }
-
         stateObj.style = createTextStyle(stateModel, stateSpecified && stateSpecified[stateName], opt, true, !isSetOnText);
         stateObj.style.text = labelStatesTexts[stateName];
-
         if (!isSetOnText) {
           var targetElEmphasisState = targetEl.ensureState(stateName);
           targetElEmphasisState.textConfig = createTextConfig(stateModel, opt, true);
         }
       }
-    } // PENDING: if there is many requirements that emphasis position
+    }
+    // PENDING: if there is many requirements that emphasis position
     // need to be different from normal position, we might consider
     // auto silent is those cases.
-
-
-    textContent.silent = !!normalModel.getShallow('silent'); // Keep x and y
-
+    textContent.silent = !!normalModel.getShallow('silent');
+    // Keep x and y
     if (textContent.style.x != null) {
       normalStyle.x = textContent.style.x;
     }
-
     if (textContent.style.y != null) {
       normalStyle.y = textContent.style.y;
     }
-
-    textContent.ignore = !showNormal; // Always create new style.
-
+    textContent.ignore = !showNormal;
+    // Always create new style.
     textContent.useStyle(normalStyle);
     textContent.dirty();
-
     if (opt.enableTextSetter) {
       labelInner(textContent).setLabelText = function (interpolatedValue) {
         var labelStatesTexts = getLabelText(opt, labelStatesModels, interpolatedValue);
@@ -36494,35 +39430,31 @@ function setLabelStyle(targetEl, labelStatesModels, opt, stateSpecified // TODO 
     // Not display rich text.
     textContent.ignore = true;
   }
-
   targetEl.dirty();
 }
-
 
 function getLabelStatesModels(itemModel, labelName) {
   labelName = labelName || 'label';
   var statesModels = {
     normal: itemModel.getModel(labelName)
   };
-
   for (var i = 0; i < SPECIAL_STATES.length; i++) {
     var stateName = SPECIAL_STATES[i];
     statesModels[stateName] = itemModel.getModel([stateName, labelName]);
   }
-
   return statesModels;
 }
 /**
  * Set basic textStyle properties.
  */
-
-function createTextStyle(textStyleModel, specifiedTextStyle, // Fixed style in the code. Can't be set by model.
+function createTextStyle(textStyleModel, specifiedTextStyle,
+// Fixed style in the code. Can't be set by model.
 opt, isNotNormal, isAttached // If text is attached on an element. If so, auto color will handling in zrender.
 ) {
   var textStyle = {};
   setTextStyleCommon(textStyle, textStyleModel, opt, isNotNormal, isAttached);
-  specifiedTextStyle && util_extend(textStyle, specifiedTextStyle); // textStyle.host && textStyle.host.dirty && textStyle.host.dirty(false);
-
+  specifiedTextStyle && core_util_extend(textStyle, specifiedTextStyle);
+  // textStyle.host && textStyle.host.dirty && textStyle.host.dirty(false);
   return textStyle;
 }
 function createTextConfig(textStyleModel, opt, isNotNormal) {
@@ -36530,32 +39462,33 @@ function createTextConfig(textStyleModel, opt, isNotNormal) {
   var textConfig = {};
   var labelPosition;
   var labelRotate = textStyleModel.getShallow('rotate');
-  var labelDistance = retrieve2(textStyleModel.getShallow('distance'), isNotNormal ? null : 5);
+  var labelDistance = util_retrieve2(textStyleModel.getShallow('distance'), isNotNormal ? null : 5);
   var labelOffset = textStyleModel.getShallow('offset');
-  labelPosition = textStyleModel.getShallow('position') || (isNotNormal ? null : 'inside'); // 'outside' is not a valid zr textPostion value, but used
-  // in bar series, and magric type should be considered.
-
+  labelPosition = textStyleModel.getShallow('position') || (isNotNormal ? null : 'inside');
+  // 'outside' is not a valid zr textPostion value, but used
+  // in bar series, and magic type should be considered.
   labelPosition === 'outside' && (labelPosition = opt.defaultOutsidePosition || 'top');
-
   if (labelPosition != null) {
     textConfig.position = labelPosition;
   }
-
   if (labelOffset != null) {
     textConfig.offset = labelOffset;
   }
-
   if (labelRotate != null) {
     labelRotate *= Math.PI / 180;
     textConfig.rotation = labelRotate;
   }
-
   if (labelDistance != null) {
     textConfig.distance = labelDistance;
-  } // fill and auto is determined by the color of path fill if it's not specified by developers.
-
-
+  }
+  // fill and auto is determined by the color of path fill if it's not specified by developers.
   textConfig.outsideFill = textStyleModel.get('color') === 'inherit' ? opt.inheritColor || null : 'auto';
+  if (opt.autoOverflowArea != null) {
+    textConfig.autoOverflowArea = opt.autoOverflowArea;
+  }
+  if (opt.layoutRect != null) {
+    textConfig.layoutRect = opt.layoutRect;
+  }
   return textConfig;
 }
 /**
@@ -36567,12 +39500,12 @@ function createTextConfig(textStyleModel, opt, isNotNormal) {
  * default value can be adopted, merge would make the logic too complicated
  * to manage.)
  */
-
 function setTextStyleCommon(textStyle, textStyleModel, opt, isNotNormal, isAttached) {
   // Consider there will be abnormal when merge hover style to normal style if given default value.
   opt = opt || EMPTY_OBJ;
   var ecModel = textStyleModel.ecModel;
-  var globalTextStyle = ecModel && ecModel.option.textStyle; // Consider case:
+  var globalTextStyle = ecModel && ecModel.option.textStyle;
+  // Consider case:
   // {
   //     data: [{
   //         value: 12,
@@ -36586,45 +39519,57 @@ function setTextStyleCommon(textStyle, textStyleModel, opt, isNotNormal, isAttac
   //         a: { ... }
   //     }
   // }
-
   var richItemNames = getRichItemNames(textStyleModel);
   var richResult;
-
   if (richItemNames) {
     richResult = {};
-
+    var richInheritPlainLabelOptionName = 'richInheritPlainLabel';
+    var richInheritPlainLabel = util_retrieve2(textStyleModel.get(richInheritPlainLabelOptionName), ecModel ? ecModel.get(richInheritPlainLabelOptionName) : undefined);
     for (var name_1 in richItemNames) {
       if (richItemNames.hasOwnProperty(name_1)) {
         // Cascade is supported in rich.
-        var richTextStyle = textStyleModel.getModel(['rich', name_1]); // In rich, never `disableBox`.
-        // FIXME: consider `label: {formatter: '{a|xx}', color: 'blue', rich: {a: {}}}`,
+        var richTextStyle = textStyleModel.getModel(['rich', name_1]);
+        // In rich, never `disableBox`.
+        // consider `label: {formatter: '{a|xx}', color: 'blue', rich: {a: {}}}`,
         // the default color `'blue'` will not be adopted if no color declared in `rich`.
         // That might confuses users. So probably we should put `textStyleModel` as the
         // root ancestor of the `richTextStyle`. But that would be a break change.
-
-        setTokenTextStyle(richResult[name_1] = {}, richTextStyle, globalTextStyle, opt, isNotNormal, isAttached, false, true);
+        // Since v6, the rich style inherits plain label by default
+        // but this behavior can be disabled by setting `richInheritPlainLabel` to `false`.
+        setTokenTextStyle(richResult[name_1] = {}, richTextStyle, globalTextStyle, textStyleModel, richInheritPlainLabel, opt, isNotNormal, isAttached, false, true);
       }
     }
   }
-
   if (richResult) {
     textStyle.rich = richResult;
   }
-
   var overflow = textStyleModel.get('overflow');
-
   if (overflow) {
     textStyle.overflow = overflow;
   }
-
-  var margin = textStyleModel.get('minMargin');
-
-  if (margin != null) {
-    textStyle.margin = margin;
+  var lineOverflow = textStyleModel.get('lineOverflow');
+  if (lineOverflow) {
+    textStyle.lineOverflow = lineOverflow;
   }
-
-  setTokenTextStyle(textStyle, textStyleModel, globalTextStyle, opt, isNotNormal, isAttached, true, false);
-} // Consider case:
+  var labelTextStyle = textStyle;
+  // `minMargin` has a higher precedence than `textMargin`, because `textMargin` is allowed
+  // to be set in `defaultOption`.
+  var minMargin = textStyleModel.get('minMargin');
+  if (minMargin != null) {
+    // `minMargin` only support number value.
+    minMargin = !util_isNumber(minMargin) ? 0 : minMargin / 2;
+    labelTextStyle.margin = [minMargin, minMargin, minMargin, minMargin];
+    labelTextStyle.__marginType = LabelMarginType.minMargin;
+  } else {
+    var textMargin = textStyleModel.get('textMargin');
+    if (textMargin != null) {
+      labelTextStyle.margin = util_normalizeCssArray(textMargin);
+      labelTextStyle.__marginType = LabelMarginType.textMargin;
+    }
+  }
+  setTokenTextStyle(textStyle, textStyleModel, globalTextStyle, null, null, opt, isNotNormal, isAttached, true, false);
+}
+// Consider case:
 // {
 //     data: [{
 //         value: 12,
@@ -36639,190 +39584,161 @@ function setTextStyleCommon(textStyle, textStyleModel, opt, isNotNormal, isAttac
 //     }
 // }
 // TODO TextStyleModel
-
-
 function getRichItemNames(textStyleModel) {
   // Use object to remove duplicated names.
   var richItemNameMap;
-
   while (textStyleModel && textStyleModel !== textStyleModel.ecModel) {
     var rich = (textStyleModel.option || EMPTY_OBJ).rich;
-
     if (rich) {
       richItemNameMap = richItemNameMap || {};
-      var richKeys = keys(rich);
-
+      var richKeys = util_keys(rich);
       for (var i = 0; i < richKeys.length; i++) {
         var richKey = richKeys[i];
         richItemNameMap[richKey] = 1;
       }
     }
-
     textStyleModel = textStyleModel.parentModel;
   }
-
   return richItemNameMap;
 }
-
 var TEXT_PROPS_WITH_GLOBAL = ['fontStyle', 'fontWeight', 'fontSize', 'fontFamily', 'textShadowColor', 'textShadowBlur', 'textShadowOffsetX', 'textShadowOffsetY'];
 var TEXT_PROPS_SELF = ['align', 'lineHeight', 'width', 'height', 'tag', 'verticalAlign', 'ellipsis'];
 var TEXT_PROPS_BOX = ['padding', 'borderWidth', 'borderRadius', 'borderDashOffset', 'backgroundColor', 'borderColor', 'shadowColor', 'shadowBlur', 'shadowOffsetX', 'shadowOffsetY'];
-
-function setTokenTextStyle(textStyle, textStyleModel, globalTextStyle, opt, isNotNormal, isAttached, isBlock, inRich) {
+function setTokenTextStyle(textStyle,
+// FIXME: check/refactor for ellipsis handling of rich text.
+textStyleModel, globalTextStyle, plainTextModel, richInheritPlainLabel, opt, isNotNormal, isAttached, isBlock, inRich) {
   // In merge mode, default value should not be given.
   globalTextStyle = !isNotNormal && globalTextStyle || EMPTY_OBJ;
   var inheritColor = opt && opt.inheritColor;
   var fillColor = textStyleModel.getShallow('color');
   var strokeColor = textStyleModel.getShallow('textBorderColor');
-  var opacity = retrieve2(textStyleModel.getShallow('opacity'), globalTextStyle.opacity);
-
+  var opacity = util_retrieve2(textStyleModel.getShallow('opacity'), globalTextStyle.opacity);
   if (fillColor === 'inherit' || fillColor === 'auto') {
     if (true) {
       if (fillColor === 'auto') {
         deprecateReplaceLog('color: \'auto\'', 'color: \'inherit\'');
       }
     }
-
     if (inheritColor) {
       fillColor = inheritColor;
     } else {
       fillColor = null;
     }
   }
-
   if (strokeColor === 'inherit' || strokeColor === 'auto') {
     if (true) {
       if (strokeColor === 'auto') {
         deprecateReplaceLog('color: \'auto\'', 'color: \'inherit\'');
       }
     }
-
     if (inheritColor) {
       strokeColor = inheritColor;
     } else {
       strokeColor = null;
     }
   }
-
   if (!isAttached) {
     // Only use default global textStyle.color if text is individual.
     // Otherwise it will use the strategy of attached text color because text may be on a path.
     fillColor = fillColor || globalTextStyle.color;
     strokeColor = strokeColor || globalTextStyle.textBorderColor;
   }
-
   if (fillColor != null) {
+    // Might not be a string, e.g, it's a function in axisLabel case; but assume that it will
+    // be erased by a correct value outside.
     textStyle.fill = fillColor;
   }
-
   if (strokeColor != null) {
     textStyle.stroke = strokeColor;
   }
-
-  var textBorderWidth = retrieve2(textStyleModel.getShallow('textBorderWidth'), globalTextStyle.textBorderWidth);
-
+  var textBorderWidth = util_retrieve2(textStyleModel.getShallow('textBorderWidth'), globalTextStyle.textBorderWidth);
   if (textBorderWidth != null) {
     textStyle.lineWidth = textBorderWidth;
   }
-
-  var textBorderType = retrieve2(textStyleModel.getShallow('textBorderType'), globalTextStyle.textBorderType);
-
+  var textBorderType = util_retrieve2(textStyleModel.getShallow('textBorderType'), globalTextStyle.textBorderType);
   if (textBorderType != null) {
     textStyle.lineDash = textBorderType;
   }
-
-  var textBorderDashOffset = retrieve2(textStyleModel.getShallow('textBorderDashOffset'), globalTextStyle.textBorderDashOffset);
-
+  var textBorderDashOffset = util_retrieve2(textStyleModel.getShallow('textBorderDashOffset'), globalTextStyle.textBorderDashOffset);
   if (textBorderDashOffset != null) {
     textStyle.lineDashOffset = textBorderDashOffset;
   }
-
   if (!isNotNormal && opacity == null && !inRich) {
     opacity = opt && opt.defaultOpacity;
   }
-
   if (opacity != null) {
     textStyle.opacity = opacity;
-  } // TODO
-
-
+  }
+  // TODO
   if (!isNotNormal && !isAttached) {
     // Set default finally.
     if (textStyle.fill == null && opt.inheritColor) {
       textStyle.fill = opt.inheritColor;
     }
-  } // Do not use `getFont` here, because merge should be supported, where
+  }
+  // Do not use `getFont` here, because merge should be supported, where
   // part of these properties may be changed in emphasis style, and the
   // others should remain their original value got from normal style.
-
-
   for (var i = 0; i < TEXT_PROPS_WITH_GLOBAL.length; i++) {
     var key = TEXT_PROPS_WITH_GLOBAL[i];
-    var val = retrieve2(textStyleModel.getShallow(key), globalTextStyle[key]);
-
+    // props width, height, padding, margin, tag, backgroundColor, borderColor,
+    // borderWidth, borderRadius, shadowColor, shadowBlur, shadowOffsetX, shadowOffsetY
+    // may inappropriate to inherit from plainTextStyle.
+    // And if some props is specified in default options, users may have to reset them one by one.
+    // Therefore, we only allow these props to inherit from plainTextStyle.
+    // `richInheritPlainLabel` is switch for backward compatibility
+    var val = richInheritPlainLabel !== false && plainTextModel ? util_retrieve3(textStyleModel.getShallow(key), plainTextModel.getShallow(key), globalTextStyle[key]) : util_retrieve2(textStyleModel.getShallow(key), globalTextStyle[key]);
     if (val != null) {
       textStyle[key] = val;
     }
   }
-
   for (var i = 0; i < TEXT_PROPS_SELF.length; i++) {
     var key = TEXT_PROPS_SELF[i];
     var val = textStyleModel.getShallow(key);
-
     if (val != null) {
       textStyle[key] = val;
     }
   }
-
   if (textStyle.verticalAlign == null) {
     var baseline = textStyleModel.getShallow('baseline');
-
     if (baseline != null) {
       textStyle.verticalAlign = baseline;
     }
   }
-
   if (!isBlock || !opt.disableBox) {
     for (var i = 0; i < TEXT_PROPS_BOX.length; i++) {
       var key = TEXT_PROPS_BOX[i];
       var val = textStyleModel.getShallow(key);
-
       if (val != null) {
         textStyle[key] = val;
       }
     }
-
     var borderType = textStyleModel.getShallow('borderType');
-
     if (borderType != null) {
       textStyle.borderDash = borderType;
     }
-
     if ((textStyle.backgroundColor === 'auto' || textStyle.backgroundColor === 'inherit') && inheritColor) {
       if (true) {
         if (textStyle.backgroundColor === 'auto') {
           deprecateReplaceLog('backgroundColor: \'auto\'', 'backgroundColor: \'inherit\'');
         }
       }
-
       textStyle.backgroundColor = inheritColor;
     }
-
     if ((textStyle.borderColor === 'auto' || textStyle.borderColor === 'inherit') && inheritColor) {
       if (true) {
         if (textStyle.borderColor === 'auto') {
           deprecateReplaceLog('borderColor: \'auto\'', 'borderColor: \'inherit\'');
         }
       }
-
       textStyle.borderColor = inheritColor;
     }
   }
 }
-
 function getFont(opt, ecModel) {
   var gTextStyleModel = ecModel && ecModel.getModel('textStyle');
-  return trim([// FIXME in node-canvas fontWeight is before fontStyle
+  return util_trim([
+  // FIXME in node-canvas fontWeight is before fontStyle
   opt.fontStyle || gTextStyleModel && gTextStyleModel.getShallow('fontStyle') || '', opt.fontWeight || gTextStyleModel && gTextStyleModel.getShallow('fontWeight') || '', (opt.fontSize || gTextStyleModel && gTextStyleModel.getShallow('fontSize') || 12) + 'px', opt.fontFamily || gTextStyleModel && gTextStyleModel.getShallow('fontFamily') || 'sans-serif'].join(' '));
 }
 var labelInner = makeInner();
@@ -36830,13 +39746,11 @@ function setLabelValueAnimation(label, labelStatesModels, value, getDefaultText)
   if (!label) {
     return;
   }
-
   var obj = labelInner(label);
   obj.prevValue = obj.value;
   obj.value = value;
   var normalLabelModel = labelStatesModels.normal;
   obj.valueAnimation = normalLabelModel.get('valueAnimation');
-
   if (obj.valueAnimation) {
     obj.precision = normalLabelModel.get('precision');
     obj.defaultInterpolatedText = getDefaultText;
@@ -36845,18 +39759,15 @@ function setLabelValueAnimation(label, labelStatesModels, value, getDefaultText)
 }
 function animateLabelValue(textEl, dataIndex, data, animatableModel, labelFetcher) {
   var labelInnerStore = labelInner(textEl);
-
   if (!labelInnerStore.valueAnimation || labelInnerStore.prevValue === labelInnerStore.value) {
     // Value not changed, no new label animation
     return;
   }
-
-  var defaultInterpolatedText = labelInnerStore.defaultInterpolatedText; // Consider the case that being animating, do not use the `obj.value`,
+  var defaultInterpolatedText = labelInnerStore.defaultInterpolatedText;
+  // Consider the case that being animating, do not use the `obj.value`,
   // Otherwise it will jump to the `obj.value` when this new animation started.
-
-  var currValue = retrieve2(labelInnerStore.interpolatedValue, labelInnerStore.prevValue);
+  var currValue = util_retrieve2(labelInnerStore.interpolatedValue, labelInnerStore.prevValue);
   var targetValue = labelInnerStore.value;
-
   function during(percent) {
     var interpolated = interpolateRawValues(data, labelInnerStore.precision, currValue, targetValue, percent);
     labelInnerStore.interpolatedValue = percent === 1 ? null : interpolated;
@@ -36867,14 +39778,22 @@ function animateLabelValue(textEl, dataIndex, data, animatableModel, labelFetche
     }, labelInnerStore.statesModels, interpolated);
     setLabelText(textEl, labelText);
   }
-
   textEl.percent = 0;
   (labelInnerStore.prevValue == null ? initProps : updateProps)(textEl, {
     // percent is used to prevent animation from being aborted #15916
     percent: 1
   }, animatableModel, dataIndex, null, during);
 }
-;// CONCATENATED MODULE: ./src/util/OrbitControl.js
+/**
+ * PENDING: Temporary impl. unify them?
+ * @see {LabelCommonOption['textMargin']}
+ * @see {LabelCommonOption['minMargin']}
+ */
+var LabelMarginType = {
+  minMargin: 1,
+  textMargin: 2
+};
+;// ./src/util/OrbitControl.js
 /**
  * Provide orbit control for 3D objects
  *
@@ -37710,7 +40629,7 @@ Object.defineProperty(OrbitControl.prototype, 'autoRotate', {
 
 
 /* harmony default export */ const util_OrbitControl = (OrbitControl);
-;// CONCATENATED MODULE: ./src/util/geometry/dynamicConvertMixin.js
+;// ./src/util/geometry/dynamicConvertMixin.js
 /* harmony default export */ const dynamicConvertMixin = ({
     convertToDynamicArray: function (clear) {
         if (clear) {
@@ -37750,7 +40669,7 @@ Object.defineProperty(OrbitControl.prototype, 'autoRotate', {
         this.dirty();
     }
 });
-;// CONCATENATED MODULE: ./node_modules/claygl/src/glmatrix/index.js
+;// ./node_modules/claygl/src/glmatrix/index.js
 /**
  * @fileoverview gl-matrix - High performance matrix and vector operations
  * @author Brandon Jones
@@ -37800,13 +40719,13 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
     quat: glmatrix_quat
 });
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/dep/glmatrix.js
+;// ./node_modules/claygl/src/dep/glmatrix.js
 // DEPRECATED
 
 
 /* harmony default export */ const dep_glmatrix = (glmatrix);
 
-;// CONCATENATED MODULE: ./src/util/geometry/Lines3D.js
+;// ./src/util/geometry/Lines3D.js
 /**
  * Lines geometry
  * Use screen space projected lines lineWidth > MAX_LINE_WIDTH
@@ -38271,7 +41190,7 @@ var LinesGeometry = src_Geometry.extend(function () {
 external_echarts_.util.defaults(LinesGeometry.prototype, dynamicConvertMixin);
 
 /* harmony default export */ const Lines3D = (LinesGeometry);
-;// CONCATENATED MODULE: ./src/util/ZRTextureAtlasSurface.js
+;// ./src/util/ZRTextureAtlasSurface.js
 /**
  * Texture Atlas for the sprites.
  * It uses zrender for 2d element management and rendering
@@ -38638,7 +41557,7 @@ ZRTextureAtlasSurface.prototype = {
 };
 
 /* harmony default export */ const util_ZRTextureAtlasSurface = (ZRTextureAtlasSurface);
-;// CONCATENATED MODULE: ./src/component/common/SceneHelper.js
+;// ./src/component/common/SceneHelper.js
 
 
 
@@ -38822,7 +41741,7 @@ SceneHelper.prototype = {
 };
 
 /* harmony default export */ const common_SceneHelper = (SceneHelper);
-;// CONCATENATED MODULE: ./src/util/geometry/Quads.js
+;// ./src/util/geometry/Quads.js
 /**
  * @module echarts-gl/util/geometry/QuadsGeometry
  * @author Yi Shen(http://github.com/pissang)
@@ -38931,7 +41850,7 @@ var QuadsGeometry = src_Geometry.extend(function () {
 external_echarts_.util.defaults(QuadsGeometry.prototype, dynamicConvertMixin);
 
 /* harmony default export */ const Quads = (QuadsGeometry);
-;// CONCATENATED MODULE: ./src/component/grid3D/Grid3DFace.js
+;// ./src/component/grid3D/Grid3DFace.js
 
 
 
@@ -39126,7 +42045,7 @@ Grid3DFace.prototype._udpateSplitAreas = function (geometry, axes, grid3DModel, 
 };
 
 /* harmony default export */ const grid3D_Grid3DFace = (Grid3DFace);
-;// CONCATENATED MODULE: ./src/util/geometry/Sprites.js
+;// ./src/util/geometry/Sprites.js
 /**
  * Geometry collecting sprites
  *
@@ -39265,10 +42184,10 @@ var SpritesGeometry = src_Geometry.extend(function () {
 external_echarts_.util.defaults(SpritesGeometry.prototype, dynamicConvertMixin);
 
 /* harmony default export */ const Sprites = (SpritesGeometry);
-;// CONCATENATED MODULE: ./src/util/shader/labels.glsl.js
+;// ./src/util/shader/labels.glsl.js
 /* harmony default export */ const labels_glsl = ("@export ecgl.labels.vertex\r\n\r\n// https://mattdesl.svbtle.com/drawing-lines-is-hard\r\nattribute vec3 position: POSITION;\r\nattribute vec2 texcoord: TEXCOORD_0;\r\nattribute vec2 offset;\r\n#ifdef VERTEX_COLOR\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform vec4 viewport : VIEWPORT;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nvoid main()\r\n{\r\n vec4 proj = worldViewProjection * vec4(position, 1.0);\r\n\r\n vec2 screen = (proj.xy / abs(proj.w) + 1.0) * 0.5 * viewport.zw;\r\n\r\n screen += offset;\r\n\r\n proj.xy = (screen / viewport.zw - 0.5) * 2.0 * abs(proj.w);\r\n gl_Position = proj;\r\n#ifdef VERTEX_COLOR\r\n v_Color = a_Color;\r\n#endif\r\n v_Texcoord = texcoord;\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.labels.fragment\r\n\r\nuniform vec3 color : [1.0, 1.0, 1.0];\r\nuniform float alpha : 1.0;\r\nuniform sampler2D textureAtlas;\r\nuniform vec2 uvScale: [1.0, 1.0];\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n#endif\r\nvarying float v_Miter;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nvoid main()\r\n{\r\n gl_FragColor = vec4(color, alpha) * texture2D(textureAtlas, v_Texcoord * uvScale);\r\n#ifdef VERTEX_COLOR\r\n gl_FragColor *= v_Color;\r\n#endif\r\n}\r\n\r\n@end");
 
-;// CONCATENATED MODULE: ./src/util/mesh/LabelsMesh.js
+;// ./src/util/mesh/LabelsMesh.js
 
 
 
@@ -39293,7 +42212,7 @@ util_graphicGL.Shader.import(labels_glsl);
         ignorePicking: true
     };
 }));
-;// CONCATENATED MODULE: ./src/component/grid3D/Grid3DAxis.js
+;// ./src/component/grid3D/Grid3DAxis.js
 
 
 
@@ -39517,10 +42436,10 @@ Grid3DAxis.prototype.setSpriteAlign = function (textAlign, textVerticalAlign, ap
 };
 
 /* harmony default export */ const grid3D_Grid3DAxis = (Grid3DAxis);
-;// CONCATENATED MODULE: ./src/util/shader/lines3D.glsl.js
+;// ./src/util/shader/lines3D.glsl.js
 /* harmony default export */ const lines3D_glsl = ("@export ecgl.lines3D.vertex\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nattribute vec3 position: POSITION;\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n\r\nvoid main()\r\n{\r\n gl_Position = worldViewProjection * vec4(position, 1.0);\r\n v_Color = a_Color;\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.lines3D.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nvarying vec4 v_Color;\r\n\r\n@import clay.util.srgb\r\n\r\nvoid main()\r\n{\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(color * v_Color);\r\n#else\r\n gl_FragColor = color * v_Color;\r\n#endif\r\n}\r\n@end\r\n\r\n\r\n\r\n@export ecgl.lines3D.clipNear\r\n\r\nvec4 clipNear(vec4 p1, vec4 p2) {\r\n float n = (p1.w - near) / (p1.w - p2.w);\r\n // PENDING\r\n return vec4(mix(p1.xy, p2.xy, n), -near, near);\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.lines3D.expandLine\r\n#ifdef VERTEX_ANIMATION\r\n vec4 prevProj = worldViewProjection * vec4(mix(prevPositionPrev, positionPrev, percent), 1.0);\r\n vec4 currProj = worldViewProjection * vec4(mix(prevPosition, position, percent), 1.0);\r\n vec4 nextProj = worldViewProjection * vec4(mix(prevPositionNext, positionNext, percent), 1.0);\r\n#else\r\n vec4 prevProj = worldViewProjection * vec4(positionPrev, 1.0);\r\n vec4 currProj = worldViewProjection * vec4(position, 1.0);\r\n vec4 nextProj = worldViewProjection * vec4(positionNext, 1.0);\r\n#endif\r\n\r\n if (currProj.w < 0.0) {\r\n if (nextProj.w > 0.0) {\r\n currProj = clipNear(currProj, nextProj);\r\n }\r\n else if (prevProj.w > 0.0) {\r\n currProj = clipNear(currProj, prevProj);\r\n }\r\n }\r\n\r\n vec2 prevScreen = (prevProj.xy / abs(prevProj.w) + 1.0) * 0.5 * viewport.zw;\r\n vec2 currScreen = (currProj.xy / abs(currProj.w) + 1.0) * 0.5 * viewport.zw;\r\n vec2 nextScreen = (nextProj.xy / abs(nextProj.w) + 1.0) * 0.5 * viewport.zw;\r\n\r\n vec2 dir;\r\n float len = offset;\r\n // Start point\r\n if (position == positionPrev) {\r\n dir = normalize(nextScreen - currScreen);\r\n }\r\n // End point\r\n else if (position == positionNext) {\r\n dir = normalize(currScreen - prevScreen);\r\n }\r\n else {\r\n vec2 dirA = normalize(currScreen - prevScreen);\r\n vec2 dirB = normalize(nextScreen - currScreen);\r\n\r\n vec2 tanget = normalize(dirA + dirB);\r\n\r\n // TODO, simple miterLimit\r\n float miter = 1.0 / max(dot(tanget, dirA), 0.5);\r\n len *= miter;\r\n dir = tanget;\r\n }\r\n\r\n dir = vec2(-dir.y, dir.x) * len;\r\n currScreen += dir;\r\n\r\n currProj.xy = (currScreen / viewport.zw - 0.5) * 2.0 * abs(currProj.w);\r\n@end\r\n\r\n\r\n@export ecgl.meshLines3D.vertex\r\n\r\n// https://mattdesl.svbtle.com/drawing-lines-is-hard\r\nattribute vec3 position: POSITION;\r\nattribute vec3 positionPrev;\r\nattribute vec3 positionNext;\r\nattribute float offset;\r\nattribute vec4 a_Color : COLOR;\r\n\r\n#ifdef VERTEX_ANIMATION\r\nattribute vec3 prevPosition;\r\nattribute vec3 prevPositionPrev;\r\nattribute vec3 prevPositionNext;\r\nuniform float percent : 1.0;\r\n#endif\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform vec4 viewport : VIEWPORT;\r\nuniform float near : NEAR;\r\n\r\nvarying vec4 v_Color;\r\n\r\n@import ecgl.common.wireframe.vertexHeader\r\n\r\n@import ecgl.lines3D.clipNear\r\n\r\nvoid main()\r\n{\r\n @import ecgl.lines3D.expandLine\r\n\r\n gl_Position = currProj;\r\n\r\n v_Color = a_Color;\r\n\r\n @import ecgl.common.wireframe.vertexMain\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.meshLines3D.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nvarying vec4 v_Color;\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.util.srgb\r\n\r\nvoid main()\r\n{\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(color * v_Color);\r\n#else\r\n gl_FragColor = color * v_Color;\r\n#endif\r\n\r\n @import ecgl.common.wireframe.fragmentMain\r\n}\r\n\r\n@end");
 
-;// CONCATENATED MODULE: ./src/component/grid3D/Grid3DView.js
+;// ./src/component/grid3D/Grid3DView.js
 // TODO orthographic camera
 
 
@@ -40108,7 +43027,7 @@ var Grid3DView_dimIndicesMap = {
         this._axisPointerLabelsSurface.dispose();
     }
 }));
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/coord/cartesian/Cartesian.js
+;// ./node_modules/echarts/lib/coord/cartesian/Cartesian.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -40153,47 +43072,37 @@ var Grid3DView_dimIndicesMap = {
 * under the License.
 */
 
-
-var Cartesian =
-/** @class */
-function () {
+var Cartesian = /** @class */function () {
   function Cartesian(name) {
     this.type = 'cartesian';
     this._dimList = [];
     this._axes = {};
     this.name = name || '';
   }
-
   Cartesian.prototype.getAxis = function (dim) {
     return this._axes[dim];
   };
-
   Cartesian.prototype.getAxes = function () {
-    return map(this._dimList, function (dim) {
+    return util_map(this._dimList, function (dim) {
       return this._axes[dim];
     }, this);
   };
-
   Cartesian.prototype.getAxesByScale = function (scaleType) {
     scaleType = scaleType.toLowerCase();
-    return filter(this.getAxes(), function (axis) {
+    return util_filter(this.getAxes(), function (axis) {
       return axis.scale.type === scaleType;
     });
   };
-
   Cartesian.prototype.addAxis = function (axis) {
     var dim = axis.dim;
     this._axes[dim] = axis;
-
     this._dimList.push(dim);
   };
-
   return Cartesian;
 }();
-
 ;
 /* harmony default export */ const cartesian_Cartesian = (Cartesian);
-;// CONCATENATED MODULE: ./src/coord/grid3D/Cartesian3D.js
+;// ./src/coord/grid3D/Cartesian3D.js
 
 
 
@@ -40247,7 +43156,7 @@ Cartesian3D.prototype = {
 external_echarts_.util.inherits(Cartesian3D, cartesian_Cartesian);
 
 /* harmony default export */ const grid3D_Cartesian3D = (Cartesian3D);
-;// CONCATENATED MODULE: ./src/coord/grid3D/Axis3D.js
+;// ./src/coord/grid3D/Axis3D.js
 
 
 function Axis3D(dim, scale, extent) {
@@ -40277,7 +43186,7 @@ Axis3D.prototype = {
 external_echarts_.util.inherits(Axis3D, external_echarts_.Axis);
 
 /* harmony default export */ const grid3D_Axis3D = (Axis3D);
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/core/fourPointsTransform.js
+;// ./node_modules/echarts/node_modules/zrender/lib/core/fourPointsTransform.js
 var LN2 = Math.log(2);
 function determinant(rows, rank, rowStart, rowMask, colMask, detCache) {
     var cacheKey = rowMask + '-' + colMask;
@@ -40338,7 +43247,8 @@ function buildTransformer(src, dest) {
     };
 }
 
-;// CONCATENATED MODULE: ./node_modules/zrender/lib/core/dom.js
+;// ./node_modules/echarts/node_modules/zrender/lib/core/dom.js
+
 
 
 var EVENT_SAVED_PROP = '___zrEVENTSAVED';
@@ -40347,8 +43257,19 @@ function transformLocalCoord(out, elFrom, elTarget, inX, inY) {
     return transformCoordWithViewport(_calcOut, elFrom, inX, inY, true)
         && transformCoordWithViewport(out, elTarget, _calcOut[0], _calcOut[1]);
 }
+function transformLocalCoordClear(elFrom, elTarget) {
+    elFrom && dealClear(elFrom);
+    elTarget && dealClear(elTarget);
+    function dealClear(el) {
+        var saved = el[EVENT_SAVED_PROP];
+        if (saved) {
+            saved.clearMarkers && saved.clearMarkers();
+            delete el[EVENT_SAVED_PROP];
+        }
+    }
+}
 function transformCoordWithViewport(out, el, inX, inY, inverse) {
-    if (el.getBoundingClientRect && core_env.domSupported && !isCanvasEl(el)) {
+    if (el.getBoundingClientRect && lib_core_env.domSupported && !isCanvasEl(el)) {
         var saved = el[EVENT_SAVED_PROP] || (el[EVENT_SAVED_PROP] = {});
         var markers = prepareCoordMarkers(el, saved);
         var transformer = preparePointerTransformer(markers, saved, inverse);
@@ -40390,6 +43311,11 @@ function prepareCoordMarkers(el, saved) {
         el.appendChild(marker);
         markers.push(marker);
     }
+    saved.clearMarkers = function () {
+        util_each(markers, function (marker) {
+            marker.parentNode && marker.parentNode.removeChild(marker);
+        });
+    };
     return markers;
 }
 function preparePointerTransformer(markers, saved, inverse) {
@@ -40434,7 +43360,7 @@ function encodeHTML(source) {
         });
 }
 
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/util/clazz.js
+;// ./node_modules/echarts/lib/util/clazz.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -40487,29 +43413,24 @@ var IS_EXTENDED_CLASS = '___EC__EXTENDED_CLASS___';
  * Notice, parseClassType('') should returns {main: '', sub: ''}
  * @public
  */
-
 function parseClassType(componentType) {
   var ret = {
     main: '',
     sub: ''
   };
-
   if (componentType) {
     var typeArr = componentType.split(TYPE_DELIMITER);
     ret.main = typeArr[0] || '';
     ret.sub = typeArr[1] || '';
   }
-
   return ret;
 }
 /**
  * @public
  */
-
 function checkClassType(componentType) {
-  assert(/^[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)?$/.test(componentType), 'componentType "' + componentType + '" illegal');
+  util_assert(/^[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)?$/.test(componentType), 'componentType "' + componentType + '" illegal');
 }
-
 function isExtendedClass(clz) {
   return !!(clz && clz[IS_EXTENDED_CLASS]);
 }
@@ -40523,32 +43444,24 @@ function isExtendedClass(clz) {
  * enableClassExtend(Xxx as XxxConstructor);
  * ```
  */
-
 function enableClassExtend(rootClz, mandatoryMethods) {
   rootClz.$constructor = rootClz; // FIXME: not necessary?
-
   rootClz.extend = function (proto) {
     if (true) {
-      each(mandatoryMethods, function (method) {
+      util_each(mandatoryMethods, function (method) {
         if (!proto[method]) {
           console.warn('Method `' + method + '` should be implemented' + (proto.type ? ' in ' + proto.type : '') + '.');
         }
       });
     }
-
     var superClass = this;
     var ExtendedClass;
-
     if (isESClass(superClass)) {
-      ExtendedClass =
-      /** @class */
-      function (_super) {
+      ExtendedClass = /** @class */function (_super) {
         __extends(class_1, _super);
-
         function class_1() {
           return _super.apply(this, arguments) || this;
         }
-
         return class_1;
       }(superClass);
     } else {
@@ -40562,11 +43475,9 @@ function enableClassExtend(rootClz, mandatoryMethods) {
       ExtendedClass = function () {
         (proto.$constructor || superClass).apply(this, arguments);
       };
-
-      inherits(ExtendedClass, this);
+      util_inherits(ExtendedClass, this);
     }
-
-    util_extend(ExtendedClass.prototype, proto);
+    core_util_extend(ExtendedClass.prototype, proto);
     ExtendedClass[IS_EXTENDED_CLASS] = true;
     ExtendedClass.extend = this.extend;
     ExtendedClass.superCall = superCall;
@@ -40575,9 +43486,8 @@ function enableClassExtend(rootClz, mandatoryMethods) {
     return ExtendedClass;
   };
 }
-
 function isESClass(fn) {
-  return isFunction(fn) && /^class\s/.test(Function.prototype.toString.call(fn));
+  return util_isFunction(fn) && /^class\s/.test(Function.prototype.toString.call(fn));
 }
 /**
  * A work around to both support ts extend and this extend mechanism.
@@ -40593,12 +43503,10 @@ function isESClass(fn) {
  * Component.markExtend(Series);
  * ```
  */
-
-
 function mountExtend(SubClz, SupperClz) {
   SubClz.extend = SupperClz.extend;
-} // A random offset.
-
+}
+// A random offset.
 var classBase = Math.round(Math.random() * 10);
 /**
  * Implements `CheckableConstructor` for `target`.
@@ -40613,35 +43521,29 @@ var classBase = Math.round(Math.random() * 10);
  * enableClassCheck(Xxx as XxxConstructor)
  * ```
  */
-
 function enableClassCheck(target) {
   var classAttr = ['__\0is_clz', classBase++].join('_');
   target.prototype[classAttr] = true;
-
   if (true) {
-    assert(!target.isInstance, 'The method "is" can not be defined.');
+    util_assert(!target.isInstance, 'The method "is" can not be defined.');
   }
-
   target.isInstance = function (obj) {
     return !!(obj && obj[classAttr]);
   };
-} // superCall should have class info, which can not be fetched from 'this'.
+}
+// superCall should have class info, which can not be fetched from 'this'.
 // Consider this case:
 // class A has method f,
 // class B inherits class A, overrides method f, f call superApply('f'),
 // class C inherits class B, does not override method f,
 // then when method of class C is called, dead loop occurred.
-
 function superCall(context, methodName) {
   var args = [];
-
   for (var _i = 2; _i < arguments.length; _i++) {
     args[_i - 2] = arguments[_i];
   }
-
   return this.superClass.prototype[methodName].apply(context, args);
 }
-
 function superApply(context, methodName, args) {
   return this.superClass.prototype[methodName].apply(context, args);
 }
@@ -40655,8 +43557,6 @@ function superApply(context, methodName, args) {
  * enableClassManagement(Xxx as XxxConstructor);
  * ```
  */
-
-
 function enableClassManagement(target) {
   /**
    * Component model classes
@@ -40666,7 +43566,6 @@ function enableClassManagement(target) {
    *     or Object.<subKey, componentClass>, when componentType is 'a.b'
    */
   var storage = {};
-
   target.registerClass = function (clz) {
     // `type` should not be a "instance member".
     // If using TS class, should better declared as `static type = 'series.pie'`.
@@ -40674,60 +43573,48 @@ function enableClassManagement(target) {
     // For backward compat and enable instance visit type via `this.type`,
     // we still support fetch `type` from prototype.
     var componentFullType = clz.type || clz.prototype.type;
-
     if (componentFullType) {
-      checkClassType(componentFullType); // If only static type declared, we assign it to prototype mandatorily.
-
+      checkClassType(componentFullType);
+      // If only static type declared, we assign it to prototype mandatorily.
       clz.prototype.type = componentFullType;
       var componentTypeInfo = parseClassType(componentFullType);
-
       if (!componentTypeInfo.sub) {
         if (true) {
           if (storage[componentTypeInfo.main]) {
             console.warn(componentTypeInfo.main + ' exists.');
           }
         }
-
         storage[componentTypeInfo.main] = clz;
       } else if (componentTypeInfo.sub !== IS_CONTAINER) {
         var container = makeContainer(componentTypeInfo);
         container[componentTypeInfo.sub] = clz;
       }
     }
-
     return clz;
   };
-
   target.getClass = function (mainType, subType, throwWhenNotFound) {
     var clz = storage[mainType];
-
     if (clz && clz[IS_CONTAINER]) {
       clz = subType ? clz[subType] : null;
     }
-
     if (throwWhenNotFound && !clz) {
       throw new Error(!subType ? mainType + '.' + 'type should be specified.' : 'Component ' + mainType + '.' + (subType || '') + ' is used but not imported.');
     }
-
     return clz;
   };
-
   target.getClassesByMainType = function (componentType) {
     var componentTypeInfo = parseClassType(componentType);
     var result = [];
     var obj = storage[componentTypeInfo.main];
-
     if (obj && obj[IS_CONTAINER]) {
-      each(obj, function (o, type) {
+      util_each(obj, function (o, type) {
         type !== IS_CONTAINER && result.push(o);
       });
     } else {
       result.push(obj);
     }
-
     return result;
   };
-
   target.hasClass = function (componentType) {
     // Just consider componentType.main.
     var componentTypeInfo = parseClassType(componentType);
@@ -40736,11 +43623,9 @@ function enableClassManagement(target) {
   /**
    * @return Like ['aa', 'bb'], but can not be ['aa.xx']
    */
-
-
   target.getAllClassMainTypes = function () {
     var types = [];
-    each(storage, function (obj, type) {
+    util_each(storage, function (obj, type) {
       types.push(type);
     });
     return types;
@@ -40748,25 +43633,21 @@ function enableClassManagement(target) {
   /**
    * If a main type is container and has sub types
    */
-
-
   target.hasSubTypes = function (componentType) {
     var componentTypeInfo = parseClassType(componentType);
     var obj = storage[componentTypeInfo.main];
     return obj && obj[IS_CONTAINER];
   };
-
   function makeContainer(componentTypeInfo) {
     var container = storage[componentTypeInfo.main];
-
     if (!container || !container[IS_CONTAINER]) {
       container = storage[componentTypeInfo.main] = {};
       container[IS_CONTAINER] = true;
     }
-
     return container;
   }
-} // /**
+}
+// /**
 //  * @param {string|Array.<string>} properties
 //  */
 // export function setReadOnly(obj, properties) {
@@ -40785,7 +43666,7 @@ function enableClassManagement(target) {
 //         && Object.freeze(obj[prop]);
 // });
 // }
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/model/mixin/makeStyleMapper.js
+;// ./node_modules/echarts/lib/model/mixin/makeStyleMapper.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -40839,30 +43720,24 @@ function makeStyleMapper(properties, ignoreParent) {
       properties[i][1] = properties[i][0];
     }
   }
-
   ignoreParent = ignoreParent || false;
   return function (model, excludes, includes) {
     var style = {};
-
     for (var i = 0; i < properties.length; i++) {
       var propName = properties[i][1];
-
-      if (excludes && indexOf(excludes, propName) >= 0 || includes && indexOf(includes, propName) < 0) {
+      if (excludes && util_indexOf(excludes, propName) >= 0 || includes && util_indexOf(includes, propName) < 0) {
         continue;
       }
-
       var val = model.getShallow(propName, ignoreParent);
-
       if (val != null) {
         style[properties[i][0]] = val;
       }
-    } // TODO Text or image?
-
-
+    }
+    // TODO Text or image?
     return style;
   };
 }
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/model/mixin/areaStyle.js
+;// ./node_modules/echarts/lib/model/mixin/areaStyle.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -40907,26 +43782,21 @@ function makeStyleMapper(properties, ignoreParent) {
 * under the License.
 */
 
-var AREA_STYLE_KEY_MAP = [['fill', 'color'], ['shadowBlur'], ['shadowOffsetX'], ['shadowOffsetY'], ['opacity'], ['shadowColor'] // Option decal is in `DecalObject` but style.decal is in `PatternObject`.
+var AREA_STYLE_KEY_MAP = [['fill', 'color'], ['shadowBlur'], ['shadowOffsetX'], ['shadowOffsetY'], ['opacity'], ['shadowColor']
+// Option decal is in `DecalObject` but style.decal is in `PatternObject`.
 // So do not transfer decal directly.
 ];
 var getAreaStyle = makeStyleMapper(AREA_STYLE_KEY_MAP);
-
-var AreaStyleMixin =
-/** @class */
-function () {
+var AreaStyleMixin = /** @class */function () {
   function AreaStyleMixin() {}
-
   AreaStyleMixin.prototype.getAreaStyle = function (excludes, includes) {
     return getAreaStyle(this, excludes, includes);
   };
-
   return AreaStyleMixin;
 }();
-
 ;
 
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/model/mixin/textStyle.js
+;// ./node_modules/echarts/lib/model/mixin/textStyle.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -40973,20 +43843,15 @@ function () {
 
 
 var PATH_COLOR = ['textStyle', 'color'];
-var textStyleParams = ['fontStyle', 'fontWeight', 'fontSize', 'fontFamily', 'padding', 'lineHeight', 'rich', 'width', 'height', 'overflow']; // TODO Performance improvement?
-
+var textStyleParams = ['fontStyle', 'fontWeight', 'fontSize', 'fontFamily', 'padding', 'lineHeight', 'rich', 'width', 'height', 'overflow'];
+// TODO Performance improvement?
 var tmpText = new Text();
-
-var TextStyleMixin =
-/** @class */
-function () {
+var TextStyleMixin = /** @class */function () {
   function TextStyleMixin() {}
   /**
    * Get color property or get color from option.textStyle.color
    */
   // TODO Callback
-
-
   TextStyleMixin.prototype.getTextColor = function (isEmphasis) {
     var ecModel = this.ecModel;
     return this.getShallow('color') || (!isEmphasis && ecModel ? ecModel.get(PATH_COLOR) : null);
@@ -40995,8 +43860,6 @@ function () {
    * Create font string from fontStyle, fontWeight, fontSize, fontFamily
    * @return {string}
    */
-
-
   TextStyleMixin.prototype.getFont = function () {
     return getFont({
       fontStyle: this.getShallow('fontStyle'),
@@ -41005,28 +43868,23 @@ function () {
       fontFamily: this.getShallow('fontFamily')
     }, this.ecModel);
   };
-
   TextStyleMixin.prototype.getTextRect = function (text) {
     var style = {
       text: text,
       verticalAlign: this.getShallow('verticalAlign') || this.getShallow('baseline')
     };
-
     for (var i = 0; i < textStyleParams.length; i++) {
       style[textStyleParams[i]] = this.getShallow(textStyleParams[i]);
     }
-
     tmpText.useStyle(style);
     tmpText.update();
     return tmpText.getBoundingRect();
   };
-
   return TextStyleMixin;
 }();
-
 ;
 /* harmony default export */ const textStyle = (TextStyleMixin);
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/model/mixin/lineStyle.js
+;// ./node_modules/echarts/lib/model/mixin/lineStyle.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -41071,26 +43929,21 @@ function () {
 * under the License.
 */
 
-var LINE_STYLE_KEY_MAP = [['lineWidth', 'width'], ['stroke', 'color'], ['opacity'], ['shadowBlur'], ['shadowOffsetX'], ['shadowOffsetY'], ['shadowColor'], ['lineDash', 'type'], ['lineDashOffset', 'dashOffset'], ['lineCap', 'cap'], ['lineJoin', 'join'], ['miterLimit'] // Option decal is in `DecalObject` but style.decal is in `PatternObject`.
+var LINE_STYLE_KEY_MAP = [['lineWidth', 'width'], ['stroke', 'color'], ['opacity'], ['shadowBlur'], ['shadowOffsetX'], ['shadowOffsetY'], ['shadowColor'], ['lineDash', 'type'], ['lineDashOffset', 'dashOffset'], ['lineCap', 'cap'], ['lineJoin', 'join'], ['miterLimit']
+// Option decal is in `DecalObject` but style.decal is in `PatternObject`.
 // So do not transfer decal directly.
 ];
 var getLineStyle = makeStyleMapper(LINE_STYLE_KEY_MAP);
-
-var LineStyleMixin =
-/** @class */
-function () {
+var LineStyleMixin = /** @class */function () {
   function LineStyleMixin() {}
-
   LineStyleMixin.prototype.getLineStyle = function (excludes) {
     return getLineStyle(this, excludes);
   };
-
   return LineStyleMixin;
 }();
-
 ;
 
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/model/mixin/itemStyle.js
+;// ./node_modules/echarts/lib/model/mixin/itemStyle.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -41135,25 +43988,20 @@ function () {
 * under the License.
 */
 
-var ITEM_STYLE_KEY_MAP = [['fill', 'color'], ['stroke', 'borderColor'], ['lineWidth', 'borderWidth'], ['opacity'], ['shadowBlur'], ['shadowOffsetX'], ['shadowOffsetY'], ['shadowColor'], ['lineDash', 'borderType'], ['lineDashOffset', 'borderDashOffset'], ['lineCap', 'borderCap'], ['lineJoin', 'borderJoin'], ['miterLimit', 'borderMiterLimit'] // Option decal is in `DecalObject` but style.decal is in `PatternObject`.
+var ITEM_STYLE_KEY_MAP = [['fill', 'color'], ['stroke', 'borderColor'], ['lineWidth', 'borderWidth'], ['opacity'], ['shadowBlur'], ['shadowOffsetX'], ['shadowOffsetY'], ['shadowColor'], ['lineDash', 'borderType'], ['lineDashOffset', 'borderDashOffset'], ['lineCap', 'borderCap'], ['lineJoin', 'borderJoin'], ['miterLimit', 'borderMiterLimit']
+// Option decal is in `DecalObject` but style.decal is in `PatternObject`.
 // So do not transfer decal directly.
 ];
 var getItemStyle = makeStyleMapper(ITEM_STYLE_KEY_MAP);
-
-var ItemStyleMixin =
-/** @class */
-function () {
+var ItemStyleMixin = /** @class */function () {
   function ItemStyleMixin() {}
-
   ItemStyleMixin.prototype.getItemStyle = function (excludes, includes) {
     return getItemStyle(this, excludes, includes);
   };
-
   return ItemStyleMixin;
 }();
 
-
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/model/Model.js
+;// ./node_modules/echarts/lib/model/Model.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -41204,14 +44052,12 @@ function () {
 
 
 
-
-var Model =
-/** @class */
-function () {
+var Model = /** @class */function () {
   function Model(option, parentModel, ecModel) {
     this.parentModel = parentModel;
     this.ecModel = ecModel;
-    this.option = option; // Simple optimization
+    this.option = option;
+    // Simple optimization
     // if (this.init) {
     //     if (arguments.length <= 4) {
     //         this.init(option, parentModel, ecModel, extraOpt);
@@ -41221,10 +44067,8 @@ function () {
     //     }
     // }
   }
-
   Model.prototype.init = function (option, parentModel, ecModel) {
     var rest = [];
-
     for (var _i = 3; _i < arguments.length; _i++) {
       rest[_i - 3] = arguments[_i];
     }
@@ -41232,42 +44076,33 @@ function () {
   /**
    * Merge the input option to me.
    */
-
-
   Model.prototype.mergeOption = function (option, ecModel) {
-    merge(this.option, option, true);
-  }; // `path` can be 'a.b.c', so the return value type have to be `ModelOption`
+    util_merge(this.option, option, true);
+  };
+  // `path` can be 'a.b.c', so the return value type have to be `ModelOption`
   // TODO: TYPE strict key check?
   // get(path: string | string[], ignoreParent?: boolean): ModelOption;
-
-
   Model.prototype.get = function (path, ignoreParent) {
     if (path == null) {
       return this.option;
     }
-
     return this._doGet(this.parsePath(path), !ignoreParent && this.parentModel);
   };
-
   Model.prototype.getShallow = function (key, ignoreParent) {
     var option = this.option;
     var val = option == null ? option : option[key];
-
     if (val == null && !ignoreParent) {
       var parentModel = this.parentModel;
-
       if (parentModel) {
         // FIXME:TS do not know how to make it works
         val = parentModel.getShallow(key);
       }
     }
-
     return val;
-  }; // `path` can be 'a.b.c', so the return value type have to be `Model<ModelOption>`
+  };
+  // `path` can be 'a.b.c', so the return value type have to be `Model<ModelOption>`
   // getModel(path: string | string[], parentModel?: Model): Model;
   // TODO 'a.b.c' is deprecated
-
-
   Model.prototype.getModel = function (path, parentModel) {
     var hasPath = path != null;
     var pathFinal = hasPath ? this.parsePath(path) : null;
@@ -41278,42 +44113,34 @@ function () {
   /**
    * If model has option
    */
-
-
   Model.prototype.isEmpty = function () {
     return this.option == null;
   };
-
-  Model.prototype.restoreData = function () {}; // Pending
-
-
+  Model.prototype.restoreData = function () {};
+  // Pending
   Model.prototype.clone = function () {
     var Ctor = this.constructor;
-    return new Ctor(clone(this.option));
-  }; // setReadOnly(properties): void {
+    return new Ctor(util_clone(this.option));
+  };
+  // setReadOnly(properties): void {
   // clazzUtil.setReadOnly(this, properties);
   // }
   // If path is null/undefined, return null/undefined.
-
-
   Model.prototype.parsePath = function (path) {
     if (typeof path === 'string') {
       return path.split('.');
     }
-
     return path;
-  }; // Resolve path for parent. Perhaps useful when parent use a different property.
+  };
+  // Resolve path for parent. Perhaps useful when parent use a different property.
   // Default to be a identity resolver.
   // Can be modified to a different resolver.
-
-
   Model.prototype.resolveParentPath = function (path) {
     return path;
-  }; // FIXME:TS check whether put this method here
-
-
+  };
+  // FIXME:TS check whether put this method here
   Model.prototype.isAnimationEnabled = function () {
-    if (!core_env.node && this.option) {
+    if (!lib_core_env.node && this.option) {
       if (this.option.animation != null) {
         return !!this.option.animation;
       } else if (this.parentModel) {
@@ -41321,48 +44148,39 @@ function () {
       }
     }
   };
-
   Model.prototype._doGet = function (pathArr, parentModel) {
     var obj = this.option;
-
     if (!pathArr) {
       return obj;
     }
-
     for (var i = 0; i < pathArr.length; i++) {
       // Ignore empty
       if (!pathArr[i]) {
         continue;
-      } // obj could be number/string/... (like 0)
-
-
+      }
+      // obj could be number/string/... (like 0)
       obj = obj && typeof obj === 'object' ? obj[pathArr[i]] : null;
-
       if (obj == null) {
         break;
       }
     }
-
     if (obj == null && parentModel) {
       obj = parentModel._doGet(this.resolveParentPath(pathArr), parentModel.parentModel);
     }
-
     return obj;
   };
-
   return Model;
 }();
-
-; // Enable Model.extend.
-
+;
+// Enable Model.extend.
 enableClassExtend(Model);
 enableClassCheck(Model);
-mixin(Model, LineStyleMixin);
-mixin(Model, ItemStyleMixin);
-mixin(Model, AreaStyleMixin);
-mixin(Model, textStyle);
+util_mixin(Model, LineStyleMixin);
+util_mixin(Model, ItemStyleMixin);
+util_mixin(Model, AreaStyleMixin);
+util_mixin(Model, textStyle);
 /* harmony default export */ const model_Model = (Model);
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/i18n/langEN.js
+;// ./node_modules/echarts/lib/i18n/langEN.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -41406,7 +44224,6 @@ mixin(Model, textStyle);
  * specific language governing permissions and limitations
  * under the License.
  */
-
 /**
  * Language: English.
  */
@@ -41483,7 +44300,9 @@ mixin(Model, textStyle);
       gauge: 'Gauge',
       pictorialBar: 'Pictorial bar',
       themeRiver: 'Theme River Map',
-      sunburst: 'Sunburst'
+      sunburst: 'Sunburst',
+      custom: 'Custom chart',
+      chart: 'Chart'
     }
   },
   aria: {
@@ -41519,7 +44338,7 @@ mixin(Model, textStyle);
     }
   }
 });
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/i18n/langZH.js
+;// ./node_modules/echarts/lib/i18n/langZH.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -41636,7 +44455,9 @@ mixin(Model, textStyle);
       gauge: '仪表盘图',
       pictorialBar: '象形柱图',
       themeRiver: '主题河流图',
-      sunburst: '旭日图'
+      sunburst: '旭日图',
+      custom: '自定义图表',
+      chart: '图表'
     }
   },
   aria: {
@@ -41672,7 +44493,7 @@ mixin(Model, textStyle);
     }
   }
 });
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/core/locale.js
+;// ./node_modules/echarts/lib/core/locale.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -41717,8 +44538,8 @@ mixin(Model, textStyle);
 * under the License.
 */
 
- // default import ZH and EN lang
 
+// default import ZH and EN lang
 
 
 
@@ -41727,31 +44548,29 @@ var LOCALE_EN = 'EN';
 var DEFAULT_LOCALE = LOCALE_EN;
 var localeStorage = {};
 var localeModels = {};
-var SYSTEM_LANG = !core_env.domSupported ? DEFAULT_LOCALE : function () {
-  var langStr = (
-  /* eslint-disable-next-line */
-  document.documentElement.lang || navigator.language || navigator.browserLanguage).toUpperCase();
+var SYSTEM_LANG = !lib_core_env.domSupported ? DEFAULT_LOCALE : function () {
+  var langStr = (/* eslint-disable-next-line */
+  document.documentElement.lang || navigator.language || navigator.browserLanguage || DEFAULT_LOCALE).toUpperCase();
   return langStr.indexOf(LOCALE_ZH) > -1 ? LOCALE_ZH : DEFAULT_LOCALE;
 }();
 function registerLocale(locale, localeObj) {
   locale = locale.toUpperCase();
   localeModels[locale] = new model_Model(localeObj);
   localeStorage[locale] = localeObj;
-} // export function getLocale(locale: string) {
+}
+// export function getLocale(locale: string) {
 //     return localeStorage[locale];
 // }
-
 function createLocaleObject(locale) {
-  if (isString(locale)) {
+  if (util_isString(locale)) {
     var localeObj = localeStorage[locale.toUpperCase()] || {};
-
     if (locale === LOCALE_ZH || locale === LOCALE_EN) {
-      return clone(localeObj);
+      return util_clone(localeObj);
     } else {
-      return merge(clone(localeObj), clone(localeStorage[DEFAULT_LOCALE]), false);
+      return util_merge(util_clone(localeObj), util_clone(localeStorage[DEFAULT_LOCALE]), false);
     }
   } else {
-    return merge(clone(locale), clone(localeStorage[DEFAULT_LOCALE]), false);
+    return util_merge(util_clone(locale), util_clone(localeStorage[DEFAULT_LOCALE]), false);
   }
 }
 function getLocaleModel(lang) {
@@ -41759,11 +44578,11 @@ function getLocaleModel(lang) {
 }
 function getDefaultLocaleModel() {
   return localeModels[DEFAULT_LOCALE];
-} // Default locale
-
+}
+// Default locale
 registerLocale(LOCALE_EN, langEN);
 registerLocale(LOCALE_ZH, langZH);
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/util/time.js
+;// ./node_modules/echarts/lib/scale/break.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -41807,6 +44626,61 @@ registerLocale(LOCALE_ZH, langZH);
 * specific language governing permissions and limitations
 * under the License.
 */
+;
+var _impl = null;
+function registerScaleBreakHelperImpl(impl) {
+  if (!_impl) {
+    _impl = impl;
+  }
+}
+function getScaleBreakHelper() {
+  return _impl;
+}
+;// ./node_modules/echarts/lib/util/time.js
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+/**
+ * AUTO-GENERATED FILE. DO NOT MODIFY.
+ */
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
 
 
 
@@ -41816,28 +44690,150 @@ var ONE_MINUTE = ONE_SECOND * 60;
 var ONE_HOUR = ONE_MINUTE * 60;
 var ONE_DAY = ONE_HOUR * 24;
 var ONE_YEAR = ONE_DAY * 365;
-var defaultLeveledFormatter = {
+var primaryTimeUnitFormatterMatchers = {
+  year: /({yyyy}|{yy})/,
+  month: /({MMMM}|{MMM}|{MM}|{M})/,
+  day: /({dd}|{d})/,
+  hour: /({HH}|{H}|{hh}|{h})/,
+  minute: /({mm}|{m})/,
+  second: /({ss}|{s})/,
+  millisecond: /({SSS}|{S})/
+};
+var defaultFormatterSeed = {
   year: '{yyyy}',
   month: '{MMM}',
   day: '{d}',
   hour: '{HH}:{mm}',
   minute: '{HH}:{mm}',
   second: '{HH}:{mm}:{ss}',
-  millisecond: '{HH}:{mm}:{ss} {SSS}',
-  none: '{yyyy}-{MM}-{dd} {HH}:{mm}:{ss} {SSS}'
+  millisecond: '{HH}:{mm}:{ss} {SSS}'
 };
+var defaultFullFormatter = '{yyyy}-{MM}-{dd} {HH}:{mm}:{ss} {SSS}';
 var fullDayFormatter = '{yyyy}-{MM}-{dd}';
 var fullLeveledFormatter = {
   year: '{yyyy}',
   month: '{yyyy}-{MM}',
   day: fullDayFormatter,
-  hour: fullDayFormatter + ' ' + defaultLeveledFormatter.hour,
-  minute: fullDayFormatter + ' ' + defaultLeveledFormatter.minute,
-  second: fullDayFormatter + ' ' + defaultLeveledFormatter.second,
-  millisecond: defaultLeveledFormatter.none
+  hour: fullDayFormatter + ' ' + defaultFormatterSeed.hour,
+  minute: fullDayFormatter + ' ' + defaultFormatterSeed.minute,
+  second: fullDayFormatter + ' ' + defaultFormatterSeed.second,
+  millisecond: defaultFullFormatter
 };
+// Order must be ensured from big to small.
 var primaryTimeUnits = ['year', 'month', 'day', 'hour', 'minute', 'second', 'millisecond'];
 var timeUnits = ['year', 'half-year', 'quarter', 'month', 'week', 'half-week', 'day', 'half-day', 'quarter-day', 'hour', 'minute', 'second', 'millisecond'];
+function parseTimeAxisLabelFormatter(formatter) {
+  // Keep the logic the same with function `leveledFormat`.
+  return !util_isString(formatter) && !util_isFunction(formatter) ? parseTimeAxisLabelFormatterDictionary(formatter) : formatter;
+}
+/**
+ * The final generated dictionary is like:
+ *  generated_dict = {
+ *      year: {
+ *          year: ['{yyyy}', ...<higher_levels_if_any>]
+ *      },
+ *      month: {
+ *          year: ['{yyyy} {MMM}', ...<higher_levels_if_any>],
+ *          month: ['{MMM}', ...<higher_levels_if_any>]
+ *      },
+ *      day: {
+ *          year: ['{yyyy} {MMM} {d}', ...<higher_levels_if_any>],
+ *          month: ['{MMM} {d}', ...<higher_levels_if_any>],
+ *          day: ['{d}', ...<higher_levels_if_any>]
+ *      },
+ *      ...
+ *  }
+ *
+ * In echarts option, users can specify the entire dictionary or typically just:
+ *  {formatter: {
+ *      year: '{yyyy}', // Or an array of leveled templates: `['{yyyy}', '{bold1|{yyyy}}', ...]`,
+ *                      // corresponding to `[level0, level1, level2, ...]`.
+ *      month: '{MMM}',
+ *      day: '{d}',
+ *      hour: '{HH}:{mm}',
+ *      second: '{HH}:{mm}',
+ *      ...
+ *  }}
+ *  If any time unit is not specified in echarts option, the default template is used,
+ *  such as `['{yyyy}', {primary|{yyyy}']`.
+ *
+ * The `tick.level` is only used to read string from each array, meaning the style type.
+ *
+ * Let `lowerUnit = getUnitFromValue(tick.value)`.
+ * The non-break axis ticks only use `generated_dict[lowerUnit][lowerUnit][level]`.
+ * The break axis ticks may use `generated_dict[lowerUnit][upperUnit][level]`, because:
+ *  Consider the case: the non-break ticks are `16th, 23th, Feb, 7th, ...`, where `Feb` is in the break
+ *  range and pruned by breaks, and the break ends might be in lower time unit than day. e.g., break start
+ *  is `Jan 25th 18:00`(in unit `hour`) and break end is `Feb 6th 18:30` (in unit `minute`). Thus the break
+ *  label prefers `Jan 25th 18:00` and `Feb 6th 18:30` rather than only `18:00` and `18:30`, otherwise it
+ *  causes misleading.
+ *  In this case, the tick of the break start and end will both be:
+ *      `{level: 1, lowerTimeUnit: 'minute', upperTimeUnit: 'month'}`
+ *  And get the final template by `generated_dict[lowerTimeUnit][upperTimeUnit][level]`.
+ *  Note that the time unit can not be calculated directly by a single tick value, since the two breaks have
+ *  to be at the same time unit to avoid awkward appearance. i.e., `Jan 25th 18:00` is in the time unit "hour"
+ *  but we need it to be "minute", following `Feb 6th 18:30`.
+ */
+function parseTimeAxisLabelFormatterDictionary(dictOption) {
+  dictOption = dictOption || {};
+  var dict = {};
+  // Currently if any template is specified by user, it may contain rich text tag,
+  // such as `'{my_bold|{YYYY}}'`, thus we do add highlight style to it.
+  // (Note that nested tag (`'{some|{some2|xxx}}'`) in rich text is not supported yet.)
+  var canAddHighlight = true;
+  util_each(primaryTimeUnits, function (lowestUnit) {
+    canAddHighlight && (canAddHighlight = dictOption[lowestUnit] == null);
+  });
+  util_each(primaryTimeUnits, function (lowestUnit, lowestUnitIdx) {
+    var upperDictOption = dictOption[lowestUnit];
+    dict[lowestUnit] = {};
+    var lowerTpl = null;
+    for (var upperUnitIdx = lowestUnitIdx; upperUnitIdx >= 0; upperUnitIdx--) {
+      var upperUnit = primaryTimeUnits[upperUnitIdx];
+      var upperDictItemOption = util_isObject(upperDictOption) && !util_isArray(upperDictOption) ? upperDictOption[upperUnit] : upperDictOption;
+      var tplArr = void 0;
+      if (util_isArray(upperDictItemOption)) {
+        tplArr = upperDictItemOption.slice();
+        lowerTpl = tplArr[0] || '';
+      } else if (util_isString(upperDictItemOption)) {
+        lowerTpl = upperDictItemOption;
+        tplArr = [lowerTpl];
+      } else {
+        if (lowerTpl == null) {
+          lowerTpl = defaultFormatterSeed[lowestUnit];
+        }
+        // Generate the dict by the rule as follows:
+        // If the user specify (or by default):
+        //  {formatter: {
+        //      year: '{yyyy}',
+        //      month: '{MMM}',
+        //      day: '{d}',
+        //      ...
+        //  }}
+        // Concat them to make the final dictionary:
+        //  {formatter: {
+        //      year: {year: ['{yyyy}']},
+        //      month: {year: ['{yyyy} {MMM}'], month: ['{MMM}']},
+        //      day: {year: ['{yyyy} {MMM} {d}'], month: ['{MMM} {d}'], day: ['{d}']}
+        //      ...
+        //  }}
+        // And then add `{primary|...}` to each array if from default template.
+        // This strategy is convinient for user configurating and works for most cases.
+        // If bad cases encountered, users can specify the entire dictionary themselves
+        // instead of going through this logic.
+        else if (!primaryTimeUnitFormatterMatchers[upperUnit].test(lowerTpl)) {
+          lowerTpl = dict[upperUnit][upperUnit][0] + " " + lowerTpl;
+        }
+        tplArr = [lowerTpl];
+        if (canAddHighlight) {
+          tplArr[1] = "{primary|" + lowerTpl + "}";
+        }
+      }
+      dict[lowestUnit][upperUnit] = tplArr;
+    }
+  });
+  return dict;
+}
 function pad(str, len) {
   str += '';
   return '0000'.substr(0, len - str.length) + str;
@@ -41847,15 +44843,12 @@ function getPrimaryTimeUnit(timeUnit) {
     case 'half-year':
     case 'quarter':
       return 'month';
-
     case 'week':
     case 'half-week':
       return 'day';
-
     case 'half-day':
     case 'quarter-day':
       return 'hour';
-
     default:
       // year, minutes, second, milliseconds
       return timeUnit;
@@ -41869,16 +44862,15 @@ function getDefaultFormatPrecisionOfInterval(timeUnit) {
     case 'year':
     case 'month':
       return 'day';
-
     case 'millisecond':
       return 'millisecond';
-
     default:
       // Also for day, hour, minute, second
       return 'second';
   }
 }
-function format( // Note: The result based on `isUTC` are totally different, which can not be just simply
+function format(
+// Note: The result based on `isUTC` are totally different, which can not be just simply
 // substituted by the result without `isUTC`. So we make the param `isUTC` mandatory.
 time, template, isUTC, lang) {
   var date = parseDate(time);
@@ -41892,61 +44884,42 @@ time, template, isUTC, lang) {
   var m = date[minutesGetterName(isUTC)]();
   var s = date[secondsGetterName(isUTC)]();
   var S = date[millisecondsGetterName(isUTC)]();
+  var a = H >= 12 ? 'pm' : 'am';
+  var A = a.toUpperCase();
   var localeModel = lang instanceof model_Model ? lang : getLocaleModel(lang || SYSTEM_LANG) || getDefaultLocaleModel();
   var timeModel = localeModel.getModel('time');
   var month = timeModel.get('month');
   var monthAbbr = timeModel.get('monthAbbr');
   var dayOfWeek = timeModel.get('dayOfWeek');
   var dayOfWeekAbbr = timeModel.get('dayOfWeekAbbr');
-  return (template || '').replace(/{yyyy}/g, y + '').replace(/{yy}/g, pad(y % 100 + '', 2)).replace(/{Q}/g, q + '').replace(/{MMMM}/g, month[M - 1]).replace(/{MMM}/g, monthAbbr[M - 1]).replace(/{MM}/g, pad(M, 2)).replace(/{M}/g, M + '').replace(/{dd}/g, pad(d, 2)).replace(/{d}/g, d + '').replace(/{eeee}/g, dayOfWeek[e]).replace(/{ee}/g, dayOfWeekAbbr[e]).replace(/{e}/g, e + '').replace(/{HH}/g, pad(H, 2)).replace(/{H}/g, H + '').replace(/{hh}/g, pad(h + '', 2)).replace(/{h}/g, h + '').replace(/{mm}/g, pad(m, 2)).replace(/{m}/g, m + '').replace(/{ss}/g, pad(s, 2)).replace(/{s}/g, s + '').replace(/{SSS}/g, pad(S, 3)).replace(/{S}/g, S + '');
+  return (template || '').replace(/{a}/g, a + '').replace(/{A}/g, A + '').replace(/{yyyy}/g, y + '').replace(/{yy}/g, pad(y % 100 + '', 2)).replace(/{Q}/g, q + '').replace(/{MMMM}/g, month[M - 1]).replace(/{MMM}/g, monthAbbr[M - 1]).replace(/{MM}/g, pad(M, 2)).replace(/{M}/g, M + '').replace(/{dd}/g, pad(d, 2)).replace(/{d}/g, d + '').replace(/{eeee}/g, dayOfWeek[e]).replace(/{ee}/g, dayOfWeekAbbr[e]).replace(/{e}/g, e + '').replace(/{HH}/g, pad(H, 2)).replace(/{H}/g, H + '').replace(/{hh}/g, pad(h + '', 2)).replace(/{h}/g, h + '').replace(/{mm}/g, pad(m, 2)).replace(/{m}/g, m + '').replace(/{ss}/g, pad(s, 2)).replace(/{s}/g, s + '').replace(/{SSS}/g, pad(S, 3)).replace(/{S}/g, S + '');
 }
 function leveledFormat(tick, idx, formatter, lang, isUTC) {
   var template = null;
-
-  if (isString(formatter)) {
+  if (util_isString(formatter)) {
     // Single formatter for all units at all levels
     template = formatter;
-  } else if (isFunction(formatter)) {
-    // Callback formatter
-    template = formatter(tick.value, idx, {
-      level: tick.level
-    });
+  } else if (util_isFunction(formatter)) {
+    var extra = {
+      time: tick.time,
+      level: tick.time.level
+    };
+    var scaleBreakHelper = getScaleBreakHelper();
+    if (scaleBreakHelper) {
+      scaleBreakHelper.makeAxisLabelFormatterParamBreak(extra, tick["break"]);
+    }
+    template = formatter(tick.value, idx, extra);
   } else {
-    var defaults = util_extend({}, defaultLeveledFormatter);
-
-    if (tick.level > 0) {
-      for (var i = 0; i < primaryTimeUnits.length; ++i) {
-        defaults[primaryTimeUnits[i]] = "{primary|" + defaults[primaryTimeUnits[i]] + "}";
-      }
-    }
-
-    var mergedFormatter = formatter ? formatter.inherit === false ? formatter // Use formatter with bigger units
-    : util_defaults(formatter, defaults) : defaults;
-    var unit = getUnitFromValue(tick.value, isUTC);
-
-    if (mergedFormatter[unit]) {
-      template = mergedFormatter[unit];
-    } else if (mergedFormatter.inherit) {
-      // Unit formatter is not defined and should inherit from bigger units
-      var targetId = timeUnits.indexOf(unit);
-
-      for (var i = targetId - 1; i >= 0; --i) {
-        if (mergedFormatter[unit]) {
-          template = mergedFormatter[unit];
-          break;
-        }
-      }
-
-      template = template || defaults.none;
-    }
-
-    if (isArray(template)) {
-      var levelId = tick.level == null ? 0 : tick.level >= 0 ? tick.level : template.length + tick.level;
-      levelId = Math.min(levelId, template.length - 1);
-      template = template[levelId];
+    var tickTime = tick.time;
+    if (tickTime) {
+      var leveledTplArr = formatter[tickTime.lowerTimeUnit][tickTime.upperTimeUnit];
+      template = leveledTplArr[Math.min(tickTime.level, leveledTplArr.length - 1)] || '';
+    } else {
+      // tick may be from customTicks or timeline therefore no tick.time.
+      var unit = getUnitFromValue(tick.value, isUTC);
+      template = formatter[unit][unit][0];
     }
   }
-
   return format(new Date(tick.value), template, isUTC, lang);
 }
 function getUnitFromValue(value, isUTC) {
@@ -41963,7 +44936,6 @@ function getUnitFromValue(value, isUTC) {
   var isDay = isHour && h === 0;
   var isMonth = isDay && d === 1;
   var isYear = isMonth && M === 1;
-
   if (isYear) {
     return 'year';
   } else if (isMonth) {
@@ -41980,41 +44952,61 @@ function getUnitFromValue(value, isUTC) {
     return 'millisecond';
   }
 }
-function getUnitValue(value, unit, isUTC) {
-  var date = isNumber(value) ? parseDate(value) : value;
-  unit = unit || getUnitFromValue(value, isUTC);
-
-  switch (unit) {
+// export function getUnitValue(
+//     value: number | Date,
+//     unit: TimeUnit,
+//     isUTC: boolean
+// ) : number {
+//     const date = zrUtil.isNumber(value)
+//         ? numberUtil.parseDate(value)
+//         : value;
+//     unit = unit || getUnitFromValue(value, isUTC);
+//     switch (unit) {
+//         case 'year':
+//             return date[fullYearGetterName(isUTC)]();
+//         case 'half-year':
+//             return date[monthGetterName(isUTC)]() >= 6 ? 1 : 0;
+//         case 'quarter':
+//             return Math.floor((date[monthGetterName(isUTC)]() + 1) / 4);
+//         case 'month':
+//             return date[monthGetterName(isUTC)]();
+//         case 'day':
+//             return date[dateGetterName(isUTC)]();
+//         case 'half-day':
+//             return date[hoursGetterName(isUTC)]() / 24;
+//         case 'hour':
+//             return date[hoursGetterName(isUTC)]();
+//         case 'minute':
+//             return date[minutesGetterName(isUTC)]();
+//         case 'second':
+//             return date[secondsGetterName(isUTC)]();
+//         case 'millisecond':
+//             return date[millisecondsGetterName(isUTC)]();
+//     }
+// }
+/**
+ * e.g.,
+ * If timeUnit is 'year', return the Jan 1st 00:00:00 000 of that year.
+ * If timeUnit is 'day', return the 00:00:00 000 of that day.
+ *
+ * @return The input date.
+ */
+function roundTime(date, timeUnit, isUTC) {
+  switch (timeUnit) {
     case 'year':
-      return date[fullYearGetterName(isUTC)]();
-
-    case 'half-year':
-      return date[monthGetterName(isUTC)]() >= 6 ? 1 : 0;
-
-    case 'quarter':
-      return Math.floor((date[monthGetterName(isUTC)]() + 1) / 4);
-
+      date[monthSetterName(isUTC)](0);
     case 'month':
-      return date[monthGetterName(isUTC)]();
-
+      date[dateSetterName(isUTC)](1);
     case 'day':
-      return date[dateGetterName(isUTC)]();
-
-    case 'half-day':
-      return date[hoursGetterName(isUTC)]() / 24;
-
+      date[hoursSetterName(isUTC)](0);
     case 'hour':
-      return date[hoursGetterName(isUTC)]();
-
+      date[minutesSetterName(isUTC)](0);
     case 'minute':
-      return date[minutesGetterName(isUTC)]();
-
+      date[secondsSetterName(isUTC)](0);
     case 'second':
-      return date[secondsGetterName(isUTC)]();
-
-    case 'millisecond':
-      return date[millisecondsGetterName(isUTC)]();
+      date[millisecondsSetterName(isUTC)](0);
   }
+  return date;
 }
 function fullYearGetterName(isUTC) {
   return isUTC ? 'getUTCFullYear' : 'getFullYear';
@@ -42058,7 +45050,7 @@ function secondsSetterName(isUTC) {
 function millisecondsSetterName(isUTC) {
   return isUTC ? 'setUTCMilliseconds' : 'setMilliseconds';
 }
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/legacy/getTextRect.js
+;// ./node_modules/echarts/lib/legacy/getTextRect.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -42118,7 +45110,7 @@ function getTextRect(text, font, align, verticalAlign, padding, rich, truncate, 
   });
   return textEl.getBoundingRect();
 }
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/util/format.js
+;// ./node_modules/echarts/lib/util/format.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -42170,12 +45162,10 @@ function getTextRect(text, font, align, verticalAlign, padding, rich, truncate, 
 /**
  * Add a comma each three digit.
  */
-
 function addCommas(x) {
   if (!isNumeric(x)) {
-    return isString(x) ? x : '-';
+    return util_isString(x) ? x : '-';
   }
-
   var parts = (x + '').split('.');
   return parts[0].replace(/(\d{1,3})(?=(?:\d{3})+(?!\d))/g, '$1,') + (parts.length > 1 ? '.' + parts[1] : '');
 }
@@ -42183,14 +45173,12 @@ function toCamelCase(str, upperCaseFirst) {
   str = (str || '').toLowerCase().replace(/-(.)/g, function (match, group1) {
     return group1.toUpperCase();
   });
-
   if (upperCaseFirst && str) {
     str = str.charAt(0).toUpperCase() + str.slice(1);
   }
-
   return str;
 }
-var format_normalizeCssArray = normalizeCssArray;
+var format_normalizeCssArray = util_normalizeCssArray;
 
 /**
  * Make value user readable for tooltip and label.
@@ -42199,42 +45187,33 @@ var format_normalizeCssArray = normalizeCssArray;
  *     Avoid to display an empty string, which users can not recognize there is
  *     a value and it might look like a bug.
  */
-
 function makeValueReadable(value, valueType, useUTC) {
   var USER_READABLE_DEFUALT_TIME_PATTERN = '{yyyy}-{MM}-{dd} {HH}:{mm}:{ss}';
-
   function stringToUserReadable(str) {
-    return str && trim(str) ? str : '-';
+    return str && util_trim(str) ? str : '-';
   }
-
   function isNumberUserReadable(num) {
     return !!(num != null && !isNaN(num) && isFinite(num));
   }
-
   var isTypeTime = valueType === 'time';
   var isValueDate = value instanceof Date;
-
   if (isTypeTime || isValueDate) {
     var date = isTypeTime ? parseDate(value) : value;
-
     if (!isNaN(+date)) {
       return format(date, USER_READABLE_DEFUALT_TIME_PATTERN, useUTC);
     } else if (isValueDate) {
       return '-';
-    } // In other cases, continue to try to display the value in the following code.
-
+    }
+    // In other cases, continue to try to display the value in the following code.
   }
-
   if (valueType === 'ordinal') {
-    return isStringSafe(value) ? stringToUserReadable(value) : isNumber(value) ? isNumberUserReadable(value) ? value + '' : '-' : '-';
-  } // By default.
-
-
+    return util_isStringSafe(value) ? stringToUserReadable(value) : util_isNumber(value) ? isNumberUserReadable(value) ? value + '' : '-' : '-';
+  }
+  // By default.
   var numericResult = numericToNumber(value);
-  return isNumberUserReadable(numericResult) ? addCommas(numericResult) : isStringSafe(value) ? stringToUserReadable(value) : typeof value === 'boolean' ? value + '' : '-';
+  return isNumberUserReadable(numericResult) ? addCommas(numericResult) : util_isStringSafe(value) ? stringToUserReadable(value) : typeof value === 'boolean' ? value + '' : '-';
 }
 var TPL_VAR_ALIAS = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
-
 var wrapVar = function (varName, seriesIdx) {
   return '{' + varName + (seriesIdx == null ? '' : seriesIdx) + '}';
 };
@@ -42242,47 +45221,38 @@ var wrapVar = function (varName, seriesIdx) {
  * Template formatter
  * @param {Array.<Object>|Object} paramsList
  */
-
-
 function formatTpl(tpl, paramsList, encode) {
-  if (!isArray(paramsList)) {
+  if (!util_isArray(paramsList)) {
     paramsList = [paramsList];
   }
-
   var seriesLen = paramsList.length;
-
   if (!seriesLen) {
     return '';
   }
-
   var $vars = paramsList[0].$vars || [];
-
   for (var i = 0; i < $vars.length; i++) {
     var alias = TPL_VAR_ALIAS[i];
     tpl = tpl.replace(wrapVar(alias), wrapVar(alias, 0));
   }
-
   for (var seriesIdx = 0; seriesIdx < seriesLen; seriesIdx++) {
     for (var k = 0; k < $vars.length; k++) {
       var val = paramsList[seriesIdx][$vars[k]];
       tpl = tpl.replace(wrapVar(TPL_VAR_ALIAS[k], seriesIdx), encode ? encodeHTML(val) : val);
     }
   }
-
   return tpl;
 }
 /**
  * simple Template formatter
  */
-
 function formatTplSimple(tpl, param, encode) {
-  each(param, function (value, key) {
+  util_each(param, function (value, key) {
     tpl = tpl.replace('{' + key + '}', encode ? encodeHTML(value) : value);
   });
   return tpl;
 }
 function getTooltipMarker(inOpt, extraCssText) {
-  var opt = isString(inOpt) ? {
+  var opt = util_isString(inOpt) ? {
     color: inOpt,
     extraCssText: extraCssText
   } : inOpt || {};
@@ -42290,13 +45260,12 @@ function getTooltipMarker(inOpt, extraCssText) {
   var type = opt.type;
   extraCssText = opt.extraCssText;
   var renderMode = opt.renderMode || 'html';
-
   if (!color) {
     return '';
   }
-
   if (renderMode === 'html') {
-    return type === 'subItem' ? '<span style="display:inline-block;vertical-align:middle;margin-right:8px;margin-left:3px;' + 'border-radius:4px;width:4px;height:4px;background-color:' // Only support string
+    return type === 'subItem' ? '<span style="display:inline-block;vertical-align:middle;margin-right:8px;margin-left:3px;' + 'border-radius:4px;width:4px;height:4px;background-color:'
+    // Only support string
     + encodeHTML(color) + ';' + (extraCssText || '') + '"></span>' : '<span style="display:inline-block;margin-right:4px;' + 'border-radius:10px;width:10px;height:10px;background-color:' + encodeHTML(color) + ';' + (extraCssText || '') + '"></span>';
   } else {
     // Should better not to auto generate style name by auto-increment number here.
@@ -42331,16 +45300,13 @@ function getTooltipMarker(inOpt, extraCssText) {
  *           and `module:echarts/util/number#parseDate`.
  * @inner
  */
-
 function formatTime(tpl, value, isUTC) {
   if (true) {
     deprecateReplaceLog('echarts.format.formatTime', 'echarts.time.format');
   }
-
   if (tpl === 'week' || tpl === 'month' || tpl === 'quarter' || tpl === 'half-year' || tpl === 'year') {
     tpl = 'MM-dd\nyyyy';
   }
-
   var date = parseDate(value);
   var getUTC = isUTC ? 'getUTC' : 'get';
   var y = date[getUTC + 'FullYear']();
@@ -42358,17 +45324,15 @@ function formatTime(tpl, value, isUTC) {
  * @param {string} str
  * @return {string}
  */
-
 function capitalFirst(str) {
   return str ? str.charAt(0).toUpperCase() + str.substr(1) : str;
 }
 /**
  * @return Never be null/undefined.
  */
-
 function convertToColorString(color, defaultColor) {
   defaultColor = defaultColor || 'transparent';
-  return isString(color) ? color : isObject(color) ? color.colorStops && (color.colorStops[0] || {}).color || defaultColor : defaultColor;
+  return util_isString(color) ? color : util_isObject(color) ? color.colorStops && (color.colorStops[0] || {}).color || defaultColor : defaultColor;
 }
 
 /**
@@ -42376,7 +45340,6 @@ function convertToColorString(color, defaultColor) {
  * @param link url
  * @param target blank or self
  */
-
 function windowOpen(link, target) {
   /* global window */
   if (target === '_blank' || target === 'blank') {
@@ -42388,7 +45351,316 @@ function windowOpen(link, target) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/util/layout.js
+;// ./node_modules/echarts/lib/core/CoordinateSystem.js
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+/**
+ * AUTO-GENERATED FILE. DO NOT MODIFY.
+ */
+
+/*
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+*
+*   http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+*/
+
+
+
+/**
+ * FIXME:
+ * `nonSeriesBoxCoordSysCreators` and `_nonSeriesBoxMasterList` are hardcoded implementations.
+ * Regarding "coord sys layout based on another coord sys", currently we only exprimentally support one level
+ * dpendency, such as, "grid(cartesian)s can be laid out based on matrix/calendar coord sys."
+ * But a comprehensive implementation may need to support:
+ *  - Recursive dependencies. e.g., a matrix coord sys lays out based on another matrix coord sys.
+ *    That requires in the implementation `create` and `update` of coord sys are called by a dependency graph.
+ *    (@see enableTopologicalTravel in `util/component.ts`)
+ */
+var nonSeriesBoxCoordSysCreators = {};
+var normalCoordSysCreators = {};
+var CoordinateSystemManager = /** @class */function () {
+  function CoordinateSystemManager() {
+    this._normalMasterList = [];
+    this._nonSeriesBoxMasterList = [];
+  }
+  /**
+   * Typically,
+   *  - in `create`, a coord sys lays out based on a given rect;
+   *  - in `update`, update the pixel and data extent of there axes (if any) based on processed `series.data`.
+   * After that, a coord sys can serve (typically by `dataToPoint`/`dataToLayout`/`pointToData`).
+   * If the coordinate system do not lay out based on `series.data`, `update` is not needed.
+   */
+  CoordinateSystemManager.prototype.create = function (ecModel, api) {
+    this._nonSeriesBoxMasterList = dealCreate(nonSeriesBoxCoordSysCreators, true);
+    this._normalMasterList = dealCreate(normalCoordSysCreators, false);
+    function dealCreate(creatorMap, canBeNonSeriesBox) {
+      var coordinateSystems = [];
+      util_each(creatorMap, function (creator, type) {
+        var list = creator.create(ecModel, api);
+        coordinateSystems = coordinateSystems.concat(list || []);
+        if (true) {
+          if (canBeNonSeriesBox) {
+            // Disallow `update` is a brutal way to ensure `_nonSeriesBoxMasterList`s are ready to
+            // serve after `create`. But if `update` has to be involved in `_nonSeriesBoxMasterList`
+            // for some future case, more complicated mechanisms need to be introduced.
+            util_each(list, function (master) {
+              return util_assert(!master.update);
+            });
+          }
+        }
+      });
+      return coordinateSystems;
+    }
+  };
+  /**
+   * @see CoordinateSystem['create']
+   */
+  CoordinateSystemManager.prototype.update = function (ecModel, api) {
+    util_each(this._normalMasterList, function (coordSys) {
+      coordSys.update && coordSys.update(ecModel, api);
+    });
+  };
+  CoordinateSystemManager.prototype.getCoordinateSystems = function () {
+    return this._normalMasterList.concat(this._nonSeriesBoxMasterList);
+  };
+  CoordinateSystemManager.register = function (type, creator) {
+    if (type === 'matrix' || type === 'calendar') {
+      // FIXME: hardcode, @see nonSeriesBoxCoordSysCreators
+      nonSeriesBoxCoordSysCreators[type] = creator;
+      return;
+    }
+    normalCoordSysCreators[type] = creator;
+  };
+  CoordinateSystemManager.get = function (type) {
+    return normalCoordSysCreators[type] || nonSeriesBoxCoordSysCreators[type];
+  };
+  return CoordinateSystemManager;
+}();
+function canBeNonSeriesBoxCoordSys(coordSysType) {
+  return !!nonSeriesBoxCoordSysCreators[coordSysType];
+}
+var BoxCoordinateSystemCoordFrom = {
+  // By default fetch coord from `model.get('coord')`.
+  coord: 1,
+  // Some model/series, such as pie, is allowed to also get coord from `model.get('center')`,
+  // if cannot get from `model.get('coord')`. But historically pie use `center` option, but
+  // geo use `layoutCenter` option to specify layout center; they are not able to be unified.
+  // Therefor it is not recommended.
+  coord2: 2
+};
+/**
+ * @see_also `createBoxLayoutReference`
+ * @see_also `injectCoordSysByOption`
+ */
+function registerLayOutOnCoordSysUsage(opt) {
+  if (true) {
+    util_assert(!coordSysUseMap.get(opt.fullType));
+  }
+  coordSysUseMap.set(opt.fullType, {
+    getCoord2: undefined
+  }).getCoord2 = opt.getCoord2;
+}
+var coordSysUseMap = util_createHashMap();
+/**
+ * @return Be an object, but never be NullUndefined.
+ */
+function getCoordForBoxCoordSys(model) {
+  var coord = model.getShallow('coord', true);
+  var from = BoxCoordinateSystemCoordFrom.coord;
+  if (coord == null) {
+    var store = coordSysUseMap.get(model.type);
+    if (store && store.getCoord2) {
+      from = BoxCoordinateSystemCoordFrom.coord2;
+      coord = store.getCoord2(model);
+    }
+  }
+  return {
+    coord: coord,
+    from: from
+  };
+}
+/**
+ * - "dataCoordSys": each data item is laid out based on a coord sys.
+ * - "boxCoordSys": the overall bounding rect or anchor point is calculated based on a coord sys.
+ *   e.g.,
+ *      grid rect (cartesian rect) is calculate based on matrix/calendar coord sys;
+ *      pie center is calculated based on calendar/cartesian;
+ *
+ * The default value (if not declared in option `coordinateSystemUsage`):
+ *  For series, use `dataCoordSys`, since this is the most case and backward compatible.
+ *  For non-series components, use `boxCoordSys`, since `dataCoordSys` is not applicable.
+ */
+var CoordinateSystemUsageKind = {
+  none: 0,
+  dataCoordSys: 1,
+  boxCoordSys: 2
+};
+function decideCoordSysUsageKind(
+// Component or series
+model, printError) {
+  // For backward compat, still not use `true` in model.get.
+  var coordSysType = model.getShallow('coordinateSystem');
+  var coordSysUsageOption = model.getShallow('coordinateSystemUsage', true);
+  var isDeclaredExplicitly = coordSysUsageOption != null;
+  var kind = CoordinateSystemUsageKind.none;
+  if (coordSysType) {
+    var isSeries = model.mainType === 'series';
+    if (coordSysUsageOption == null) {
+      coordSysUsageOption = isSeries ? 'data' : 'box';
+    }
+    if (coordSysUsageOption === 'data') {
+      kind = CoordinateSystemUsageKind.dataCoordSys;
+      if (!isSeries) {
+        if (true) {
+          if (isDeclaredExplicitly && printError) {
+            error('coordinateSystemUsage "data" is not supported in non-series components.');
+          }
+        }
+        kind = CoordinateSystemUsageKind.none;
+      }
+    } else if (coordSysUsageOption === 'box') {
+      kind = CoordinateSystemUsageKind.boxCoordSys;
+      if (!isSeries && !canBeNonSeriesBoxCoordSys(coordSysType)) {
+        if (true) {
+          if (isDeclaredExplicitly && printError) {
+            error("coordinateSystem \"" + coordSysType + "\" cannot be used" + (" as coordinateSystemUsage \"box\" for \"" + model.type + "\" yet."));
+          }
+        }
+        kind = CoordinateSystemUsageKind.none;
+      }
+    }
+  }
+  return {
+    coordSysType: coordSysType,
+    kind: kind
+  };
+}
+/**
+ * These cases are considered:
+ *  (A) Most series can use only "dataCoordSys", but "boxCoordSys" is not applicable:
+ *    - e.g., series.heatmap, series.line, series.bar, series.scatter, ...
+ *  (B) Some series and most components can use only "boxCoordSys", but "dataCoordSys" is not applicable:
+ *    - e.g., series.pie, series.funnel, ...
+ *    - e.g., grid, polar, geo, title, ...
+ *  (C) Several series can use both "boxCoordSys" and "dataCoordSys", even at the same time:
+ *    - e.g., series.graph, series.map
+ *      - If graph or map series use a "boxCoordSys", it creates a internal "dataCoordSys" to lay out its data.
+ *      - Graph series can use matrix coord sys as either the "dataCoordSys" (each item layout on one cell)
+ *        or "boxCoordSys" (the entire series are layout within one cell).
+ *    - To achieve this effect,
+ *      `series.coordinateSystemUsage: 'box'` needs to be specified explicitly.
+ *
+ * Check these echarts option settings:
+ *  - If `series: {type: 'bar'}`:
+ *      dataCoordSys: "cartesian2d", boxCoordSys: "none".
+ *      (since `coordinateSystem: 'cartesian2d'` is the default option in bar.)
+ *  - If `grid: {coordinateSystem: 'matrix'}`
+ *      dataCoordSys: "none", boxCoordSys: "matrix".
+ *  - If `series: {type: 'pie', coordinateSystem: 'matrix'}`:
+ *      dataCoordSys: "none", boxCoordSys: "matrix".
+ *      (since `coordinateSystemUsage: 'box'` is the default option in pie.)
+ *  - If `series: {type: 'graph', coordinateSystem: 'matrix'}`:
+ *      dataCoordSys: "matrix", boxCoordSys: "none"
+ *  - If `series: {type: 'graph', coordinateSystem: 'matrix', coordinateSystemUsage: 'box'}`:
+ *      dataCoordSys: "an internal view", boxCoordSys: "the internal view is laid out on a matrix"
+ *  - If `series: {type: 'map'}`:
+ *      dataCoordSys: "a internal geo", boxCoordSys: "none"
+ *  - If `series: {type: 'map', coordinateSystem: 'geo', geoIndex: 0}`:
+ *      dataCoordSys: "a geo", boxCoordSys: "none"
+ *  - If `series: {type: 'map', coordinateSystem: 'matrix'}`:
+ *      not_applicable
+ *  - If `series: {type: 'map', coordinateSystem: 'matrix', coordinateSystemUsage: 'box'}`:
+ *      dataCoordSys: "an internal geo", boxCoordSys: "the internal geo is laid out on a matrix"
+ *
+ * @usage
+ * For case (A) & (B),
+ *  call `injectCoordSysByOption({coordSysType: 'aaa', ...})` once for each series/components.
+ * For case (C),
+ *  call `injectCoordSysByOption({coordSysType: 'aaa', ...})` once for each series/components,
+ *  and then call `injectCoordSysByOption({coordSysType: 'bbb', ..., isDefaultDataCoordSys: true})`
+ *  once for each series/components.
+ *
+ * @return Whether injected.
+ */
+function injectCoordSysByOption(opt) {
+  var targetModel = opt.targetModel,
+    coordSysType = opt.coordSysType,
+    coordSysProvider = opt.coordSysProvider,
+    isDefaultDataCoordSys = opt.isDefaultDataCoordSys,
+    allowNotFound = opt.allowNotFound;
+  if (true) {
+    util_assert(!!coordSysType);
+  }
+  var _a = decideCoordSysUsageKind(targetModel, true),
+    kind = _a.kind,
+    declaredType = _a.coordSysType;
+  if (isDefaultDataCoordSys && kind !== CoordinateSystemUsageKind.dataCoordSys) {
+    // If both dataCoordSys and boxCoordSys declared in one model.
+    // There is the only case in series-graph, and no other cases yet.
+    kind = CoordinateSystemUsageKind.dataCoordSys;
+    declaredType = coordSysType;
+  }
+  if (kind === CoordinateSystemUsageKind.none || declaredType !== coordSysType) {
+    return false;
+  }
+  var coordSys = coordSysProvider(coordSysType, targetModel);
+  if (!coordSys) {
+    if (true) {
+      if (!allowNotFound) {
+        error(coordSysType + " cannot be found for" + (" " + targetModel.type + " (index: " + targetModel.componentIndex + ")."));
+      }
+    }
+    return false;
+  }
+  if (kind === CoordinateSystemUsageKind.dataCoordSys) {
+    if (true) {
+      util_assert(targetModel.mainType === 'series');
+    }
+    targetModel.coordinateSystem = coordSys;
+  } else {
+    // kind === 'boxCoordSys'
+    targetModel.boxCoordinateSystem = coordSys;
+  }
+  return true;
+}
+var simpleCoordSysInjectionProvider = function (coordSysType, injectTargetModel) {
+  var coordSysModel = injectTargetModel.getReferringComponents(coordSysType, SINGLE_REFERRING).models[0];
+  return coordSysModel && coordSysModel.coordinateSystem;
+};
+/* harmony default export */ const CoordinateSystem = (CoordinateSystemManager);
+;// ./node_modules/echarts/lib/util/layout.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -42437,30 +45709,26 @@ function windowOpen(link, target) {
 
 
 
-var layout_each = each;
+
+
+var layout_each = util_each;
 /**
  * @public
  */
-
 var LOCATION_PARAMS = ['left', 'right', 'top', 'bottom', 'width', 'height'];
 /**
  * @public
  */
-
 var HV_NAMES = [['width', 'left', 'right'], ['height', 'top', 'bottom']];
-
 function boxLayout(orient, group, gap, maxWidth, maxHeight) {
   var x = 0;
   var y = 0;
-
   if (maxWidth == null) {
     maxWidth = Infinity;
   }
-
   if (maxHeight == null) {
     maxHeight = Infinity;
   }
-
   var currentLineMaxSize = 0;
   group.eachChild(function (child, idx) {
     var rect = child.getBoundingRect();
@@ -42468,12 +45736,11 @@ function boxLayout(orient, group, gap, maxWidth, maxHeight) {
     var nextChildRect = nextChild && nextChild.getBoundingRect();
     var nextX;
     var nextY;
-
     if (orient === 'horizontal') {
       var moveX = rect.width + (nextChildRect ? -nextChildRect.x + rect.x : 0);
-      nextX = x + moveX; // Wrap when width exceeds maxWidth or meet a `newline` group
+      nextX = x + moveX;
+      // Wrap when width exceeds maxWidth or meet a `newline` group
       // FIXME compare before adding gap?
-
       if (nextX > maxWidth || child.newline) {
         x = 0;
         nextX = moveX;
@@ -42485,8 +45752,8 @@ function boxLayout(orient, group, gap, maxWidth, maxHeight) {
       }
     } else {
       var moveY = rect.height + (nextChildRect ? -nextChildRect.y + rect.y : 0);
-      nextY = y + moveY; // Wrap when width exceeds maxHeight or meet a `newline` group
-
+      nextY = y + moveY;
+      // Wrap when width exceeds maxHeight or meet a `newline` group
       if (nextY > maxHeight || child.newline) {
         x += currentLineMaxSize + gap;
         y = 0;
@@ -42496,11 +45763,9 @@ function boxLayout(orient, group, gap, maxWidth, maxHeight) {
         currentLineMaxSize = Math.max(currentLineMaxSize, rect.width);
       }
     }
-
     if (child.newline) {
       return;
     }
-
     child.x = x;
     child.y = y;
     child.markRedraw();
@@ -42515,8 +45780,6 @@ function boxLayout(orient, group, gap, maxWidth, maxHeight) {
  * @param {number} [width=Infinity]
  * @param {number} [height=Infinity]
  */
-
-
 var box = boxLayout;
 /**
  * VBox layouting
@@ -42525,8 +45788,7 @@ var box = boxLayout;
  * @param {number} [width=Infinity]
  * @param {number} [height=Infinity]
  */
-
-var vbox = curry(boxLayout, 'vertical');
+var vbox = util_curry(boxLayout, 'vertical');
 /**
  * HBox layouting
  * @param {module:zrender/graphic/Group} group
@@ -42534,37 +45796,82 @@ var vbox = curry(boxLayout, 'vertical');
  * @param {number} [width=Infinity]
  * @param {number} [height=Infinity]
  */
-
-var hbox = curry(boxLayout, 'horizontal');
-/**
- * If x or x2 is not specified or 'center' 'left' 'right',
- * the width would be as long as possible.
- * If y or y2 is not specified or 'middle' 'top' 'bottom',
- * the height would be as long as possible.
- */
-
-function getAvailableSize(positionInfo, containerRect, margin) {
-  var containerWidth = containerRect.width;
-  var containerHeight = containerRect.height;
-  var x = number_parsePercent(positionInfo.left, containerWidth);
-  var y = number_parsePercent(positionInfo.top, containerHeight);
-  var x2 = number_parsePercent(positionInfo.right, containerWidth);
-  var y2 = number_parsePercent(positionInfo.bottom, containerHeight);
-  (isNaN(x) || isNaN(parseFloat(positionInfo.left))) && (x = 0);
-  (isNaN(x2) || isNaN(parseFloat(positionInfo.right))) && (x2 = containerWidth);
-  (isNaN(y) || isNaN(parseFloat(positionInfo.top))) && (y = 0);
-  (isNaN(y2) || isNaN(parseFloat(positionInfo.bottom))) && (y2 = containerHeight);
-  margin = format_normalizeCssArray(margin || 0);
+var hbox = util_curry(boxLayout, 'horizontal');
+function getBoxLayoutParams(boxLayoutModel, ignoreParent) {
   return {
-    width: Math.max(x2 - x - margin[1] - margin[3], 0),
-    height: Math.max(y2 - y - margin[0] - margin[2], 0)
+    left: boxLayoutModel.getShallow('left', ignoreParent),
+    top: boxLayoutModel.getShallow('top', ignoreParent),
+    right: boxLayoutModel.getShallow('right', ignoreParent),
+    bottom: boxLayoutModel.getShallow('bottom', ignoreParent),
+    width: boxLayoutModel.getShallow('width', ignoreParent),
+    height: boxLayoutModel.getShallow('height', ignoreParent)
+  };
+}
+function getViewRectAndCenterForCircleLayout(seriesModel, api) {
+  var layoutRef = createBoxLayoutReference(seriesModel, api, {
+    enableLayoutOnlyByCenter: true
+  });
+  var boxLayoutParams = seriesModel.getBoxLayoutParams();
+  var viewRect;
+  var center;
+  if (layoutRef.type === BoxLayoutReferenceType.point) {
+    center = layoutRef.refPoint;
+    // `viewRect` is required in `pie/labelLayout.ts`.
+    viewRect = getLayoutRect(boxLayoutParams, {
+      width: api.getWidth(),
+      height: api.getHeight()
+    });
+  } else {
+    // layoutRef.type === layout.BoxLayoutReferenceType.rect
+    var centerOption = seriesModel.get('center');
+    var centerOptionArr = util_isArray(centerOption) ? centerOption : [centerOption, centerOption];
+    viewRect = getLayoutRect(boxLayoutParams, layoutRef.refContainer);
+    center = layoutRef.boxCoordFrom === BoxCoordinateSystemCoordFrom.coord2 ? layoutRef.refPoint // option `series.center` has been used as coord.
+    : [number_parsePercent(centerOptionArr[0], viewRect.width) + viewRect.x, number_parsePercent(centerOptionArr[1], viewRect.height) + viewRect.y];
+  }
+  return {
+    viewRect: viewRect,
+    center: center
+  };
+}
+function getCircleLayout(seriesModel, api) {
+  // center can be string or number when coordinateSystem is specified
+  var _a = getViewRectAndCenterForCircleLayout(seriesModel, api),
+    viewRect = _a.viewRect,
+    center = _a.center;
+  var radius = seriesModel.get('radius');
+  if (!util_isArray(radius)) {
+    radius = [0, radius];
+  }
+  var width = number_parsePercent(viewRect.width, api.getWidth());
+  var height = number_parsePercent(viewRect.height, api.getHeight());
+  var size = Math.min(width, height);
+  var r0 = number_parsePercent(radius[0], size / 2);
+  var r = number_parsePercent(radius[1], size / 2);
+  return {
+    cx: center[0],
+    cy: center[1],
+    r0: r0,
+    r: r,
+    viewRect: viewRect
   };
 }
 /**
  * Parse position info.
  */
-
-function getLayoutRect(positionInfo, containerRect, margin) {
+function getLayoutRect(positionInfo, containerRect,
+// This is the space from the `containerRect` to the returned bounding rect.
+// Commonly used in option `legend.padding`, `timeline.padding`, `title.padding`,
+//  `visualMap.padding`, ...
+// [NOTICE]:
+//  It's named `margin`, because it's the space that outside the bounding rect. But from
+//  the perspective of the the caller, it's commonly used as the `padding` of a component,
+//  because conventionally background color covers this space.
+// [BEHAVIOR]:
+//  - If width/height is specified, `margin` does not effect them.
+//  - Otherwise, they are calculated based on the rect that `containerRect` shrinked by `margin`.
+//  - left/right/top/bottom are based on the rect that `containerRect` shrinked by `margin`.
+margin) {
   margin = format_normalizeCssArray(margin || 0);
   var containerWidth = containerRect.width;
   var containerHeight = containerRect.height;
@@ -42576,16 +45883,14 @@ function getLayoutRect(positionInfo, containerRect, margin) {
   var height = number_parsePercent(positionInfo.height, containerHeight);
   var verticalMargin = margin[2] + margin[0];
   var horizontalMargin = margin[1] + margin[3];
-  var aspect = positionInfo.aspect; // If width is not specified, calculate width from left and right
-
+  var aspect = positionInfo.aspect;
+  // If width is not specified, calculate width from left and right
   if (isNaN(width)) {
     width = containerWidth - right - horizontalMargin - left;
   }
-
   if (isNaN(height)) {
     height = containerHeight - bottom - verticalMargin - top;
   }
-
   if (aspect != null) {
     // If width and height are not given
     // 1. Graph should not exceeds the container
@@ -42595,71 +45900,158 @@ function getLayoutRect(positionInfo, containerRect, margin) {
     // Margin is not considered, because there is no case that both
     // using margin and aspect so far.
     if (isNaN(width) && isNaN(height)) {
+      // PENDING: if only `left` or `right` is defined, perhaps it's more preferable to
+      // calculate size based on `containerWidth - left` or `containerWidth - left` here,
+      // but for backward compatibility we do not change it.
       if (aspect > containerWidth / containerHeight) {
         width = containerWidth * 0.8;
       } else {
         height = containerHeight * 0.8;
       }
-    } // Calculate width or height with given aspect
-
-
+    }
+    // Calculate width or height with given aspect
     if (isNaN(width)) {
       width = aspect * height;
     }
-
     if (isNaN(height)) {
       height = width / aspect;
     }
-  } // If left is not specified, calculate left from right and width
-
-
+  }
+  // If left is not specified, calculate left from right and width
   if (isNaN(left)) {
     left = containerWidth - right - width - horizontalMargin;
   }
-
   if (isNaN(top)) {
     top = containerHeight - bottom - height - verticalMargin;
-  } // Align left and top
-
-
+  }
+  // Align left and top
   switch (positionInfo.left || positionInfo.right) {
     case 'center':
       left = containerWidth / 2 - width / 2 - margin[3];
       break;
-
     case 'right':
       left = containerWidth - width - horizontalMargin;
       break;
   }
-
   switch (positionInfo.top || positionInfo.bottom) {
     case 'middle':
     case 'center':
       top = containerHeight / 2 - height / 2 - margin[0];
       break;
-
     case 'bottom':
       top = containerHeight - height - verticalMargin;
       break;
-  } // If something is wrong and left, top, width, height are calculated as NaN
-
-
+  }
+  // If something is wrong and left, top, width, height are calculated as NaN
   left = left || 0;
   top = top || 0;
-
   if (isNaN(width)) {
     // Width may be NaN if only one value is given except width
     width = containerWidth - horizontalMargin - left - (right || 0);
   }
-
   if (isNaN(height)) {
     // Height may be NaN if only one value is given except height
     height = containerHeight - verticalMargin - top - (bottom || 0);
   }
-
-  var rect = new core_BoundingRect(left + margin[3], top + margin[0], width, height);
+  var rect = new core_BoundingRect((containerRect.x || 0) + left + margin[3], (containerRect.y || 0) + top + margin[0], width, height);
   rect.margin = margin;
   return rect;
+}
+/**
+ * PENDING:
+ *  when preserveAspect: 'cover' and aspect is near Infinity
+ *  or when preserveAspect: 'contain' and aspect is near 0,
+ *  the result width or height is near Inifity. It's logically correct,
+ *  Therefore currently we do not handle it, until bad cases arise.
+ */
+function applyPreserveAspect(component, layoutRect,
+// That is, `width / height`.
+// Assume `aspect` is positive.
+aspect) {
+  var preserveAspect = component.getShallow('preserveAspect', true);
+  if (!preserveAspect) {
+    return layoutRect;
+  }
+  var actualAspect = layoutRect.width / layoutRect.height;
+  if (Math.abs(Math.atan(aspect) - Math.atan(actualAspect)) < 1e-9) {
+    return layoutRect;
+  }
+  var preserveAspectAlign = component.getShallow('preserveAspectAlign', true);
+  var preserveAspectVerticalAlign = component.getShallow('preserveAspectVerticalAlign', true);
+  var layoutOptInner = {
+    width: layoutRect.width,
+    height: layoutRect.height
+  };
+  var isCover = preserveAspect === 'cover';
+  if (actualAspect > aspect && !isCover || actualAspect < aspect && isCover) {
+    layoutOptInner.width = layoutRect.height * aspect;
+    preserveAspectAlign === 'left' ? layoutOptInner.left = 0 : preserveAspectAlign === 'right' ? layoutOptInner.right = 0 : layoutOptInner.left = 'center';
+  } else {
+    layoutOptInner.height = layoutRect.width / aspect;
+    preserveAspectVerticalAlign === 'top' ? layoutOptInner.top = 0 : preserveAspectVerticalAlign === 'bottom' ? layoutOptInner.bottom = 0 : layoutOptInner.top = 'middle';
+  }
+  return getLayoutRect(layoutOptInner, layoutRect);
+}
+var BoxLayoutReferenceType = {
+  rect: 1,
+  point: 2
+};
+/**
+ * Uniformly calculate layout reference (rect or center) based on either:
+ *  - viewport:
+ *      - Get `refContainer` as `{x: 0, y: 0, width: api.getWidth(), height: api.getHeight()}`
+ *  - coordinate system, which can serve in several ways:
+ *      - Use `dataToPoint` to get the `refPoint`, such as, in cartesian2d coord sys.
+ *      - Use `dataToLayout` to get the `refContainer`, such as, in matrix coord sys.
+ */
+function createBoxLayoutReference(model, api, opt) {
+  var refContainer;
+  var refPoint;
+  var layoutRefType;
+  var boxCoordSys = model.boxCoordinateSystem;
+  var boxCoordFrom;
+  if (boxCoordSys) {
+    var _a = getCoordForBoxCoordSys(model),
+      coord = _a.coord,
+      from = _a.from;
+    // Do not use `clamp` in `dataToLayout` and `dataToPoint`, because:
+    //  1. Should support overflow (such as, by dataZoom), where NaN should be in the result.
+    //  2. Be consistent with the way used in `series.data`
+    if (boxCoordSys.dataToLayout) {
+      layoutRefType = BoxLayoutReferenceType.rect;
+      boxCoordFrom = from;
+      var result = boxCoordSys.dataToLayout(coord);
+      refContainer = result.contentRect || result.rect;
+    } else if (opt && opt.enableLayoutOnlyByCenter && boxCoordSys.dataToPoint) {
+      layoutRefType = BoxLayoutReferenceType.point;
+      boxCoordFrom = from;
+      refPoint = boxCoordSys.dataToPoint(coord);
+    } else {
+      if (true) {
+        error(model.type + "[" + model.componentIndex + "]" + (" layout based on " + boxCoordSys.type + " is not supported."));
+      }
+    }
+  }
+  if (layoutRefType == null) {
+    layoutRefType = BoxLayoutReferenceType.rect;
+  }
+  if (layoutRefType === BoxLayoutReferenceType.rect) {
+    if (!refContainer) {
+      refContainer = {
+        x: 0,
+        y: 0,
+        width: api.getWidth(),
+        height: api.getHeight()
+      };
+    }
+    refPoint = [refContainer.x + refContainer.width / 2, refContainer.y + refContainer.height / 2];
+  }
+  return {
+    type: layoutRefType,
+    refContainer: refContainer,
+    refPoint: refPoint,
+    boxCoordFrom: boxCoordFrom
+  };
 }
 /**
  * Position a zr element in viewport
@@ -42701,7 +46093,6 @@ function getLayoutRect(positionInfo, containerRect, margin) {
  *               container. (Consider a rotated circle needs to be located in a corner.)
  *               In this mode positionInfo.width/height can only be number.
  */
-
 function positionElement(el, positionInfo, containerRect, margin, opt, out) {
   var h = !opt || !opt.hv || opt.hv[0];
   var v = !opt || !opt.hv || opt.hv[1];
@@ -42709,38 +46100,32 @@ function positionElement(el, positionInfo, containerRect, margin, opt, out) {
   out = out || el;
   out.x = el.x;
   out.y = el.y;
-
   if (!h && !v) {
     return false;
   }
-
   var rect;
-
   if (boundingMode === 'raw') {
     rect = el.type === 'group' ? new core_BoundingRect(0, 0, +positionInfo.width || 0, +positionInfo.height || 0) : el.getBoundingRect();
   } else {
     rect = el.getBoundingRect();
-
     if (el.needLocalTransform()) {
-      var transform = el.getLocalTransform(); // Notice: raw rect may be inner object of el,
+      var transform = el.getLocalTransform();
+      // Notice: raw rect may be inner object of el,
       // which should not be modified.
-
       rect = rect.clone();
       rect.applyTransform(transform);
     }
-  } // The real width and height can not be specified but calculated by the given el.
-
-
+  }
+  // The real width and height can not be specified but calculated by the given el.
   var layoutRect = getLayoutRect(util_defaults({
     width: rect.width,
     height: rect.height
-  }, positionInfo), containerRect, margin); // Because 'tranlate' is the last step in transform
+  }, positionInfo), containerRect, margin);
+  // Because 'tranlate' is the last step in transform
   // (see zrender/core/Transformable#getLocalTransform),
   // we can just only modify el.position to get final result.
-
   var dx = h ? layoutRect.x - rect.x : 0;
   var dy = v ? layoutRect.y - rect.y : 0;
-
   if (boundingMode === 'raw') {
     out.x = dx;
     out.y = dy;
@@ -42748,24 +46133,21 @@ function positionElement(el, positionInfo, containerRect, margin, opt, out) {
     out.x += dx;
     out.y += dy;
   }
-
   if (out === el) {
     el.markRedraw();
   }
-
   return true;
 }
 /**
  * @param option Contains some of the properties in HV_NAMES.
  * @param hvIdx 0: horizontal; 1: vertical.
  */
-
 function sizeCalculable(option, hvIdx) {
   return option[HV_NAMES[hvIdx][0]] != null || option[HV_NAMES[hvIdx][1]] != null && option[HV_NAMES[hvIdx][2]] != null;
 }
 function fetchLayoutMode(ins) {
   var layoutMode = ins.layoutMode || ins.constructor.layoutMode;
-  return isObject(layoutMode) ? layoutMode : layoutMode ? {
+  return util_isObject(layoutMode) ? layoutMode : layoutMode ? {
     type: layoutMode
   } : null;
 }
@@ -42792,15 +46174,13 @@ function fetchLayoutMode(ins) {
  * @param newOption
  * @param opt
  */
-
 function mergeLayoutParam(targetOption, newOption, opt) {
   var ignoreSize = opt && opt.ignoreSize;
-  !isArray(ignoreSize) && (ignoreSize = [ignoreSize, ignoreSize]);
+  !util_isArray(ignoreSize) && (ignoreSize = [ignoreSize, ignoreSize]);
   var hResult = merge(HV_NAMES[0], 0);
   var vResult = merge(HV_NAMES[1], 1);
   copy(HV_NAMES[0], targetOption, hResult);
   copy(HV_NAMES[1], targetOption, vResult);
-
   function merge(names, hvIdx) {
     var newParams = {};
     var newValueCount = 0;
@@ -42813,11 +46193,10 @@ function mergeLayoutParam(targetOption, newOption, opt) {
     layout_each(names, function (name) {
       // Consider case: newOption.width is null, which is
       // set by user for removing width setting.
-      hasProp(newOption, name) && (newParams[name] = merged[name] = newOption[name]);
+      util_hasOwn(newOption, name) && (newParams[name] = merged[name] = newOption[name]);
       hasValue(newParams, name) && newValueCount++;
       hasValue(merged, name) && mergedValueCount++;
     });
-
     if (ignoreSize[hvIdx]) {
       // Only one of left/right is premitted to exist.
       if (hasValue(newOption, names[1])) {
@@ -42825,44 +46204,35 @@ function mergeLayoutParam(targetOption, newOption, opt) {
       } else if (hasValue(newOption, names[2])) {
         merged[names[1]] = null;
       }
-
       return merged;
-    } // Case: newOption: {width: ..., right: ...},
+    }
+    // Case: newOption: {width: ..., right: ...},
     // or targetOption: {right: ...} and newOption: {width: ...},
     // There is no conflict when merged only has params count
     // little than enoughParamNumber.
-
-
     if (mergedValueCount === enoughParamNumber || !newValueCount) {
       return merged;
-    } // Case: newOption: {width: ..., right: ...},
+    }
+    // Case: newOption: {width: ..., right: ...},
     // Than we can make sure user only want those two, and ignore
     // all origin params in targetOption.
     else if (newValueCount >= enoughParamNumber) {
-        return newParams;
-      } else {
-        // Chose another param from targetOption by priority.
-        for (var i = 0; i < names.length; i++) {
-          var name_1 = names[i];
-
-          if (!hasProp(newParams, name_1) && hasProp(targetOption, name_1)) {
-            newParams[name_1] = targetOption[name_1];
-            break;
-          }
+      return newParams;
+    } else {
+      // Chose another param from targetOption by priority.
+      for (var i = 0; i < names.length; i++) {
+        var name_1 = names[i];
+        if (!util_hasOwn(newParams, name_1) && util_hasOwn(targetOption, name_1)) {
+          newParams[name_1] = targetOption[name_1];
+          break;
         }
-
-        return newParams;
       }
+      return newParams;
+    }
   }
-
-  function hasProp(obj, name) {
-    return obj.hasOwnProperty(name);
-  }
-
   function hasValue(obj, name) {
     return obj[name] != null && obj[name] !== 'auto';
   }
-
   function copy(names, target, source) {
     layout_each(names, function (name) {
       target[name] = source[name];
@@ -42872,7 +46242,6 @@ function mergeLayoutParam(targetOption, newOption, opt) {
 /**
  * Retrieve 'left', 'right', 'top', 'bottom', 'width', 'height' from object.
  */
-
 function getLayoutParams(source) {
   return copyLayoutParams({}, source);
 }
@@ -42881,14 +46250,13 @@ function getLayoutParams(source) {
  * @param {Object} source
  * @return {Object} Result contains those props.
  */
-
 function copyLayoutParams(target, source) {
   source && target && layout_each(LOCATION_PARAMS, function (name) {
-    source.hasOwnProperty(name) && (target[name] = source[name]);
+    util_hasOwn(source, name) && (target[name] = source[name]);
   });
   return target;
 }
-;// CONCATENATED MODULE: ./node_modules/claygl/src/compositor/TexturePool.js
+;// ./node_modules/claygl/src/compositor/TexturePool.js
 
 
 
@@ -42999,10 +46367,10 @@ function TexturePool_isPowerOfTwo(width, height) {
 
 /* harmony default export */ const compositor_TexturePool = (TexturePool);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/shadowmap.glsl.js
+;// ./node_modules/claygl/src/shader/source/shadowmap.glsl.js
 /* harmony default export */ const shadowmap_glsl = ("@export clay.sm.depth.vertex\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nattribute vec3 position : POSITION;\nattribute vec2 texcoord : TEXCOORD_0;\nuniform vec2 uvRepeat = vec2(1.0, 1.0);\nuniform vec2 uvOffset = vec2(0.0, 0.0);\n@import clay.chunk.skinning_header\n@import clay.chunk.instancing_header\nvarying vec4 v_ViewPosition;\nvarying vec2 v_Texcoord;\nvoid main(){\n vec4 P = vec4(position, 1.0);\n#ifdef SKINNING\n @import clay.chunk.skin_matrix\n P = skinMatrixWS * P;\n#endif\n#ifdef INSTANCING\n @import clay.chunk.instancing_matrix\n P = instanceMat * P;\n#endif\n v_ViewPosition = worldViewProjection * P;\n gl_Position = v_ViewPosition;\n v_Texcoord = texcoord * uvRepeat + uvOffset;\n}\n@end\n@export clay.sm.depth.fragment\nvarying vec4 v_ViewPosition;\nvarying vec2 v_Texcoord;\nuniform float bias : 0.001;\nuniform float slopeScale : 1.0;\nuniform sampler2D alphaMap;\nuniform float alphaCutoff: 0.0;\n@import clay.util.encode_float\nvoid main(){\n float depth = v_ViewPosition.z / v_ViewPosition.w;\n if (alphaCutoff > 0.0) {\n if (texture2D(alphaMap, v_Texcoord).a <= alphaCutoff) {\n discard;\n }\n }\n#ifdef USE_VSM\n depth = depth * 0.5 + 0.5;\n float moment1 = depth;\n float moment2 = depth * depth;\n #ifdef SUPPORT_STANDARD_DERIVATIVES\n float dx = dFdx(depth);\n float dy = dFdy(depth);\n moment2 += 0.25*(dx*dx+dy*dy);\n #endif\n gl_FragColor = vec4(moment1, moment2, 0.0, 1.0);\n#else\n #ifdef SUPPORT_STANDARD_DERIVATIVES\n float dx = dFdx(depth);\n float dy = dFdy(depth);\n depth += sqrt(dx*dx + dy*dy) * slopeScale + bias;\n #else\n depth += bias;\n #endif\n gl_FragColor = encodeFloat(depth * 0.5 + 0.5);\n#endif\n}\n@end\n@export clay.sm.debug_depth\nuniform sampler2D depthMap;\nvarying vec2 v_Texcoord;\n@import clay.util.decode_float\nvoid main() {\n vec4 tex = texture2D(depthMap, v_Texcoord);\n#ifdef USE_VSM\n gl_FragColor = vec4(tex.rgb, 1.0);\n#else\n float depth = decodeFloat(tex);\n gl_FragColor = vec4(depth, depth, depth, 1.0);\n#endif\n}\n@end\n@export clay.sm.distance.vertex\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nuniform mat4 world : WORLD;\nattribute vec3 position : POSITION;\n@import clay.chunk.skinning_header\nvarying vec3 v_WorldPosition;\nvoid main (){\n vec4 P = vec4(position, 1.0);\n#ifdef SKINNING\n @import clay.chunk.skin_matrix\n P = skinMatrixWS * P;\n#endif\n#ifdef INSTANCING\n @import clay.chunk.instancing_matrix\n P = instanceMat * P;\n#endif\n gl_Position = worldViewProjection * P;\n v_WorldPosition = (world * P).xyz;\n}\n@end\n@export clay.sm.distance.fragment\nuniform vec3 lightPosition;\nuniform float range : 100;\nvarying vec3 v_WorldPosition;\n@import clay.util.encode_float\nvoid main(){\n float dist = distance(lightPosition, v_WorldPosition);\n#ifdef USE_VSM\n gl_FragColor = vec4(dist, dist * dist, 0.0, 0.0);\n#else\n dist = dist / range;\n gl_FragColor = encodeFloat(dist);\n#endif\n}\n@end\n@export clay.plugin.shadow_map_common\n@import clay.util.decode_float\nfloat tapShadowMap(sampler2D map, vec2 uv, float z){\n vec4 tex = texture2D(map, uv);\n return step(z, decodeFloat(tex) * 2.0 - 1.0);\n}\nfloat pcf(sampler2D map, vec2 uv, float z, float textureSize, vec2 scale) {\n float shadowContrib = tapShadowMap(map, uv, z);\n vec2 offset = vec2(1.0 / textureSize) * scale;\n#ifdef PCF_KERNEL_SIZE\n for (int _idx_ = 0; _idx_ < PCF_KERNEL_SIZE; _idx_++) {{\n shadowContrib += tapShadowMap(map, uv + offset * pcfKernel[_idx_], z);\n }}\n return shadowContrib / float(PCF_KERNEL_SIZE + 1);\n#else\n shadowContrib += tapShadowMap(map, uv+vec2(offset.x, 0.0), z);\n shadowContrib += tapShadowMap(map, uv+vec2(offset.x, offset.y), z);\n shadowContrib += tapShadowMap(map, uv+vec2(-offset.x, offset.y), z);\n shadowContrib += tapShadowMap(map, uv+vec2(0.0, offset.y), z);\n shadowContrib += tapShadowMap(map, uv+vec2(-offset.x, 0.0), z);\n shadowContrib += tapShadowMap(map, uv+vec2(-offset.x, -offset.y), z);\n shadowContrib += tapShadowMap(map, uv+vec2(offset.x, -offset.y), z);\n shadowContrib += tapShadowMap(map, uv+vec2(0.0, -offset.y), z);\n return shadowContrib / 9.0;\n#endif\n}\nfloat pcf(sampler2D map, vec2 uv, float z, float textureSize) {\n return pcf(map, uv, z, textureSize, vec2(1.0));\n}\nfloat chebyshevUpperBound(vec2 moments, float z){\n float p = 0.0;\n z = z * 0.5 + 0.5;\n if (z <= moments.x) {\n p = 1.0;\n }\n float variance = moments.y - moments.x * moments.x;\n variance = max(variance, 0.0000001);\n float mD = moments.x - z;\n float pMax = variance / (variance + mD * mD);\n pMax = clamp((pMax-0.4)/(1.0-0.4), 0.0, 1.0);\n return max(p, pMax);\n}\nfloat computeShadowContrib(\n sampler2D map, mat4 lightVPM, vec3 position, float textureSize, vec2 scale, vec2 offset\n) {\n vec4 posInLightSpace = lightVPM * vec4(position, 1.0);\n posInLightSpace.xyz /= posInLightSpace.w;\n float z = posInLightSpace.z;\n if(all(greaterThan(posInLightSpace.xyz, vec3(-0.99, -0.99, -1.0))) &&\n all(lessThan(posInLightSpace.xyz, vec3(0.99, 0.99, 1.0)))){\n vec2 uv = (posInLightSpace.xy+1.0) / 2.0;\n #ifdef USE_VSM\n vec2 moments = texture2D(map, uv * scale + offset).xy;\n return chebyshevUpperBound(moments, z);\n #else\n return pcf(map, uv * scale + offset, z, textureSize, scale);\n #endif\n }\n return 1.0;\n}\nfloat computeShadowContrib(sampler2D map, mat4 lightVPM, vec3 position, float textureSize) {\n return computeShadowContrib(map, lightVPM, position, textureSize, vec2(1.0), vec2(0.0));\n}\nfloat computeShadowContribOmni(samplerCube map, vec3 direction, float range)\n{\n float dist = length(direction);\n vec4 shadowTex = textureCube(map, direction);\n#ifdef USE_VSM\n vec2 moments = shadowTex.xy;\n float variance = moments.y - moments.x * moments.x;\n float mD = moments.x - dist;\n float p = variance / (variance + mD * mD);\n if(moments.x + 0.001 < dist){\n return clamp(p, 0.0, 1.0);\n }else{\n return 1.0;\n }\n#else\n return step(dist, (decodeFloat(shadowTex) + 0.0002) * range);\n#endif\n}\n@end\n@export clay.plugin.compute_shadow_map\n#if defined(SPOT_LIGHT_SHADOWMAP_COUNT) || defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT) || defined(POINT_LIGHT_SHADOWMAP_COUNT)\n#ifdef SPOT_LIGHT_SHADOWMAP_COUNT\nuniform sampler2D spotLightShadowMaps[SPOT_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\nuniform mat4 spotLightMatrices[SPOT_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\nuniform float spotLightShadowMapSizes[SPOT_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\n#endif\n#ifdef DIRECTIONAL_LIGHT_SHADOWMAP_COUNT\n#if defined(SHADOW_CASCADE)\nuniform sampler2D directionalLightShadowMaps[1]:unconfigurable;\nuniform mat4 directionalLightMatrices[SHADOW_CASCADE]:unconfigurable;\nuniform float directionalLightShadowMapSizes[1]:unconfigurable;\nuniform float shadowCascadeClipsNear[SHADOW_CASCADE]:unconfigurable;\nuniform float shadowCascadeClipsFar[SHADOW_CASCADE]:unconfigurable;\n#else\nuniform sampler2D directionalLightShadowMaps[DIRECTIONAL_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\nuniform mat4 directionalLightMatrices[DIRECTIONAL_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\nuniform float directionalLightShadowMapSizes[DIRECTIONAL_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\n#endif\n#endif\n#ifdef POINT_LIGHT_SHADOWMAP_COUNT\nuniform samplerCube pointLightShadowMaps[POINT_LIGHT_SHADOWMAP_COUNT]:unconfigurable;\n#endif\nuniform bool shadowEnabled : true;\n#ifdef PCF_KERNEL_SIZE\nuniform vec2 pcfKernel[PCF_KERNEL_SIZE];\n#endif\n@import clay.plugin.shadow_map_common\n#if defined(SPOT_LIGHT_SHADOWMAP_COUNT)\nvoid computeShadowOfSpotLights(vec3 position, inout float shadowContribs[SPOT_LIGHT_COUNT] ) {\n float shadowContrib;\n for(int _idx_ = 0; _idx_ < SPOT_LIGHT_SHADOWMAP_COUNT; _idx_++) {{\n shadowContrib = computeShadowContrib(\n spotLightShadowMaps[_idx_], spotLightMatrices[_idx_], position,\n spotLightShadowMapSizes[_idx_]\n );\n shadowContribs[_idx_] = shadowContrib;\n }}\n for(int _idx_ = SPOT_LIGHT_SHADOWMAP_COUNT; _idx_ < SPOT_LIGHT_COUNT; _idx_++){{\n shadowContribs[_idx_] = 1.0;\n }}\n}\n#endif\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\n#ifdef SHADOW_CASCADE\nvoid computeShadowOfDirectionalLights(vec3 position, inout float shadowContribs[DIRECTIONAL_LIGHT_COUNT]){\n float depth = (2.0 * gl_FragCoord.z - gl_DepthRange.near - gl_DepthRange.far)\n / (gl_DepthRange.far - gl_DepthRange.near);\n float shadowContrib;\n shadowContribs[0] = 1.0;\n for (int _idx_ = 0; _idx_ < SHADOW_CASCADE; _idx_++) {{\n if (\n depth >= shadowCascadeClipsNear[_idx_] &&\n depth <= shadowCascadeClipsFar[_idx_]\n ) {\n shadowContrib = computeShadowContrib(\n directionalLightShadowMaps[0], directionalLightMatrices[_idx_], position,\n directionalLightShadowMapSizes[0],\n vec2(1.0 / float(SHADOW_CASCADE), 1.0),\n vec2(float(_idx_) / float(SHADOW_CASCADE), 0.0)\n );\n shadowContribs[0] = shadowContrib;\n }\n }}\n for(int _idx_ = DIRECTIONAL_LIGHT_SHADOWMAP_COUNT; _idx_ < DIRECTIONAL_LIGHT_COUNT; _idx_++) {{\n shadowContribs[_idx_] = 1.0;\n }}\n}\n#else\nvoid computeShadowOfDirectionalLights(vec3 position, inout float shadowContribs[DIRECTIONAL_LIGHT_COUNT]){\n float shadowContrib;\n for(int _idx_ = 0; _idx_ < DIRECTIONAL_LIGHT_SHADOWMAP_COUNT; _idx_++) {{\n shadowContrib = computeShadowContrib(\n directionalLightShadowMaps[_idx_], directionalLightMatrices[_idx_], position,\n directionalLightShadowMapSizes[_idx_]\n );\n shadowContribs[_idx_] = shadowContrib;\n }}\n for(int _idx_ = DIRECTIONAL_LIGHT_SHADOWMAP_COUNT; _idx_ < DIRECTIONAL_LIGHT_COUNT; _idx_++) {{\n shadowContribs[_idx_] = 1.0;\n }}\n}\n#endif\n#endif\n#if defined(POINT_LIGHT_SHADOWMAP_COUNT)\nvoid computeShadowOfPointLights(vec3 position, inout float shadowContribs[POINT_LIGHT_COUNT] ){\n vec3 lightPosition;\n vec3 direction;\n for(int _idx_ = 0; _idx_ < POINT_LIGHT_SHADOWMAP_COUNT; _idx_++) {{\n lightPosition = pointLightPosition[_idx_];\n direction = position - lightPosition;\n shadowContribs[_idx_] = computeShadowContribOmni(pointLightShadowMaps[_idx_], direction, pointLightRange[_idx_]);\n }}\n for(int _idx_ = POINT_LIGHT_SHADOWMAP_COUNT; _idx_ < POINT_LIGHT_COUNT; _idx_++) {{\n shadowContribs[_idx_] = 1.0;\n }}\n}\n#endif\n#endif\n@end");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/prePass/ShadowMap.js
+;// ./node_modules/claygl/src/prePass/ShadowMap.js
 
 
 
@@ -43907,7 +47275,7 @@ ShadowMapPass.PCF = 2;
 
 /* harmony default export */ const ShadowMap = (ShadowMapPass);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/compositor/CompositorNode.js
+;// ./node_modules/claygl/src/compositor/CompositorNode.js
 
 
 // PENDING
@@ -44155,7 +47523,7 @@ var CompositorNode = core_Base.extend(function () {
 
 /* harmony default export */ const compositor_CompositorNode = (CompositorNode);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/compositor/Graph.js
+;// ./node_modules/claygl/src/compositor/Graph.js
 
 
 
@@ -44297,7 +47665,7 @@ var Graph = core_Base.extend(function () {
 
 /* harmony default export */ const compositor_Graph = (Graph);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/compositor/Compositor.js
+;// ./node_modules/claygl/src/compositor/Compositor.js
 
 
 
@@ -44385,7 +47753,7 @@ var Compositor = compositor_Graph.extend(function() {
 
 /* harmony default export */ const compositor_Compositor = (Compositor);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/compositor/SceneNode.js
+;// ./node_modules/claygl/src/compositor/SceneNode.js
 
 
 
@@ -44482,7 +47850,7 @@ var SceneNode = compositor_CompositorNode.extend(
 
 /* harmony default export */ const compositor_SceneNode = (SceneNode);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/compositor/TextureNode.js
+;// ./node_modules/claygl/src/compositor/TextureNode.js
 
 
 /**
@@ -44515,7 +47883,7 @@ var TextureNode = compositor_CompositorNode.extend(function() {
 
 /* harmony default export */ const compositor_TextureNode = (TextureNode);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/compositor/FilterNode.js
+;// ./node_modules/claygl/src/compositor/FilterNode.js
 // TODO Shader library
 
 
@@ -44822,46 +48190,46 @@ var FilterNode = compositor_CompositorNode.extend(function () {
 
 /* harmony default export */ const compositor_FilterNode = (FilterNode);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/compositor/coloradjust.glsl.js
+;// ./node_modules/claygl/src/shader/source/compositor/coloradjust.glsl.js
 /* harmony default export */ const coloradjust_glsl = ("@export clay.compositor.coloradjust\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float brightness : 0.0;\nuniform float contrast : 1.0;\nuniform float exposure : 0.0;\nuniform float gamma : 1.0;\nuniform float saturation : 1.0;\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\nvoid main()\n{\n vec4 tex = texture2D( texture, v_Texcoord);\n vec3 color = clamp(tex.rgb + vec3(brightness), 0.0, 1.0);\n color = clamp( (color-vec3(0.5))*contrast+vec3(0.5), 0.0, 1.0);\n color = clamp( color * pow(2.0, exposure), 0.0, 1.0);\n color = clamp( pow(color, vec3(gamma)), 0.0, 1.0);\n float luminance = dot( color, w );\n color = mix(vec3(luminance), color, saturation);\n gl_FragColor = vec4(color, tex.a);\n}\n@end\n@export clay.compositor.brightness\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float brightness : 0.0;\nvoid main()\n{\n vec4 tex = texture2D( texture, v_Texcoord);\n vec3 color = tex.rgb + vec3(brightness);\n gl_FragColor = vec4(color, tex.a);\n}\n@end\n@export clay.compositor.contrast\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float contrast : 1.0;\nvoid main()\n{\n vec4 tex = texture2D( texture, v_Texcoord);\n vec3 color = (tex.rgb-vec3(0.5))*contrast+vec3(0.5);\n gl_FragColor = vec4(color, tex.a);\n}\n@end\n@export clay.compositor.exposure\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float exposure : 0.0;\nvoid main()\n{\n vec4 tex = texture2D(texture, v_Texcoord);\n vec3 color = tex.rgb * pow(2.0, exposure);\n gl_FragColor = vec4(color, tex.a);\n}\n@end\n@export clay.compositor.gamma\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float gamma : 1.0;\nvoid main()\n{\n vec4 tex = texture2D(texture, v_Texcoord);\n vec3 color = pow(tex.rgb, vec3(gamma));\n gl_FragColor = vec4(color, tex.a);\n}\n@end\n@export clay.compositor.saturation\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float saturation : 1.0;\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\nvoid main()\n{\n vec4 tex = texture2D(texture, v_Texcoord);\n vec3 color = tex.rgb;\n float luminance = dot(color, w);\n color = mix(vec3(luminance), color, saturation);\n gl_FragColor = vec4(color, tex.a);\n}\n@end");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/compositor/blur.glsl.js
+;// ./node_modules/claygl/src/shader/source/compositor/blur.glsl.js
 /* harmony default export */ const blur_glsl = ("@export clay.compositor.kernel.gaussian_9\nfloat gaussianKernel[9];\ngaussianKernel[0] = 0.07;\ngaussianKernel[1] = 0.09;\ngaussianKernel[2] = 0.12;\ngaussianKernel[3] = 0.14;\ngaussianKernel[4] = 0.16;\ngaussianKernel[5] = 0.14;\ngaussianKernel[6] = 0.12;\ngaussianKernel[7] = 0.09;\ngaussianKernel[8] = 0.07;\n@end\n@export clay.compositor.kernel.gaussian_13\nfloat gaussianKernel[13];\ngaussianKernel[0] = 0.02;\ngaussianKernel[1] = 0.03;\ngaussianKernel[2] = 0.06;\ngaussianKernel[3] = 0.08;\ngaussianKernel[4] = 0.11;\ngaussianKernel[5] = 0.13;\ngaussianKernel[6] = 0.14;\ngaussianKernel[7] = 0.13;\ngaussianKernel[8] = 0.11;\ngaussianKernel[9] = 0.08;\ngaussianKernel[10] = 0.06;\ngaussianKernel[11] = 0.03;\ngaussianKernel[12] = 0.02;\n@end\n@export clay.compositor.gaussian_blur\n#define SHADER_NAME gaussian_blur\nuniform sampler2D texture;varying vec2 v_Texcoord;\nuniform float blurSize : 2.0;\nuniform vec2 textureSize : [512.0, 512.0];\nuniform float blurDir : 0.0;\n@import clay.util.rgbm\n@import clay.util.clamp_sample\nvoid main (void)\n{\n @import clay.compositor.kernel.gaussian_9\n vec2 off = blurSize / textureSize;\n off *= vec2(1.0 - blurDir, blurDir);\n vec4 sum = vec4(0.0);\n float weightAll = 0.0;\n for (int i = 0; i < 9; i++) {\n float w = gaussianKernel[i];\n vec4 texel = decodeHDR(clampSample(texture, v_Texcoord + float(i - 4) * off));\n sum += texel * w;\n weightAll += w;\n }\n gl_FragColor = encodeHDR(sum / max(weightAll, 0.01));\n}\n@end\n");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/compositor/lum.glsl.js
+;// ./node_modules/claygl/src/shader/source/compositor/lum.glsl.js
 /* harmony default export */ const lum_glsl = ("@export clay.compositor.hdr.log_lum\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\n@import clay.util.rgbm\nvoid main()\n{\n vec4 tex = decodeHDR(texture2D(texture, v_Texcoord));\n float luminance = dot(tex.rgb, w);\n luminance = log(luminance + 0.001);\n gl_FragColor = encodeHDR(vec4(vec3(luminance), 1.0));\n}\n@end\n@export clay.compositor.hdr.lum_adaption\nvarying vec2 v_Texcoord;\nuniform sampler2D adaptedLum;\nuniform sampler2D currentLum;\nuniform float frameTime : 0.02;\n@import clay.util.rgbm\nvoid main()\n{\n float fAdaptedLum = decodeHDR(texture2D(adaptedLum, vec2(0.5, 0.5))).r;\n float fCurrentLum = exp(encodeHDR(texture2D(currentLum, vec2(0.5, 0.5))).r);\n fAdaptedLum += (fCurrentLum - fAdaptedLum) * (1.0 - pow(0.98, 30.0 * frameTime));\n gl_FragColor = encodeHDR(vec4(vec3(fAdaptedLum), 1.0));\n}\n@end\n@export clay.compositor.lum\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\nvoid main()\n{\n vec4 tex = texture2D( texture, v_Texcoord );\n float luminance = dot(tex.rgb, w);\n gl_FragColor = vec4(vec3(luminance), 1.0);\n}\n@end");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/compositor/lut.glsl.js
+;// ./node_modules/claygl/src/shader/source/compositor/lut.glsl.js
 /* harmony default export */ const lut_glsl = ("\n@export clay.compositor.lut\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform sampler2D lookup;\nvoid main()\n{\n vec4 tex = texture2D(texture, v_Texcoord);\n float blueColor = tex.b * 63.0;\n vec2 quad1;\n quad1.y = floor(floor(blueColor) / 8.0);\n quad1.x = floor(blueColor) - (quad1.y * 8.0);\n vec2 quad2;\n quad2.y = floor(ceil(blueColor) / 8.0);\n quad2.x = ceil(blueColor) - (quad2.y * 8.0);\n vec2 texPos1;\n texPos1.x = (quad1.x * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * tex.r);\n texPos1.y = (quad1.y * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * tex.g);\n vec2 texPos2;\n texPos2.x = (quad2.x * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * tex.r);\n texPos2.y = (quad2.y * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * tex.g);\n vec4 newColor1 = texture2D(lookup, texPos1);\n vec4 newColor2 = texture2D(lookup, texPos2);\n vec4 newColor = mix(newColor1, newColor2, fract(blueColor));\n gl_FragColor = vec4(newColor.rgb, tex.w);\n}\n@end");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/compositor/vignette.glsl.js
+;// ./node_modules/claygl/src/shader/source/compositor/vignette.glsl.js
 /* harmony default export */ const vignette_glsl = ("@export clay.compositor.vignette\n#define OUTPUT_ALPHA\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\nuniform float darkness: 1;\nuniform float offset: 1;\n@import clay.util.rgbm\nvoid main()\n{\n vec4 texel = decodeHDR(texture2D(texture, v_Texcoord));\n gl_FragColor.rgb = texel.rgb;\n vec2 uv = (v_Texcoord - vec2(0.5)) * vec2(offset);\n gl_FragColor = encodeHDR(vec4(mix(texel.rgb, vec3(1.0 - darkness), dot(uv, uv)), texel.a));\n}\n@end");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/compositor/output.glsl.js
+;// ./node_modules/claygl/src/shader/source/compositor/output.glsl.js
 /* harmony default export */ const output_glsl = ("@export clay.compositor.output\n#define OUTPUT_ALPHA\nvarying vec2 v_Texcoord;\nuniform sampler2D texture;\n@import clay.util.rgbm\nvoid main()\n{\n vec4 tex = decodeHDR(texture2D(texture, v_Texcoord));\n gl_FragColor.rgb = tex.rgb;\n#ifdef OUTPUT_ALPHA\n gl_FragColor.a = tex.a;\n#else\n gl_FragColor.a = 1.0;\n#endif\n gl_FragColor = encodeHDR(gl_FragColor);\n#ifdef PREMULTIPLY_ALPHA\n gl_FragColor.rgb *= gl_FragColor.a;\n#endif\n}\n@end");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/compositor/bright.glsl.js
+;// ./node_modules/claygl/src/shader/source/compositor/bright.glsl.js
 /* harmony default export */ const bright_glsl = ("@export clay.compositor.bright\nuniform sampler2D texture;\nuniform float threshold : 1;\nuniform float scale : 1.0;\nuniform vec2 textureSize: [512, 512];\nvarying vec2 v_Texcoord;\nconst vec3 lumWeight = vec3(0.2125, 0.7154, 0.0721);\n@import clay.util.rgbm\nvec4 median(vec4 a, vec4 b, vec4 c)\n{\n return a + b + c - min(min(a, b), c) - max(max(a, b), c);\n}\nvoid main()\n{\n vec4 texel = decodeHDR(texture2D(texture, v_Texcoord));\n#ifdef ANTI_FLICKER\n vec3 d = 1.0 / textureSize.xyx * vec3(1.0, 1.0, 0.0);\n vec4 s1 = decodeHDR(texture2D(texture, v_Texcoord - d.xz));\n vec4 s2 = decodeHDR(texture2D(texture, v_Texcoord + d.xz));\n vec4 s3 = decodeHDR(texture2D(texture, v_Texcoord - d.zy));\n vec4 s4 = decodeHDR(texture2D(texture, v_Texcoord + d.zy));\n texel = median(median(texel, s1, s2), s3, s4);\n#endif\n float lum = dot(texel.rgb , lumWeight);\n vec4 color;\n if (lum > threshold && texel.a > 0.0)\n {\n color = vec4(texel.rgb * scale, texel.a * scale);\n }\n else\n {\n color = vec4(0.0);\n }\n gl_FragColor = encodeHDR(color);\n}\n@end\n");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/compositor/downsample.glsl.js
+;// ./node_modules/claygl/src/shader/source/compositor/downsample.glsl.js
 /* harmony default export */ const downsample_glsl = ("@export clay.compositor.downsample\nuniform sampler2D texture;\nuniform vec2 textureSize : [512, 512];\nvarying vec2 v_Texcoord;\n@import clay.util.rgbm\nfloat brightness(vec3 c)\n{\n return max(max(c.r, c.g), c.b);\n}\n@import clay.util.clamp_sample\nvoid main()\n{\n vec4 d = vec4(-1.0, -1.0, 1.0, 1.0) / textureSize.xyxy;\n#ifdef ANTI_FLICKER\n vec3 s1 = decodeHDR(clampSample(texture, v_Texcoord + d.xy)).rgb;\n vec3 s2 = decodeHDR(clampSample(texture, v_Texcoord + d.zy)).rgb;\n vec3 s3 = decodeHDR(clampSample(texture, v_Texcoord + d.xw)).rgb;\n vec3 s4 = decodeHDR(clampSample(texture, v_Texcoord + d.zw)).rgb;\n float s1w = 1.0 / (brightness(s1) + 1.0);\n float s2w = 1.0 / (brightness(s2) + 1.0);\n float s3w = 1.0 / (brightness(s3) + 1.0);\n float s4w = 1.0 / (brightness(s4) + 1.0);\n float oneDivideSum = 1.0 / (s1w + s2w + s3w + s4w);\n vec4 color = vec4(\n (s1 * s1w + s2 * s2w + s3 * s3w + s4 * s4w) * oneDivideSum,\n 1.0\n );\n#else\n vec4 color = decodeHDR(clampSample(texture, v_Texcoord + d.xy));\n color += decodeHDR(clampSample(texture, v_Texcoord + d.zy));\n color += decodeHDR(clampSample(texture, v_Texcoord + d.xw));\n color += decodeHDR(clampSample(texture, v_Texcoord + d.zw));\n color *= 0.25;\n#endif\n gl_FragColor = encodeHDR(color);\n}\n@end");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/compositor/upsample.glsl.js
+;// ./node_modules/claygl/src/shader/source/compositor/upsample.glsl.js
 /* harmony default export */ const upsample_glsl = ("\n@export clay.compositor.upsample\n#define HIGH_QUALITY\nuniform sampler2D texture;\nuniform vec2 textureSize : [512, 512];\nuniform float sampleScale: 0.5;\nvarying vec2 v_Texcoord;\n@import clay.util.rgbm\n@import clay.util.clamp_sample\nvoid main()\n{\n#ifdef HIGH_QUALITY\n vec4 d = vec4(1.0, 1.0, -1.0, 0.0) / textureSize.xyxy * sampleScale;\n vec4 s;\n s = decodeHDR(clampSample(texture, v_Texcoord - d.xy));\n s += decodeHDR(clampSample(texture, v_Texcoord - d.wy)) * 2.0;\n s += decodeHDR(clampSample(texture, v_Texcoord - d.zy));\n s += decodeHDR(clampSample(texture, v_Texcoord + d.zw)) * 2.0;\n s += decodeHDR(clampSample(texture, v_Texcoord )) * 4.0;\n s += decodeHDR(clampSample(texture, v_Texcoord + d.xw)) * 2.0;\n s += decodeHDR(clampSample(texture, v_Texcoord + d.zy));\n s += decodeHDR(clampSample(texture, v_Texcoord + d.wy)) * 2.0;\n s += decodeHDR(clampSample(texture, v_Texcoord + d.xy));\n gl_FragColor = encodeHDR(s / 16.0);\n#else\n vec4 d = vec4(-1.0, -1.0, +1.0, +1.0) / textureSize.xyxy;\n vec4 s;\n s = decodeHDR(clampSample(texture, v_Texcoord + d.xy));\n s += decodeHDR(clampSample(texture, v_Texcoord + d.zy));\n s += decodeHDR(clampSample(texture, v_Texcoord + d.xw));\n s += decodeHDR(clampSample(texture, v_Texcoord + d.zw));\n gl_FragColor = encodeHDR(s / 4.0);\n#endif\n}\n@end");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/compositor/hdr.glsl.js
+;// ./node_modules/claygl/src/shader/source/compositor/hdr.glsl.js
 /* harmony default export */ const hdr_glsl = ("@export clay.compositor.hdr.composite\n#define TONEMAPPING\nuniform sampler2D texture;\n#ifdef BLOOM_ENABLED\nuniform sampler2D bloom;\n#endif\n#ifdef LENSFLARE_ENABLED\nuniform sampler2D lensflare;\nuniform sampler2D lensdirt;\n#endif\n#ifdef LUM_ENABLED\nuniform sampler2D lum;\n#endif\n#ifdef LUT_ENABLED\nuniform sampler2D lut;\n#endif\n#ifdef COLOR_CORRECTION\nuniform float brightness : 0.0;\nuniform float contrast : 1.0;\nuniform float saturation : 1.0;\n#endif\n#ifdef VIGNETTE\nuniform float vignetteDarkness: 1.0;\nuniform float vignetteOffset: 1.0;\n#endif\nuniform float exposure : 1.0;\nuniform float bloomIntensity : 0.25;\nuniform float lensflareIntensity : 1;\nvarying vec2 v_Texcoord;\n@import clay.util.srgb\nvec3 ACESToneMapping(vec3 color)\n{\n const float A = 2.51;\n const float B = 0.03;\n const float C = 2.43;\n const float D = 0.59;\n const float E = 0.14;\n return (color * (A * color + B)) / (color * (C * color + D) + E);\n}\nfloat eyeAdaption(float fLum)\n{\n return mix(0.2, fLum, 0.5);\n}\n#ifdef LUT_ENABLED\nvec3 lutTransform(vec3 color) {\n float blueColor = color.b * 63.0;\n vec2 quad1;\n quad1.y = floor(floor(blueColor) / 8.0);\n quad1.x = floor(blueColor) - (quad1.y * 8.0);\n vec2 quad2;\n quad2.y = floor(ceil(blueColor) / 8.0);\n quad2.x = ceil(blueColor) - (quad2.y * 8.0);\n vec2 texPos1;\n texPos1.x = (quad1.x * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * color.r);\n texPos1.y = (quad1.y * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * color.g);\n vec2 texPos2;\n texPos2.x = (quad2.x * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * color.r);\n texPos2.y = (quad2.y * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * color.g);\n vec4 newColor1 = texture2D(lut, texPos1);\n vec4 newColor2 = texture2D(lut, texPos2);\n vec4 newColor = mix(newColor1, newColor2, fract(blueColor));\n return newColor.rgb;\n}\n#endif\n@import clay.util.rgbm\nvoid main()\n{\n vec4 texel = vec4(0.0);\n vec4 originalTexel = vec4(0.0);\n#ifdef TEXTURE_ENABLED\n texel = decodeHDR(texture2D(texture, v_Texcoord));\n originalTexel = texel;\n#endif\n#ifdef BLOOM_ENABLED\n vec4 bloomTexel = decodeHDR(texture2D(bloom, v_Texcoord));\n texel.rgb += bloomTexel.rgb * bloomIntensity;\n texel.a += bloomTexel.a * bloomIntensity;\n#endif\n#ifdef LENSFLARE_ENABLED\n texel += decodeHDR(texture2D(lensflare, v_Texcoord)) * texture2D(lensdirt, v_Texcoord) * lensflareIntensity;\n#endif\n texel.a = min(texel.a, 1.0);\n#ifdef LUM_ENABLED\n float fLum = texture2D(lum, vec2(0.5, 0.5)).r;\n float adaptedLumDest = 3.0 / (max(0.1, 1.0 + 10.0*eyeAdaption(fLum)));\n float exposureBias = adaptedLumDest * exposure;\n#else\n float exposureBias = exposure;\n#endif\n#ifdef TONEMAPPING\n texel.rgb *= exposureBias;\n texel.rgb = ACESToneMapping(texel.rgb);\n#endif\n texel = linearTosRGB(texel);\n#ifdef LUT_ENABLED\n texel.rgb = lutTransform(clamp(texel.rgb,vec3(0.0),vec3(1.0)));\n#endif\n#ifdef COLOR_CORRECTION\n texel.rgb = clamp(texel.rgb + vec3(brightness), 0.0, 1.0);\n texel.rgb = clamp((texel.rgb - vec3(0.5))*contrast+vec3(0.5), 0.0, 1.0);\n float lum = dot(texel.rgb, vec3(0.2125, 0.7154, 0.0721));\n texel.rgb = mix(vec3(lum), texel.rgb, saturation);\n#endif\n#ifdef VIGNETTE\n vec2 uv = (v_Texcoord - vec2(0.5)) * vec2(vignetteOffset);\n texel.rgb = mix(texel.rgb, vec3(1.0 - vignetteDarkness), dot(uv, uv));\n#endif\n gl_FragColor = encodeHDR(texel);\n#ifdef DEBUG\n #if DEBUG == 1\n gl_FragColor = encodeHDR(decodeHDR(texture2D(texture, v_Texcoord)));\n #elif DEBUG == 2\n gl_FragColor = encodeHDR(decodeHDR(texture2D(bloom, v_Texcoord)) * bloomIntensity);\n #elif DEBUG == 3\n gl_FragColor = encodeHDR(decodeHDR(texture2D(lensflare, v_Texcoord) * lensflareIntensity));\n #endif\n#endif\n if (originalTexel.a <= 0.01 && gl_FragColor.a > 1e-5) {\n gl_FragColor.a = dot(gl_FragColor.rgb, vec3(0.2125, 0.7154, 0.0721));\n }\n#ifdef PREMULTIPLY_ALPHA\n gl_FragColor.rgb *= gl_FragColor.a;\n#endif\n}\n@end");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/compositor/lensflare.glsl.js
+;// ./node_modules/claygl/src/shader/source/compositor/lensflare.glsl.js
 /* harmony default export */ const lensflare_glsl = ("@export clay.compositor.lensflare\n#define SAMPLE_NUMBER 8\nuniform sampler2D texture;\nuniform sampler2D lenscolor;\nuniform vec2 textureSize : [512, 512];\nuniform float dispersal : 0.3;\nuniform float haloWidth : 0.4;\nuniform float distortion : 1.0;\nvarying vec2 v_Texcoord;\n@import clay.util.rgbm\nvec4 textureDistorted(\n in vec2 texcoord,\n in vec2 direction,\n in vec3 distortion\n) {\n return vec4(\n decodeHDR(texture2D(texture, texcoord + direction * distortion.r)).r,\n decodeHDR(texture2D(texture, texcoord + direction * distortion.g)).g,\n decodeHDR(texture2D(texture, texcoord + direction * distortion.b)).b,\n 1.0\n );\n}\nvoid main()\n{\n vec2 texcoord = -v_Texcoord + vec2(1.0); vec2 textureOffset = 1.0 / textureSize;\n vec2 ghostVec = (vec2(0.5) - texcoord) * dispersal;\n vec2 haloVec = normalize(ghostVec) * haloWidth;\n vec3 distortion = vec3(-textureOffset.x * distortion, 0.0, textureOffset.x * distortion);\n vec4 result = vec4(0.0);\n for (int i = 0; i < SAMPLE_NUMBER; i++)\n {\n vec2 offset = fract(texcoord + ghostVec * float(i));\n float weight = length(vec2(0.5) - offset) / length(vec2(0.5));\n weight = pow(1.0 - weight, 10.0);\n result += textureDistorted(offset, normalize(ghostVec), distortion) * weight;\n }\n result *= texture2D(lenscolor, vec2(length(vec2(0.5) - texcoord)) / length(vec2(0.5)));\n float weight = length(vec2(0.5) - fract(texcoord + haloVec)) / length(vec2(0.5));\n weight = pow(1.0 - weight, 10.0);\n vec2 offset = fract(texcoord + haloVec);\n result += textureDistorted(offset, normalize(ghostVec), distortion) * weight;\n gl_FragColor = result;\n}\n@end");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/compositor/blend.glsl.js
+;// ./node_modules/claygl/src/shader/source/compositor/blend.glsl.js
 /* harmony default export */ const blend_glsl = ("@export clay.compositor.blend\n#define SHADER_NAME blend\n#ifdef TEXTURE1_ENABLED\nuniform sampler2D texture1;\nuniform float weight1 : 1.0;\n#endif\n#ifdef TEXTURE2_ENABLED\nuniform sampler2D texture2;\nuniform float weight2 : 1.0;\n#endif\n#ifdef TEXTURE3_ENABLED\nuniform sampler2D texture3;\nuniform float weight3 : 1.0;\n#endif\n#ifdef TEXTURE4_ENABLED\nuniform sampler2D texture4;\nuniform float weight4 : 1.0;\n#endif\n#ifdef TEXTURE5_ENABLED\nuniform sampler2D texture5;\nuniform float weight5 : 1.0;\n#endif\n#ifdef TEXTURE6_ENABLED\nuniform sampler2D texture6;\nuniform float weight6 : 1.0;\n#endif\nvarying vec2 v_Texcoord;\n@import clay.util.rgbm\nvoid main()\n{\n vec4 tex = vec4(0.0);\n#ifdef TEXTURE1_ENABLED\n tex += decodeHDR(texture2D(texture1, v_Texcoord)) * weight1;\n#endif\n#ifdef TEXTURE2_ENABLED\n tex += decodeHDR(texture2D(texture2, v_Texcoord)) * weight2;\n#endif\n#ifdef TEXTURE3_ENABLED\n tex += decodeHDR(texture2D(texture3, v_Texcoord)) * weight3;\n#endif\n#ifdef TEXTURE4_ENABLED\n tex += decodeHDR(texture2D(texture4, v_Texcoord)) * weight4;\n#endif\n#ifdef TEXTURE5_ENABLED\n tex += decodeHDR(texture2D(texture5, v_Texcoord)) * weight5;\n#endif\n#ifdef TEXTURE6_ENABLED\n tex += decodeHDR(texture2D(texture6, v_Texcoord)) * weight6;\n#endif\n gl_FragColor = encodeHDR(tex);\n}\n@end");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/source/compositor/fxaa.glsl.js
+;// ./node_modules/claygl/src/shader/source/compositor/fxaa.glsl.js
 /* harmony default export */ const fxaa_glsl = ("@export clay.compositor.fxaa\nuniform sampler2D texture;\nuniform vec4 viewport : VIEWPORT;\nvarying vec2 v_Texcoord;\n#define FXAA_REDUCE_MIN (1.0/128.0)\n#define FXAA_REDUCE_MUL (1.0/8.0)\n#define FXAA_SPAN_MAX 8.0\n@import clay.util.rgbm\nvoid main()\n{\n vec2 resolution = 1.0 / viewport.zw;\n vec3 rgbNW = decodeHDR( texture2D( texture, ( gl_FragCoord.xy + vec2( -1.0, -1.0 ) ) * resolution ) ).xyz;\n vec3 rgbNE = decodeHDR( texture2D( texture, ( gl_FragCoord.xy + vec2( 1.0, -1.0 ) ) * resolution ) ).xyz;\n vec3 rgbSW = decodeHDR( texture2D( texture, ( gl_FragCoord.xy + vec2( -1.0, 1.0 ) ) * resolution ) ).xyz;\n vec3 rgbSE = decodeHDR( texture2D( texture, ( gl_FragCoord.xy + vec2( 1.0, 1.0 ) ) * resolution ) ).xyz;\n vec4 rgbaM = decodeHDR( texture2D( texture, gl_FragCoord.xy * resolution ) );\n vec3 rgbM = rgbaM.xyz;\n float opacity = rgbaM.w;\n vec3 luma = vec3( 0.299, 0.587, 0.114 );\n float lumaNW = dot( rgbNW, luma );\n float lumaNE = dot( rgbNE, luma );\n float lumaSW = dot( rgbSW, luma );\n float lumaSE = dot( rgbSE, luma );\n float lumaM = dot( rgbM, luma );\n float lumaMin = min( lumaM, min( min( lumaNW, lumaNE ), min( lumaSW, lumaSE ) ) );\n float lumaMax = max( lumaM, max( max( lumaNW, lumaNE) , max( lumaSW, lumaSE ) ) );\n vec2 dir;\n dir.x = -((lumaNW + lumaNE) - (lumaSW + lumaSE));\n dir.y = ((lumaNW + lumaSW) - (lumaNE + lumaSE));\n float dirReduce = max( ( lumaNW + lumaNE + lumaSW + lumaSE ) * ( 0.25 * FXAA_REDUCE_MUL ), FXAA_REDUCE_MIN );\n float rcpDirMin = 1.0 / ( min( abs( dir.x ), abs( dir.y ) ) + dirReduce );\n dir = min( vec2( FXAA_SPAN_MAX, FXAA_SPAN_MAX),\n max( vec2(-FXAA_SPAN_MAX, -FXAA_SPAN_MAX),\n dir * rcpDirMin)) * resolution;\n vec3 rgbA = decodeHDR( texture2D( texture, gl_FragCoord.xy * resolution + dir * ( 1.0 / 3.0 - 0.5 ) ) ).xyz;\n rgbA += decodeHDR( texture2D( texture, gl_FragCoord.xy * resolution + dir * ( 2.0 / 3.0 - 0.5 ) ) ).xyz;\n rgbA *= 0.5;\n vec3 rgbB = decodeHDR( texture2D( texture, gl_FragCoord.xy * resolution + dir * -0.5 ) ).xyz;\n rgbB += decodeHDR( texture2D( texture, gl_FragCoord.xy * resolution + dir * 0.5 ) ).xyz;\n rgbB *= 0.25;\n rgbB += rgbA * 0.5;\n float lumaB = dot( rgbB, luma );\n if ( ( lumaB < lumaMin ) || ( lumaB > lumaMax ) )\n {\n gl_FragColor = vec4( rgbA, opacity );\n }\n else {\n gl_FragColor = vec4( rgbB, opacity );\n }\n}\n@end");
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/shader/registerBuiltinCompositor.js
+;// ./node_modules/claygl/src/shader/registerBuiltinCompositor.js
 
 
 
@@ -44896,7 +48264,7 @@ function register(Shader) {
     Shader['import'](fxaa_glsl);
 
 }
-;// CONCATENATED MODULE: ./node_modules/claygl/src/createCompositor.js
+;// ./node_modules/claygl/src/createCompositor.js
 
 
 
@@ -45207,11 +48575,11 @@ function tryConvertExpr(string) {
 
 /* harmony default export */ const src_createCompositor = (createCompositor);
 
-;// CONCATENATED MODULE: ./node_modules/claygl/src/compositor/createCompositor.js
+;// ./node_modules/claygl/src/compositor/createCompositor.js
 // DEPRECATED
 
 /* harmony default export */ const compositor_createCompositor = (src_createCompositor);
-;// CONCATENATED MODULE: ./src/effect/halton.js
+;// ./src/effect/halton.js
 
 // Generate halton sequence
 // https://en.wikipedia.org/wiki/Halton_sequence
@@ -45230,10 +48598,10 @@ function halton(index, base) {
 
 
 /* harmony default export */ const effect_halton = (halton);
-;// CONCATENATED MODULE: ./src/effect/SSAO.glsl.js
+;// ./src/effect/SSAO.glsl.js
 /* harmony default export */ const SSAO_glsl = ("@export ecgl.ssao.estimate\r\n\r\nuniform sampler2D depthTex;\r\n\r\nuniform sampler2D normalTex;\r\n\r\nuniform sampler2D noiseTex;\r\n\r\nuniform vec2 depthTexSize;\r\n\r\nuniform vec2 noiseTexSize;\r\n\r\nuniform mat4 projection;\r\n\r\nuniform mat4 projectionInv;\r\n\r\nuniform mat4 viewInverseTranspose;\r\n\r\nuniform vec3 kernel[KERNEL_SIZE];\r\n\r\nuniform float radius : 1;\r\n\r\n// PENDING\r\nuniform float power : 1;\r\n\r\nuniform float bias: 1e-2;\r\n\r\nuniform float intensity: 1.0;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nfloat ssaoEstimator(in vec3 originPos, in mat3 kernelBasis) {\r\n float occlusion = 0.0;\r\n\r\n for (int i = 0; i < KERNEL_SIZE; i++) {\r\n vec3 samplePos = kernel[i];\r\n#ifdef NORMALTEX_ENABLED\r\n samplePos = kernelBasis * samplePos;\r\n#endif\r\n samplePos = samplePos * radius + originPos;\r\n\r\n vec4 texCoord = projection * vec4(samplePos, 1.0);\r\n texCoord.xy /= texCoord.w;\r\n\r\n vec4 depthTexel = texture2D(depthTex, texCoord.xy * 0.5 + 0.5);\r\n\r\n float sampleDepth = depthTexel.r * 2.0 - 1.0;\r\n if (projection[3][3] == 0.0) {\r\n // Perspective\r\n sampleDepth = projection[3][2] / (sampleDepth * projection[2][3] - projection[2][2]);\r\n }\r\n else {\r\n // Symmetrical orthographic\r\n // PENDING\r\n sampleDepth = (sampleDepth - projection[3][2]) / projection[2][2];\r\n }\r\n // Consider orthographic projection\r\n // vec4 projectedPos = vec4(texCoord.xy, sampleDepth, 1.0);\r\n // vec4 p4 = projectionInv * projectedPos;\r\n // sampleDepth = p4.z / p4.w;\r\n\r\n float rangeCheck = smoothstep(0.0, 1.0, radius / abs(originPos.z - sampleDepth));\r\n occlusion += rangeCheck * step(samplePos.z, sampleDepth - bias);\r\n }\r\n#ifdef NORMALTEX_ENABLED\r\n occlusion = 1.0 - occlusion / float(KERNEL_SIZE);\r\n#else\r\n occlusion = 1.0 - clamp((occlusion / float(KERNEL_SIZE) - 0.6) * 2.5, 0.0, 1.0);\r\n#endif\r\n return pow(occlusion, power);\r\n}\r\n\r\nvoid main()\r\n{\r\n\r\n vec4 depthTexel = texture2D(depthTex, v_Texcoord);\r\n\r\n#ifdef NORMALTEX_ENABLED\r\n vec4 tex = texture2D(normalTex, v_Texcoord);\r\n // Is empty\r\n if (dot(tex.rgb, tex.rgb) == 0.0) {\r\n gl_FragColor = vec4(1.0);\r\n return;\r\n }\r\n vec3 N = tex.rgb * 2.0 - 1.0;\r\n N = (viewInverseTranspose * vec4(N, 0.0)).xyz;\r\n\r\n vec2 noiseTexCoord = depthTexSize / vec2(noiseTexSize) * v_Texcoord;\r\n vec3 rvec = texture2D(noiseTex, noiseTexCoord).rgb * 2.0 - 1.0;\r\n // Tangent\r\n vec3 T = normalize(rvec - N * dot(rvec, N));\r\n // Bitangent\r\n vec3 BT = normalize(cross(N, T));\r\n mat3 kernelBasis = mat3(T, BT, N);\r\n#else\r\n if (depthTexel.r > 0.99999) {\r\n gl_FragColor = vec4(1.0);\r\n return;\r\n }\r\n mat3 kernelBasis;\r\n#endif\r\n\r\n float z = depthTexel.r * 2.0 - 1.0;\r\n\r\n vec4 projectedPos = vec4(v_Texcoord * 2.0 - 1.0, z, 1.0);\r\n vec4 p4 = projectionInv * projectedPos;\r\n\r\n vec3 position = p4.xyz / p4.w;\r\n\r\n float ao = ssaoEstimator(position, kernelBasis);\r\n ao = clamp(1.0 - (1.0 - ao) * intensity, 0.0, 1.0);\r\n gl_FragColor = vec4(vec3(ao), 1.0);\r\n}\r\n\r\n@end\r\n\r\n\r\n@export ecgl.ssao.blur\r\n#define SHADER_NAME SSAO_BLUR\r\n\r\nuniform sampler2D ssaoTexture;\r\n\r\n#ifdef NORMALTEX_ENABLED\r\nuniform sampler2D normalTex;\r\n#endif\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nuniform vec2 textureSize;\r\nuniform float blurSize : 1.0;\r\n\r\n// 0 horizontal, 1 vertical\r\nuniform int direction: 0.0;\r\n\r\n#ifdef DEPTHTEX_ENABLED\r\nuniform sampler2D depthTex;\r\nuniform mat4 projection;\r\nuniform float depthRange : 0.5;\r\n\r\nfloat getLinearDepth(vec2 coord)\r\n{\r\n float depth = texture2D(depthTex, coord).r * 2.0 - 1.0;\r\n return projection[3][2] / (depth * projection[2][3] - projection[2][2]);\r\n}\r\n#endif\r\n\r\nvoid main()\r\n{\r\n float kernel[5];\r\n kernel[0] = 0.122581;\r\n kernel[1] = 0.233062;\r\n kernel[2] = 0.288713;\r\n kernel[3] = 0.233062;\r\n kernel[4] = 0.122581;\r\n\r\n vec2 off = vec2(0.0);\r\n if (direction == 0) {\r\n off[0] = blurSize / textureSize.x;\r\n }\r\n else {\r\n off[1] = blurSize / textureSize.y;\r\n }\r\n\r\n vec2 coord = v_Texcoord;\r\n\r\n float sum = 0.0;\r\n float weightAll = 0.0;\r\n\r\n#ifdef NORMALTEX_ENABLED\r\n vec3 centerNormal = texture2D(normalTex, v_Texcoord).rgb * 2.0 - 1.0;\r\n#endif\r\n#if defined(DEPTHTEX_ENABLED)\r\n float centerDepth = getLinearDepth(v_Texcoord);\r\n#endif\r\n\r\n for (int i = 0; i < 5; i++) {\r\n vec2 coord = clamp(v_Texcoord + vec2(float(i) - 2.0) * off, vec2(0.0), vec2(1.0));\r\n\r\n float w = kernel[i];\r\n#ifdef NORMALTEX_ENABLED\r\n vec3 normal = texture2D(normalTex, coord).rgb * 2.0 - 1.0;\r\n w *= clamp(dot(normal, centerNormal), 0.0, 1.0);\r\n#endif\r\n#ifdef DEPTHTEX_ENABLED\r\n float d = getLinearDepth(coord);\r\n // PENDING Better equation?\r\n w *= (1.0 - smoothstep(abs(centerDepth - d) / depthRange, 0.0, 1.0));\r\n#endif\r\n\r\n weightAll += w;\r\n sum += texture2D(ssaoTexture, coord).r * w;\r\n }\r\n\r\n gl_FragColor = vec4(vec3(sum / weightAll), 1.0);\r\n// gl_FragColor = texture2D(ssaoTexture, v_Texcoord);\r\n}\r\n\r\n@end\r\n");
 
-;// CONCATENATED MODULE: ./src/effect/SSAOPass.js
+;// ./src/effect/SSAOPass.js
 
 
 
@@ -45462,10 +48830,10 @@ SSAOPass.prototype.dispose = function (renderer) {
 };
 
 /* harmony default export */ const effect_SSAOPass = (SSAOPass);
-;// CONCATENATED MODULE: ./src/effect/SSR.glsl.js
+;// ./src/effect/SSR.glsl.js
 /* harmony default export */ const SSR_glsl = ("// http://www.kode80.com/blog/2015/03/11/screen-space-reflections-in-unity-5/\r\n// http://casual-effects.blogspot.jp/2014/08/screen-space-ray-tracing.html\r\n@export ecgl.ssr.main\r\n\r\n#define SHADER_NAME SSR\r\n#define MAX_ITERATION 20;\r\n#define SAMPLE_PER_FRAME 5;\r\n#define TOTAL_SAMPLES 128;\r\n\r\nuniform sampler2D sourceTexture;\r\nuniform sampler2D gBufferTexture1;\r\nuniform sampler2D gBufferTexture2;\r\nuniform sampler2D gBufferTexture3;\r\nuniform samplerCube specularCubemap;\r\nuniform float specularIntensity: 1;\r\n\r\nuniform mat4 projection;\r\nuniform mat4 projectionInv;\r\nuniform mat4 toViewSpace;\r\nuniform mat4 toWorldSpace;\r\n\r\nuniform float maxRayDistance: 200;\r\n\r\nuniform float pixelStride: 16;\r\nuniform float pixelStrideZCutoff: 50; // ray origin Z at this distance will have a pixel stride of 1.0\r\n\r\nuniform float screenEdgeFadeStart: 0.9; // distance to screen edge that ray hits will start to fade (0.0 -> 1.0)\r\n\r\nuniform float eyeFadeStart : 0.2; // ray direction's Z that ray hits will start to fade (0.0 -> 1.0)\r\nuniform float eyeFadeEnd: 0.8; // ray direction's Z that ray hits will be cut (0.0 -> 1.0)\r\n\r\nuniform float minGlossiness: 0.2; // Object larger than minGlossiness will have ssr effect\r\nuniform float zThicknessThreshold: 1;\r\n\r\nuniform float nearZ;\r\nuniform vec2 viewportSize : VIEWPORT_SIZE;\r\n\r\nuniform float jitterOffset: 0;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\n#ifdef DEPTH_DECODE\r\n@import clay.util.decode_float\r\n#endif\r\n\r\n#ifdef PHYSICALLY_CORRECT\r\n// uniform vec3 lambertNormals[SAMPLE_PER_FRAME];\r\nuniform sampler2D normalDistribution;\r\nuniform float sampleOffset: 0;\r\nuniform vec2 normalDistributionSize;\r\n\r\nvec3 transformNormal(vec3 H, vec3 N) {\r\n vec3 upVector = N.y > 0.999 ? vec3(1.0, 0.0, 0.0) : vec3(0.0, 1.0, 0.0);\r\n vec3 tangentX = normalize(cross(N, upVector));\r\n vec3 tangentZ = cross(N, tangentX);\r\n // Tangent to world space\r\n return normalize(tangentX * H.x + N * H.y + tangentZ * H.z);\r\n}\r\nvec3 importanceSampleNormalGGX(float i, float roughness, vec3 N) {\r\n float p = fract((i + sampleOffset) / float(TOTAL_SAMPLES));\r\n vec3 H = texture2D(normalDistribution,vec2(roughness, p)).rgb;\r\n return transformNormal(H, N);\r\n}\r\nfloat G_Smith(float g, float ndv, float ndl) {\r\n float roughness = 1.0 - g;\r\n float k = roughness * roughness / 2.0;\r\n float G1V = ndv / (ndv * (1.0 - k) + k);\r\n float G1L = ndl / (ndl * (1.0 - k) + k);\r\n return G1L * G1V;\r\n}\r\nvec3 F_Schlick(float ndv, vec3 spec) {\r\n return spec + (1.0 - spec) * pow(1.0 - ndv, 5.0);\r\n}\r\n#endif\r\n\r\nfloat fetchDepth(sampler2D depthTexture, vec2 uv)\r\n{\r\n vec4 depthTexel = texture2D(depthTexture, uv);\r\n return depthTexel.r * 2.0 - 1.0;\r\n}\r\n\r\nfloat linearDepth(float depth)\r\n{\r\n if (projection[3][3] == 0.0) {\r\n // Perspective\r\n return projection[3][2] / (depth * projection[2][3] - projection[2][2]);\r\n }\r\n else {\r\n // Symmetrical orthographic\r\n // PENDING\r\n return (depth - projection[3][2]) / projection[2][2];\r\n }\r\n}\r\n\r\nbool rayIntersectDepth(float rayZNear, float rayZFar, vec2 hitPixel)\r\n{\r\n // Swap if bigger\r\n if (rayZFar > rayZNear)\r\n {\r\n float t = rayZFar; rayZFar = rayZNear; rayZNear = t;\r\n }\r\n float cameraZ = linearDepth(fetchDepth(gBufferTexture2, hitPixel));\r\n // Cross z\r\n return rayZFar <= cameraZ && rayZNear >= cameraZ - zThicknessThreshold;\r\n}\r\n\r\n// Trace a ray in screenspace from rayOrigin (in camera space) pointing in rayDir (in camera space)\r\n//\r\n// With perspective correct interpolation\r\n//\r\n// Returns true if the ray hits a pixel in the depth buffer\r\n// and outputs the hitPixel (in UV space), the hitPoint (in camera space) and the number\r\n// of iterations it took to get there.\r\n//\r\n// Based on Morgan McGuire & Mike Mara's GLSL implementation:\r\n// http://casual-effects.blogspot.com/2014/08/screen-space-ray-tracing.html\r\n\r\nbool traceScreenSpaceRay(\r\n vec3 rayOrigin, vec3 rayDir, float jitter,\r\n out vec2 hitPixel, out vec3 hitPoint, out float iterationCount\r\n)\r\n{\r\n // Clip to the near plane\r\n float rayLength = ((rayOrigin.z + rayDir.z * maxRayDistance) > -nearZ)\r\n ? (-nearZ - rayOrigin.z) / rayDir.z : maxRayDistance;\r\n\r\n vec3 rayEnd = rayOrigin + rayDir * rayLength;\r\n\r\n // Project into homogeneous clip space\r\n vec4 H0 = projection * vec4(rayOrigin, 1.0);\r\n vec4 H1 = projection * vec4(rayEnd, 1.0);\r\n\r\n float k0 = 1.0 / H0.w, k1 = 1.0 / H1.w;\r\n\r\n // The interpolated homogeneous version of the camera space points\r\n vec3 Q0 = rayOrigin * k0, Q1 = rayEnd * k1;\r\n\r\n // Screen space endpoints\r\n // PENDING viewportSize ?\r\n vec2 P0 = (H0.xy * k0 * 0.5 + 0.5) * viewportSize;\r\n vec2 P1 = (H1.xy * k1 * 0.5 + 0.5) * viewportSize;\r\n\r\n // If the line is degenerate, make it cover at least one pixel to avoid handling\r\n // zero-pixel extent as a special case later\r\n P1 += dot(P1 - P0, P1 - P0) < 0.0001 ? 0.01 : 0.0;\r\n vec2 delta = P1 - P0;\r\n\r\n // Permute so that the primary iteration is in x to collapse\r\n // all quadrant-specific DDA case later\r\n bool permute = false;\r\n if (abs(delta.x) < abs(delta.y)) {\r\n // More vertical line\r\n permute = true;\r\n delta = delta.yx;\r\n P0 = P0.yx;\r\n P1 = P1.yx;\r\n }\r\n float stepDir = sign(delta.x);\r\n float invdx = stepDir / delta.x;\r\n\r\n // Track the derivatives of Q and K\r\n vec3 dQ = (Q1 - Q0) * invdx;\r\n float dk = (k1 - k0) * invdx;\r\n\r\n vec2 dP = vec2(stepDir, delta.y * invdx);\r\n\r\n // Calculate pixel stride based on distance of ray origin from camera.\r\n // Since perspective means distant objects will be smaller in screen space\r\n // we can use this to have higher quality reflections for far away objects\r\n // while still using a large pixel stride for near objects (and increase performance)\r\n // this also helps mitigate artifacts on distant reflections when we use a large\r\n // pixel stride.\r\n float strideScaler = 1.0 - min(1.0, -rayOrigin.z / pixelStrideZCutoff);\r\n float pixStride = 1.0 + strideScaler * pixelStride;\r\n\r\n // Scale derivatives by the desired pixel stride and the offset the starting values by the jitter fraction\r\n dP *= pixStride; dQ *= pixStride; dk *= pixStride;\r\n\r\n // Track ray step and derivatives in a vec4 to parallelize\r\n vec4 pqk = vec4(P0, Q0.z, k0);\r\n vec4 dPQK = vec4(dP, dQ.z, dk);\r\n\r\n pqk += dPQK * jitter;\r\n float rayZFar = (dPQK.z * 0.5 + pqk.z) / (dPQK.w * 0.5 + pqk.w);\r\n float rayZNear;\r\n\r\n bool intersect = false;\r\n\r\n vec2 texelSize = 1.0 / viewportSize;\r\n\r\n iterationCount = 0.0;\r\n\r\n for (int i = 0; i < MAX_ITERATION; i++)\r\n {\r\n pqk += dPQK;\r\n\r\n rayZNear = rayZFar;\r\n rayZFar = (dPQK.z * 0.5 + pqk.z) / (dPQK.w * 0.5 + pqk.w);\r\n\r\n hitPixel = permute ? pqk.yx : pqk.xy;\r\n hitPixel *= texelSize;\r\n\r\n intersect = rayIntersectDepth(rayZNear, rayZFar, hitPixel);\r\n\r\n iterationCount += 1.0;\r\n\r\n dPQK *= 1.2;\r\n\r\n // PENDING Right on all platforms?\r\n if (intersect) {\r\n break;\r\n }\r\n }\r\n\r\n Q0.xy += dQ.xy * iterationCount;\r\n Q0.z = pqk.z;\r\n hitPoint = Q0 / pqk.w;\r\n\r\n return intersect;\r\n}\r\n\r\nfloat calculateAlpha(\r\n float iterationCount, float reflectivity,\r\n vec2 hitPixel, vec3 hitPoint, float dist, vec3 rayDir\r\n)\r\n{\r\n float alpha = clamp(reflectivity, 0.0, 1.0);\r\n // Fade ray hits that approach the maximum iterations\r\n alpha *= 1.0 - (iterationCount / float(MAX_ITERATION));\r\n // Fade ray hits that approach the screen edge\r\n vec2 hitPixelNDC = hitPixel * 2.0 - 1.0;\r\n float maxDimension = min(1.0, max(abs(hitPixelNDC.x), abs(hitPixelNDC.y)));\r\n alpha *= 1.0 - max(0.0, maxDimension - screenEdgeFadeStart) / (1.0 - screenEdgeFadeStart);\r\n\r\n // Fade ray hits base on how much they face the camera\r\n float _eyeFadeStart = eyeFadeStart;\r\n float _eyeFadeEnd = eyeFadeEnd;\r\n if (_eyeFadeStart > _eyeFadeEnd) {\r\n float tmp = _eyeFadeEnd;\r\n _eyeFadeEnd = _eyeFadeStart;\r\n _eyeFadeStart = tmp;\r\n }\r\n\r\n float eyeDir = clamp(rayDir.z, _eyeFadeStart, _eyeFadeEnd);\r\n alpha *= 1.0 - (eyeDir - _eyeFadeStart) / (_eyeFadeEnd - _eyeFadeStart);\r\n\r\n // Fade ray hits based on distance from ray origin\r\n alpha *= 1.0 - clamp(dist / maxRayDistance, 0.0, 1.0);\r\n\r\n return alpha;\r\n}\r\n\r\n@import clay.util.rand\r\n\r\n@import clay.util.rgbm\r\n\r\nvoid main()\r\n{\r\n vec4 normalAndGloss = texture2D(gBufferTexture1, v_Texcoord);\r\n\r\n // Is empty\r\n if (dot(normalAndGloss.rgb, vec3(1.0)) == 0.0) {\r\n discard;\r\n }\r\n\r\n float g = normalAndGloss.a;\r\n#if !defined(PHYSICALLY_CORRECT)\r\n if (g <= minGlossiness) {\r\n discard;\r\n }\r\n#endif\r\n\r\n float reflectivity = (g - minGlossiness) / (1.0 - minGlossiness);\r\n\r\n vec3 N = normalize(normalAndGloss.rgb * 2.0 - 1.0);\r\n N = normalize((toViewSpace * vec4(N, 0.0)).xyz);\r\n\r\n // Position in view\r\n vec4 projectedPos = vec4(v_Texcoord * 2.0 - 1.0, fetchDepth(gBufferTexture2, v_Texcoord), 1.0);\r\n vec4 pos = projectionInv * projectedPos;\r\n vec3 rayOrigin = pos.xyz / pos.w;\r\n vec3 V = -normalize(rayOrigin);\r\n\r\n float ndv = clamp(dot(N, V), 0.0, 1.0);\r\n float iterationCount;\r\n float jitter = rand(fract(v_Texcoord + jitterOffset));\r\n\r\n#ifdef PHYSICALLY_CORRECT\r\n vec4 color = vec4(vec3(0.0), 1.0);\r\n vec4 albedoMetalness = texture2D(gBufferTexture3, v_Texcoord);\r\n vec3 albedo = albedoMetalness.rgb;\r\n float m = albedoMetalness.a;\r\n vec3 diffuseColor = albedo * (1.0 - m);\r\n vec3 spec = mix(vec3(0.04), albedo, m);\r\n\r\n // PENDING Add noise?\r\n float jitter2 = rand(fract(v_Texcoord)) * float(TOTAL_SAMPLES);\r\n\r\n for (int i = 0; i < SAMPLE_PER_FRAME; i++) {\r\n vec3 H = importanceSampleNormalGGX(float(i) + jitter2, 1.0 - g, N);\r\n // TODO Normal\r\n // vec3 H = transformNormal(lambertNormals[i], N);\r\n // vec3 rayDir = H;\r\n vec3 rayDir = normalize(reflect(-V, H));\r\n#else\r\n vec3 rayDir = normalize(reflect(-V, N));\r\n#endif\r\n vec2 hitPixel;\r\n vec3 hitPoint;\r\n\r\n bool intersect = traceScreenSpaceRay(rayOrigin, rayDir, jitter, hitPixel, hitPoint, iterationCount);\r\n\r\n float dist = distance(rayOrigin, hitPoint);\r\n\r\n vec3 hitNormal = texture2D(gBufferTexture1, hitPixel).rgb * 2.0 - 1.0;\r\n hitNormal = normalize((toViewSpace * vec4(hitNormal, 0.0)).xyz);\r\n#ifdef PHYSICALLY_CORRECT\r\n float ndl = clamp(dot(N, rayDir), 0.0, 1.0);\r\n float vdh = clamp(dot(V, H), 0.0, 1.0);\r\n float ndh = clamp(dot(N, H), 0.0, 1.0);\r\n vec3 litTexel = vec3(0.0);\r\n if (dot(hitNormal, rayDir) < 0.0 && intersect) {\r\n litTexel = texture2D(sourceTexture, hitPixel).rgb;\r\n // PENDING\r\n litTexel *= pow(clamp(1.0 - dist / 200.0, 0.0, 1.0), 3.0);\r\n\r\n // color.rgb += ndl * litTexel * fade * diffuseColor;\r\n }\r\n else {\r\n // Fetch from environment\r\n#ifdef SPECULARCUBEMAP_ENABLED\r\n vec3 rayDirW = normalize(toWorldSpace * vec4(rayDir, 0.0)).rgb;\r\n litTexel = RGBMDecode(textureCubeLodEXT(specularCubemap, rayDirW, 0.0), 8.12).rgb * specularIntensity;\r\n#endif\r\n }\r\n color.rgb += ndl * litTexel * (\r\n F_Schlick(ndl, spec) * G_Smith(g, ndv, ndl) * vdh / (ndh * ndv + 0.001)\r\n );\r\n }\r\n color.rgb /= float(SAMPLE_PER_FRAME);\r\n#else\r\n // Ignore the pixel not face the ray\r\n // TODO fadeout ?\r\n // PENDING Can be configured?\r\n#if !defined(SPECULARCUBEMAP_ENABLED)\r\n if (dot(hitNormal, rayDir) >= 0.0) {\r\n discard;\r\n }\r\n if (!intersect) {\r\n discard;\r\n }\r\n#endif\r\n float alpha = clamp(calculateAlpha(iterationCount, reflectivity, hitPixel, hitPoint, dist, rayDir), 0.0, 1.0);\r\n vec4 color = texture2D(sourceTexture, hitPixel);\r\n color.rgb *= alpha;\r\n\r\n#ifdef SPECULARCUBEMAP_ENABLED\r\n vec3 rayDirW = normalize(toWorldSpace * vec4(rayDir, 0.0)).rgb;\r\n alpha = alpha * (intersect ? 1.0 : 0.0);\r\n float bias = (1.0 -g) * 5.0;\r\n color.rgb += (1.0 - alpha)\r\n * RGBMDecode(textureCubeLodEXT(specularCubemap, rayDirW, bias), 8.12).rgb\r\n * specularIntensity;\r\n#endif\r\n\r\n#endif\r\n\r\n gl_FragColor = encodeHDR(color);\r\n}\r\n@end\r\n\r\n// https://bartwronski.com/2014/03/23/gdc-follow-up-screenspace-reflections-filtering-and-up-sampling/\r\n@export ecgl.ssr.blur\r\n\r\nuniform sampler2D texture;\r\nuniform sampler2D gBufferTexture1;\r\nuniform sampler2D gBufferTexture2;\r\nuniform mat4 projection;\r\nuniform float depthRange : 0.05;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nuniform vec2 textureSize;\r\nuniform float blurSize : 1.0;\r\n\r\n#ifdef BLEND\r\n #ifdef SSAOTEX_ENABLED\r\nuniform sampler2D ssaoTex;\r\n #endif\r\nuniform sampler2D sourceTexture;\r\n#endif\r\n\r\nfloat getLinearDepth(vec2 coord)\r\n{\r\n float depth = texture2D(gBufferTexture2, coord).r * 2.0 - 1.0;\r\n return projection[3][2] / (depth * projection[2][3] - projection[2][2]);\r\n}\r\n\r\n@import clay.util.rgbm\r\n\r\n\r\nvoid main()\r\n{\r\n @import clay.compositor.kernel.gaussian_9\r\n\r\n vec4 centerNTexel = texture2D(gBufferTexture1, v_Texcoord);\r\n float g = centerNTexel.a;\r\n float maxBlurSize = clamp(1.0 - g, 0.0, 1.0) * blurSize;\r\n#ifdef VERTICAL\r\n vec2 off = vec2(0.0, maxBlurSize / textureSize.y);\r\n#else\r\n vec2 off = vec2(maxBlurSize / textureSize.x, 0.0);\r\n#endif\r\n\r\n vec2 coord = v_Texcoord;\r\n\r\n vec4 sum = vec4(0.0);\r\n float weightAll = 0.0;\r\n\r\n vec3 cN = centerNTexel.rgb * 2.0 - 1.0;\r\n float cD = getLinearDepth(v_Texcoord);\r\n for (int i = 0; i < 9; i++) {\r\n vec2 coord = clamp((float(i) - 4.0) * off + v_Texcoord, vec2(0.0), vec2(1.0));\r\n float w = gaussianKernel[i]\r\n * clamp(dot(cN, texture2D(gBufferTexture1, coord).rgb * 2.0 - 1.0), 0.0, 1.0);\r\n float d = getLinearDepth(coord);\r\n w *= (1.0 - smoothstep(abs(cD - d) / depthRange, 0.0, 1.0));\r\n\r\n weightAll += w;\r\n sum += decodeHDR(texture2D(texture, coord)) * w;\r\n }\r\n\r\n#ifdef BLEND\r\n float aoFactor = 1.0;\r\n #ifdef SSAOTEX_ENABLED\r\n aoFactor = texture2D(ssaoTex, v_Texcoord).r;\r\n #endif\r\n gl_FragColor = encodeHDR(\r\n sum / weightAll * aoFactor + decodeHDR(texture2D(sourceTexture, v_Texcoord))\r\n );\r\n#else\r\n gl_FragColor = encodeHDR(sum / weightAll);\r\n#endif\r\n}\r\n\r\n@end");
 
-;// CONCATENATED MODULE: ./src/effect/SSRPass.js
+;// ./src/effect/SSRPass.js
 
 
 
@@ -45687,7 +49055,7 @@ SSRPass.prototype.dispose = function (renderer) {
 };
 
 /* harmony default export */ const effect_SSRPass = (SSRPass);
-;// CONCATENATED MODULE: ./src/effect/poissonKernel.js
+;// ./src/effect/poissonKernel.js
 // Based on https://bl.ocks.org/mbostock/19168c663618b707158
 
 /* harmony default export */ const poissonKernel = ([
@@ -45724,10 +49092,10 @@ SSRPass.prototype.dispose = function (renderer) {
 -0.634888119007, -0.302301223431,
 0.617074219636, 0.779817204925
 ]);
-;// CONCATENATED MODULE: ./src/util/shader/normal.glsl.js
+;// ./src/util/shader/normal.glsl.js
 /* harmony default export */ const normal_glsl = ("@export ecgl.normal.vertex\r\n\r\n@import ecgl.common.transformUniforms\r\n\r\n@import ecgl.common.uv.header\r\n\r\n@import ecgl.common.attributes\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\n@import ecgl.common.normalMap.vertexHeader\r\n\r\n@import ecgl.common.vertexAnimation.header\r\n\r\nvoid main()\r\n{\r\n\r\n // TODO Animation\r\n @import ecgl.common.vertexAnimation.main\r\n\r\n @import ecgl.common.uv.main\r\n\r\n v_Normal = normalize((worldInverseTranspose * vec4(normal, 0.0)).xyz);\r\n v_WorldPosition = (world * vec4(pos, 1.0)).xyz;\r\n\r\n @import ecgl.common.normalMap.vertexMain\r\n\r\n gl_Position = worldViewProjection * vec4(pos, 1.0);\r\n\r\n}\r\n\r\n\r\n@end\r\n\r\n\r\n@export ecgl.normal.fragment\r\n\r\n#define ROUGHNESS_CHANEL 0\r\n\r\nuniform bool useBumpMap;\r\nuniform bool useRoughnessMap;\r\nuniform bool doubleSide;\r\nuniform float roughness;\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\nuniform mat4 viewInverse : VIEWINVERSE;\r\n\r\n@import ecgl.common.normalMap.fragmentHeader\r\n@import ecgl.common.bumpMap.header\r\n\r\nuniform sampler2D roughnessMap;\r\n\r\nvoid main()\r\n{\r\n vec3 N = v_Normal;\r\n \r\n bool flipNormal = false;\r\n if (doubleSide) {\r\n vec3 eyePos = viewInverse[3].xyz;\r\n vec3 V = normalize(eyePos - v_WorldPosition);\r\n\r\n if (dot(N, V) < 0.0) {\r\n flipNormal = true;\r\n }\r\n }\r\n\r\n @import ecgl.common.normalMap.fragmentMain\r\n\r\n if (useBumpMap) {\r\n N = bumpNormal(v_WorldPosition, v_Normal, N);\r\n }\r\n\r\n float g = 1.0 - roughness;\r\n\r\n if (useRoughnessMap) {\r\n float g2 = 1.0 - texture2D(roughnessMap, v_DetailTexcoord)[ROUGHNESS_CHANEL];\r\n // Adjust the brightness\r\n g = clamp(g2 + (g - 0.5) * 2.0, 0.0, 1.0);\r\n }\r\n\r\n if (flipNormal) {\r\n N = -N;\r\n }\r\n\r\n gl_FragColor.rgb = (N.xyz + 1.0) * 0.5;\r\n gl_FragColor.a = g;\r\n}\r\n@end");
 
-;// CONCATENATED MODULE: ./src/effect/NormalPass.js
+;// ./src/effect/NormalPass.js
 // NormalPass will generate normal and depth data.
 
 // TODO Animation
@@ -45935,7 +49303,7 @@ NormalPass.prototype.dispose = function (renderer) {
 }
 
 /* harmony default export */ const effect_NormalPass = (NormalPass);
-;// CONCATENATED MODULE: ./src/effect/EdgePass.js
+;// ./src/effect/EdgePass.js
 
 
 
@@ -45993,7 +49361,7 @@ EdgePass.prototype.dispose = function (renderer) {
 };
 
 /* harmony default export */ const effect_EdgePass = (EdgePass);
-;// CONCATENATED MODULE: ./src/effect/composite.js
+;// ./src/effect/composite.js
 /* harmony default export */ const composite = ({
     'type' : 'compositor',
     'nodes' : [
@@ -46572,13 +49940,13 @@ EdgePass.prototype.dispose = function (renderer) {
         }
     ]
 });
-;// CONCATENATED MODULE: ./src/effect/DOF.glsl.js
+;// ./src/effect/DOF.glsl.js
 /* harmony default export */ const DOF_glsl = ("@export ecgl.dof.coc\r\n\r\nuniform sampler2D depth;\r\n\r\nuniform float zNear: 0.1;\r\nuniform float zFar: 2000;\r\n\r\nuniform float focalDistance: 3;\r\n// Object in range are perfectly in focus\r\nuniform float focalRange: 1;\r\n// 30mm\r\nuniform float focalLength: 30;\r\n// f/2.8\r\nuniform float fstop: 2.8;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\n@import clay.util.encode_float\r\n\r\nvoid main()\r\n{\r\n float z = texture2D(depth, v_Texcoord).r * 2.0 - 1.0;\r\n\r\n float dist = 2.0 * zNear * zFar / (zFar + zNear - z * (zFar - zNear));\r\n\r\n float aperture = focalLength / fstop;\r\n\r\n float coc;\r\n\r\n float uppper = focalDistance + focalRange;\r\n float lower = focalDistance - focalRange;\r\n if (dist <= uppper && dist >= lower) {\r\n // Object in range are perfectly in focus\r\n coc = 0.5;\r\n }\r\n else {\r\n // Adjust focalDistance\r\n float focalAdjusted = dist > uppper ? uppper : lower;\r\n\r\n // GPU Gems Depth of Field: A Survey of Techniques\r\n coc = abs(aperture * (focalLength * (dist - focalAdjusted)) / (dist * (focalAdjusted - focalLength)));\r\n // Clamp on the near focus plane and far focus plane\r\n // PENDING\r\n // Float value can only be [0.0 - 1.0)\r\n coc = clamp(coc, 0.0, 2.0) / 2.00001;\r\n\r\n // Near field\r\n if (dist < lower) {\r\n coc = -coc;\r\n }\r\n coc = coc * 0.5 + 0.5;\r\n }\r\n\r\n // R: coc, < 0.5 is near field, > 0.5 is far field\r\n gl_FragColor = encodeFloat(coc);\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.dof.composite\r\n\r\n#define DEBUG 0\r\n\r\nuniform sampler2D original;\r\nuniform sampler2D blurred;\r\nuniform sampler2D nearfield;\r\nuniform sampler2D coc;\r\nuniform sampler2D nearcoc;\r\nvarying vec2 v_Texcoord;\r\n\r\n@import clay.util.rgbm\r\n@import clay.util.float\r\n\r\nvoid main()\r\n{\r\n vec4 blurredColor = texture2D(blurred, v_Texcoord);\r\n vec4 originalColor = texture2D(original, v_Texcoord);\r\n\r\n float fCoc = decodeFloat(texture2D(coc, v_Texcoord));\r\n\r\n // FIXME blur after premultiply will have white edge\r\n // blurredColor.rgb /= max(fCoc, 0.1);\r\n fCoc = abs(fCoc * 2.0 - 1.0);\r\n\r\n float weight = smoothstep(0.0, 1.0, fCoc);\r\n // float weight = fCoc;\r\n\r\n#ifdef NEARFIELD_ENABLED\r\n vec4 nearfieldColor = texture2D(nearfield, v_Texcoord);\r\n float fNearCoc = decodeFloat(texture2D(nearcoc, v_Texcoord));\r\n fNearCoc = abs(fNearCoc * 2.0 - 1.0);\r\n\r\n // FIXME\r\n gl_FragColor = encodeHDR(\r\n mix(\r\n nearfieldColor, mix(originalColor, blurredColor, weight),\r\n // near field blur is too unobvious if use linear blending\r\n pow(1.0 - fNearCoc, 4.0)\r\n )\r\n );\r\n#else\r\n gl_FragColor = encodeHDR(mix(originalColor, blurredColor, weight));\r\n#endif\r\n\r\n// #if DEBUG == 1\r\n// // Show coc\r\n// gl_FragColor = vec4(vec3(fCoc), 1.0);\r\n// #elif DEBUG == 2\r\n// // Show near coc\r\n// gl_FragColor = vec4(vec3(fNearCoc), 1.0);\r\n// #elif DEBUG == 3\r\n// gl_FragColor = encodeHDR(blurredColor);\r\n// #elif DEBUG == 4\r\n// // gl_FragColor = vec4(vec3(nearfieldTexel.a), 1.0);\r\n// gl_FragColor = encodeHDR(nearfieldColor);\r\n// #endif\r\n}\r\n\r\n@end\r\n\r\n\r\n\r\n@export ecgl.dof.diskBlur\r\n\r\n#define POISSON_KERNEL_SIZE 16;\r\n\r\nuniform sampler2D texture;\r\nuniform sampler2D coc;\r\nvarying vec2 v_Texcoord;\r\n\r\nuniform float blurRadius : 10.0;\r\nuniform vec2 textureSize : [512.0, 512.0];\r\n\r\nuniform vec2 poissonKernel[POISSON_KERNEL_SIZE];\r\n\r\nuniform float percent;\r\n\r\nfloat nrand(const in vec2 n) {\r\n return fract(sin(dot(n.xy ,vec2(12.9898,78.233))) * 43758.5453);\r\n}\r\n\r\n@import clay.util.rgbm\r\n@import clay.util.float\r\n\r\n\r\nvoid main()\r\n{\r\n vec2 offset = blurRadius / textureSize;\r\n\r\n float rnd = 6.28318 * nrand(v_Texcoord + 0.07 * percent );\r\n float cosa = cos(rnd);\r\n float sina = sin(rnd);\r\n vec4 basis = vec4(cosa, -sina, sina, cosa);\r\n\r\n#if !defined(BLUR_NEARFIELD) && !defined(BLUR_COC)\r\n offset *= abs(decodeFloat(texture2D(coc, v_Texcoord)) * 2.0 - 1.0);\r\n#endif\r\n\r\n#ifdef BLUR_COC\r\n float cocSum = 0.0;\r\n#else\r\n vec4 color = vec4(0.0);\r\n#endif\r\n\r\n\r\n float weightSum = 0.0;\r\n\r\n for (int i = 0; i < POISSON_KERNEL_SIZE; i++) {\r\n vec2 ofs = poissonKernel[i];\r\n\r\n ofs = vec2(dot(ofs, basis.xy), dot(ofs, basis.zw));\r\n\r\n vec2 uv = v_Texcoord + ofs * offset;\r\n vec4 texel = texture2D(texture, uv);\r\n\r\n float w = 1.0;\r\n#ifdef BLUR_COC\r\n float fCoc = decodeFloat(texel) * 2.0 - 1.0;\r\n // Blur coc in nearfield\r\n cocSum += clamp(fCoc, -1.0, 0.0) * w;\r\n#else\r\n texel = texel;\r\n #if !defined(BLUR_NEARFIELD)\r\n float fCoc = decodeFloat(texture2D(coc, uv)) * 2.0 - 1.0;\r\n // TODO DOF premult to avoid bleeding, can be tweaked (currently x^3)\r\n // tradeoff between bleeding dof and out of focus object that shrinks too much\r\n w *= abs(fCoc);\r\n #endif\r\n texel.rgb *= texel.a;\r\n color += texel * w;\r\n#endif\r\n\r\n weightSum += w;\r\n }\r\n\r\n#ifdef BLUR_COC\r\n gl_FragColor = encodeFloat(clamp(cocSum / weightSum, -1.0, 0.0) * 0.5 + 0.5);\r\n#else\r\n color /= weightSum;\r\n color.rgb /= (color.a + 0.0001);\r\n // TODO Windows will not be totally transparent if color.rgb is not 0 and color.a is 0.\r\n gl_FragColor = color;\r\n#endif\r\n}\r\n\r\n@end");
 
-;// CONCATENATED MODULE: ./src/effect/edge.glsl.js
+;// ./src/effect/edge.glsl.js
 /* harmony default export */ const edge_glsl = ("@export ecgl.edge\r\n// http://williamchyr.com/2014/03/development-update-edge-detection/\r\n// http://williamchyr.com/2014/05/revisiting-edge-detection/\r\n// http://williamchyr.com/2015/08/edge-detection-shader-deep-dive-part-1-even-or-thinner-edges/\r\n// http://www.thomaseichhorn.de/npr-sketch-shader-vvvv/\r\n\r\nuniform sampler2D texture;\r\n\r\nuniform sampler2D normalTexture;\r\nuniform sampler2D depthTexture;\r\n\r\nuniform mat4 projectionInv;\r\n\r\nuniform vec2 textureSize;\r\n\r\nuniform vec4 edgeColor: [0,0,0,0.8];\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nvec3 packColor(vec2 coord) {\r\n float z = texture2D(depthTexture, coord).r * 2.0 - 1.0;\r\n vec4 p = vec4(v_Texcoord * 2.0 - 1.0, z, 1.0);\r\n vec4 p4 = projectionInv * p;\r\n\r\n return vec3(\r\n texture2D(normalTexture, coord).rg,\r\n -p4.z / p4.w / 5.0\r\n );\r\n}\r\n\r\nvoid main() {\r\n vec2 cc = v_Texcoord;\r\n // center\r\n vec3 center = packColor(cc);\r\n\r\n // PENDING Fade out in 100 - 500\r\n float size = clamp(1.0 - (center.z - 10.0) / 100.0, 0.0, 1.0) * 0.5;\r\n float dx = size / textureSize.x;\r\n float dy = size / textureSize.y;\r\n\r\n vec2 coord;\r\n // top left\r\n vec3 topLeft = packColor(cc+vec2(-dx, -dy));\r\n // top\r\n vec3 top = packColor(cc+vec2(0.0, -dy));\r\n // top right\r\n vec3 topRight = packColor(cc+vec2(dx, -dy));\r\n // left\r\n vec3 left = packColor(cc+vec2(-dx, 0.0));\r\n // right\r\n vec3 right = packColor(cc+vec2(dx, 0.0));\r\n // bottom left\r\n vec3 bottomLeft = packColor(cc+vec2(-dx, dy));\r\n // bottom\r\n vec3 bottom = packColor(cc+vec2(0.0, dy));\r\n // bottom right\r\n vec3 bottomRight = packColor(cc+vec2(dx, dy));\r\n\r\n vec3 v = -topLeft-2.0*top-topRight+bottomLeft+2.0*bottom+bottomRight;\r\n vec3 h = -bottomLeft-2.0*left-topLeft+bottomRight+2.0*right+topRight;\r\n\r\n float edge = sqrt(dot(h, h) + dot(v, v));\r\n\r\n edge = smoothstep(0.8, 1.0, edge);\r\n\r\n gl_FragColor = mix(texture2D(texture, v_Texcoord), vec4(edgeColor.rgb, 1.0), edgeColor.a * edge);\r\n}\r\n@end");
 
-;// CONCATENATED MODULE: ./src/effect/EffectCompositor.js
+;// ./src/effect/EffectCompositor.js
 
 
 
@@ -47119,7 +50487,7 @@ EffectCompositor.prototype.dispose = function (renderer) {
 };
 
 /* harmony default export */ const effect_EffectCompositor = (EffectCompositor);
-;// CONCATENATED MODULE: ./src/effect/TemporalSuperSampling.js
+;// ./src/effect/TemporalSuperSampling.js
 // Temporal Super Sample for static Scene
 
 
@@ -47286,7 +50654,7 @@ TemporalSuperSampling.prototype = {
 };
 
 /* harmony default export */ const effect_TemporalSuperSampling = (TemporalSuperSampling);
-;// CONCATENATED MODULE: ./src/core/ViewGL.js
+;// ./src/core/ViewGL.js
 /*
  * @module echarts-gl/core/ViewGL
  * @author Yi Shen(http://github.com/pissang)
@@ -47740,7 +51108,7 @@ ViewGL.prototype.removeAll = function (node3D) {
 Object.assign(ViewGL.prototype, mixin_notifier);
 
 /* harmony default export */ const core_ViewGL = (ViewGL);
-;// CONCATENATED MODULE: ./src/coord/grid3DCreator.js
+;// ./src/coord/grid3DCreator.js
 
 
 
@@ -47930,7 +51298,7 @@ var grid3DCreator = {
 };
 
 /* harmony default export */ const coord_grid3DCreator = (grid3DCreator);
-;// CONCATENATED MODULE: ./src/component/grid3D/Axis3DModel.js
+;// ./src/component/grid3D/Axis3DModel.js
 
 
 var Axis3DModel = external_echarts_.ComponentModel.extend({
@@ -47954,7 +51322,7 @@ var Axis3DModel = external_echarts_.ComponentModel.extend({
 external_echarts_.helper.mixinAxisModelCommonMethods(Axis3DModel);
 
 /* harmony default export */ const grid3D_Axis3DModel = (Axis3DModel);
-;// CONCATENATED MODULE: ./src/component/grid3D/axis3DDefault.js
+;// ./src/component/grid3D/axis3DDefault.js
 
 
 var defaultOption = {
@@ -48046,7 +51414,7 @@ logAxis.scale = true;
     timeAxis3D: timeAxis,
     logAxis3D: logAxis
 });
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/data/OrdinalMeta.js
+;// ./node_modules/echarts/lib/data/OrdinalMeta.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -48092,21 +51460,42 @@ logAxis.scale = true;
 */
 
 var uidBase = 0;
-
-var OrdinalMeta =
-/** @class */
-function () {
+var OrdinalMeta = /** @class */function () {
+  /**
+   * PENDING - Regarding forcibly converting to string:
+   *  In the early days, the underlying hash map impl used JS plain object and converted the key to
+   *  string; later in https://github.com/ecomfe/zrender/pull/966 it was changed to a JS Map (in supported
+   *  platforms), which does not require string keys. But consider any input that `scale/Ordinal['parse']`
+   *  is involved, a number input represents an `OrdinalNumber` (i.e., an index), and affect the query
+   *  behavior:
+   *    - If forcbily converting to string:
+   *      pros: users can use numeric string (such as, '123') to query the raw data (123), tho it's probably
+   *      still confusing.
+   *      cons: NaN/null/undefined in data will be equals to 'NaN'/'null'/'undefined', if simply using
+   *      `val + ''` to convert them, like currently `getName` does.
+   *    - Otherwise:
+   *      pros: see NaN/null/undefined case above.
+   *      cons: users cannot query the raw data (123) any more.
+   *  There are two inconsistent behaviors in the current impl:
+   *    - Force conversion is applied on the case `xAxis{data: ['aaa', 'bbb', ...]}`,
+   *      but no conversion applied to the case `xAxis{data: [{value: 'aaa'}, ...]}` and
+   *      the case `dataset: {source: [['aaa', 123], ['bbb', 234], ...]}`.
+   *    - behaves differently according to whether JS Map is supported (the polyfill is simply using JS
+   *      plain object) (tho it seems rare platform that do not support it).
+   *  Since there's no sufficient good solution to offset cost of the breaking change, we preserve the
+   *  current behavior, until real issues is reported.
+   */
   function OrdinalMeta(opt) {
     this.categories = opt.categories || [];
     this._needCollect = opt.needCollect;
     this._deduplication = opt.deduplication;
     this.uid = ++uidBase;
+    this._onCollect = opt.onCollect;
   }
-
   OrdinalMeta.createByAxisModel = function (axisModel) {
     var option = axisModel.option;
     var data = option.data;
-    var categories = data && map(data, getName);
+    var categories = data && util_map(data, getName);
     return new OrdinalMeta({
       categories: categories,
       needCollect: !categories,
@@ -48114,29 +51503,25 @@ function () {
       deduplication: option.dedplication !== false
     });
   };
-
   ;
-
   OrdinalMeta.prototype.getOrdinal = function (category) {
-    // @ts-ignore
     return this._getOrCreateMap().get(category);
   };
   /**
    * @return The ordinal. If not found, return NaN.
    */
-
-
   OrdinalMeta.prototype.parseAndCollect = function (category) {
     var index;
-    var needCollect = this._needCollect; // The value of category dim can be the index of the given category set.
+    var needCollect = this._needCollect;
+    // The value of category dim can be the index of the given category set.
     // This feature is only supported when !needCollect, because we should
     // consider a common case: a value is 2017, which is a number but is
     // expected to be tread as a category. This case usually happen in dataset,
     // where it happent to be no need of the index feature.
-
-    if (!isString(category) && !needCollect) {
+    if (!util_isString(category) && !needCollect) {
       return category;
-    } // Optimize for the scenario:
+    }
+    // Optimize for the scenario:
     // category is ['2012-01-01', '2012-01-02', ...], where the input
     // data has been ensured not duplicate and is large data.
     // Notice, if a dataset dimension provide categroies, usually echarts
@@ -48144,51 +51529,41 @@ function () {
     // (set axis.deduplication = false), because echarts do not know whether
     // the values in the category dimension has duplication (consider the
     // parallel-aqi example)
-
-
     if (needCollect && !this._deduplication) {
       index = this.categories.length;
       this.categories[index] = category;
+      this._onCollect && this._onCollect(category, index);
       return index;
     }
-
-    var map = this._getOrCreateMap(); // @ts-ignore
-
-
+    var map = this._getOrCreateMap();
     index = map.get(category);
-
     if (index == null) {
       if (needCollect) {
         index = this.categories.length;
-        this.categories[index] = category; // @ts-ignore
-
+        this.categories[index] = category;
         map.set(category, index);
+        this._onCollect && this._onCollect(category, index);
       } else {
         index = NaN;
       }
     }
-
     return index;
-  }; // Consider big data, do not create map until needed.
-
-
-  OrdinalMeta.prototype._getOrCreateMap = function () {
-    return this._map || (this._map = createHashMap(this.categories));
   };
-
+  // Consider big data, do not create map until needed.
+  OrdinalMeta.prototype._getOrCreateMap = function () {
+    return this._map || (this._map = util_createHashMap(this.categories));
+  };
   return OrdinalMeta;
 }();
-
 function getName(obj) {
-  if (isObject(obj) && obj.value != null) {
+  if (util_isObject(obj) && obj.value != null) {
     return obj.value;
   } else {
     return obj + '';
   }
 }
-
 /* harmony default export */ const data_OrdinalMeta = (OrdinalMeta);
-;// CONCATENATED MODULE: ./src/component/grid3D/createAxis3DModel.js
+;// ./src/component/grid3D/createAxis3DModel.js
 
 
 
@@ -48262,7 +51637,7 @@ var AXIS_TYPES = ['value', 'category', 'time', 'log'];
         external_echarts_.util.curry(axisTypeDefaulter, dim)
     );
 };
-;// CONCATENATED MODULE: ./src/component/grid3D/install.js
+;// ./src/component/grid3D/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -48323,11 +51698,11 @@ function install(registers) {
 }
 
 
-;// CONCATENATED MODULE: ./src/component/grid3D.js
+;// ./src/component/grid3D.js
 
 
 (0,external_echarts_.use)(install);
-;// CONCATENATED MODULE: ./src/component/common/componentShadingMixin.js
+;// ./src/component/common/componentShadingMixin.js
 /* harmony default export */ const componentShadingMixin = ({
     defaultOption: {
         shading: null,
@@ -48361,7 +51736,7 @@ function install(registers) {
         }
     }
 });
-;// CONCATENATED MODULE: ./src/coord/geo3D/geo3DModelMixin.js
+;// ./src/coord/geo3D/geo3DModelMixin.js
 
 
 /* harmony default export */ const geo3DModelMixin = ({
@@ -48500,7 +51875,7 @@ function install(registers) {
         }
     }
 });
-;// CONCATENATED MODULE: ./src/component/geo3D/Geo3DModel.js
+;// ./src/component/geo3D/Geo3DModel.js
 
 
 
@@ -48604,7 +51979,7 @@ external_echarts_.util.merge(Geo3DModel.prototype, componentLightMixin);
 external_echarts_.util.merge(Geo3DModel.prototype, componentShadingMixin);
 
 /* harmony default export */ const geo3D_Geo3DModel = (Geo3DModel);
-;// CONCATENATED MODULE: ./src/util/earcut.js
+;// ./src/util/earcut.js
 // https://github.com/mapbox/earcut/blob/master/src/earcut.js
 
 /* harmony default export */ const earcut = (earcut_earcut);
@@ -49223,7 +52598,7 @@ function signedArea(data, start, end, dim) {
     }
     return sum;
 }
-;// CONCATENATED MODULE: ./src/util/ProgressiveQuickSort.js
+;// ./src/util/ProgressiveQuickSort.js
 
 function swap(arr, a, b) {
     var tmp = arr[a];
@@ -49353,7 +52728,7 @@ ProgressiveQuickSort.prototype.step = function (arr, compare, frame) {
 ProgressiveQuickSort.sort = quickSort;
 
 /* harmony default export */ const util_ProgressiveQuickSort = (ProgressiveQuickSort);
-;// CONCATENATED MODULE: ./src/util/geometry/trianglesSortMixin.js
+;// ./src/util/geometry/trianglesSortMixin.js
 
 
 var trianglesSortMixin_vec3 = dep_glmatrix.vec3;
@@ -49489,7 +52864,7 @@ var p2 = trianglesSortMixin_vec3.create();
         }, frame);
     }
 });
-;// CONCATENATED MODULE: ./src/util/visual.js
+;// ./src/util/visual.js
 function getVisualColor(data) {
     const style = data.getVisual('style');
     if (style) {
@@ -49512,7 +52887,7 @@ function getItemVisualOpacity(data, idx) {
     const style = data.getItemVisual(idx, 'style');
     return style && style.opacity;
 }
-;// CONCATENATED MODULE: ./src/component/common/LabelsBuilder.js
+;// ./src/component/common/LabelsBuilder.js
 
 
 
@@ -49693,7 +53068,7 @@ LabelsBuilder.prototype.dispose = function () {
 }
 
 /* harmony default export */ const common_LabelsBuilder = (LabelsBuilder);
-;// CONCATENATED MODULE: ./src/component/common/Geo3DBuilder.js
+;// ./src/component/common/Geo3DBuilder.js
 
 
 
@@ -50466,7 +53841,7 @@ Geo3DBuilder.prototype = {
 };
 
 /* harmony default export */ const common_Geo3DBuilder = (Geo3DBuilder);
-;// CONCATENATED MODULE: ./src/component/geo3D/Geo3DView.js
+;// ./src/component/geo3D/Geo3DView.js
 
 
 
@@ -50563,7 +53938,7 @@ Geo3DBuilder.prototype = {
         this._geo3DBuilder.dispose();
     }
 }));
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/coord/geo/fix/textCoord.js
+;// ./node_modules/echarts/lib/coord/geo/fix/textCoord.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -50619,7 +53994,6 @@ var coordsOffsetMap = {
 function fixTextCoords(mapType, region) {
   if (mapType === 'china') {
     var coordFix = coordsOffsetMap[region.name];
-
     if (coordFix) {
       var cp = region.getCenter();
       cp[0] += coordFix[0] / 10.5;
@@ -50628,7 +54002,7 @@ function fixTextCoords(mapType, region) {
     }
   }
 }
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/coord/geo/fix/geoCoord.js
+;// ./node_modules/echarts/lib/coord/geo/fix/geoCoord.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -50680,14 +54054,13 @@ var geoCoordMap = {
 function fixGeoCoords(mapType, region) {
   if (mapType === 'world') {
     var geoCoord = geoCoordMap[region.name];
-
     if (geoCoord) {
       var cp = [geoCoord[0], geoCoord[1]];
       region.setCenter(cp);
     }
   }
 }
-;// CONCATENATED MODULE: ./src/coord/geo3D/Geo3D.js
+;// ./src/coord/geo3D/Geo3D.js
 
 
 var Geo3D_vec3 = dep_glmatrix.vec3;
@@ -50872,7 +54245,7 @@ Geo3D.prototype = {
 };
 
 /* harmony default export */ const geo3D_Geo3D = (Geo3D);
-;// CONCATENATED MODULE: ./src/coord/geo3DCreator.js
+;// ./src/coord/geo3DCreator.js
 
 
 
@@ -51082,7 +54455,7 @@ var geo3DCreator = {
 };
 
 /* harmony default export */ const coord_geo3DCreator = (geo3DCreator);
-;// CONCATENATED MODULE: ./src/component/geo3D/install.js
+;// ./src/component/geo3D/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -51109,11 +54482,11 @@ function install_install(registers) {
     registers.registerCoordinateSystem('geo3D', coord_geo3DCreator);
 
 }
-;// CONCATENATED MODULE: ./src/component/geo3D.js
+;// ./src/component/geo3D.js
 
 
 (0,external_echarts_.use)(install_install);
-;// CONCATENATED MODULE: ./src/component/globe/GlobeModel.js
+;// ./src/component/globe/GlobeModel.js
 
 
 
@@ -51322,7 +54695,7 @@ external_echarts_.util.merge(GlobeModel.prototype, componentLightMixin);
 external_echarts_.util.merge(GlobeModel.prototype, componentShadingMixin);
 
 /* harmony default export */ const globe_GlobeModel = (GlobeModel);
-;// CONCATENATED MODULE: ./src/util/sunCalc.js
+;// ./src/util/sunCalc.js
 /*
  (c) 2011-2014, Vladimir Agafonkin
  SunCalc is a JavaScript library for calculating sun/mooon position and light phases.
@@ -51408,10 +54781,10 @@ SunCalc.getPosition = function (date, lat, lng) {
 };
 
 /* harmony default export */ const sunCalc = (SunCalc);
-;// CONCATENATED MODULE: ./src/component/globe/atmosphere.glsl.js
+;// ./src/component/globe/atmosphere.glsl.js
 /* harmony default export */ const atmosphere_glsl = ("@export ecgl.atmosphere.vertex\r\nattribute vec3 position: POSITION;\r\nattribute vec3 normal : NORMAL;\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform mat4 normalMatrix : WORLDINVERSETRANSPOSE;\r\n\r\nvarying vec3 v_Normal;\r\n\r\nvoid main() {\r\n v_Normal = normalize((normalMatrix * vec4(normal, 0.0)).xyz);\r\n gl_Position = worldViewProjection * vec4(position, 1.0);\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.atmosphere.fragment\r\nuniform mat4 viewTranspose: VIEWTRANSPOSE;\r\nuniform float glowPower;\r\nuniform vec3 glowColor;\r\n\r\nvarying vec3 v_Normal;\r\n\r\nvoid main() {\r\n float intensity = pow(1.0 - dot(v_Normal, (viewTranspose * vec4(0.0, 0.0, 1.0, 0.0)).xyz), glowPower);\r\n gl_FragColor = vec4(glowColor, intensity * intensity);\r\n}\r\n@end");
 
-;// CONCATENATED MODULE: ./src/component/globe/GlobeView.js
+;// ./src/component/globe/GlobeView.js
 
 
 
@@ -51869,7 +55242,7 @@ util_graphicGL.Shader['import'](atmosphere_glsl);
         this._control.dispose();
     }
 }));
-;// CONCATENATED MODULE: ./src/coord/globe/Globe.js
+;// ./src/coord/globe/Globe.js
 
 var Globe_vec3 = dep_glmatrix.vec3;
 
@@ -51972,7 +55345,7 @@ Globe.prototype = {
 };
 
 /* harmony default export */ const globe_Globe = (Globe);
-;// CONCATENATED MODULE: ./src/coord/globeCreator.js
+;// ./src/coord/globeCreator.js
 
 
 
@@ -52150,7 +55523,7 @@ var globeCreator = {
 };
 
 /* harmony default export */ const coord_globeCreator = (globeCreator);
-;// CONCATENATED MODULE: ./src/component/globe/install.js
+;// ./src/component/globe/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -52185,11 +55558,11 @@ function globe_install_install(registers) {
     });
 
 }
-;// CONCATENATED MODULE: ./src/component/globe.js
+;// ./src/component/globe.js
 
 
 (0,external_echarts_.use)(globe_install_install);
-;// CONCATENATED MODULE: ./src/component/mapbox3D/Mapbox3DModel.js
+;// ./src/component/mapbox3D/Mapbox3DModel.js
 
 
 
@@ -52264,7 +55637,7 @@ external_echarts_.util.merge(Mapbox3DModel.prototype, componentPostEffectMixin);
 external_echarts_.util.merge(Mapbox3DModel.prototype, componentLightMixin);
 
 /* harmony default export */ const mapbox3D_Mapbox3DModel = (Mapbox3DModel);
-;// CONCATENATED MODULE: ./src/component/mapbox3D/Mapbox3DLayer.js
+;// ./src/component/mapbox3D/Mapbox3DLayer.js
 /**
  * @constructor
  * @alias module:echarts-gl/component/mapbox3D/Mapbox3DLayer
@@ -52343,10 +55716,10 @@ Mapbox3DLayer.prototype.dispose = function () {
 };
 
 /* harmony default export */ const mapbox3D_Mapbox3DLayer = (Mapbox3DLayer);
-;// CONCATENATED MODULE: ./src/util/shader/displayShadow.glsl.js
+;// ./src/util/shader/displayShadow.glsl.js
 /* harmony default export */ const displayShadow_glsl = ("// Only display shadow\r\n\r\n@export ecgl.displayShadow.vertex\r\n\r\n@import ecgl.common.transformUniforms\r\n\r\n@import ecgl.common.uv.header\r\n\r\n@import ecgl.common.attributes\r\n\r\nvarying vec3 v_WorldPosition;\r\n\r\nvarying vec3 v_Normal;\r\n\r\nvoid main()\r\n{\r\n @import ecgl.common.uv.main\r\n v_Normal = normalize((worldInverseTranspose * vec4(normal, 0.0)).xyz);\r\n\r\n v_WorldPosition = (world * vec4(position, 1.0)).xyz;\r\n gl_Position = worldViewProjection * vec4(position, 1.0);\r\n}\r\n\r\n@end\r\n\r\n\r\n@export ecgl.displayShadow.fragment\r\n\r\n@import ecgl.common.uv.fragmentHeader\r\n\r\nvarying vec3 v_Normal;\r\nvarying vec3 v_WorldPosition;\r\n\r\n// For reflection.\r\nuniform float roughness: 0.2;\r\n\r\n#ifdef DIRECTIONAL_LIGHT_COUNT\r\n@import clay.header.directional_light\r\n#endif\r\n\r\n@import ecgl.common.ssaoMap.header\r\n\r\n@import clay.plugin.compute_shadow_map\r\n\r\nvoid main()\r\n{\r\n float shadow = 1.0;\r\n\r\n @import ecgl.common.ssaoMap.main\r\n\r\n#if defined(DIRECTIONAL_LIGHT_COUNT) && defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\r\n float shadowContribsDir[DIRECTIONAL_LIGHT_COUNT];\r\n if(shadowEnabled)\r\n {\r\n computeShadowOfDirectionalLights(v_WorldPosition, shadowContribsDir);\r\n }\r\n for (int i = 0; i < DIRECTIONAL_LIGHT_COUNT; i++) {\r\n shadow = min(shadow, shadowContribsDir[i] * 0.5 + 0.5);\r\n }\r\n#endif\r\n\r\n shadow *= 0.5 + ao * 0.5;\r\n shadow = clamp(shadow, 0.0, 1.0);\r\n\r\n gl_FragColor = vec4(vec3(0.0), 1.0 - shadow);\r\n}\r\n\r\n@end");
 
-;// CONCATENATED MODULE: ./src/component/mapbox3D/Mapbox3DView.js
+;// ./src/component/mapbox3D/Mapbox3DView.js
 
 
 
@@ -52494,7 +55867,7 @@ var TILE_SIZE = 512;
         api.getZr().painter.delLayer(-1000);
     }
 }));
-;// CONCATENATED MODULE: ./src/coord/mapServiceCommon/MapService3D.js
+;// ./src/coord/mapServiceCommon/MapService3D.js
 
 var MapService3D_mat4 = dep_glmatrix.mat4;
 
@@ -52683,7 +56056,7 @@ MapServiceCoordSys3D.prototype = {
 };
 
 /* harmony default export */ const MapService3D = (MapServiceCoordSys3D);
-;// CONCATENATED MODULE: ./src/coord/mapbox3D/Mapbox3D.js
+;// ./src/coord/mapbox3D/Mapbox3D.js
 
 
 function Mapbox3D() {
@@ -52695,7 +56068,7 @@ Mapbox3D.prototype.constructor = Mapbox3D;
 Mapbox3D.prototype.type = 'mapbox3D';
 
 /* harmony default export */ const mapbox3D_Mapbox3D = (Mapbox3D);
-;// CONCATENATED MODULE: ./src/coord/mapServiceCommon/createMapService3DCreator.js
+;// ./src/coord/mapServiceCommon/createMapService3DCreator.js
 
 
 
@@ -52805,7 +56178,7 @@ Mapbox3D.prototype.type = 'mapbox3D';
     };
 }
 
-;// CONCATENATED MODULE: ./src/coord/mapbox3DCreator.js
+;// ./src/coord/mapbox3DCreator.js
 
 
 
@@ -52816,7 +56189,7 @@ var mapbox3DCreator = createMapService3DCreator('mapbox3D', mapbox3D_Mapbox3D, f
 });
 
 /* harmony default export */ const coord_mapbox3DCreator = (mapbox3DCreator);
-;// CONCATENATED MODULE: ./src/component/mapbox3D/install.js
+;// ./src/component/mapbox3D/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -52842,11 +56215,11 @@ function mapbox3D_install_install(registers) {
         });
     });
 }
-;// CONCATENATED MODULE: ./src/component/mapbox3D.js
+;// ./src/component/mapbox3D.js
 
 
 (0,external_echarts_.use)(mapbox3D_install_install);
-;// CONCATENATED MODULE: ./src/component/maptalks3D/Maptalks3DModel.js
+;// ./src/component/maptalks3D/Maptalks3DModel.js
 
 
 
@@ -52922,7 +56295,7 @@ external_echarts_.util.merge(Maptalks3DModel.prototype, componentPostEffectMixin
 external_echarts_.util.merge(Maptalks3DModel.prototype, componentLightMixin);
 
 /* harmony default export */ const maptalks3D_Maptalks3DModel = (Maptalks3DModel);
-;// CONCATENATED MODULE: ./src/component/maptalks3D/Maptalks3DLayer.js
+;// ./src/component/maptalks3D/Maptalks3DLayer.js
 /**
  * @constructor
  * @alias module:echarts-gl/component/maptalks/Maptalks3DLayer
@@ -53013,7 +56386,7 @@ Maptalks3DLayer.prototype.dispose = function () {
 
 /* harmony default export */ const maptalks3D_Maptalks3DLayer = (Maptalks3DLayer);
 
-;// CONCATENATED MODULE: ./src/component/maptalks3D/Maptalks3DView.js
+;// ./src/component/maptalks3D/Maptalks3DView.js
 
 
 
@@ -53186,7 +56559,7 @@ function getMapboxZoom(res) {
     return 19 - Math.log(res / MAX_RES) / Math.LN2;
 }
 
-;// CONCATENATED MODULE: ./src/coord/maptalks3D/Maptalks3D.js
+;// ./src/coord/maptalks3D/Maptalks3D.js
 
 
 function Maptalks3D() {
@@ -53201,7 +56574,7 @@ Maptalks3D.prototype.constructor = Maptalks3D;
 Maptalks3D.prototype.type = 'maptalks3D';
 
 /* harmony default export */ const maptalks3D_Maptalks3D = (Maptalks3D);
-;// CONCATENATED MODULE: ./src/coord/maptalks3DCreator.js
+;// ./src/coord/maptalks3DCreator.js
 
 
 
@@ -53212,7 +56585,7 @@ var maptalks3DCreator = createMapService3DCreator('maptalks3D', maptalks3D_Mapta
 });
 
 /* harmony default export */ const coord_maptalks3DCreator = (maptalks3DCreator);
-;// CONCATENATED MODULE: ./src/component/maptalks3D/install.js
+;// ./src/component/maptalks3D/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -53238,12 +56611,12 @@ function maptalks3D_install_install(registers) {
         });
     });
 }
-;// CONCATENATED MODULE: ./src/component/maptalks3D.js
+;// ./src/component/maptalks3D.js
 // Thanks to https://gitee.com/iverson_hu/maptalks-echarts-gl
 
 
 (0,external_echarts_.use)(maptalks3D_install_install);
-;// CONCATENATED MODULE: ./src/chart/bar3D/cartesian3DLayout.js
+;// ./src/chart/bar3D/cartesian3DLayout.js
 
 
 var cartesian3DLayout_vec3 = dep_glmatrix.vec3;
@@ -53324,7 +56697,7 @@ function cartesian3DLayout(seriesModel, coordSys) {
 }
 
 /* harmony default export */ const bar3D_cartesian3DLayout = (cartesian3DLayout);
-;// CONCATENATED MODULE: ./src/chart/bar3D/evaluateBarSparseness.js
+;// ./src/chart/bar3D/evaluateBarSparseness.js
 /* harmony default export */ function evaluateBarSparseness(data, dimX, dimY) {
     var xExtent = data.getDataExtent(dimX);
     var yExtent = data.getDataExtent(dimY);
@@ -53350,7 +56723,7 @@ function cartesian3DLayout(seriesModel, coordSys) {
     }
     return filledCount / tmp.length;
 };
-;// CONCATENATED MODULE: ./src/chart/bar3D/bar3DLayout.js
+;// ./src/chart/bar3D/bar3DLayout.js
 
 
 
@@ -53527,7 +56900,7 @@ function registerBarLayout(registers) {
         });
     });
 }
-;// CONCATENATED MODULE: ./src/util/format.js
+;// ./src/util/format.js
 
 
 var formatUtil = {};
@@ -53570,7 +56943,7 @@ formatUtil.normalizeToArray = function (value) {
 };
 
 /* harmony default export */ const util_format = (formatUtil);
-;// CONCATENATED MODULE: ./src/chart/common/formatTooltip.js
+;// ./src/chart/common/formatTooltip.js
 
 
 
@@ -53653,7 +57026,7 @@ function otherDimToDataDim (data, otherDim) {
             )
         : colorEl + seriesName + formattedValue;
 };
-;// CONCATENATED MODULE: ./src/chart/common/createList.js
+;// ./src/chart/common/createList.js
 
 
 /* harmony default export */ function createList(seriesModel, dims, source) {
@@ -53698,7 +57071,7 @@ function otherDimToDataDim (data, otherDim) {
 
     return data;
 }
-;// CONCATENATED MODULE: ./src/chart/bar3D/Bar3DSeries.js
+;// ./src/chart/bar3D/Bar3DSeries.js
 
 
 
@@ -53784,7 +57157,7 @@ var Bar3DSeries = external_echarts_.SeriesModel.extend({
 external_echarts_.util.merge(Bar3DSeries.prototype, componentShadingMixin);
 
 /* harmony default export */ const bar3D_Bar3DSeries = (Bar3DSeries);
-;// CONCATENATED MODULE: ./src/util/geometry/Bars3DGeometry.js
+;// ./src/util/geometry/Bars3DGeometry.js
 /**
  * Geometry collecting bars data
  *
@@ -54178,7 +57551,7 @@ external_echarts_.util.defaults(BarsGeometry.prototype, dynamicConvertMixin);
 external_echarts_.util.defaults(BarsGeometry.prototype, trianglesSortMixin);
 
 /* harmony default export */ const Bars3DGeometry = (BarsGeometry);
-;// CONCATENATED MODULE: ./src/chart/bar3D/Bar3DView.js
+;// ./src/chart/bar3D/Bar3DView.js
 
 
 
@@ -54503,7 +57876,7 @@ var Bar3DView_vec3 = dep_glmatrix.vec3;
         this.groupGL.removeAll();
     }
 }));
-;// CONCATENATED MODULE: ./src/chart/bar3D/install.js
+;// ./src/chart/bar3D/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -54527,11 +57900,11 @@ function bar3D_install_install(registers) {
         });
     });
 }
-;// CONCATENATED MODULE: ./src/chart/bar3D.js
+;// ./src/chart/bar3D.js
 
 
 (0,external_echarts_.use)(bar3D_install_install);
-;// CONCATENATED MODULE: ./src/chart/line3D/Line3DSeries.js
+;// ./src/chart/line3D/Line3DSeries.js
 
 
 
@@ -54569,7 +57942,33 @@ var Line3DSeries = external_echarts_.SeriesModel.extend({
 });
 
 /* harmony default export */ const line3D_Line3DSeries = (Line3DSeries);
-;// CONCATENATED MODULE: ./src/chart/line3D/Line3DView.js
+;// ./node_modules/zrender/lib/contain/line.js
+function line_containStroke(x0, y0, x1, y1, lineWidth, x, y) {
+    if (lineWidth === 0) {
+        return false;
+    }
+    var _l = lineWidth;
+    var _a = 0;
+    var _b = x0;
+    if ((y > y0 + _l && y > y1 + _l)
+        || (y < y0 - _l && y < y1 - _l)
+        || (x > x0 + _l && x > x1 + _l)
+        || (x < x0 - _l && x < x1 - _l)) {
+        return false;
+    }
+    if (x0 !== x1) {
+        _a = (y0 - y1) / (x0 - x1);
+        _b = (x0 * y1 - x1 * y0) / (x0 - x1);
+    }
+    else {
+        return Math.abs(x - x0) <= _l / 2;
+    }
+    var tmp = _a * x - y + _b;
+    var _s = tmp * tmp / (_a * _a + 1);
+    return _s <= _l / 2 * _l / 2;
+}
+
+;// ./src/chart/line3D/Line3DView.js
 
 
 
@@ -54832,7 +58231,7 @@ util_graphicGL.Shader.import(lines3D_glsl);
             var x1 = (positionNDC[i * 2] + 1) * halfWidth;
             var y1 = (positionNDC[i * 2 + 1] + 1) * halfHeight;
 
-            if (containStroke(x0, y0, x1, y1, lineWidth, x, y)) {
+            if (line_containStroke(x0, y0, x1, y1, lineWidth, x, y)) {
                 var dist0 = (x0 - x) * (x0 - x) + (y0 - y) * (y0 - y);
                 var dist1 = (x1 - x) * (x1 - x) + (y1 - y) * (y1 - y);
                 // Nearest point.
@@ -54866,7 +58265,7 @@ util_graphicGL.Shader.import(lines3D_glsl);
         this.groupGL.removeAll();
     }
 }));
-;// CONCATENATED MODULE: ./src/chart/line3D/install.js
+;// ./src/chart/line3D/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -54916,11 +58315,11 @@ function line3D_install_install(registers) {
         });
     });
 }
-;// CONCATENATED MODULE: ./src/chart/line3D.js
+;// ./src/chart/line3D.js
 
 
 (0,external_echarts_.use)(line3D_install_install);
-;// CONCATENATED MODULE: ./src/chart/scatter3D/Scatter3DSeries.js
+;// ./src/chart/scatter3D/Scatter3DSeries.js
 
 
 
@@ -55000,7 +58399,7 @@ function line3D_install_install(registers) {
         animationDurationUpdate: 500
     }
 }));
-;// CONCATENATED MODULE: ./src/util/sprite.js
+;// ./src/util/sprite.js
 
 
 function makeSprite(size, canvas, draw) {
@@ -55181,7 +58580,7 @@ var spriteUtil = {
 };
 
 /* harmony default export */ const sprite = (spriteUtil);
-;// CONCATENATED MODULE: ./src/util/geometry/verticesSortMixin.js
+;// ./src/util/geometry/verticesSortMixin.js
 
 
 var verticesSortMixin_vec3 = dep_glmatrix.vec3;
@@ -55286,10 +58685,10 @@ var verticesSortMixin_vec3 = dep_glmatrix.vec3;
         }, frame);
     }
 });
-;// CONCATENATED MODULE: ./src/chart/common/sdfSprite.glsl.js
+;// ./src/chart/common/sdfSprite.glsl.js
 /* harmony default export */ const sdfSprite_glsl = ("@export ecgl.sdfSprite.vertex\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform float elapsedTime : 0;\r\n\r\nattribute vec3 position : POSITION;\r\n\r\n#ifdef VERTEX_SIZE\r\nattribute float size;\r\n#else\r\nuniform float u_Size;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\nattribute vec4 a_FillColor: COLOR;\r\nvarying vec4 v_Color;\r\n#endif\r\n\r\n#ifdef VERTEX_ANIMATION\r\nattribute vec3 prevPosition;\r\nattribute float prevSize;\r\nuniform float percent : 1.0;\r\n#endif\r\n\r\n\r\n#ifdef POSITIONTEXTURE_ENABLED\r\nuniform sampler2D positionTexture;\r\n#endif\r\n\r\nvarying float v_Size;\r\n\r\nvoid main()\r\n{\r\n\r\n#ifdef POSITIONTEXTURE_ENABLED\r\n // Only 2d position texture supported\r\n gl_Position = worldViewProjection * vec4(texture2D(positionTexture, position.xy).xy, -10.0, 1.0);\r\n#else\r\n\r\n #ifdef VERTEX_ANIMATION\r\n vec3 pos = mix(prevPosition, position, percent);\r\n #else\r\n vec3 pos = position;\r\n #endif\r\n gl_Position = worldViewProjection * vec4(pos, 1.0);\r\n#endif\r\n\r\n#ifdef VERTEX_SIZE\r\n#ifdef VERTEX_ANIMATION\r\n v_Size = mix(prevSize, size, percent);\r\n#else\r\n v_Size = size;\r\n#endif\r\n#else\r\n v_Size = u_Size;\r\n#endif\r\n\r\n#ifdef VERTEX_COLOR\r\n v_Color = a_FillColor;\r\n // v_StrokeColor = a_StrokeColor;\r\n#endif\r\n\r\n gl_PointSize = v_Size;\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.sdfSprite.fragment\r\n\r\nuniform vec4 color: [1, 1, 1, 1];\r\nuniform vec4 strokeColor: [1, 1, 1, 1];\r\nuniform float smoothing: 0.07;\r\n\r\nuniform float lineWidth: 0.0;\r\n\r\n#ifdef VERTEX_COLOR\r\nvarying vec4 v_Color;\r\n// varying vec4 v_StrokeColor;\r\n#endif\r\n\r\nvarying float v_Size;\r\n\r\nuniform sampler2D sprite;\r\n\r\n@import clay.util.srgb\r\n\r\nvoid main()\r\n{\r\n gl_FragColor = color;\r\n\r\n vec4 _strokeColor = strokeColor;\r\n\r\n#ifdef VERTEX_COLOR\r\n gl_FragColor *= v_Color;\r\n // TODO\r\n // _strokeColor *= v_StrokeColor;\r\n#endif\r\n\r\n#ifdef SPRITE_ENABLED\r\n float d = texture2D(sprite, gl_PointCoord).r;\r\n // Antialias\r\n gl_FragColor.a *= smoothstep(0.5 - smoothing, 0.5 + smoothing, d);\r\n\r\n if (lineWidth > 0.0) {\r\n // TODO SCREEN SPACE OUTLINE\r\n float sLineWidth = lineWidth / 2.0;\r\n\r\n float outlineMaxValue0 = 0.5 + sLineWidth;\r\n float outlineMaxValue1 = 0.5 + sLineWidth + smoothing;\r\n float outlineMinValue0 = 0.5 - sLineWidth - smoothing;\r\n float outlineMinValue1 = 0.5 - sLineWidth;\r\n\r\n // FIXME Aliasing\r\n if (d <= outlineMaxValue1 && d >= outlineMinValue0) {\r\n float a = _strokeColor.a;\r\n if (d <= outlineMinValue1) {\r\n a = a * smoothstep(outlineMinValue0, outlineMinValue1, d);\r\n }\r\n else {\r\n a = a * smoothstep(outlineMaxValue1, outlineMaxValue0, d);\r\n }\r\n gl_FragColor.rgb = mix(gl_FragColor.rgb * gl_FragColor.a, _strokeColor.rgb, a);\r\n gl_FragColor.a = gl_FragColor.a * (1.0 - a) + a;\r\n }\r\n }\r\n#endif\r\n\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(gl_FragColor);\r\n#endif\r\n}\r\n@end");
 
-;// CONCATENATED MODULE: ./src/chart/common/PointsMesh.js
+;// ./src/chart/common/PointsMesh.js
 
 
 
@@ -55405,7 +58804,7 @@ var PointsMesh = util_graphicGL.Mesh.extend(function () {
 });
 
 /* harmony default export */ const common_PointsMesh = (PointsMesh);
-;// CONCATENATED MODULE: ./src/chart/common/PointsBuilder.js
+;// ./src/chart/common/PointsBuilder.js
 
 
 
@@ -55992,7 +59391,7 @@ PointsBuilder.prototype = {
 
 /* harmony default export */ const common_PointsBuilder = (PointsBuilder);
 
-;// CONCATENATED MODULE: ./src/chart/scatter3D/Scatter3DView.js
+;// ./src/chart/scatter3D/Scatter3DView.js
 
 
 
@@ -56127,7 +59526,7 @@ PointsBuilder.prototype = {
         this.groupGL.removeAll();
     }
 }));
-;// CONCATENATED MODULE: ./src/chart/scatter3D/install.js
+;// ./src/chart/scatter3D/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -56178,11 +59577,11 @@ function scatter3D_install_install(registers) {
         }
     });
 }
-;// CONCATENATED MODULE: ./src/chart/scatter3D.js
+;// ./src/chart/scatter3D.js
 
 
 (0,external_echarts_.use)(scatter3D_install_install);
-;// CONCATENATED MODULE: ./src/chart/lines3D/lines3DLayout.js
+;// ./src/chart/lines3D/lines3DLayout.js
 
 
 var lines3DLayout_vec3 = dep_glmatrix.vec3;
@@ -56349,7 +59748,7 @@ function lines3DLayout(ecModel, api) {
         }
     });
 };
-;// CONCATENATED MODULE: ./src/chart/lines3D/Lines3DSeries.js
+;// ./src/chart/lines3D/Lines3DSeries.js
 
 
 /* harmony default export */ const Lines3DSeries = (external_echarts_.SeriesModel.extend({
@@ -56415,10 +59814,10 @@ function lines3DLayout(ecModel, api) {
         }
     }
 }));
-;// CONCATENATED MODULE: ./src/chart/lines3D/shader/trail2.glsl.js
+;// ./src/chart/lines3D/shader/trail2.glsl.js
 /* harmony default export */ const trail2_glsl = ("// Inspired by https://github.com/uber/deck.gl/tree/master/examples/trips/trips-layer\r\n@export ecgl.trail2.vertex\r\nattribute vec3 position: POSITION;\r\nattribute vec3 positionPrev;\r\nattribute vec3 positionNext;\r\nattribute float offset;\r\n// Distance to first point.\r\nattribute float dist;\r\nattribute float distAll;\r\n// Start distance/time\r\nattribute float start;\r\n\r\nattribute vec4 a_Color : COLOR;\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform vec4 viewport : VIEWPORT;\r\nuniform float near : NEAR;\r\n\r\nuniform float speed : 0;\r\nuniform float trailLength: 0.3;\r\nuniform float time;\r\nuniform float period: 1000;\r\n\r\nuniform float spotSize: 1;\r\n\r\nvarying vec4 v_Color;\r\nvarying float v_Percent;\r\nvarying float v_SpotPercent;\r\n\r\n@import ecgl.common.wireframe.vertexHeader\r\n\r\n@import ecgl.lines3D.clipNear\r\n\r\nvoid main()\r\n{\r\n @import ecgl.lines3D.expandLine\r\n\r\n gl_Position = currProj;\r\n\r\n v_Color = a_Color;\r\n\r\n @import ecgl.common.wireframe.vertexMain\r\n\r\n#ifdef CONSTANT_SPEED\r\n float t = mod((speed * time + start) / distAll, 1. + trailLength) - trailLength;\r\n#else\r\n float t = mod((time + start) / period, 1. + trailLength) - trailLength;\r\n#endif\r\n\r\n float trailLen = distAll * trailLength;\r\n\r\n v_Percent = (dist - t * distAll) / trailLen;\r\n\r\n v_SpotPercent = spotSize / distAll;\r\n\r\n // if (t > 1.0 - trailLength) {\r\n // float t2 = t - 1.0;\r\n // v_Percent = max(v_Percent, (dist - t2 * distAll) / trailLen);\r\n // }\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.trail2.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\nuniform float spotIntensity: 5;\r\n\r\nvarying vec4 v_Color;\r\nvarying float v_Percent;\r\nvarying float v_SpotPercent;\r\n\r\n@import ecgl.common.wireframe.fragmentHeader\r\n\r\n@import clay.util.srgb\r\n\r\nvoid main()\r\n{\r\n if (v_Percent > 1.0 || v_Percent < 0.0) {\r\n discard;\r\n }\r\n\r\n float fade = v_Percent;\r\n\r\n#ifdef SRGB_DECODE\r\n gl_FragColor = sRGBToLinear(color * v_Color);\r\n#else\r\n gl_FragColor = color * v_Color;\r\n#endif\r\n\r\n @import ecgl.common.wireframe.fragmentMain\r\n\r\n // Spot part\r\n // PENDING\r\n if (v_Percent > (1.0 - v_SpotPercent)) {\r\n gl_FragColor.rgb *= spotIntensity;\r\n // gl_FragColor.rgb *= (10.0 * (v_Percent - 1.0 + v_SpotPercent) / v_SpotPercent + 1.0);\r\n }\r\n\r\n gl_FragColor.a *= fade;\r\n}\r\n\r\n@end");
 
-;// CONCATENATED MODULE: ./src/chart/lines3D/TrailMesh2.js
+;// ./src/chart/lines3D/TrailMesh2.js
 
 
 
@@ -56574,7 +59973,7 @@ util_graphicGL.Shader.import(trail2_glsl);
         this.material.set('time', time);
     }
 }));
-;// CONCATENATED MODULE: ./src/chart/lines3D/Lines3DView.js
+;// ./src/chart/lines3D/Lines3DView.js
 
 
 
@@ -56763,7 +60162,7 @@ function getCoordSysSize(coordSys) {
         this.groupGL.removeAll();
     }
 }));
-;// CONCATENATED MODULE: ./src/chart/lines3D/install.js
+;// ./src/chart/lines3D/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -56795,11 +60194,11 @@ function lines3D_install_install(registers) {
         update: 'series.lines3D:toggleEffect'
     }, function () {});
 }
-;// CONCATENATED MODULE: ./src/chart/lines3D.js
+;// ./src/chart/lines3D.js
 
 
 (0,external_echarts_.use)(lines3D_install_install);
-;// CONCATENATED MODULE: ./src/chart/polygons3D/Polygons3DSeries.js
+;// ./src/chart/polygons3D/Polygons3DSeries.js
 
 
 
@@ -56910,7 +60309,7 @@ var Polygons3DSeries = external_echarts_.SeriesModel.extend({
 external_echarts_.util.merge(Polygons3DSeries.prototype, componentShadingMixin);
 
 /* harmony default export */ const polygons3D_Polygons3DSeries = (Polygons3DSeries);
-;// CONCATENATED MODULE: ./src/chart/polygons3D/Polygons3DView.js
+;// ./src/chart/polygons3D/Polygons3DView.js
 
 
 
@@ -57006,7 +60405,7 @@ external_echarts_.util.merge(Polygons3DSeries.prototype, componentShadingMixin);
         })
     }
 }));
-;// CONCATENATED MODULE: ./src/chart/polygons3D/install.js
+;// ./src/chart/polygons3D/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -57017,11 +60416,11 @@ function polygons3D_install_install(registers) {
     registers.registerChartView(Polygons3DView);
     registers.registerSeriesModel(polygons3D_Polygons3DSeries);
 }
-;// CONCATENATED MODULE: ./src/chart/polygons3D.js
+;// ./src/chart/polygons3D.js
 
 
 (0,external_echarts_.use)(polygons3D_install_install);
-;// CONCATENATED MODULE: ./src/chart/surface/SurfaceSeries.js
+;// ./src/chart/surface/SurfaceSeries.js
 
 
 
@@ -57226,7 +60625,7 @@ var SurfaceSeries = external_echarts_.SeriesModel.extend({
 external_echarts_.util.merge(SurfaceSeries.prototype, componentShadingMixin);
 
 /* harmony default export */ const surface_SurfaceSeries = (SurfaceSeries);
-;// CONCATENATED MODULE: ./src/chart/surface/SurfaceView.js
+;// ./src/chart/surface/SurfaceView.js
 
 
 
@@ -57719,7 +61118,7 @@ function isPointsNaN(pt) {
         this.groupGL.removeAll();
     }
 }));
-;// CONCATENATED MODULE: ./src/chart/surface/install.js
+;// ./src/chart/surface/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -57764,11 +61163,11 @@ function surface_install_install(registers) {
         });
     });
 }
-;// CONCATENATED MODULE: ./src/chart/surface.js
+;// ./src/chart/surface.js
 
 
 (0,external_echarts_.use)(surface_install_install);
-;// CONCATENATED MODULE: ./src/chart/map3D/Map3DSeries.js
+;// ./src/chart/map3D/Map3DSeries.js
 
 
 
@@ -57927,7 +61326,7 @@ external_echarts_.util.merge(Map3DSeries.prototype, componentLightMixin);
 external_echarts_.util.merge(Map3DSeries.prototype, componentShadingMixin);
 
 /* harmony default export */ const map3D_Map3DSeries = (Map3DSeries);
-;// CONCATENATED MODULE: ./src/chart/map3D/Map3DView.js
+;// ./src/chart/map3D/Map3DView.js
 
 
 
@@ -58039,7 +61438,7 @@ external_echarts_.util.merge(Map3DSeries.prototype, componentShadingMixin);
         this._geo3DBuilder.dispose();
     }
 }));
-;// CONCATENATED MODULE: ./src/chart/map3D/install.js
+;// ./src/chart/map3D/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -58066,11 +61465,11 @@ function map3D_install_install(registers) {
         });
     });
 }
-;// CONCATENATED MODULE: ./src/chart/map3D.js
+;// ./src/chart/map3D.js
 
 
 (0,external_echarts_.use)(map3D_install_install);
-;// CONCATENATED MODULE: ./src/chart/scatterGL/ScatterGLSeries.js
+;// ./src/chart/scatterGL/ScatterGLSeries.js
 
 
 /* harmony default export */ const ScatterGLSeries = (external_echarts_.SeriesModel.extend({
@@ -58133,7 +61532,108 @@ function map3D_install_install(registers) {
 
     }
 }));
-;// CONCATENATED MODULE: ./src/chart/common/GLViewHelper.js
+;// ./node_modules/zrender/lib/core/matrix.js
+function core_matrix_create() {
+    return [1, 0, 0, 1, 0, 0];
+}
+function matrix_identity(out) {
+    out[0] = 1;
+    out[1] = 0;
+    out[2] = 0;
+    out[3] = 1;
+    out[4] = 0;
+    out[5] = 0;
+    return out;
+}
+function core_matrix_copy(out, m) {
+    out[0] = m[0];
+    out[1] = m[1];
+    out[2] = m[2];
+    out[3] = m[3];
+    out[4] = m[4];
+    out[5] = m[5];
+    return out;
+}
+function core_matrix_mul(out, m1, m2) {
+    var out0 = m1[0] * m2[0] + m1[2] * m2[1];
+    var out1 = m1[1] * m2[0] + m1[3] * m2[1];
+    var out2 = m1[0] * m2[2] + m1[2] * m2[3];
+    var out3 = m1[1] * m2[2] + m1[3] * m2[3];
+    var out4 = m1[0] * m2[4] + m1[2] * m2[5] + m1[4];
+    var out5 = m1[1] * m2[4] + m1[3] * m2[5] + m1[5];
+    out[0] = out0;
+    out[1] = out1;
+    out[2] = out2;
+    out[3] = out3;
+    out[4] = out4;
+    out[5] = out5;
+    return out;
+}
+function matrix_translate(out, a, v) {
+    out[0] = a[0];
+    out[1] = a[1];
+    out[2] = a[2];
+    out[3] = a[3];
+    out[4] = a[4] + v[0];
+    out[5] = a[5] + v[1];
+    return out;
+}
+function matrix_rotate(out, a, rad, pivot) {
+    if (pivot === void 0) { pivot = [0, 0]; }
+    var aa = a[0];
+    var ac = a[2];
+    var atx = a[4];
+    var ab = a[1];
+    var ad = a[3];
+    var aty = a[5];
+    var st = Math.sin(rad);
+    var ct = Math.cos(rad);
+    out[0] = aa * ct + ab * st;
+    out[1] = -aa * st + ab * ct;
+    out[2] = ac * ct + ad * st;
+    out[3] = -ac * st + ct * ad;
+    out[4] = ct * (atx - pivot[0]) + st * (aty - pivot[1]) + pivot[0];
+    out[5] = ct * (aty - pivot[1]) - st * (atx - pivot[0]) + pivot[1];
+    return out;
+}
+function core_matrix_scale(out, a, v) {
+    var vx = v[0];
+    var vy = v[1];
+    out[0] = a[0] * vx;
+    out[1] = a[1] * vy;
+    out[2] = a[2] * vx;
+    out[3] = a[3] * vy;
+    out[4] = a[4] * vx;
+    out[5] = a[5] * vy;
+    return out;
+}
+function matrix_invert(out, a) {
+    var aa = a[0];
+    var ac = a[2];
+    var atx = a[4];
+    var ab = a[1];
+    var ad = a[3];
+    var aty = a[5];
+    var det = aa * ad - ab * ac;
+    if (!det) {
+        return null;
+    }
+    det = 1.0 / det;
+    out[0] = ad * det;
+    out[1] = -ab * det;
+    out[2] = -ac * det;
+    out[3] = aa * det;
+    out[4] = (ac * aty - ad * atx) * det;
+    out[5] = (ab * atx - aa * aty) * det;
+    return out;
+}
+function core_matrix_clone(a) {
+    var b = core_matrix_create();
+    core_matrix_copy(b, a);
+    return b;
+}
+
+;// ./src/chart/common/GLViewHelper.js
 
 
 
@@ -58144,7 +61644,7 @@ function GLViewHelper(viewGL) {
 
 GLViewHelper.prototype.reset = function (seriesModel, api) {
     this._updateCamera(api.getWidth(), api.getHeight(), api.getDevicePixelRatio());
-    this._viewTransform = matrix_create();
+    this._viewTransform = core_matrix_create();
     this.updateTransform(seriesModel, api);
 };
 
@@ -58153,7 +61653,7 @@ GLViewHelper.prototype.updateTransform = function (seriesModel, api) {
 
     if (coordinateSystem.getRoamTransform) {
 
-        invert(this._viewTransform, coordinateSystem.getRoamTransform());
+        matrix_invert(this._viewTransform, coordinateSystem.getRoamTransform());
 
         this._setCameraTransform(this._viewTransform);
 
@@ -58217,7 +61717,7 @@ GLViewHelper.prototype._updateCamera = function (width, height, dpr) {
 };
 
 /* harmony default export */ const common_GLViewHelper = (GLViewHelper);
-;// CONCATENATED MODULE: ./src/chart/scatterGL/ScatterGLView.js
+;// ./src/chart/scatterGL/ScatterGLView.js
 
 
 
@@ -58339,7 +61839,7 @@ GLViewHelper.prototype._updateCamera = function (width, height, dpr) {
         this.groupGL.removeAll();
     }
 }));
-;// CONCATENATED MODULE: ./src/chart/scatterGL/install.js
+;// ./src/chart/scatterGL/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -58355,6 +61855,10 @@ function scatterGL_install_install(registers) {
         reset: function (seriesModel) {
             var coordSys = seriesModel.coordinateSystem;
             var data = seriesModel.getData();
+
+            const boundaryRect = coordSys.master._rect;
+            var topLeft = { x: boundaryRect.x, y: boundaryRect.y };
+            var bottomRight = { x: boundaryRect.x + boundaryRect.width, y: boundaryRect.y + boundaryRect.height };
 
             var progress;
             if (coordSys) {
@@ -58386,8 +61890,8 @@ function scatterGL_install_install(registers) {
                             pt[1] = y;
 
                             pt = coordSys.dataToPoint(pt);
-                            points[offset] = pt[0];
-                            points[offset + 1] = pt[1];
+                            points[offset] = pt[0] >= topLeft.x && pt[0] <= bottomRight.x ? pt[0] : undefined;
+                            points[offset + 1] = pt[1] >= topLeft.y && pt[1] <= bottomRight.y ? pt[1] : undefined;
                         }
                         data.setLayout('points', points);
                     };
@@ -58398,11 +61902,11 @@ function scatterGL_install_install(registers) {
         }
     });
 }
-;// CONCATENATED MODULE: ./src/chart/scatterGL.js
+;// ./src/chart/scatterGL.js
 
 
 (0,external_echarts_.use)(scatterGL_install_install);
-;// CONCATENATED MODULE: ./src/chart/heatmapGL/HeatmapGLSeries.js
+;// ./src/chart/heatmapGL/HeatmapGLSeries.js
 /*
 * File based on scatterGL/ScatterGLSeries.js
 */
@@ -58412,7 +61916,7 @@ function scatterGL_install_install(registers) {
 
     type: 'series.heatmapGL',
 
-    dependencies: ['grid', 'polar', 'geo', 'singleAxis'],
+    dependencies: ['grid'],
 
     getInitialData: function () {
         return external_echarts_.helper.createList(this);
@@ -58442,7 +61946,7 @@ function scatterGL_install_install(registers) {
     },
 
 }));
-;// CONCATENATED MODULE: ./src/chart/common/SquareMesh.js
+;// ./src/chart/common/SquareMesh.js
 
 
 
@@ -58465,6 +61969,9 @@ var SquareMesh = util_graphicGL.Mesh.extend(function () {
 
     material.define('both', 'VERTEX_COLOR');
 
+    // Custom pick methods.
+    geometry.pick = this._pick.bind(this);
+
     return {
         geometry: geometry,
         material: material,
@@ -58473,25 +61980,64 @@ var SquareMesh = util_graphicGL.Mesh.extend(function () {
         sizeScale: 1
     };
 }, {
+    _pick: function (x, y, renderer, camera, renderable, out) {
+        var viewport = renderer.viewport;
+        var halfWidth = viewport.width / 2;
+        var halfHeight = viewport.height / 2;
+        var cx = x * halfWidth + halfWidth;
+        var cy = ((-1 * y * halfHeight) + halfHeight);
+
+        // From near to far. indices have been sorted.
+        for (var i = this.geometry.vertexCount; i >=0 ; i -= 6) {
+            var idx;
+            if (!this.geometry.indices) {
+                idx = i;
+            }
+            else {
+                idx = this.geometry.indices[i];
+            }
+
+            var point = new util_graphicGL.Vector3();
+            var pointPosition = this.geometry.attributes.position.get(idx, point.array);
+            var pointX = pointPosition[0];
+            var pointY = pointPosition[1];
+
+            // getting position two diagonal points for calculation cell width/height 
+            var cellP1 = this.geometry.attributes.position.get(idx, new util_graphicGL.Vector3());
+            var cellP2 = this.geometry.attributes.position.get(idx + 2, new util_graphicGL.Vector3());
+            var cellWidth = cellP2[0] - cellP1[0];
+            var cellHeight = cellP2[1] - cellP1[1];
+
+            if (cx > pointX && cx < pointX + cellWidth && cy > pointY && cy < pointY + cellHeight) {
+                var color = this.geometry.attributes.color.get(idx, new util_graphicGL.Vector4());
+                if (color[0] === 0 && color[1] === 0 && color[2] === 0) {
+                    return
+                }
+
+                var pointWorld = new util_graphicGL.Vector3();
+                util_graphicGL.Vector3.transformMat4(pointWorld, point, this.worldTransform);
+                out.push({
+                    vertexIndex: idx / 6,
+                    point: [point],
+                    pointWorld: pointWorld,
+                    target: this,
+                    distance: pointWorld.distance(camera.getWorldPosition())
+                });
+            }
+        }
+    },
 });
 
 /* harmony default export */ const common_SquareMesh = (SquareMesh);
-;// CONCATENATED MODULE: ./src/chart/common/SquareBuilder.js
+;// ./src/chart/common/SquareBuilder.js
 
 
 
 
 
-
-
-
-var SquareBuilder_SDF_RANGE = 20;
 
 var SquareBuilder_Z_2D = -10;
 
-function SquareBuilder_isSymbolSizeSame(a, b) {
-    return a && b && a[0] === b[0] && a[1] === b[1];
-}
 // TODO gl_PointSize has max value.
 function SquareBuilder(api) {
     this.rootNode = new util_graphicGL.Node();
@@ -58634,10 +62180,9 @@ SquareBuilder.prototype = {
             attributes.color.set(col + 4, rgbaArr);
             attributes.color.set(col + 5, rgbaArr);
         }
-        // console.log('positionArr', positionArr);
         this._updateLabelBuilder(seriesModel, start, end);
 
-        // this._updateHandler(seriesModel, ecModel, api);
+        this._updateHandler(seriesModel, ecModel, api);
 
         this._updateAnimation(seriesModel);
 
@@ -58647,6 +62192,11 @@ SquareBuilder.prototype = {
     getPointsMesh: function () {
         return this._mesh;
     },
+
+    dispose: function () {
+        this._labelsBuilder.dispose();
+    },
+
     _updateLabelBuilder: function (seriesModel, start, end) {
         var data = seriesModel.getData();
         var geometry = this._mesh.geometry;
@@ -58678,11 +62228,101 @@ SquareBuilder.prototype = {
         );
     },
 
+    _updateHandler: function (seriesModel, ecModel, api) {
+        var data = seriesModel.getData();
+        var pointsMesh = this._mesh;
+        var self = this;
+
+        var lastDataIndex = -1;
+        pointsMesh.seriesIndex = seriesModel.seriesIndex;
+
+        pointsMesh.off('mousemove');
+        pointsMesh.off('mouseout');
+
+        pointsMesh.on('mousemove', function (e) {
+            var dataIndex = e.vertexIndex + self._startDataIndex;
+
+            if (dataIndex !== lastDataIndex) {
+                if (this.highlightOnMouseover) {
+                    this.downplay(data, lastDataIndex);
+                    this.highlight(data, dataIndex);
+                    this._labelsBuilder.updateLabels([dataIndex]);
+                }
+            }
+
+            pointsMesh.dataIndex = dataIndex;
+            lastDataIndex = dataIndex;
+        }, this);
+
+        pointsMesh.on('mouseout', function (e) {
+            var dataIndex = e.vertexIndex + self._startDataIndex;
+            if (this.highlightOnMouseover) {
+                this.downplay(data, dataIndex);
+                this._labelsBuilder.updateLabels();
+            }
+            lastDataIndex = -1;
+            pointsMesh.dataIndex = -1;
+        }, this);
+    },
+
+    highlight: function (data, dataIndex) {
+        if (dataIndex > this._endDataIndex || dataIndex < this._startDataIndex) {
+            return;
+        }
+        var itemModel = data.getItemModel(dataIndex);
+        var emphasisItemStyleModel = itemModel.getModel('emphasis.itemStyle');
+        var emphasisColor = emphasisItemStyleModel.get('color');
+        var emphasisOpacity = emphasisItemStyleModel.get('opacity');
+        if (emphasisColor == null) {
+            var color = getItemVisualColor(data, dataIndex);
+            emphasisColor = external_echarts_.color.lift(color, -0.4);
+        }
+        if (emphasisOpacity == null) {
+            emphasisOpacity = getItemVisualOpacity(data, dataIndex);
+        }
+        var colorArr = util_graphicGL.parseColor(emphasisColor);
+        colorArr[3] *= emphasisOpacity;
+
+        const coefficient = dataIndex * 6;
+
+        this._mesh.geometry.attributes.color.set(coefficient - this._startDataIndex, colorArr);
+        this._mesh.geometry.attributes.color.set(coefficient + 1 - this._startDataIndex, colorArr);
+        this._mesh.geometry.attributes.color.set(coefficient + 2 - this._startDataIndex, colorArr);
+        this._mesh.geometry.attributes.color.set(coefficient + 3 - this._startDataIndex, colorArr);
+        this._mesh.geometry.attributes.color.set(coefficient + 4 - this._startDataIndex, colorArr);
+        this._mesh.geometry.attributes.color.set(coefficient + 5 - this._startDataIndex, colorArr);
+        this._mesh.geometry.dirtyAttribute('color');
+
+        this._api.getZr().refresh();
+    },
+    downplay: function (data, dataIndex) {
+        if (dataIndex > this._endDataIndex || dataIndex < this._startDataIndex) {
+            return;
+        }
+        var color = getItemVisualColor(data, dataIndex);
+        var opacity = getItemVisualOpacity(data, dataIndex);
+
+        var colorArr = util_graphicGL.parseColor(color);
+        colorArr[3] *= opacity;
+
+        const coefficient = dataIndex * 6;
+
+        this._mesh.geometry.attributes.color.set(coefficient - this._startDataIndex, colorArr);
+        this._mesh.geometry.attributes.color.set(coefficient + 1 - this._startDataIndex, colorArr);
+        this._mesh.geometry.attributes.color.set(coefficient + 2 - this._startDataIndex, colorArr);
+        this._mesh.geometry.attributes.color.set(coefficient + 3 - this._startDataIndex, colorArr);
+        this._mesh.geometry.attributes.color.set(coefficient + 4 - this._startDataIndex, colorArr);
+        this._mesh.geometry.attributes.color.set(coefficient + 5 - this._startDataIndex, colorArr);
+        this._mesh.geometry.dirtyAttribute('color');
+
+        this._api.getZr().refresh();
+    },
+
 };
 
 /* harmony default export */ const common_SquareBuilder = (SquareBuilder);
 
-;// CONCATENATED MODULE: ./src/chart/heatmapGL/HeatmapGLView.js
+;// ./src/chart/heatmapGL/HeatmapGLView.js
 /** 
  * File based on scatterGL/ScatterGLView.js
 */
@@ -58707,7 +62347,6 @@ SquareBuilder.prototype = {
 
         this.viewGL.add(this.groupGL);
 
-        this._pointsBuilderList = [];
         this._glViewHelper = new common_GLViewHelper(this.viewGL);
     },
 
@@ -58718,17 +62357,27 @@ SquareBuilder.prototype = {
         if (!seriesModel.getData().count()) {
             return;
         }
-       
-        var pointsBuilder = new common_SquareBuilder(api);
-        // changes - end
-        this._pointsBuilderList.length = 1;
 
-        this.groupGL.add(pointsBuilder.rootNode);
+        this._pointsBuilder = new common_SquareBuilder(api);
 
-        pointsBuilder.update(seriesModel, ecModel, api);
+        this.groupGL.add(this._pointsBuilder.rootNode);
+
+        this._pointsBuilder.update(seriesModel, ecModel, api);
     },
+
+    dispose: function () {
+        this.groupGL.removeAll();
+        if (this._pointsBuilder && this._pointsBuilder.dispose) {
+            this._pointsBuilder.dispose();
+        }
+    },
+
+    remove: function () {
+        this.groupGL.removeAll();
+    }
 }));
-;// CONCATENATED MODULE: ./src/chart/heatmapGL/install.js
+
+;// ./src/chart/heatmapGL/install.js
 /*
 * File based on scatterGL/install.js
 */
@@ -58755,20 +62404,7 @@ function heatmapGL_install_install(registers) {
                     return data.mapDimension(dim);
                 }).slice(0, 2);
                 var pt = [];
-                if (dims.length === 1) {
-                    progress = function (params) {
-                        var points = new Float32Array((params.end - params.start) * 2);
-                        for (var idx = params.start; idx < params.end; idx++) {
-                            var offset = (idx - params.start) * 2;
-                            var x = data.get(dims[0], idx);
-                            var pt = coordSys.dataToPoint(x);
-                            points[offset] = pt[0];
-                            points[offset + 1] = pt[1];
-                        }
-                        data.setLayout('points', points);
-                    };
-                }
-                else if (dims.length === 2) {
+                if (dims.length === 2) {
                     progress = function (params) {
                         var points = new Float32Array((params.end - params.start) * 2);
                         for (var idx = params.start; idx < params.end; idx++) {
@@ -58791,11 +62427,11 @@ function heatmapGL_install_install(registers) {
         }
     });
 }
-;// CONCATENATED MODULE: ./src/chart/heatmapGL.js
+;// ./src/chart/heatmapGL.js
 
 
 (0,external_echarts_.use)(heatmapGL_install_install);
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/data/Graph.js
+;// ./node_modules/echarts/lib/data/Graph.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -58839,15 +62475,12 @@ function heatmapGL_install_install(registers) {
 * specific language governing permissions and limitations
 * under the License.
 */
- // id may be function name of Object, add a prefix to avoid this problem.
 
+// id may be function name of Object, add a prefix to avoid this problem.
 function generateNodeKey(id) {
   return '_EC_' + id;
 }
-
-var Graph_Graph =
-/** @class */
-function () {
+var Graph_Graph = /** @class */function () {
   function Graph(directed) {
     this.type = 'graph';
     this.nodes = [];
@@ -58857,288 +62490,227 @@ function () {
      * @type {Object.<string, module:echarts/data/Graph.Edge>}
      * @private
      */
-
     this._edgesMap = {};
     this._directed = directed || false;
   }
   /**
    * If is directed graph
    */
-
-
   Graph.prototype.isDirected = function () {
     return this._directed;
   };
-
   ;
   /**
    * Add a new node
    */
-
   Graph.prototype.addNode = function (id, dataIndex) {
     id = id == null ? '' + dataIndex : '' + id;
     var nodesMap = this._nodesMap;
-
     if (nodesMap[generateNodeKey(id)]) {
       if (true) {
         console.error('Graph nodes have duplicate name or id');
       }
-
       return;
     }
-
     var node = new GraphNode(id, dataIndex);
     node.hostGraph = this;
     this.nodes.push(node);
     nodesMap[generateNodeKey(id)] = node;
     return node;
   };
-
   ;
   /**
    * Get node by data index
    */
-
   Graph.prototype.getNodeByIndex = function (dataIndex) {
     var rawIdx = this.data.getRawIndex(dataIndex);
     return this.nodes[rawIdx];
   };
-
   ;
   /**
    * Get node by id
    */
-
   Graph.prototype.getNodeById = function (id) {
     return this._nodesMap[generateNodeKey(id)];
   };
-
   ;
   /**
    * Add a new edge
    */
-
   Graph.prototype.addEdge = function (n1, n2, dataIndex) {
     var nodesMap = this._nodesMap;
-    var edgesMap = this._edgesMap; // PENDING
-
-    if (isNumber(n1)) {
+    var edgesMap = this._edgesMap;
+    // PENDING
+    if (util_isNumber(n1)) {
       n1 = this.nodes[n1];
     }
-
-    if (isNumber(n2)) {
+    if (util_isNumber(n2)) {
       n2 = this.nodes[n2];
     }
-
     if (!(n1 instanceof GraphNode)) {
       n1 = nodesMap[generateNodeKey(n1)];
     }
-
     if (!(n2 instanceof GraphNode)) {
       n2 = nodesMap[generateNodeKey(n2)];
     }
-
     if (!n1 || !n2) {
       return;
     }
-
     var key = n1.id + '-' + n2.id;
     var edge = new GraphEdge(n1, n2, dataIndex);
     edge.hostGraph = this;
-
     if (this._directed) {
       n1.outEdges.push(edge);
       n2.inEdges.push(edge);
     }
-
     n1.edges.push(edge);
-
     if (n1 !== n2) {
       n2.edges.push(edge);
     }
-
     this.edges.push(edge);
     edgesMap[key] = edge;
     return edge;
   };
-
   ;
   /**
    * Get edge by data index
    */
-
   Graph.prototype.getEdgeByIndex = function (dataIndex) {
     var rawIdx = this.edgeData.getRawIndex(dataIndex);
     return this.edges[rawIdx];
   };
-
   ;
   /**
    * Get edge by two linked nodes
    */
-
   Graph.prototype.getEdge = function (n1, n2) {
     if (n1 instanceof GraphNode) {
       n1 = n1.id;
     }
-
     if (n2 instanceof GraphNode) {
       n2 = n2.id;
     }
-
     var edgesMap = this._edgesMap;
-
     if (this._directed) {
       return edgesMap[n1 + '-' + n2];
     } else {
       return edgesMap[n1 + '-' + n2] || edgesMap[n2 + '-' + n1];
     }
   };
-
   ;
   /**
    * Iterate all nodes
    */
-
   Graph.prototype.eachNode = function (cb, context) {
     var nodes = this.nodes;
     var len = nodes.length;
-
     for (var i = 0; i < len; i++) {
       if (nodes[i].dataIndex >= 0) {
         cb.call(context, nodes[i], i);
       }
     }
   };
-
   ;
   /**
    * Iterate all edges
    */
-
   Graph.prototype.eachEdge = function (cb, context) {
     var edges = this.edges;
     var len = edges.length;
-
     for (var i = 0; i < len; i++) {
       if (edges[i].dataIndex >= 0 && edges[i].node1.dataIndex >= 0 && edges[i].node2.dataIndex >= 0) {
         cb.call(context, edges[i], i);
       }
     }
   };
-
   ;
   /**
    * Breadth first traverse
    * Return true to stop traversing
    */
-
   Graph.prototype.breadthFirstTraverse = function (cb, startNode, direction, context) {
     if (!(startNode instanceof GraphNode)) {
       startNode = this._nodesMap[generateNodeKey(startNode)];
     }
-
     if (!startNode) {
       return;
     }
-
     var edgeType = direction === 'out' ? 'outEdges' : direction === 'in' ? 'inEdges' : 'edges';
-
     for (var i = 0; i < this.nodes.length; i++) {
       this.nodes[i].__visited = false;
     }
-
     if (cb.call(context, startNode, null)) {
       return;
     }
-
     var queue = [startNode];
-
     while (queue.length) {
       var currentNode = queue.shift();
       var edges = currentNode[edgeType];
-
       for (var i = 0; i < edges.length; i++) {
         var e = edges[i];
         var otherNode = e.node1 === currentNode ? e.node2 : e.node1;
-
         if (!otherNode.__visited) {
           if (cb.call(context, otherNode, currentNode)) {
             // Stop traversing
             return;
           }
-
           queue.push(otherNode);
           otherNode.__visited = true;
         }
       }
     }
   };
-
-  ; // TODO
+  ;
+  // TODO
   // depthFirstTraverse(
   //     cb, startNode, direction, context
   // ) {
   // };
   // Filter update
-
   Graph.prototype.update = function () {
     var data = this.data;
     var edgeData = this.edgeData;
     var nodes = this.nodes;
     var edges = this.edges;
-
     for (var i = 0, len = nodes.length; i < len; i++) {
       nodes[i].dataIndex = -1;
     }
-
     for (var i = 0, len = data.count(); i < len; i++) {
       nodes[data.getRawIndex(i)].dataIndex = i;
     }
-
     edgeData.filterSelf(function (idx) {
       var edge = edges[edgeData.getRawIndex(idx)];
       return edge.node1.dataIndex >= 0 && edge.node2.dataIndex >= 0;
-    }); // Update edge
-
+    });
+    // Update edge
     for (var i = 0, len = edges.length; i < len; i++) {
       edges[i].dataIndex = -1;
     }
-
     for (var i = 0, len = edgeData.count(); i < len; i++) {
       edges[edgeData.getRawIndex(i)].dataIndex = i;
     }
   };
-
   ;
   /**
    * @return {module:echarts/data/Graph}
    */
-
   Graph.prototype.clone = function () {
     var graph = new Graph(this._directed);
     var nodes = this.nodes;
     var edges = this.edges;
-
     for (var i = 0; i < nodes.length; i++) {
       graph.addNode(nodes[i].id, nodes[i].dataIndex);
     }
-
     for (var i = 0; i < edges.length; i++) {
       var e = edges[i];
       graph.addEdge(e.node1.id, e.node2.id, e.dataIndex);
     }
-
     return graph;
   };
-
   ;
   return Graph;
 }();
-
-var GraphNode =
-/** @class */
-function () {
+var GraphNode = /** @class */function () {
   function GraphNode(id, dataIndex) {
     this.inEdges = [];
     this.outEdges = [];
@@ -59150,177 +62722,158 @@ function () {
   /**
    * @return {number}
    */
-
-
   GraphNode.prototype.degree = function () {
     return this.edges.length;
   };
   /**
    * @return {number}
    */
-
-
   GraphNode.prototype.inDegree = function () {
     return this.inEdges.length;
   };
   /**
   * @return {number}
   */
-
-
   GraphNode.prototype.outDegree = function () {
     return this.outEdges.length;
   };
-
   GraphNode.prototype.getModel = function (path) {
     if (this.dataIndex < 0) {
       return;
     }
-
     var graph = this.hostGraph;
     var itemModel = graph.data.getItemModel(this.dataIndex);
     return itemModel.getModel(path);
   };
-
   GraphNode.prototype.getAdjacentDataIndices = function () {
     var dataIndices = {
       edge: [],
       node: []
     };
-
     for (var i = 0; i < this.edges.length; i++) {
       var adjacentEdge = this.edges[i];
-
       if (adjacentEdge.dataIndex < 0) {
         continue;
       }
-
       dataIndices.edge.push(adjacentEdge.dataIndex);
       dataIndices.node.push(adjacentEdge.node1.dataIndex, adjacentEdge.node2.dataIndex);
     }
-
     return dataIndices;
   };
-
   GraphNode.prototype.getTrajectoryDataIndices = function () {
-    var connectedEdgesMap = createHashMap();
-    var connectedNodesMap = createHashMap();
-
-    for (var i = 0; i < this.edges.length; i++) {
+    var connectedEdgesMap = util_createHashMap();
+    var connectedNodesMap = util_createHashMap();
+    for (var i = 0, len = this.edges.length; i < len; i++) {
       var adjacentEdge = this.edges[i];
-
       if (adjacentEdge.dataIndex < 0) {
         continue;
       }
-
       connectedEdgesMap.set(adjacentEdge.dataIndex, true);
       var sourceNodesQueue = [adjacentEdge.node1];
       var targetNodesQueue = [adjacentEdge.node2];
       var nodeIteratorIndex = 0;
-
       while (nodeIteratorIndex < sourceNodesQueue.length) {
         var sourceNode = sourceNodesQueue[nodeIteratorIndex];
         nodeIteratorIndex++;
         connectedNodesMap.set(sourceNode.dataIndex, true);
-
-        for (var j = 0; j < sourceNode.inEdges.length; j++) {
-          connectedEdgesMap.set(sourceNode.inEdges[j].dataIndex, true);
-          sourceNodesQueue.push(sourceNode.inEdges[j].node1);
+        var sourceNodeInEdges = sourceNode.inEdges;
+        for (var j = 0, len_1 = sourceNodeInEdges.length, inEdge = void 0, inEdgeDataIndex = void 0; j < len_1; j++) {
+          inEdge = sourceNodeInEdges[j];
+          inEdgeDataIndex = inEdge.dataIndex;
+          if (inEdgeDataIndex >= 0 && !connectedEdgesMap.hasKey(inEdgeDataIndex)) {
+            connectedEdgesMap.set(inEdgeDataIndex, true);
+            sourceNodesQueue.push(inEdge.node1);
+          }
         }
       }
-
       nodeIteratorIndex = 0;
-
       while (nodeIteratorIndex < targetNodesQueue.length) {
         var targetNode = targetNodesQueue[nodeIteratorIndex];
         nodeIteratorIndex++;
         connectedNodesMap.set(targetNode.dataIndex, true);
-
-        for (var j = 0; j < targetNode.outEdges.length; j++) {
-          connectedEdgesMap.set(targetNode.outEdges[j].dataIndex, true);
-          targetNodesQueue.push(targetNode.outEdges[j].node2);
+        var targetNodeOutEdges = targetNode.outEdges;
+        for (var j = 0, len_2 = targetNodeOutEdges.length, outEdge = void 0, outEdgeDataIndex = void 0; j < len_2; j++) {
+          outEdge = targetNodeOutEdges[j];
+          outEdgeDataIndex = outEdge.dataIndex;
+          if (outEdgeDataIndex >= 0 && !connectedEdgesMap.hasKey(outEdgeDataIndex)) {
+            connectedEdgesMap.set(outEdgeDataIndex, true);
+            targetNodesQueue.push(outEdge.node2);
+          }
         }
       }
     }
-
     return {
       edge: connectedEdgesMap.keys(),
       node: connectedNodesMap.keys()
     };
   };
-
   return GraphNode;
 }();
-
-var GraphEdge =
-/** @class */
-function () {
+var GraphEdge = /** @class */function () {
   function GraphEdge(n1, n2, dataIndex) {
     this.dataIndex = -1;
     this.node1 = n1;
     this.node2 = n2;
     this.dataIndex = dataIndex == null ? -1 : dataIndex;
-  } // eslint-disable-next-line @typescript-eslint/no-unused-vars
-
-
+  }
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   GraphEdge.prototype.getModel = function (path) {
     if (this.dataIndex < 0) {
       return;
     }
-
     var graph = this.hostGraph;
     var itemModel = graph.edgeData.getItemModel(this.dataIndex);
     return itemModel.getModel(path);
   };
-
   GraphEdge.prototype.getAdjacentDataIndices = function () {
     return {
       edge: [this.dataIndex],
       node: [this.node1.dataIndex, this.node2.dataIndex]
     };
   };
-
   GraphEdge.prototype.getTrajectoryDataIndices = function () {
-    var connectedEdgesMap = createHashMap();
-    var connectedNodesMap = createHashMap();
+    var connectedEdgesMap = util_createHashMap();
+    var connectedNodesMap = util_createHashMap();
     connectedEdgesMap.set(this.dataIndex, true);
     var sourceNodes = [this.node1];
     var targetNodes = [this.node2];
     var nodeIteratorIndex = 0;
-
     while (nodeIteratorIndex < sourceNodes.length) {
       var sourceNode = sourceNodes[nodeIteratorIndex];
       nodeIteratorIndex++;
       connectedNodesMap.set(sourceNode.dataIndex, true);
-
-      for (var j = 0; j < sourceNode.inEdges.length; j++) {
-        connectedEdgesMap.set(sourceNode.inEdges[j].dataIndex, true);
-        sourceNodes.push(sourceNode.inEdges[j].node1);
+      var sourceNodeInEdges = sourceNode.inEdges;
+      for (var j = 0, len = sourceNodeInEdges.length, inEdge = void 0, inEdgeDataIndex = void 0; j < len; j++) {
+        inEdge = sourceNode.inEdges[j];
+        inEdgeDataIndex = inEdge.dataIndex;
+        if (inEdgeDataIndex >= 0 && !connectedEdgesMap.hasKey(inEdgeDataIndex)) {
+          connectedEdgesMap.set(inEdgeDataIndex, true);
+          sourceNodes.push(inEdge.node1);
+        }
       }
     }
-
     nodeIteratorIndex = 0;
-
     while (nodeIteratorIndex < targetNodes.length) {
       var targetNode = targetNodes[nodeIteratorIndex];
       nodeIteratorIndex++;
       connectedNodesMap.set(targetNode.dataIndex, true);
-
-      for (var j = 0; j < targetNode.outEdges.length; j++) {
-        connectedEdgesMap.set(targetNode.outEdges[j].dataIndex, true);
-        targetNodes.push(targetNode.outEdges[j].node2);
+      var targetNodeOutEdges = targetNode.outEdges;
+      for (var j = 0, len = targetNodeOutEdges.length, outEdge = void 0, outEdgeDataIndex = void 0; j < len; j++) {
+        outEdge = targetNode.outEdges[j];
+        outEdgeDataIndex = outEdge.dataIndex;
+        if (outEdgeDataIndex >= 0 && !connectedEdgesMap.hasKey(outEdgeDataIndex)) {
+          connectedEdgesMap.set(outEdgeDataIndex, true);
+          targetNodes.push(outEdge.node2);
+        }
       }
     }
-
     return {
       edge: connectedEdgesMap.keys(),
       node: connectedNodesMap.keys()
     };
   };
-
   return GraphEdge;
 }();
-
 function createGraphDataProxyMixin(hostName, dataName) {
   return {
     /**
@@ -59351,15 +62904,14 @@ function createGraphDataProxyMixin(hostName, dataName) {
     }
   };
 }
-
 ;
 ;
 ;
-mixin(GraphNode, createGraphDataProxyMixin('hostGraph', 'data'));
-mixin(GraphEdge, createGraphDataProxyMixin('hostGraph', 'edgeData'));
+util_mixin(GraphNode, createGraphDataProxyMixin('hostGraph', 'data'));
+util_mixin(GraphEdge, createGraphDataProxyMixin('hostGraph', 'edgeData'));
 /* harmony default export */ const data_Graph = (Graph_Graph);
 
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/data/helper/linkSeriesData.js
+;// ./node_modules/echarts/lib/data/helper/linkSeriesData.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -59403,18 +62955,15 @@ mixin(GraphEdge, createGraphDataProxyMixin('hostGraph', 'edgeData'));
 * specific language governing permissions and limitations
 * under the License.
 */
-
 /**
  * Link lists and struct (graph or tree)
  */
 
 
 var inner = makeInner();
-
 function linkSeriesData(opt) {
   var mainData = opt.mainData;
   var datas = opt.datas;
-
   if (!datas) {
     datas = {
       main: mainData
@@ -59423,51 +62972,46 @@ function linkSeriesData(opt) {
       main: 'data'
     };
   }
-
   opt.datas = opt.mainData = null;
-  linkAll(mainData, datas, opt); // Porxy data original methods.
-
-  each(datas, function (data) {
-    each(mainData.TRANSFERABLE_METHODS, function (methodName) {
-      data.wrapMethod(methodName, curry(transferInjection, opt));
+  linkAll(mainData, datas, opt);
+  // Porxy data original methods.
+  util_each(datas, function (data) {
+    util_each(mainData.TRANSFERABLE_METHODS, function (methodName) {
+      data.wrapMethod(methodName, util_curry(transferInjection, opt));
     });
-  }); // Beyond transfer, additional features should be added to `cloneShallow`.
-
-  mainData.wrapMethod('cloneShallow', curry(cloneShallowInjection, opt)); // Only mainData trigger change, because struct.update may trigger
+  });
+  // Beyond transfer, additional features should be added to `cloneShallow`.
+  mainData.wrapMethod('cloneShallow', util_curry(cloneShallowInjection, opt));
+  // Only mainData trigger change, because struct.update may trigger
   // another changable methods, which may bring about dead lock.
-
-  each(mainData.CHANGABLE_METHODS, function (methodName) {
-    mainData.wrapMethod(methodName, curry(changeInjection, opt));
-  }); // Make sure datas contains mainData.
-
-  assert(datas[mainData.dataType] === mainData);
+  util_each(mainData.CHANGABLE_METHODS, function (methodName) {
+    mainData.wrapMethod(methodName, util_curry(changeInjection, opt));
+  });
+  // Make sure datas contains mainData.
+  util_assert(datas[mainData.dataType] === mainData);
 }
-
 function transferInjection(opt, res) {
   if (isMainData(this)) {
     // Transfer datas to new main data.
-    var datas = util_extend({}, inner(this).datas);
+    var datas = core_util_extend({}, inner(this).datas);
     datas[this.dataType] = res;
     linkAll(res, datas, opt);
   } else {
     // Modify the reference in main data to point newData.
     linkSingle(res, this.dataType, inner(this).mainData, opt);
   }
-
   return res;
 }
-
 function changeInjection(opt, res) {
   opt.struct && opt.struct.update();
   return res;
 }
-
 function cloneShallowInjection(opt, res) {
   // cloneShallow, which brings about some fragilities, may be inappropriate
   // to be exposed as an API. So for implementation simplicity we can make
   // the restriction that cloneShallow of not-mainData should not be invoked
   // outside, but only be invoked here.
-  each(inner(res).datas, function (data, dataType) {
+  util_each(inner(res).datas, function (data, dataType) {
     data !== res && linkSingle(data.cloneShallow(), dataType, res, opt);
   });
   return res;
@@ -59478,8 +63022,6 @@ function cloneShallowInjection(opt, res) {
  * @public
  * @param [dataType] If not specified, return mainData.
  */
-
-
 function getLinkedData(dataType) {
   var mainData = inner(this).mainData;
   return dataType == null || mainData == null ? mainData : inner(mainData).datas[dataType];
@@ -59487,48 +63029,40 @@ function getLinkedData(dataType) {
 /**
  * Get list of all linked data
  */
-
-
 function getLinkedDataAll() {
   var mainData = inner(this).mainData;
   return mainData == null ? [{
     data: mainData
-  }] : map(keys(inner(mainData).datas), function (type) {
+  }] : util_map(util_keys(inner(mainData).datas), function (type) {
     return {
       type: type,
       data: inner(mainData).datas[type]
     };
   });
 }
-
 function isMainData(data) {
   return inner(data).mainData === data;
 }
-
 function linkAll(mainData, datas, opt) {
   inner(mainData).datas = {};
-  each(datas, function (data, dataType) {
+  util_each(datas, function (data, dataType) {
     linkSingle(data, dataType, mainData, opt);
   });
 }
-
 function linkSingle(data, dataType, mainData, opt) {
   inner(mainData).datas[dataType] = data;
   inner(data).mainData = mainData;
   data.dataType = dataType;
-
   if (opt.struct) {
     data[opt.structAttr] = opt.struct;
     opt.struct[opt.datasAttr[dataType]] = data;
-  } // Supplement method.
-
-
+  }
+  // Supplement method.
   data.getLinkedData = getLinkedData;
   data.getLinkedDataAll = getLinkedDataAll;
 }
-
 /* harmony default export */ const helper_linkSeriesData = (linkSeriesData);
-;// CONCATENATED MODULE: ./node_modules/echarts/lib/data/helper/linkList.js
+;// ./node_modules/echarts/lib/data/helper/linkList.js
 
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
@@ -59575,7 +63109,7 @@ function linkSingle(data, dataType, mainData, opt) {
 // TODO: this module is only for compatibility with echarts-gl
 
 /* harmony default export */ const linkList = (helper_linkSeriesData);
-;// CONCATENATED MODULE: ./src/chart/graphGL/createGraphFromNodeEdge.js
+;// ./src/chart/graphGL/createGraphFromNodeEdge.js
 
 
 
@@ -59634,7 +63168,7 @@ function linkSingle(data, dataType, mainData, opt) {
 
     return graph;
 };
-;// CONCATENATED MODULE: ./src/chart/graphGL/GraphGLSeries.js
+;// ./src/chart/graphGL/GraphGLSeries.js
 
 
 
@@ -59916,7 +63450,7 @@ var GraphSeries = external_echarts_.SeriesModel.extend({
 });
 
 /* harmony default export */ const GraphGLSeries = (GraphSeries);
-;// CONCATENATED MODULE: ./src/util/geometry/Lines2D.js
+;// ./src/util/geometry/Lines2D.js
 /**
  * Lines geometry
  * Use screen space projected lines lineWidth > MAX_LINE_WIDTH
@@ -60383,10 +63917,10 @@ var Lines2D_LinesGeometry = src_Geometry.extend(function () {
 external_echarts_.util.defaults(Lines2D_LinesGeometry.prototype, dynamicConvertMixin);
 
 /* harmony default export */ const Lines2D = (Lines2D_LinesGeometry);
-;// CONCATENATED MODULE: ./src/chart/graphGL/forceAtlas2.glsl.js
+;// ./src/chart/graphGL/forceAtlas2.glsl.js
 /* harmony default export */ const forceAtlas2_glsl = ("@export ecgl.forceAtlas2.updateNodeRepulsion\r\n\r\n#define NODE_COUNT 0\r\n\r\nuniform sampler2D positionTex;\r\n\r\nuniform vec2 textureSize;\r\nuniform float gravity;\r\nuniform float scaling;\r\nuniform vec2 gravityCenter;\r\n\r\nuniform bool strongGravityMode;\r\nuniform bool preventOverlap;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nvoid main() {\r\n\r\n vec4 n0 = texture2D(positionTex, v_Texcoord);\r\n\r\n vec2 force = vec2(0.0);\r\n for (int i = 0; i < NODE_COUNT; i++) {\r\n vec2 uv = vec2(\r\n mod(float(i), textureSize.x) / (textureSize.x - 1.0),\r\n floor(float(i) / textureSize.x) / (textureSize.y - 1.0)\r\n );\r\n vec4 n1 = texture2D(positionTex, uv);\r\n\r\n vec2 dir = n0.xy - n1.xy;\r\n float d2 = dot(dir, dir);\r\n\r\n if (d2 > 0.0) {\r\n float factor = 0.0;\r\n if (preventOverlap) {\r\n float d = sqrt(d2);\r\n d = d - n0.w - n1.w;\r\n if (d > 0.0) {\r\n factor = scaling * n0.z * n1.z / (d * d);\r\n }\r\n else if (d < 0.0) {\r\n // A stronger repulsion if overlap\r\n factor = scaling * 100.0 * n0.z * n1.z;\r\n }\r\n }\r\n else {\r\n // Divide factor by an extra `d` to normalize the `v`\r\n factor = scaling * n0.z * n1.z / d2;\r\n }\r\n force += dir * factor;\r\n }\r\n }\r\n\r\n // Gravity\r\n vec2 dir = gravityCenter - n0.xy;\r\n float d = 1.0;\r\n if (!strongGravityMode) {\r\n d = length(dir);\r\n }\r\n\r\n force += dir * n0.z * gravity / (d + 1.0);\r\n\r\n gl_FragColor = vec4(force, 0.0, 1.0);\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.updateEdgeAttraction.vertex\r\n\r\nattribute vec2 node1;\r\nattribute vec2 node2;\r\nattribute float weight;\r\n\r\nuniform sampler2D positionTex;\r\nuniform float edgeWeightInfluence;\r\nuniform bool preventOverlap;\r\nuniform bool linLogMode;\r\n\r\nuniform vec2 windowSize: WINDOW_SIZE;\r\n\r\nvarying vec2 v_Force;\r\n\r\nvoid main() {\r\n\r\n vec4 n0 = texture2D(positionTex, node1);\r\n vec4 n1 = texture2D(positionTex, node2);\r\n\r\n vec2 dir = n1.xy - n0.xy;\r\n float d = length(dir);\r\n float w;\r\n if (edgeWeightInfluence == 0.0) {\r\n w = 1.0;\r\n }\r\n else if (edgeWeightInfluence == 1.0) {\r\n w = weight;\r\n }\r\n else {\r\n w = pow(weight, edgeWeightInfluence);\r\n }\r\n // Add 0.5 offset.\r\n // PENDING.\r\n vec2 offset = vec2(1.0 / windowSize.x, 1.0 / windowSize.y);\r\n vec2 scale = vec2((windowSize.x - 1.0) / windowSize.x, (windowSize.y - 1.0) / windowSize.y);\r\n vec2 pos = node1 * scale * 2.0 - 1.0;\r\n gl_Position = vec4(pos + offset, 0.0, 1.0);\r\n gl_PointSize = 1.0;\r\n\r\n float factor;\r\n if (preventOverlap) {\r\n d = d - n1.w - n0.w;\r\n }\r\n if (d <= 0.0) {\r\n v_Force = vec2(0.0);\r\n return;\r\n }\r\n\r\n if (linLogMode) {\r\n // Divide factor by an extra `d` to normalize the `v`\r\n factor = w * log(d) / d;\r\n }\r\n else {\r\n factor = w;\r\n }\r\n v_Force = dir * factor;\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.updateEdgeAttraction.fragment\r\n\r\nvarying vec2 v_Force;\r\n\r\nvoid main() {\r\n gl_FragColor = vec4(v_Force, 0.0, 0.0);\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.calcWeightedSum.vertex\r\n\r\nattribute vec2 node;\r\n\r\nvarying vec2 v_NodeUv;\r\n\r\nvoid main() {\r\n\r\n v_NodeUv = node;\r\n gl_Position = vec4(0.0, 0.0, 0.0, 1.0);\r\n gl_PointSize = 1.0;\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.calcWeightedSum.fragment\r\n\r\nvarying vec2 v_NodeUv;\r\n\r\nuniform sampler2D positionTex;\r\nuniform sampler2D forceTex;\r\nuniform sampler2D forcePrevTex;\r\n\r\nvoid main() {\r\n vec2 force = texture2D(forceTex, v_NodeUv).rg;\r\n vec2 forcePrev = texture2D(forcePrevTex, v_NodeUv).rg;\r\n\r\n float mass = texture2D(positionTex, v_NodeUv).z;\r\n float swing = length(force - forcePrev) * mass;\r\n float traction = length(force + forcePrev) * 0.5 * mass;\r\n\r\n gl_FragColor = vec4(swing, traction, 0.0, 0.0);\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.calcGlobalSpeed\r\n\r\nuniform sampler2D globalSpeedPrevTex;\r\nuniform sampler2D weightedSumTex;\r\nuniform float jitterTolerence;\r\n\r\nvoid main() {\r\n vec2 weightedSum = texture2D(weightedSumTex, vec2(0.5)).xy;\r\n float prevGlobalSpeed = texture2D(globalSpeedPrevTex, vec2(0.5)).x;\r\n float globalSpeed = jitterTolerence * jitterTolerence\r\n // traction / swing\r\n * weightedSum.y / weightedSum.x;\r\n if (prevGlobalSpeed > 0.0) {\r\n globalSpeed = min(globalSpeed / prevGlobalSpeed, 1.5) * prevGlobalSpeed;\r\n }\r\n gl_FragColor = vec4(globalSpeed, 0.0, 0.0, 1.0);\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.updatePosition\r\n\r\nuniform sampler2D forceTex;\r\nuniform sampler2D forcePrevTex;\r\nuniform sampler2D positionTex;\r\nuniform sampler2D globalSpeedTex;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\nvoid main() {\r\n vec2 force = texture2D(forceTex, v_Texcoord).xy;\r\n vec2 forcePrev = texture2D(forcePrevTex, v_Texcoord).xy;\r\n vec4 node = texture2D(positionTex, v_Texcoord);\r\n\r\n float globalSpeed = texture2D(globalSpeedTex, vec2(0.5)).r;\r\n float swing = length(force - forcePrev);\r\n float speed = 0.1 * globalSpeed / (0.1 + globalSpeed * sqrt(swing));\r\n\r\n // Additional constraint to prevent local speed gets too high\r\n float df = length(force);\r\n if (df > 0.0) {\r\n speed = min(df * speed, 10.0) / df;\r\n\r\n gl_FragColor = vec4(node.xy + speed * force, node.zw);\r\n }\r\n else {\r\n gl_FragColor = node;\r\n }\r\n}\r\n@end\r\n\r\n// For edge draw\r\n@export ecgl.forceAtlas2.edges.vertex\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nattribute vec2 node;\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n\r\nuniform sampler2D positionTex;\r\n\r\nvoid main()\r\n{\r\n gl_Position = worldViewProjection * vec4(\r\n texture2D(positionTex, node).xy, -10.0, 1.0\r\n );\r\n v_Color = a_Color;\r\n}\r\n@end\r\n\r\n@export ecgl.forceAtlas2.edges.fragment\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\nvarying vec4 v_Color;\r\nvoid main() {\r\n gl_FragColor = color * v_Color;\r\n}\r\n@end");
 
-;// CONCATENATED MODULE: ./src/chart/graphGL/ForceAtlas2GPU.js
+;// ./src/chart/graphGL/ForceAtlas2GPU.js
 
 
 
@@ -60854,7 +64388,7 @@ ForceAtlas2GPU.prototype.dispose = function (renderer) {
 };
 
 /* harmony default export */ const graphGL_ForceAtlas2GPU = (ForceAtlas2GPU);
-;// CONCATENATED MODULE: ./src/chart/graphGL/forceAtlas2Worker.js
+;// ./src/chart/graphGL/forceAtlas2Worker.js
 /****************************
  * Vector2 math functions
  ***************************/
@@ -61516,7 +65050,7 @@ function forceAtlas2Worker() {
 }
 
 /* harmony default export */ const graphGL_forceAtlas2Worker = (forceAtlas2Worker);
-;// CONCATENATED MODULE: ./src/chart/graphGL/ForceAtlas2.js
+;// ./src/chart/graphGL/ForceAtlas2.js
 
 
 
@@ -61798,7 +65332,7 @@ ForceAtlas2.prototype.dispose = function (renderer) {
 };
 
 /* harmony default export */ const graphGL_ForceAtlas2 = (ForceAtlas2);
-;// CONCATENATED MODULE: ./src/util/Roam2DControl.js
+;// ./src/util/Roam2DControl.js
 
 
 
@@ -61996,10 +65530,10 @@ var Roam2DControl = core_Base.extend(function () {
 });
 
 /* harmony default export */ const util_Roam2DControl = (Roam2DControl);
-;// CONCATENATED MODULE: ./src/util/shader/lines2D.glsl.js
+;// ./src/util/shader/lines2D.glsl.js
 /* harmony default export */ const lines2D_glsl = ("@export ecgl.lines2D.vertex\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nattribute vec2 position: POSITION;\r\nattribute vec4 a_Color : COLOR;\r\nvarying vec4 v_Color;\r\n\r\n#ifdef POSITIONTEXTURE_ENABLED\r\nuniform sampler2D positionTexture;\r\n#endif\r\n\r\nvoid main()\r\n{\r\n gl_Position = worldViewProjection * vec4(position, -10.0, 1.0);\r\n\r\n v_Color = a_Color;\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.lines2D.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nvarying vec4 v_Color;\r\n\r\nvoid main()\r\n{\r\n gl_FragColor = color * v_Color;\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.meshLines2D.vertex\r\n\r\n// https://mattdesl.svbtle.com/drawing-lines-is-hard\r\nattribute vec2 position: POSITION;\r\nattribute vec2 normal;\r\nattribute float offset;\r\nattribute vec4 a_Color : COLOR;\r\n\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\nuniform vec4 viewport : VIEWPORT;\r\n\r\nvarying vec4 v_Color;\r\nvarying float v_Miter;\r\n\r\nvoid main()\r\n{\r\n vec4 p2 = worldViewProjection * vec4(position + normal, -10.0, 1.0);\r\n gl_Position = worldViewProjection * vec4(position, -10.0, 1.0);\r\n\r\n p2.xy /= p2.w;\r\n gl_Position.xy /= gl_Position.w;\r\n\r\n // Get normal on projection space.\r\n vec2 N = normalize(p2.xy - gl_Position.xy);\r\n gl_Position.xy += N * offset / viewport.zw * 2.0;\r\n\r\n gl_Position.xy *= gl_Position.w;\r\n\r\n v_Color = a_Color;\r\n}\r\n@end\r\n\r\n\r\n@export ecgl.meshLines2D.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\n\r\nvarying vec4 v_Color;\r\nvarying float v_Miter;\r\n\r\nvoid main()\r\n{\r\n // TODO Fadeout pixels v_Miter > 1\r\n gl_FragColor = color * v_Color;\r\n}\r\n\r\n@end");
 
-;// CONCATENATED MODULE: ./src/chart/graphGL/GraphGLView.js
+;// ./src/chart/graphGL/GraphGLView.js
 
 
 
@@ -62731,7 +66265,7 @@ var globalLayoutId = 1;
         this._control.dispose();
     }
 }));
-;// CONCATENATED MODULE: ./src/chart/graphGL/install.js
+;// ./src/chart/graphGL/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -62901,11 +66435,11 @@ function graphGL_install_install(registers) {
         update: 'series.graphGL:unfocusNodeAdjacency'
     }, noop);
 }
-;// CONCATENATED MODULE: ./src/chart/graphGL.js
+;// ./src/chart/graphGL.js
 
 
 (0,external_echarts_.use)(graphGL_install_install);
-;// CONCATENATED MODULE: ./src/chart/flowGL/FlowGLSeries.js
+;// ./src/chart/flowGL/FlowGLSeries.js
 
 
 /* harmony default export */ const FlowGLSeries = (external_echarts_.SeriesModel.extend({
@@ -62962,7 +66496,7 @@ function graphGL_install_install(registers) {
         }
     }
 }));
-;// CONCATENATED MODULE: ./src/chart/flowGL/Line2D.js
+;// ./src/chart/flowGL/Line2D.js
 /**
  * Lines geometry
  * Use screen space projected lines lineWidth > MAX_LINE_WIDTH
@@ -63044,10 +66578,10 @@ var Line2D_LinesGeometry = src_Geometry.extend(function () {
 });
 
 /* harmony default export */ const Line2D = (Line2D_LinesGeometry);
-;// CONCATENATED MODULE: ./src/chart/flowGL/vectorFieldParticle.glsl.js
+;// ./src/chart/flowGL/vectorFieldParticle.glsl.js
 /* harmony default export */ const vectorFieldParticle_glsl = ("@export ecgl.vfParticle.particle.fragment\r\n\r\nuniform sampler2D particleTexture;\r\nuniform sampler2D spawnTexture;\r\nuniform sampler2D velocityTexture;\r\n\r\nuniform float deltaTime;\r\nuniform float elapsedTime;\r\n\r\nuniform float speedScaling : 1.0;\r\n\r\nuniform vec2 textureSize;\r\nuniform vec4 region : [0, 0, 1, 1];\r\nuniform float firstFrameTime;\r\n\r\nvarying vec2 v_Texcoord;\r\n\r\n// vec2 bilinearFetch(vec2 uv)\r\n// {\r\n// vec2 off = 1.0 / textureSize;\r\n// vec2 sc = (floor(uv * textureSize)) * off;\r\n// vec2 f = fract(uv * textureSize);\r\n// vec2 tl = texture2D(velocityTexture, sc).xy;\r\n// vec2 tr = texture2D(velocityTexture, sc + vec2(off.x, 0)).xy;\r\n// vec2 bl = texture2D(velocityTexture, sc + vec2(0, off.y)).xy;\r\n// vec2 br = texture2D(velocityTexture, sc + off).xy;\r\n// return mix(mix(tl, tr, f.x), mix(bl, br, f.x), f.y);\r\n// }\r\n\r\nvoid main()\r\n{\r\n vec4 p = texture2D(particleTexture, v_Texcoord);\r\n bool spawn = false;\r\n if (p.w <= 0.0) {\r\n p = texture2D(spawnTexture, fract(v_Texcoord + elapsedTime / 10.0));\r\n p.w -= firstFrameTime;\r\n spawn = true;\r\n }\r\n vec2 v = texture2D(velocityTexture, fract(p.xy * region.zw + region.xy)).xy;\r\n // https://blog.mapbox.com/how-i-built-a-wind-map-with-webgl-b63022b5537f\r\n // vec2 v = bilinearFetch(fract(p.xy * region.zw + region.xy));\r\n v = (v - 0.5) * 2.0;\r\n p.z = length(v);\r\n p.xy += v * deltaTime / 10.0 * speedScaling;\r\n p.w -= deltaTime;\r\n\r\n // TODO Not show just spawned particle or crossed particle.\r\n if (spawn || p.xy != fract(p.xy)) {\r\n p.z = 0.0;\r\n }\r\n // Make the particle surface seamless\r\n p.xy = fract(p.xy);\r\n\r\n gl_FragColor = p;\r\n}\r\n@end\r\n\r\n@export ecgl.vfParticle.renderPoints.vertex\r\n\r\n#define PI 3.1415926\r\n\r\nattribute vec2 texcoord : TEXCOORD_0;\r\n\r\nuniform sampler2D particleTexture;\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nuniform float size : 1.0;\r\n\r\nvarying float v_Mag;\r\nvarying vec2 v_Uv;\r\n\r\nvoid main()\r\n{\r\n vec4 p = texture2D(particleTexture, texcoord);\r\n\r\n // PENDING If ignore 0 length vector\r\n if (p.w > 0.0 && p.z > 1e-5) {\r\n gl_Position = worldViewProjection * vec4(p.xy * 2.0 - 1.0, 0.0, 1.0);\r\n }\r\n else {\r\n gl_Position = vec4(100000.0, 100000.0, 100000.0, 1.0);\r\n }\r\n\r\n v_Mag = p.z;\r\n v_Uv = p.xy;\r\n\r\n gl_PointSize = size;\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.vfParticle.renderPoints.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\nuniform sampler2D gradientTexture;\r\nuniform sampler2D colorTexture;\r\nuniform sampler2D spriteTexture;\r\n\r\nvarying float v_Mag;\r\nvarying vec2 v_Uv;\r\n\r\nvoid main()\r\n{\r\n gl_FragColor = color;\r\n#ifdef SPRITETEXTURE_ENABLED\r\n gl_FragColor *= texture2D(spriteTexture, gl_PointCoord);\r\n if (color.a == 0.0) {\r\n discard;\r\n }\r\n#endif\r\n#ifdef GRADIENTTEXTURE_ENABLED\r\n gl_FragColor *= texture2D(gradientTexture, vec2(v_Mag, 0.5));\r\n#endif\r\n#ifdef COLORTEXTURE_ENABLED\r\n gl_FragColor *= texture2D(colorTexture, v_Uv);\r\n#endif\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.vfParticle.renderLines.vertex\r\n\r\n#define PI 3.1415926\r\n\r\nattribute vec3 position : POSITION;\r\n\r\nuniform sampler2D particleTexture;\r\nuniform sampler2D prevParticleTexture;\r\n\r\nuniform float size : 1.0;\r\nuniform vec4 vp: VIEWPORT;\r\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\r\n\r\nvarying float v_Mag;\r\nvarying vec2 v_Uv;\r\n\r\n@import clay.util.rand\r\n\r\nvoid main()\r\n{\r\n vec4 p = texture2D(particleTexture, position.xy);\r\n vec4 p2 = texture2D(prevParticleTexture, position.xy);\r\n\r\n p.xy = p.xy * 2.0 - 1.0;\r\n p2.xy = p2.xy * 2.0 - 1.0;\r\n\r\n // PENDING If ignore 0 length vector\r\n if (p.w > 0.0 && p.z > 1e-5) {\r\n vec2 dir = normalize(p.xy - p2.xy);\r\n vec2 norm = vec2(dir.y / vp.z, -dir.x / vp.w) * sign(position.z) * size;\r\n if (abs(position.z) == 2.0) {\r\n gl_Position = vec4(p.xy + norm, 0.0, 1.0);\r\n v_Uv = p.xy;\r\n v_Mag = p.z;\r\n }\r\n else {\r\n gl_Position = vec4(p2.xy + norm, 0.0, 1.0);\r\n v_Mag = p2.z;\r\n v_Uv = p2.xy;\r\n }\r\n gl_Position = worldViewProjection * gl_Position;\r\n }\r\n else {\r\n gl_Position = vec4(100000.0, 100000.0, 100000.0, 1.0);\r\n }\r\n}\r\n\r\n@end\r\n\r\n@export ecgl.vfParticle.renderLines.fragment\r\n\r\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\r\nuniform sampler2D gradientTexture;\r\nuniform sampler2D colorTexture;\r\n\r\nvarying float v_Mag;\r\nvarying vec2 v_Uv;\r\n\r\nvoid main()\r\n{\r\n gl_FragColor = color;\r\n // gl_FragColor = mix(vec4(1.0,0.0,0.0,1.0), vec4(0.0,0.0,1.0,1.0), 1.0 - v_Mag);\r\n#ifdef GRADIENTTEXTURE_ENABLED\r\n gl_FragColor *= texture2D(gradientTexture, vec2(v_Mag, 0.5));\r\n#endif\r\n#ifdef COLORTEXTURE_ENABLED\r\n gl_FragColor *= texture2D(colorTexture, v_Uv);\r\n#endif\r\n}\r\n\r\n@end\r\n");
 
-;// CONCATENATED MODULE: ./src/chart/flowGL/VectorFieldParticleSurface.js
+;// ./src/chart/flowGL/VectorFieldParticleSurface.js
 
 
 
@@ -63490,7 +67024,7 @@ VectorFieldParticleSurface.prototype = {
 };
 
 /* harmony default export */ const flowGL_VectorFieldParticleSurface = (VectorFieldParticleSurface);
-;// CONCATENATED MODULE: ./src/chart/flowGL/FlowGLView.js
+;// ./src/chart/flowGL/FlowGLView.js
 
 
 
@@ -63850,7 +67384,7 @@ VectorFieldParticleSurface.prototype = {
     }
 }));
 
-;// CONCATENATED MODULE: ./src/chart/flowGL/install.js
+;// ./src/chart/flowGL/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -63861,11 +67395,11 @@ function flowGL_install_install(registers) {
     registers.registerChartView(FlowGLView);
     registers.registerSeriesModel(FlowGLSeries);
 }
-;// CONCATENATED MODULE: ./src/chart/flowGL.js
+;// ./src/chart/flowGL.js
 
 
 (0,external_echarts_.use)(flowGL_install_install);
-;// CONCATENATED MODULE: ./src/chart/linesGL/LinesGLSeries.js
+;// ./src/chart/linesGL/LinesGLSeries.js
 
 
 
@@ -64069,7 +67603,7 @@ var LinesGLSeries = external_echarts_.SeriesModel.extend({
 });
 
 /* harmony default export */ const linesGL_LinesGLSeries = (LinesGLSeries);
-;// CONCATENATED MODULE: ./src/chart/linesGL/LinesGLView.js
+;// ./src/chart/linesGL/LinesGLView.js
 
 
 
@@ -64272,7 +67806,7 @@ var LinesGLSeries = external_echarts_.SeriesModel.extend({
         this.groupGL.removeAll();
     }
 }));
-;// CONCATENATED MODULE: ./src/chart/linesGL/install.js
+;// ./src/chart/linesGL/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
 
@@ -64283,11 +67817,11 @@ function linesGL_install_install(registers) {
     registers.registerChartView(LinesGLView);
     registers.registerSeriesModel(linesGL_LinesGLSeries);
 }
-;// CONCATENATED MODULE: ./src/chart/linesGL.js
+;// ./src/chart/linesGL.js
 
 
 (0,external_echarts_.use)(linesGL_install_install);
-;// CONCATENATED MODULE: ./src/export/all.js
+;// ./src/export/all.js
 
 
 
