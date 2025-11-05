@@ -74,19 +74,30 @@ ECharts-GL is available under the BSD license.
 
 The Apache Software Foundation [Apache ECharts, ECharts](https://echarts.apache.org/), Apache, the Apache feather, and the Apache ECharts project logo are either registered trademarks or trademarks of the [Apache Software Foundation](https://www.apache.org/).
 
-## Changes in this fork
+</br>
+</br>
+
+# Changes in this fork
+
+The fork has been updated to the echart v.6.0.0.
 
 1. New chart type - `heatmapGL` - was developed. \
    This chart was based on the scatterGL. And it has some limitation on styling in `itemStyle` (you can't use borders, or emphasis options).
    You can find example in <b>./test/hetamapGL-simple.html</b>
 
 2. `ScatterGL`
-   - items outside the grid boundary have been excluded from the rendering process
+   - items outside the grid boundary have been excluded from the rendering process.
+   - The behavior for tooltip was fixed. Now it works with single item and with trigger = "axis". 
 
-#### Installing
+## Installing
 
 ```bash
 npm i github:AndreyPatseiko/echarts-gl#heat-map-optimization
 ```
 
-PS. It's not ideal code, and may be improvement.
+## Deploy
+
+```bash
+npm run release
+```
+Then push all files in `dist` folder to the repo.

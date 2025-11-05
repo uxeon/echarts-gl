@@ -58985,7 +58985,12 @@ PointsBuilder.prototype = {
 
         this._mesh.sizeScale = pointSizeScale;
 
-        geometry.updateBoundingBox();
+        /*
+         *  This function are updated piking zone between two (ore more) points.
+         *  So if you have only one point, you never got a tooltip.
+         *  If it's commented, picking starts work by whole canvas.
+         */
+        // geometry.updateBoundingBox();
         geometry.dirty();
 
         // Update material.
@@ -61744,6 +61749,8 @@ GLViewHelper.prototype._updateCamera = function (width, height, dpr) {
         this._sizeScale = 1;
 
         this._glViewHelper = new common_GLViewHelper(this.viewGL);
+
+        this.isInit = false;
     },
 
     render: function (seriesModel, ecModel, api) {
@@ -61764,9 +61771,28 @@ GLViewHelper.prototype._updateCamera = function (width, height, dpr) {
 
         this._removeTransformInPoints(seriesModel.getData().getLayout('points'));
         pointsBuilder.update(seriesModel, ecModel, api);
-
+		/*
+		 * updateView launched for correct calculation NDCPosition,
+	 	 * that needs for correct counting _pick function, for tooltip.
+		 */
+        pointsBuilder.updateView(this.viewGL.camera);
+        this._onceReInitView()
         this.viewGL.setPostEffect(seriesModel.getModel('postEffect'), api);
     },
+
+    _onceReInitView() {
+		/* For some reason camera.projectionMatrix in the first render wasn't correct
+		 * So we did some reinitialization with correct matrix.
+		 */
+    	if (!this.isInit) {
+      		setTimeout(() => {
+				if(this._pointsBuilderList[0]) {
+					this._pointsBuilderList[0].updateView(this.viewGL.camera);
+					this.isInit = true;
+				}
+      		}, 0);
+    	}
+  	},
 
     incrementalPrepareRender: function (seriesModel, ecModel, api) {
         this.groupGL.removeAll();
