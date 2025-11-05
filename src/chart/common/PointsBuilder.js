@@ -178,7 +178,12 @@ PointsBuilder.prototype = {
 
         this._mesh.sizeScale = pointSizeScale;
 
-        geometry.updateBoundingBox();
+        /*
+         *  This function are updated piking zone between two (ore more) points.
+         *  So if you have only one point, you never got a tooltip.
+         *  If it's commented, picking starts work by whole canvas.
+         */
+        // geometry.updateBoundingBox();
         geometry.dirty();
 
         // Update material.

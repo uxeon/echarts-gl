@@ -27,6 +27,16 @@
 
             chart.setOption({
                 backgroundColor: '#fff',
+                tooltip: {},
+                grid: {
+                    bottom: 0,
+                    top: 0,
+                    right: 0,
+                    left: 0
+                },
+                dataZoom: [{
+                    type: 'inside'
+                }],
                 xAxis: {
                     type: 'value',
                     min: -1,
@@ -40,7 +50,7 @@
                 series: [{
                     type: 'scatterGL',
                     data: [[0, 0]],
-                    symbolSize: 120,
+                    symbolSize: 100,
                     symbol: 'rect',
                     itemStyle: {
                         borderWidth: 2,
