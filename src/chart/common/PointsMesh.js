@@ -81,13 +81,20 @@ var PointsMesh = graphicGL.Mesh.extend(function () {
                 var pointWorld = new graphicGL.Vector3();
                 this.geometry.attributes.position.get(idx, point.array);
                 graphicGL.Vector3.transformMat4(pointWorld, point, this.worldTransform);
-                out.push({
-                    vertexIndex: idx,
-                    point: point,
-                    pointWorld: pointWorld,
-                    target: this,
-                    distance: pointWorld.distance(camera.getWorldPosition())
-                });
+
+                /* Sending output only when element is present.
+                 * Point wasn't hidden by visual map element.
+                 */
+                var color = this.geometry.attributes.color.get(idx, point.array)[3];
+                if(color){
+                    out.push({
+                        vertexIndex: idx,
+                        point: point,
+                        pointWorld: pointWorld,
+                        target: this,
+                        distance: pointWorld.distance(camera.getWorldPosition())
+                    });
+                }
             }
         }
     },
