@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ScatterGL - ECHARTS-GL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Fullscreen Landscape on iOS -->
+    <link rel="stylesheet" href="./common.css">
+</head>
+
+<body>
+    <div id="main"></div>
+    <script src="../node_modules/echarts/dist/echarts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+    <script src="../dist/echarts-gl.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/commonUI.js"></script>
+
+    <script>
+        /* issue 
+            https://github.com/apache/echarts/issues/18567
+        */
+
+        var chart = echarts.init(document.getElementById('main'));
+
+        chart.setOption(
+            {
+                backgroundColor: '#fff',
+                grid: {
+                    left: 90,
+                    right: 15,
+                    top: 40,
+                    bottom: 120
+                },
+                legend: {
+                    orient: "horizontal",
+                    bottom: 80
+                },
+                xAxis: {
+                    type: "value",
+                    name: "Delta X \n(mm)",
+                    nameLocation: "end",
+                    nameGap: 3,
+                    axisLabel: {
+                        formatter: "{value} mm"
+                    },
+                    min: -67.01,
+                    max: 67.01
+                },
+                yAxis: {
+                    type: "value",
+                    name: "Delta Y (mm)",
+                    nameLocation: "end",
+                    nameGap: 3,
+                    axisLabel: {
+                        formatter: "{value} mm"
+                    },
+                    min: -25.01,
+                    max: 25.01
+                },
+                animation: false,
+                visualMap: [
+                    {
+                        type: "piecewise",
+                        dimension: 3,
+                        precision: 1,
+                        top: 40,
+                        right: 0,
+                        pieces: [
+                            {
+                                min: 20,
+                                color: "#cc0033"
+                            },
+                            {
+                                min: 16,
+                                color: "#ff9933",
+                                max: 20
+                            },
+                            {
+                                min: 12,
+                                color: "#c9c120",
+                                max: 16
+                            },
+                            {
+                                color: "#096",
+                                max: 12
+                            }
+                        ],
+                        id: "boundary-visual-map"
+                    }
+                ],
+                series: [
+                    {
+                        encode: {
+                            x: 1,
+                            y: 2,
+                            tooltip: [0, 1, 2, 3]
+                        },
+                        largeThreshold: 500,
+                        large: true,
+                        blendMode: "source-over",
+                        name: "Continuous",
+                        id: "serie-con-disp-ne",
+                        type: "scatterGL",
+                        data: [
+                            ["2021-04-12T06:00:00.000Z", 13, 13, 18.384776310850235],
+                            ["2021-04-12T05:00:00.000Z", 12, 12, 16.97056274847714],
+                            ["2021-04-12T04:00:00.000Z", 12.001, 0, 12.001],
+                            ["2021-04-12T03:00:00.000Z", 11.999, 0, 11.999],
+                            ["2021-04-12T02:00:00.000Z", 9, 7.9376, 12.000228904483446],
+                            ["2021-04-12T02:00:00.000Z", 9, 7.9372, 11.999964326613641],
+                            ["2021-04-12T01:00:00.000Z", 8, 8, 11.313708498984761],
+                            ["2021-04-12T01:00:00.000Z", 8, 8, 11.313708498984761],
+                            ["2021-04-12T00:00:00.000Z", 2, 1, 2.23606797749979],
+                            ["2021-04-09T00:00:00.000Z", 2, 1, 2.23606797749979]
+                        ]
+                    },
+                    {
+                        encode: {
+                            x: 1,
+                            y: 2,
+                            tooltip: [0, 1, 2, 3]
+                        },
+                        symbol: "pin",
+                        largeThreshold: 500,
+                        // large: true,
+                        blendMode: "source-over",
+                        name: "Validation",
+                        id: "serie-val-disp-ne",
+                        type: "scatterGL",
+                        data: [
+                            ["2021-04-12T00:00:00.000Z", 0, 0, 0],
+                            ["2021-04-09T00:00:00.000Z", 12.5, 25, 27.95084971874737]
+                        ]
+                    }
+                ],
+                title: [
+                    {
+                        left: "center",
+                        text: "COTU RO PD TP016",
+                        show: false,
+                        top: "top",
+                        textStyle: {
+                            color: "grey",
+                            fontSize: 20
+                        },
+                        id: "save-image-title"
+                    },
+                    {
+                        id: "no-data-title",
+                        text: "No Data",
+                        left: "center",
+                        show: false,
+                        textStyle: {
+                            color: "grey",
+                            fontSize: 20
+                        }
+                    }
+                ],
+                tooltip: {},
+                dataZoom: [
+                    {
+                        type: "inside",
+                        filterMode: "none"
+                    },
+                    {
+                        type: "slider",
+                        showDataShadow: false,
+                        handleIcon: "path://M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z",
+                        handleSize: "80%",
+                        bottom: "55",
+                        filterMode: "none",
+                        id: "horizontal-data-zoom"
+                    },
+                    {
+                        type: "inside",
+                        orient: "vertical",
+                        filterMode: "none"
+                    },
+                    {
+                        type: "slider",
+                        orient: "vertical",
+                        showDataShadow: false,
+                        handleIcon: "path://M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z",
+                        handleSize: "80%",
+                        left: "0",
+                        filterMode: "none",
+                        id: "vertical-data-zoom"
+                    }
+                ]
+            });
+    </script>
+</body>
+
+</html>

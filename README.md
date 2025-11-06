@@ -87,8 +87,9 @@ The fork has been updated to the echart v.6.0.0.
 
 2. `ScatterGL`
    - items outside the grid boundary have been excluded from the rendering process.
-   - The behavior for tooltip was fixed. Now it works with single item and with trigger = "axis".
-   - The tooltip doesn't appear if the item is hidden by the visual map.
+   - <b>Only for series.large = false (default)</b>
+     - The behavior for tooltip was fixed. Now it works with single item and with trigger = "axis".
+     - The tooltip doesn't appear if the item is hidden by the visual map.
 
 ## Installing
 
