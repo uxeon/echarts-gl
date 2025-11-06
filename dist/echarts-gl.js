@@ -61778,12 +61778,19 @@ GLViewHelper.prototype._updateCamera = function (width, height, dpr) {
 
         this._removeTransformInPoints(seriesModel.getData().getLayout('points'));
         pointsBuilder.update(seriesModel, ecModel, api);
-		/*
-		 * updateView launched for correct calculation NDCPosition,
-	 	 * that needs for correct counting _pick function, for tooltip.
-		 */
-        pointsBuilder.updateView(this.viewGL.camera);
-        this._onceReInitView()
+        
+        /* if large = false (by default).
+         * All updates deactivate. Because in this case creating point has different approach,
+         * simplified. Without some attributes (size/color), that critical for normal working _pick function.         
+         */
+        var largeMode = seriesModel.get('large');
+        if(!largeMode) {
+            /* UpdateView launched for correct calculation NDCPosition,
+             * that needs for correct counting _pick function, for tooltip.
+             */
+            pointsBuilder.updateView(this.viewGL.camera);
+            this._onceReInitView()
+        }
         this.viewGL.setPostEffect(seriesModel.getModel('postEffect'), api);
     },
 
