@@ -90,6 +90,7 @@ The fork has been updated to the echart v.6.0.0.
    - <b>Only for series.large = false (default)</b>
      - The behavior for tooltip was fixed. Now it works with single item and with trigger = "axis".
      - The tooltip doesn't appear if the item is hidden by the visual map.
+   - The warning - Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See:sprite.js:132 - was fixed 
 
 ## Installing
 
