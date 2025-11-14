@@ -151,7 +151,7 @@ var spriteUtil = {
     createSDFFromCanvas: function (canvas, size, range, outCanvas) {
         // TODO Create a low resolution SDF from high resolution image.
         return makeSprite(size, outCanvas, function (outCtx) {
-            var ctx = canvas.getContext('2d');
+            var ctx = canvas.getContext('2d', { willReadFrequently: true });
             var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
             outCtx.putImageData(generateSDF(outCtx, imgData, range), 0, 0);
