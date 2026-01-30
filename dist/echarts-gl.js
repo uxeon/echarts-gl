@@ -12,15 +12,15 @@ return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "echarts/lib/echarts":
+/***/ "echarts/lib/echarts"
 /*!**************************!*\
   !*** external "echarts" ***!
   \**************************/
-/***/ ((module) => {
+(module) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE_echarts_lib_echarts__;
 
-/***/ })
+/***/ }
 
 /******/ 	});
 /************************************************************************/
@@ -33,6 +33,12 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_echarts_lib_echarts__;
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
 /******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Check if module exists (development only)
+/******/ 		if (__webpack_modules__[moduleId] === undefined) {
+/******/ 			var e = new Error("Cannot find module '" + moduleId + "'");
+/******/ 			e.code = 'MODULE_NOT_FOUND';
+/******/ 			throw e;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
@@ -26571,6 +26577,8 @@ requestAnimationFrame = (core_env.hasGlobalWindow
 
 
 
+var _LayerGL_global_renderer = undefined;
+
 /**
  * @constructor
  * @alias module:echarts-gl/core/LayerGL
@@ -26594,13 +26602,7 @@ var LayerGL = function (id, zr) {
      * @type {clay.Renderer}
      */
     try {
-        this.renderer = new src_Renderer({
-            clearBit: 0,
-            devicePixelRatio: zr.painter.dpr,
-            preserveDrawingBuffer: true,
-            // PENDING
-            premultipliedAlpha: true
-        });
+        this.resetRenderer();
         this.renderer.resize(zr.painter.getWidth(), zr.painter.getHeight());
     }
     catch (e) {
@@ -26621,7 +26623,12 @@ var LayerGL = function (id, zr) {
      * Canvas dom for webgl rendering
      * @type {HTMLCanvasElement}
      */
-    this.dom = this.renderer.canvas;
+    this.dom = document.createElement('canvas');
+    this.domCanvasContext = this.dom.getContext('2d')
+    this.dom.style.width = this.renderer.canvas.style.width;
+    this.dom.style.height = this.renderer.canvas.style.height;
+    this.dom.width = this.renderer.canvas.width;
+    this.dom.height = this.renderer.canvas.height;
     var style = this.dom.style;
     style.position = 'absolute';
     style.left = '0';
@@ -26652,6 +26659,20 @@ var LayerGL = function (id, zr) {
     this._backgroundColor = null;
 
     this._disposed = false;
+};
+
+LayerGL.prototype.resetRenderer = function () {
+    if (!_LayerGL_global_renderer || _LayerGL_global_renderer.gl.isContextLost()) {
+        console.log('creating new renderer')
+        _LayerGL_global_renderer = new src_Renderer({
+            clearBit: 0,
+            devicePixelRatio: this.zr.painter.dpr,
+            preserveDrawingBuffer: true,
+            // PENDING
+            premultipliedAlpha: true
+        });
+    }
+    this.renderer = _LayerGL_global_renderer;
 };
 
 LayerGL.prototype.setUnpainted = function () {};
@@ -26732,6 +26753,11 @@ LayerGL.prototype.removeViewsAll = function () {
 LayerGL.prototype.resize = function (width, height) {
     var renderer = this.renderer;
     renderer.resize(width, height);
+
+    this.dom.style.width = this.renderer.canvas.style.width;
+    this.dom.style.height = this.renderer.canvas.style.height;
+    this.dom.width = this.renderer.canvas.width;
+    this.dom.height = this.renderer.canvas.height;
 };
 
 /**
@@ -26775,6 +26801,13 @@ LayerGL.prototype.needsRefresh = function () {
  * Refresh the layer, will be invoked by zrender
  */
 LayerGL.prototype.refresh = function (bgColor) {
+    if (this.renderer.gl.isContextLost()) {
+        console.log('context lost, resetting renderer')
+        this.resetRenderer();
+    }
+
+    // make sure global renderer canvas size matches this layer
+    this.renderer.resize(this.zr.painter.getWidth(), this.zr.painter.getHeight());
 
     this._backgroundColor = bgColor ? util_graphicGL.parseColor(bgColor) : [0, 0, 0, 0];
     this.renderer.clearColor = this._backgroundColor;
@@ -26805,12 +26838,28 @@ LayerGL.prototype.renderToCanvas = function (ctx) {
 };
 
 LayerGL.prototype._doRender = function (accumulating) {
+    if (this.renderer.gl.isContextLost()) {
+        console.log('context lost, resetting renderer and refreshing')
+        this.resetRenderer();
+
+        // Context lost in the "middle" of rendering/accumulating; trigger full rerender
+        this.needsRefresh();
+        return;
+    }
+
+    // Needed in case we are not directly called from render()
+    this.renderer.clearColor = this._backgroundColor;
+    this.renderer.resize(this.zr.painter.getWidth(), this.zr.painter.getHeight());
+
     this.clear();
     this.renderer.saveViewport();
     for (var i = 0; i < this.views.length; i++) {
         this.views[i].render(this.renderer, accumulating);
     }
     this.renderer.restoreViewport();
+
+    this.domCanvasContext.clearRect(0,0,this.dom.width,this.dom.height)
+    this.domCanvasContext.drawImage(this.renderer.canvas, 0, 0, this.renderer.canvas.width, this.renderer.canvas.height);
 };
 
 /**
@@ -67131,6 +67180,9 @@ VectorFieldParticleSurface.prototype = {
                 __percent: 1
             })
             .during(function () {
+                if (self._renderer && self._renderer.gl.isContextLost()) {
+                    self._renderer = self._layerGL.renderer;
+                }
                 var timeNow = + (new Date());
                 var dTime = Math.min(timeNow - time, 20);
                 time = time + dTime;
@@ -67161,6 +67213,7 @@ VectorFieldParticleSurface.prototype = {
     afterRender: function (globeModel, ecModel, api, layerGL) {
         var renderer = layerGL.renderer;
         this._renderer = renderer;
+        this._layerGL = layerGL;
     },
 
     _updateData: function (seriesModel, api) {
@@ -67423,7 +67476,6 @@ VectorFieldParticleSurface.prototype = {
         this.groupGL.removeAll();
     }
 }));
-
 ;// ./src/chart/flowGL/install.js
 // TODO ECharts GL must be imported whatever component,charts is imported.
 
