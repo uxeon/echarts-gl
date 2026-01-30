@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>HeatmapGL - ECHARTS-GL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- Fullscreen Landscape on iOS -->
+  <link rel="stylesheet" href="./common.css" />
+  <style>
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      height: 90vh;
+      justify-content: space-around;
+      gap: 1em;
+    }
+
+    .single-chart {
+      height: 200px;
+      width: 30vw;
+    }
+
+    h3 {
+      color: white
+    }
+  </style>
+</head>
+
+<body>
+  <h3>More than 20 charts without - Too many active WebGL contexts - warning and charts render correct.</h3>
+
+  <div class="wrapper">
+    <div class="single-chart" id="main1"></div>
+    <div class="single-chart" id="main2"></div>
+    <div class="single-chart" id="main3"></div>
+    <div class="single-chart" id="main4"></div>
+    <div class="single-chart" id="main5"></div>
+    <div class="single-chart" id="main6"></div>
+    <div class="single-chart" id="main7"></div>
+    <div class="single-chart" id="main8"></div>
+    <div class="single-chart" id="main9"></div>
+    <div class="single-chart" id="main10"></div>
+    <div class="single-chart" id="main11"></div>
+    <div class="single-chart" id="main12"></div>
+    <div class="single-chart" id="main13"></div>
+    <div class="single-chart" id="main14"></div>
+    <div class="single-chart" id="main15"></div>
+    <div class="single-chart" id="main16"></div>
+    <div class="single-chart" id="main17"></div>
+    <div class="single-chart" id="main18"></div>
+    <div class="single-chart" id="main19"></div>
+    <div class="single-chart" id="main20"></div>
+    <div class="single-chart" id="main21"></div>
+  </div>
+
+  <script src="../node_modules/echarts/dist/echarts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script src="../dist/echarts-gl.js"></script>
+  <script>
+
+    for (let i = 1; i <= 21; i++) {
+      const chart = echarts.init(document.getElementById(`main${i}`));
+
+      chart.setOption({
+        backgroundColor: "#fff",
+        tooltip: {
+          trigger: "item",
+          formatter: "{c} C",
+        },
+        legend: {
+          orient: "horizontal",
+          x: "center",
+          bottom: 30,
+        },
+        toolbox: {
+          top: 0,
+          feature: {
+            dataZoom: {
+              title: {
+                zoom: "zoom",
+                back: "back",
+              },
+              yAxisIndex: "none",
+            },
+          },
+        },
+        xAxis: {
+          type: "category",
+          min: "0%",
+          max: "100%",
+        },
+        yAxis: {
+          type: "category",
+          name: "Y Axis name params",
+          nameLocation: "center",
+          nameGap: 30,
+        },
+        grid: {
+          left: 30,
+          top: 30,
+          right: 50,
+          containLabel: true,
+          bottom: 50
+        },
+        dataZoom: [
+          {
+            type: "inside",
+            start: 0,
+            end: 100,
+          },
+          {
+            start: 0,
+            end: 100,
+            bottom: 3
+          },
+        ],
+        series: [
+          {
+            name: "Punch Card",
+            type: "heatmapGL",
+            label: {
+              show: true,
+            },
+            emphasis: {
+              itemStyle: {
+                shadowBlur: 10,
+                shadowColor: "rgba(0, 0, 0, 0.5)",
+              },
+            },
+            data: [
+              ["16th", "00", 9.738],
+              ["16th", "01", 8.639],
+              ["16th", "02", 3.696],
+              ["16th", "03", 4.606],
+              ["16th", "04", 6.307],
+              ["16th", "05", 4.574],
+              ["16th", "06", 6.49],
+              ["16th", "07", 5.711],
+              ["16th", "08", 1.909],
+              ["16th", "09", 8.492],
+              ["16th", "10", 2.402],
+              ["17th", "00", 2.512],
+              ["17th", "01", 5.593],
+              ["17th", "02", 9.968],
+              ["17th", "03", 9.345],
+              ["17th", "04", 5.202],
+              ["17th", "05", 1.651],
+              ["17th", "06", 7.071],
+              ["17th", "07", 6.872],
+              ["17th", "08", 8.076],
+              ["17th", "09", 3.001],
+              ["17th", "10", 0.324],
+              ["18th", "00", 7.789],
+              ["18th", "01", 2.204],
+              ["18th", "02", 2.732],
+              ["18th", "03", 9.881],
+              ["18th", "04", 6.862],
+              ["18th", "05", 2.131],
+              ["18th", "06", 2.567],
+              ["18th", "07", 8.649],
+              ["18th", "08", 2.673],
+              ["18th", "09", 3.044],
+              ["18th", "10", 4.831],
+              ["19th", "00", 0.429],
+              ["19th", "01", 3.743],
+              ["19th", "02", 2.468],
+              ["19th", "03", 7.813],
+              ["19th", "04", 4.708],
+              ["19th", "05", 3.187],
+              ["19th", "06", 3.074],
+              ["19th", "07", 1.31],
+              ["19th", "08", 1.773],
+              ["19th", "09", 0.002],
+              ["19th", "10", 1.834],
+            ],
+          },
+        ],
+        visualMap: {
+          min: 0,
+          max: 10,
+          calculable: true,
+          orient: "vertical",
+          right: 3,
+          top: 20,
+        },
+      });
+    }
+  </script>
+</body>
+
+</html>
