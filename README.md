@@ -106,7 +106,7 @@ The fork has been updated to the echart v.6.0.0.
 ## Installing
 
 ```bash
-npm i github:AndreyPatseiko/echarts-gl#heat-map-optimization
+npm i github:AndreyPatseiko/echarts-gl#v1.0.0
 ```
 
 ## Deploy
